@@ -1,7 +1,9 @@
+import { ExplanationComponent } from "../../components"
 
 function LenguajeDeMarcasScreen() {
   return (
-    <div>LenguajeDeMarcasScreen</div>
+    <ExplanationComponent color={"var(--light-green)"}/>
+
   )
 }
 

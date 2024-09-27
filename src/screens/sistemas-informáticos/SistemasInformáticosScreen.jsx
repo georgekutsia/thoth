@@ -1,7 +1,8 @@
+import { ExplanationComponent } from "../../components"
 
 function SistemasInformáticosScreen() {
   return (
-    <div>SistemasInformáticosScreen</div>
+    <ExplanationComponent color={"var(--light-blue)"}/>
   )
 }
 

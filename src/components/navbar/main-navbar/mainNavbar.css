@@ -1,64 +1,91 @@
 .main-navbar-box {
   display: flex;
-  gap: 20px; /* Espaciado entre los botones */
-  margin-top: calc(10px + 2vh);
+  gap: calc(20px + 5vw);
+  padding-top: calc(10px + 2vh);
   justify-content: center;
 }
 
 .main-navbar-box .navLinkBtn {
-  position: relative; /* Necesario para el posicionamiento absoluto del pseudo-elemento */
+  position: relative;
   border: none;
   background-color: transparent;
   color: white;
   font-size: calc(20px + 2vw);
   cursor: pointer;
-  /* Quitamos overflow hidden para que el pseudo-elemento no se corte */
+ 
 }
 
 .main-navbar-box .navLinkBtn::after {
-  content: attr(data-icon); /* Obtiene el valor del atributo data-icon */
+  content: attr(data-icon);
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  font-family: "Font Awesome 6 Free"; /* Familia de iconos Font Awesome */
-  font-weight: 900; /* Asegura que sea el icono sólido */
-  color: rgba(255, 255, 255, 0.2); /* Icono semi-transparente por defecto */
-  font-size: calc(20px + 2vw); /* Mismo tamaño que el ícono original */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: calc(20px + 2vw);
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1; /* Inicialmente detrás del botón original */
-  transform: rotate(0deg); /* Sin rotación inicial */
-  transition: transform 0.3s ease, color 0.3s ease; /* Suaviza la animación de rotación y color */
-  transform-origin: 100% 100%; /* Cambiamos el origen de la transformación a la esquina inferior derecha */
+  z-index: 1;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease, color 0.3s ease;
+  transform-origin: 100% 100%;
 }
 
 .main-navbar-box .navLinkBtn:hover::after {
-  z-index: 1; /* Ponemos el pseudo-elemento sobre el botón original al hacer hover */
-  transform: rotate(25deg); /* Gira 25 grados sobre su nuevo eje (derecha y abajo) */
-  color: rgb(235, 31, 31); /* Color por defecto en hover */
+  z-index: -1;
+  transform: rotate(25deg);
+  color: rgb(235, 31, 31);
 }
 
-/* Asignamos colores específicos para cada ícono */
 
-/* Pseudo-elemento para el icono fa-sitemap (color personalizado) */
 .main-navbar-box .navLinkBtn[data-icon="fa-sitemap"]::after {
-  content: "\f0e8"; /* Código del icono fa-sitemap en Font Awesome */
-  color: rgba(31, 176, 235, 0.7); /* Color azul claro */
+  content: "\f0e8";
+  color: var(--navbar-blue)
 }
 
 .main-navbar-box .navLinkBtn[data-icon="fa-sitemap"]:hover::after {
-  color: rgb(31, 176, 235); /* Color azul más intenso en hover */
+  color: var(--navbar-blue)
+
 }
 
-/* Pseudo-elemento para el icono fa-laptop-code (color personalizado) */
 .main-navbar-box .navLinkBtn[data-icon="fa-laptop-code"]::after {
-  content: "\f5fc"; /* Código del icono fa-laptop-code en Font Awesome */
-  color: rgba(176, 31, 235, 0.7); /* Color púrpura claro */
+  content: "\f5fc";
+  color:var(--navbar-violet)
 }
 
 .main-navbar-box .navLinkBtn[data-icon="fa-laptop-code"]:hover::after {
-  color: rgb(176, 31, 235); /* Color púrpura más intenso en hover */
+  color:var(--navbar-violet)
+}
+.main-navbar-box .navLinkBtn[data-icon="fa-database"]::after {
+  content: "\f1c0";
+  color: var(--navbar-yellow)
+}
+
+.main-navbar-box .navLinkBtn[data-icon="fa-database"]:hover::after {
+  color: var(--navbar-yellow)
+}
+.main-navbar-box .navLinkBtn[data-icon="fa-file-code"]::after {
+  content: "\f1c9";
+  color: var(--navbar-green)
+}
+
+.main-navbar-box .navLinkBtn[data-icon="fa-file-code"]:hover::after {
+  color: var(--navbar-green)
+
+
+}
+.main-navbar-box .navLinkBtn[data-icon="fa-house-laptop"]::after {
+  content: "\e066";
+  color: var(--navbar-red)
+  
+}
+
+.main-navbar-box .navLinkBtn[data-icon="fa-house-laptop"]:hover::after {
+  color: var(--navbar-red)
+
+
 }

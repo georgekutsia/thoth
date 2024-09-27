@@ -8,11 +8,10 @@ function Routers() {
     <div>
       <Routes>
         <Route path="/dbs" element={<BasesDeDatosScreen />} />
-        <Route path="/entornos" element={<ProgramacionScreen />} />
-        <Route path="/ldm" element={<EntornosDeDesarrolloScreen />} />
-        <Route path="/programacion" element={<LenguajeDeMarcasScreen/>} />
+        <Route path="/programacion" element={<ProgramacionScreen />} />
+        <Route path="/entornos" element={<EntornosDeDesarrolloScreen />} />
+        <Route path="/ldm" element={<LenguajeDeMarcasScreen/>} />
         <Route path="/sistemas" element={<SistemasInformáticosScreen />} />
-
         <Route path="*" element={<Error404 />} />
       </Routes>
     </div>

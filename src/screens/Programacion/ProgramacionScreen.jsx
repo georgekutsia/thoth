@@ -1,7 +1,9 @@
+import { ExplanationComponent } from "../../components"
 
 function ProgramacionScreen() {
   return (
-    <div>ProgramacionScreen</div>
+    <ExplanationComponent color={"var(--light-violet)"}/>
+
   )
 }
 

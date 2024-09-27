@@ -1,7 +1,9 @@
+import { ExplanationComponent } from "../../components"
 
 function EntornosDeDesarrolloScreen() {
   return (
-    <div>EntornosDeDesarrolloScreen</div>
+    <ExplanationComponent color={"var(--light-red)"}/>
+
   )
 }
 

@@ -1,0 +1,51 @@
+.explanation-box #expl-section1{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 10vh auto 0vh auto;
+}
+.explanation-box #expl-section2{
+  display: flex;
+  text-align: center;
+  justify-content: end;
+  gap: calc(10px + 0.3vw);
+  width: 80%;
+  margin: 10vh auto 0vh auto;
+  font-size: calc(12px + 2vw);
+}
+.explanation-title{
+  background-color: red;
+  padding: 5px 10px;
+  font-size: calc(16px + 0.5vw);
+}
+.explanation-text{
+  padding: 10px 10px;
+  width: 70%;
+  background-color: rgba(255, 166, 0, 0.099);
+  font-size: calc(12px + 0.3vw);
+  max-height: 100px;
+  overflow: scroll;
+  border-radius: 10px;
+}
+
+.extra-icons{
+  transition: 0.2s ease-in-out;
+}
+.extra-icons:hover{
+  scale: 1.1;
+
+}
+.fa-kitchen-set:hover{
+  color: rgb(152, 51, 51);
+}
+.fa-video:hover{
+  color: rgb(29, 114, 39);
+}
+.fa-baseball:hover{
+  color: rgb(46, 46, 129);
+}
+.fa-shuffle:hover{
+  color: rgb(113, 27, 141);
+}
