@@ -6,3 +6,5 @@ export {default as MainNavbarBtnComponent} from "./navbar/main-navbar/main-navba
 
 
 export {default as ExtraExplanationComponent} from "./expl/expl-versions/ExtraExplanationComponent"
+
+export {default as MultipleChoiceTest} from "./multiple-choice-test/MutipleChoiceTest"
