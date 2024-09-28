@@ -6,7 +6,8 @@ import {
   TestSection,
   ResultsModal,
 } from "../../components";
-import { useBasesDeDatos } from "../../hooks/useBasesDeDatos";
+import { useTestSimulator } from "../../hooks/useTestSimulator";
+import { basesDeDatosTest } from "../../data";
 
 function BasesDeDatosScreen() {
   const {
@@ -16,13 +17,12 @@ function BasesDeDatosScreen() {
     currentQuestion,
     handleNextQuestion,
     handleSimulacroSelect,
-    handleTestComplete,
     handleRetry,
     handleCloseResults,
     getSimulacroList,
     currentQuestionIndex,
     totalQuestions,
-  } = useBasesDeDatos();
+  } = useTestSimulator(basesDeDatosTest);
 
   const simulacros = getSimulacroList();
 

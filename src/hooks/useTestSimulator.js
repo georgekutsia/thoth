@@ -1,7 +1,6 @@
 import { useState, useMemo } from "react";
-import { basesDeDatosTest } from "../data";
 
-export function useBasesDeDatos() {
+export function useTestSimulator(testData) {
   const [testCompleted, setTestCompleted] = useState(false);
   const [testResults, setTestResults] = useState(null);
   const [selectedSimulacro, setSelectedSimulacro] = useState(null);
@@ -23,8 +22,6 @@ export function useBasesDeDatos() {
 
     setTestCompleted(true);
     setTestResults({ results, score });
-    console.log("Test completed", results);
-    console.log("Final score:", score);
   };
 
   const resetTest = () => {
@@ -53,8 +50,8 @@ export function useBasesDeDatos() {
   };
 
   const mixQuestions = () => {
-    const simulacros = Object.keys(basesDeDatosTest);
-    const questionsPerSimulacro = basesDeDatosTest[simulacros[0]].length;
+    const simulacros = Object.keys(testData);
+    const questionsPerSimulacro = testData[simulacros[0]].length;
     const questionsPerSimulacroInMix = Math.floor(
       questionsPerSimulacro / simulacros.length
     );
@@ -62,9 +59,7 @@ export function useBasesDeDatos() {
     let mixedQuestions = [];
 
     simulacros.forEach((simulacro) => {
-      const shuffled = [...basesDeDatosTest[simulacro]].sort(
-        () => 0.5 - Math.random()
-      );
+      const shuffled = [...testData[simulacro]].sort(() => 0.5 - Math.random());
       mixedQuestions = [
         ...mixedQuestions,
         ...shuffled.slice(0, questionsPerSimulacroInMix),
@@ -74,7 +69,7 @@ export function useBasesDeDatos() {
     while (mixedQuestions.length < questionsPerSimulacro) {
       const randomSimulacro =
         simulacros[Math.floor(Math.random() * simulacros.length)];
-      const remainingQuestions = basesDeDatosTest[randomSimulacro].filter(
+      const remainingQuestions = testData[randomSimulacro].filter(
         (q) => !mixedQuestions.includes(q)
       );
       if (remainingQuestions.length > 0) {
@@ -89,7 +84,7 @@ export function useBasesDeDatos() {
     if (selectedSimulacro === "mixed") {
       return mixQuestions();
     }
-    return selectedSimulacro ? basesDeDatosTest[selectedSimulacro] : null;
+    return selectedSimulacro ? testData[selectedSimulacro] : null;
   }, [selectedSimulacro]);
 
   const currentQuestion = useMemo(() => {
@@ -110,7 +105,7 @@ export function useBasesDeDatos() {
 
   const getSimulacroList = () => {
     return [
-      ...Object.keys(basesDeDatosTest).map((key) => ({
+      ...Object.keys(testData).map((key) => ({
         id: key,
         name: key.charAt(0).toUpperCase() + key.slice(1),
       })),

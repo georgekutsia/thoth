@@ -1,4 +1,4 @@
-const entornosDeDesarrolloTest = {
+const entornosDeDesarrolloSimulacros = {
   simulacro1: [
     {
       id: 1,
@@ -28,8 +28,10 @@ const entornosDeDesarrolloTest = {
       ],
       correctAnswer: 1,
     },
+  ],
+  simulacro2: [
     {
-      id: 4,
+      id: 1,
       text: "¿Cuál es la función principal de un depurador (debugger)?",
       options: [
         "Optimizar el código para que se ejecute más rápido",
@@ -40,7 +42,7 @@ const entornosDeDesarrolloTest = {
       correctAnswer: 1,
     },
     {
-      id: 5,
+      id: 2,
       text: "¿Qué es un sistema de construcción (build system)?",
       options: [
         "Una herramienta para diseñar interfaces de usuario",
@@ -50,7 +52,53 @@ const entornosDeDesarrolloTest = {
       ],
       correctAnswer: 2,
     },
+    {
+      id: 3,
+      text: "¿Cuál de las siguientes NO es una característica común de un IDE moderno?",
+      options: [
+        "Resaltado de sintaxis",
+        "Autocompletado de código",
+        "Control de versiones integrado",
+        "Compilación de código ensamblador",
+      ],
+      correctAnswer: 3,
+    },
+  ],
+  simulacro3: [
+    {
+      id: 1,
+      text: "¿Qué es un sistema de control de versiones distribuido?",
+      options: [
+        "Un sistema que permite trabajar sin conexión a internet",
+        "Un sistema que distribuye el código entre varios servidores",
+        "Un sistema donde cada desarrollador tiene una copia completa del repositorio",
+        "Un sistema que automáticamente distribuye actualizaciones a los usuarios",
+      ],
+      correctAnswer: 2,
+    },
+    {
+      id: 2,
+      text: "¿Cuál es el propósito principal de un linter?",
+      options: [
+        "Compilar el código fuente",
+        "Detectar errores de estilo y potenciales errores en el código",
+        "Optimizar el rendimiento del código",
+        "Generar documentación automática",
+      ],
+      correctAnswer: 1,
+    },
+    {
+      id: 3,
+      text: "¿Qué es la integración continua (CI)?",
+      options: [
+        "Un proceso para mezclar diferentes versiones de código",
+        "Una técnica para optimizar bases de datos",
+        "Una práctica de combinar los cambios de código frecuentemente",
+        "Un método para integrar diferentes lenguajes de programación",
+      ],
+      correctAnswer: 2,
+    },
   ],
 };
 
-export default entornosDeDesarrolloTest;
+export default entornosDeDesarrolloSimulacros;
