@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import PropTypes from "prop-types";
 
 const MultipleChoiceTest = ({ questions, onComplete }) => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(-1);
@@ -20,9 +21,9 @@ const MultipleChoiceTest = ({ questions, onComplete }) => {
         question: question.text,
         correctAnswer: question.options[question.correctAnswer],
         userAnswer: question.options[answers[index]],
-        isCorrect: answers[index] === question.correctAnswer
+        isCorrect: answers[index] === question.correctAnswer,
       }));
-      const score = results.filter(result => result.isCorrect).length;
+      const score = results.filter((result) => result.isCorrect).length;
       onComplete(results, score);
     }
   };
@@ -42,7 +43,10 @@ const MultipleChoiceTest = ({ questions, onComplete }) => {
             className="question-card start-card"
           >
             <h2>Bienvenido al Test</h2>
-            <p>Este test consta de {questions.length} preguntas. ¿Estás listo para comenzar?</p>
+            <p>
+              Este test consta de {questions.length} preguntas. ¿Estás listo
+              para comenzar?
+            </p>
             <button onClick={handleStartTest} className="start-button">
               Comenzar Test
             </button>
@@ -78,6 +82,18 @@ const MultipleChoiceTest = ({ questions, onComplete }) => {
       )}
     </div>
   );
+};
+
+MultipleChoiceTest.propTypes = {
+  questions: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      text: PropTypes.string.isRequired,
+      options: PropTypes.arrayOf(PropTypes.string).isRequired,
+      correctAnswer: PropTypes.number.isRequired,
+    })
+  ).isRequired,
+  onComplete: PropTypes.func.isRequired,
 };
 
 export default MultipleChoiceTest;
