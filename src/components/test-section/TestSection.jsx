@@ -2,6 +2,34 @@ import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import PropTypes from "prop-types";
 
+/**
+ * @typedef {Object} Question
+ * @property {number} id - El identificador único de la pregunta.
+ * @property {string} text - El texto de la pregunta.
+ * @property {string[]} options - Las opciones de respuesta para la pregunta.
+ * @property {number} correctAnswer - El índice de la respuesta correcta.
+ */
+
+/**
+ * Componente que representa una sección de preguntas en un test.
+ *
+ * @component
+ * @param {Object} props - Las propiedades del componente.
+ * @param {Question} props.question - La pregunta actual a mostrar.
+ * @param {Function} props.onAnswer - Función a llamar cuando se selecciona una respuesta.
+ * @param {number} props.currentQuestionIndex - El índice de la pregunta actual.
+ * @param {number} props.totalQuestions - El número total de preguntas en el test.
+ *
+ * @returns {React.Element} Un elemento React que representa la sección de preguntas.
+ *
+ * @example
+ * <TestSection
+ *   question={{id: 1, text: "¿Cuál es la capital de Francia?", options: ["Londres", "París", "Berlín"], correctAnswer: 1}}
+ *   onAnswer={(index) => console.log(`Respuesta seleccionada: ${index}`)}
+ *   currentQuestionIndex={0}
+ *   totalQuestions={10}
+ * />
+ */
 const TestSection = ({
   question,
   onAnswer,

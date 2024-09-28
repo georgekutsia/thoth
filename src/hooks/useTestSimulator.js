@@ -1,5 +1,69 @@
 import { useState, useMemo } from "react";
 
+/**
+ * @typedef {Object} Question
+ * @property {string} text - El texto de la pregunta.
+ * @property {string[]} options - Las opciones de respuesta.
+ * @property {number} correctAnswer - El índice de la respuesta correcta.
+ */
+
+/**
+ * @typedef {Object} TestResult
+ * @property {string} question - El texto de la pregunta.
+ * @property {string} userAnswer - La respuesta proporcionada por el usuario.
+ * @property {string} correctAnswer - La respuesta correcta.
+ * @property {boolean} isCorrect - Indica si la respuesta del usuario es correcta.
+ */
+
+/**
+ * @typedef {Object} SimulacroOption
+ * @property {string} id - Identificador único del simulacro.
+ * @property {string} name - Nombre del simulacro.
+ */
+
+/**
+ * Custom hook para manejar la lógica de un simulador de tests.
+ *
+ * @param {Object.<string, Question[]>} testData - Objeto con los datos de los tests, donde las claves son los nombres de los simulacros y los valores son arrays de preguntas.
+ *
+ * @returns {Object} Un objeto con el estado y las funciones para manejar el simulador de tests.
+ * @property {boolean} testCompleted - Indica si el test ha sido completado.
+ * @property {Object|null} testResults - Resultados del test, incluyendo respuestas y puntuación.
+ * @property {string|null} selectedSimulacro - ID del simulacro seleccionado.
+ * @property {Question[]|null} currentQuestions - Array de preguntas del simulacro actual.
+ * @property {Question|null} currentQuestion - Pregunta actual.
+ * @property {number} currentQuestionIndex - Índice de la pregunta actual.
+ * @property {number} totalQuestions - Número total de preguntas en el simulacro actual.
+ * @property {Function} handleTestComplete - Función para manejar la finalización del test.
+ * @property {Function} handleNextQuestion - Función para pasar a la siguiente pregunta.
+ * @property {Function} handleRetry - Función para reiniciar el test actual.
+ * @property {Function} handleSimulacroSelect - Función para seleccionar un simulacro.
+ * @property {Function} handleCloseResults - Función para cerrar los resultados y reiniciar el test.
+ * @property {Function} getSimulacroList - Función que devuelve la lista de simulacros disponibles.
+ *
+ * @example
+ * const testData = {
+ *   simulacro1: [
+ *     { text: "¿Pregunta 1?", options: ["Opción 1", "Opción 2"], correctAnswer: 0 },
+ *     { text: "¿Pregunta 2?", options: ["Opción 1", "Opción 2"], correctAnswer: 1 }
+ *   ],
+ *   simulacro2: [
+ *     { text: "¿Pregunta 3?", options: ["Opción 1", "Opción 2"], correctAnswer: 0 }
+ *   ]
+ * };
+ *
+ * function TestComponent() {
+ *   const {
+ *     testCompleted,
+ *     currentQuestion,
+ *     handleNextQuestion,
+ *     handleSimulacroSelect,
+ *     getSimulacroList
+ *   } = useTestSimulator(testData);
+ *
+ *   // Usar las funciones y estados retornados para construir la UI del test
+ * }
+ */
 export function useTestSimulator(testData) {
   const [testCompleted, setTestCompleted] = useState(false);
   const [testResults, setTestResults] = useState(null);
