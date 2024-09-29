@@ -275,3 +275,97 @@ button {
 .simulacro-selection button.mix-button:hover {
   background-color: var(--dark-orange);
 }
+/* Estilos para el selector de asignaturas */
+.subject-selection {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.subject-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+}
+
+.subject-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-blue);
+  border: 2px solid var(--blue);
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  height: 150px;
+}
+
+.subject-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: var(--blue);
+}
+
+.subject-card-bottom {
+  grid-column: span 3;
+  width: calc(66.66% - 10px);
+  justify-self: center;
+}
+
+.subject-icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: var(--dark-blue);
+}
+
+.subject-card:hover .subject-icon {
+  color: var(--white);
+}
+
+.subject-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--dark-blue);
+}
+
+.subject-card:hover .subject-name {
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .subject-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .subject-card-bottom {
+    grid-column: span 2;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .subject-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .subject-card,
+  .subject-card-bottom {
+    grid-column: span 1;
+    width: 100%;
+  }
+
+  .subject-card {
+    height: 120px;
+  }
+
+  .subject-icon {
+    font-size: 2.5rem;
+  }
+
+  .subject-name {
+    font-size: 1rem;
+  }
+}

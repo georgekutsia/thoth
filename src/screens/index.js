@@ -3,3 +3,4 @@ export {default as ProgramacionScreen} from "./Programacion/ProgramacionScreen.j
 export {default as EntornosDeDesarrolloScreen} from "./entornos-de-desarrollo/EntornosDeDesarrolloScreen.jsx"
 export {default as LenguajeDeMarcasScreen} from "./lenguajes-de-marcas/LenguajeDeMarcasScreen.jsx"
 export {default as SistemasInformáticosScreen} from "./sistemas-informáticos/SistemasInformáticosScreen.jsx"
+export {default as ExamenesScreen} from "./Examenes/ExamenesScreen.jsx"

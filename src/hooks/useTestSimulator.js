@@ -114,8 +114,9 @@ export function useTestSimulator(testData) {
   };
 
   const mixQuestions = () => {
+    if (!testData) return [];
     const simulacros = Object.keys(testData);
-    const questionsPerSimulacro = testData[simulacros[0]].length;
+    const questionsPerSimulacro = testData[simulacros[0]]?.length || 0;
     const questionsPerSimulacroInMix = Math.floor(
       questionsPerSimulacro / simulacros.length
     );
@@ -123,7 +124,7 @@ export function useTestSimulator(testData) {
     let mixedQuestions = [];
 
     simulacros.forEach((simulacro) => {
-      const shuffled = [...testData[simulacro]].sort(() => 0.5 - Math.random());
+      const shuffled = [...(testData[simulacro] || [])].sort(() => 0.5 - Math.random());
       mixedQuestions = [
         ...mixedQuestions,
         ...shuffled.slice(0, questionsPerSimulacroInMix),
@@ -133,7 +134,7 @@ export function useTestSimulator(testData) {
     while (mixedQuestions.length < questionsPerSimulacro) {
       const randomSimulacro =
         simulacros[Math.floor(Math.random() * simulacros.length)];
-      const remainingQuestions = testData[randomSimulacro].filter(
+      const remainingQuestions = (testData[randomSimulacro] || []).filter(
         (q) => !mixedQuestions.includes(q)
       );
       if (remainingQuestions.length > 0) {
@@ -148,8 +149,8 @@ export function useTestSimulator(testData) {
     if (selectedSimulacro === "mixed") {
       return mixQuestions();
     }
-    return selectedSimulacro ? testData[selectedSimulacro] : null;
-  }, [selectedSimulacro]);
+    return selectedSimulacro && testData ? testData[selectedSimulacro] : null;
+  }, [selectedSimulacro, testData]);
 
   const currentQuestion = useMemo(() => {
     if (!currentQuestions || currentQuestions.length === 0) return null;
@@ -168,6 +169,9 @@ export function useTestSimulator(testData) {
   };
 
   const getSimulacroList = () => {
+    if (!testData) {
+      return []; // Retorna una lista vacía si testData es null o undefined
+    }
     return [
       ...Object.keys(testData).map((key) => ({
         id: key,
@@ -176,6 +180,9 @@ export function useTestSimulator(testData) {
       { id: "mixed", name: "Mezcla de todos los simulacros" },
     ];
   };
+
+  // Memoiza la lista de simulacros para evitar recálculos innecesarios
+  const simulacroList = useMemo(() => getSimulacroList(), [testData]);
 
   return {
     testCompleted,
@@ -190,6 +197,6 @@ export function useTestSimulator(testData) {
     handleRetry,
     handleSimulacroSelect,
     handleCloseResults,
-    getSimulacroList,
+    simulacroList,
   };
 }

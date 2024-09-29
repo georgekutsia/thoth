@@ -1,40 +1,12 @@
-import React, { useEffect, useState } from "react";
-import {
-  ExplanationComponent,
-  SimulacroSelection,
-  TestSection,
-  ResultsModal,
-} from "../../components";
-import { useTestSimulator } from "../../hooks/useTestSimulator";
-import { entornosDeDesarrolloTest } from "../../data";
+import { ExplanationComponent } from "../../components"
+import {entData} from "../../data"; 
+import { useState } from "react";
 
 function EntornosDeDesarrolloScreen() {
-  const [dataSistemas, setDataSistemas] = useState(data);
-
-  const {
-    selectedSimulacro,
-    testCompleted,
-    testResults,
-    currentQuestion,
-    handleNextQuestion,
-    handleSimulacroSelect,
-    handleRetry,
-    handleCloseResults,
-    getSimulacroList,
-    currentQuestionIndex,
-    totalQuestions,
-  } = useTestSimulator(entornosDeDesarrolloTest);
-
-  const simulacros = getSimulacroList();
-
-  useEffect(() => {
-    if (window.AOS) {
-      window.AOS.refreshHard();
-    }
-  }, [selectedSimulacro, testCompleted]);
+  const [dataSistemas, setDataSistemas] = useState(entData);
 
   return (
-    <div data-aos="fade-in" data-aos-duration="500">
+    <>
       {dataSistemas.map((sistData, index) => (
         <ExplanationComponent
           key={index}
@@ -47,61 +19,8 @@ function EntornosDeDesarrolloScreen() {
           random={sistData.random}
         />
       ))}
-      <div className="entornos-de-desarrollo-screen">
-        {!selectedSimulacro ? (
-          <div
-            key="simulacro-selection"
-            data-aos="fade-up"
-            data-aos-duration="500"
-            data-aos-delay="100"
-          >
-            <SimulacroSelection
-              title="Selecciona un simulacro:"
-              options={simulacros}
-              onSelect={handleSimulacroSelect}
-            />
-          </div>
-        ) : (
-          <div
-            key="test-section"
-            data-aos="fade-up"
-            data-aos-duration="500"
-            data-aos-delay="100"
-            className="test-container"
-          >
-            <div className="question-card">
-              <TestSection
-                question={currentQuestion}
-                onAnswer={handleNextQuestion}
-                currentQuestionIndex={currentQuestionIndex}
-                totalQuestions={totalQuestions}
-              />
-            </div>
-          </div>
-        )}
-      </div>
-      {testCompleted && testResults && (
-        <div
-          key="results-modal"
-          data-aos="fade-in"
-          data-aos-duration="500"
-        >
-          <ResultsModal
-            results={testResults.results}
-            score={testResults.score}
-            totalQuestions={totalQuestions}
-            onRetry={handleRetry}
-            onClose={handleCloseResults}
-            testTitle={
-              selectedSimulacro === "mixed"
-                ? "Mezcla de todos los simulacros"
-                : selectedSimulacro
-            }
-          />
-        </div>
-      )}
-    </div>
-  );
+    </>
+  )
 }
 
-export default EntornosDeDesarrolloScreen;
+export default EntornosDeDesarrolloScreen
