@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import Error404 from "./screens/error-screen/Error404.jsx";
-import { BasesDeDatosScreen, ProgramacionScreen, EntornosDeDesarrolloScreen, LenguajeDeMarcasScreen, SistemasInformáticosScreen, ItinerarioDeEmpleabilidadScreen} from "./screens";
+import { BasesDeDatosScreen, ProgramacionScreen, EntornosDeDesarrolloScreen, LenguajeDeMarcasScreen, SistemasInformáticosScreen, ItinerarioDeEmpleabilidadScreen, ExamenesScreen} from "./screens";
 
 
 

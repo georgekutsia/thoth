@@ -32,9 +32,6 @@ body {
 --navbar-bluey: rgb(111, 0, 255);
 
 
-
-
-
   --nav-violet: rgb(250, 93, 250);
   --nav-red: #ff6e6e;
   --nav-blue: rgb(100, 100, 249);
@@ -57,12 +54,12 @@ body {
 
   --light-white: rgba(255, 255, 255, 0.461);
   --light-grey: rgba(218, 218, 218, 0.461);
-  --light-blue: rgba(31, 153, 235, 0.108);
-  --light-red: rgba(226, 48, 48, 0.095);
-  --light-orange: rgba(252, 202, 101, 0.452);
-  --light-violet: rgba(192, 28, 247, 0.091);
-  --light-green: rgba(5, 240, 32, 0.061);
-  --light-yellow: rgba(243, 255, 7, 0.115);
+  --light-blue: rgba(0, 153, 255, 0.038);
+  --light-red: rgba(255, 0, 0, 0.05);
+  --light-orange: rgba(255, 170, 0, 0.047);
+  --light-violet: rgba(191, 0, 255, 0.047);
+  --light-green: rgba(0, 255, 30, 0.018);
+  --light-yellow: rgba(242, 255, 0, 0.042);
   --light-black: #1c1c1c3e;
   
 
@@ -85,6 +82,11 @@ a {
 button {
   cursor: pointer;
 }
+
+
+
+
+
 
 /* Estilos para el componente MultipleChoiceTest */
 .test-container {
@@ -287,19 +289,21 @@ button {
 /* Estilos para el selector de asignaturas */
 .subject-selection {
   max-width: 1000px;
-  margin: 0 auto;
   padding: 20px;
+  height: 85vh;   
+   /*Se suma al 15vh del margen que tiene con .screen-box.   El width será del 80% pero maximo 1000px  */
 }
 
 .screen-box{
-  margin-top: 15vh;
+  margin: 15vh auto 10vh auto;
+  width: 80%;
+}
 .subject-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   justify-content: center;
 }
-
 .subject-card {
   display: flex;
   flex-direction: column;

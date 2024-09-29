@@ -1,13 +1,19 @@
-import { ExplanationComponent } from "../../components"
-import {dbsData} from "../../data";
+import { ExplanationComponent, FilterComponent } from "../../components";
+import { dbsData } from "../../data";
 import { useState } from "react";
 
 function BasesDeDatosScreen() {
-  const [dataSistemas, setDataSistemas] = useState(dbsData);
+  const [dataSistemas] = useState(dbsData);
+  const [searchTerm, setSearchTerm] = useState(""); 
+
+  const filteredData = dataSistemas.filter((sistData) =>
+    sistData.titulo.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   return (
     <div className="screen-box">
-      {dataSistemas.map((sistData, index) => (
+      <FilterComponent searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
+      {filteredData.map((sistData, index) => (
         <ExplanationComponent
           key={index}
           color={"var(--light-yellow)"}
@@ -20,7 +26,7 @@ function BasesDeDatosScreen() {
         />
       ))}
     </div>
-  )
+  );
 }
 
-export default BasesDeDatosScreen
+export default BasesDeDatosScreen;

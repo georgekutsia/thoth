@@ -16,16 +16,17 @@ function ExplanationComponent({ color, titulo, explicación, cine, cocina, depor
   return (
     <div className="explanation-box" data-aos="fade-up">
       <section id="expl-section1">
-        <h3 className="explanation-title">{titulo}</h3>
+        <h3 className="explanation-title" onClick={() => handleExplType(0)}>{titulo}</h3>
         <p style={{ backgroundColor: color }} className="explanation-text">
-          {explicación}
+        {explType === 0 && <p  data-aos="fade-in">{explicación}</p>}
+        {explType === 1 && <p  data-aos="fade-in">{cocina}</p>}
+        {explType === 2 && <p  data-aos="fade-in">{cine}</p>}
+        {explType === 3 && <p  data-aos="fade-in">{deporte}</p>}
+        {explType === 4 && <p  data-aos="fade-in">{random}</p>}
         </p>
       </section>
-      <section id="expl-section2" >
-        {explType === 1 && <p  data-aos="fade-down">{cocina}</p>}
-        {explType === 2 && <p  data-aos="fade-down">{cine}</p>}
-        {explType === 3 && <p  data-aos="fade-down">{deporte}</p>}
-        {explType === 4 && <p  data-aos="fade-down">{random}</p>}
+      <section id="expl-section2">
+
       </section>
       <section id="expl-section3" >
         <ExtraExplanationComponent
@@ -33,22 +34,29 @@ function ExplanationComponent({ color, titulo, explicación, cine, cocina, depor
           handle={() => handleExplType(1)} 
           color={"blue"}
           aos={"100"}
+          btnT={"Ejemplos de Cocina"}
         />
         <ExtraExplanationComponent
           icon={"fa-solid fa-video extra-icons"}
           handle={() => handleExplType(2)}
           color={"red"}
           aos={"200"}
+          btnT={"Ejemplos de Cine"}
+
         />
         <ExtraExplanationComponent
           icon={"fa-solid fa-baseball extra-icons"}
           handle={() => handleExplType(3)}
           aos={"300"}
+          btnT={"Ejemplos de Deporte"}
+
         />
         <ExtraExplanationComponent
           icon={"fa-solid fa-shuffle extra-icons"}
           handle={() => handleExplType(4)}
           aos={"400"}
+          btnT={"Ejemplos Aleatorios"}
+
         />
       </section>
     </div>

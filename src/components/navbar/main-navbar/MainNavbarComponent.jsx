@@ -6,19 +6,21 @@ function MainNavbarComponent() {
   const [collapsed, setCollapsed] = useState(false);
   const [mainNavbarClass, setmainNavbarClass] = useState(false);
 
-  // Manejo del scroll
+  
   useEffect(() => {
     const handleScroll = () => {
       let navbar = document.querySelector(".main-navbar-box");
-      if(window.scrollY <= navbar.offsetHeight + 199 ){
-        setCollapsed(false); // Restaurar si el scroll es menor
+      if(window.scrollY <= navbar.offsetHeight + 50 ){
+        setCollapsed(false); 
         setmainNavbarClass(false)
-      } else if (window.scrollY >= navbar.offsetHeight + 200 && window.scrollY <= navbar.offsetHeight + 400) {
-        setCollapsed(true); // Colapsar si el scroll es mayor al tamaño del navbar
+      } else if (window.scrollY >= navbar.offsetHeight + 51 && window.scrollY <= navbar.offsetHeight + 200) {
+        setCollapsed(true); 
         setmainNavbarClass(false)
 
-      }  else if(window.scrollY > navbar.offsetHeight + 401){
+      }  else if(window.scrollY > navbar.offsetHeight + 201){
         setmainNavbarClass(true)
+        setCollapsed(true); 
+
       } 
     };
 
@@ -38,8 +40,8 @@ function MainNavbarComponent() {
       {!collapsed &&   //no es ternario por que interfiere con el fading de AOS del primer componente al hacer scroll hacia arriba. raro
       <>
           <MainNavbarBtnComponent
-            classN={"fa-solid fa-sitemap"}
-            dataI={"fa-sitemap"}
+            classN={"fa-solid fa-server"}
+            dataI={"fa-server"}
             navL={"/sistemas"}
             btnT={"Sistemas"}
             aosDelay={"350"}
