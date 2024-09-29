@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import Error404 from "./screens/error-screen/Error404.jsx";
-import { BasesDeDatosScreen, ProgramacionScreen, EntornosDeDesarrolloScreen, LenguajeDeMarcasScreen, SistemasInformáticosScreen, ExamenesScreen} from "./screens";
+import { BasesDeDatosScreen, ProgramacionScreen, EntornosDeDesarrolloScreen, LenguajeDeMarcasScreen, SistemasInformáticosScreen, ItinerarioDeEmpleabilidadScreen} from "./screens";
+
 
 
 function Routers() {
@@ -12,6 +13,7 @@ function Routers() {
         <Route path="/entornos" element={<EntornosDeDesarrolloScreen />} />
         <Route path="/ldm" element={<LenguajeDeMarcasScreen/>} />
         <Route path="/sistemas" element={<SistemasInformáticosScreen />} />
+        <Route path="/empleabilidad" element={<ItinerarioDeEmpleabilidadScreen />} />
         <Route path="/examenes" element={<ExamenesScreen />} />
         <Route path="*" element={<Error404 />} />
       </Routes>

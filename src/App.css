@@ -13,7 +13,7 @@ body {
 :root {
   --white: #ffffff;
   --grey: rgb(228, 228, 228);
-  --black: #21232a;
+  --black: #000000;
   --violet: rgb(255, 0, 255);
   --red: #ff0000;
   --blue: rgb(0, 0, 255);
@@ -63,6 +63,9 @@ body {
   --light-violet: rgba(192, 28, 247, 0.091);
   --light-green: rgba(5, 240, 32, 0.061);
   --light-yellow: rgba(243, 255, 7, 0.115);
+  --light-black: #1c1c1c3e;
+  
+
 }
 
 * {
@@ -288,6 +291,8 @@ button {
   padding: 20px;
 }
 
+.screen-box{
+  margin-top: 15vh;
 .subject-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

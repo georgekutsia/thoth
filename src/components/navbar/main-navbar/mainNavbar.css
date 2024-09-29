@@ -1,20 +1,34 @@
-.main-navbar-box {
+.main-navbar-box{
+  display: flex;
+  gap: calc(10px + 2vw);
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: calc(10px + 2vh) 50px 20px 50px;
+  border-radius: 30px;
+  background-color: var(--light-black);
+  z-index: 20; /* Asegura que el navbar esté siempre encima */
+  transition: all 0.5s ease-in-out ;
+  backdrop-filter: blur(20px);
+
+}
+
+.main-navbar-box-mini{
   display: flex;
   gap: calc(10px + 2vw);
   padding-top: calc(10px + 2vh);
   justify-content: center;
   position: fixed;
   top: 0;
-  left: 50%;
   transform: translateX(-50%);
-  width: 100%;
   z-index: 20; /* Asegura que el navbar esté siempre encima */
-  background-color: rgba(0, 0, 0, 0.8); /* Ajusta el color de fondo si es necesario */
   padding-bottom: 1rem; /* Espacio adicional bajo los botones */
+  left: 10%;
 }
 
-
-.main-navbar-box .navLinkBtn {
+.navLinkBtn {
   position: relative;
   border: none;
   background-color: transparent;
@@ -24,7 +38,7 @@
  
 }
 
-.main-navbar-box .navLinkBtn::after {
+ .navLinkBtn::after {
   content: attr(data-icon);
   position: absolute;
   top: 0;
@@ -44,87 +58,87 @@
   transform-origin: 100% 100%;
 }
 
-.main-navbar-box .navLinkBtn:hover::after {
+ .navLinkBtn:hover::after {
   z-index: -1;
   transform: rotate(25deg);
   color: rgb(235, 31, 31);
 }
 
 
-.main-navbar-box .navLinkBtn[data-icon="fa-sitemap"]::after {
+ .navLinkBtn[data-icon="fa-sitemap"]::after {
   content: "\f0e8";
   color: var(--navbar-blue)
 }
 
-.main-navbar-box .navLinkBtn[data-icon="fa-sitemap"]:hover::after {
+ .navLinkBtn[data-icon="fa-sitemap"]:hover::after {
   color: var(--navbar-blue)
 
 }
 
-.main-navbar-box .navLinkBtn[data-icon="fa-laptop-code"]::after {
+ .navLinkBtn[data-icon="fa-laptop-code"]::after {
   content: "\f5fc";
   color:var(--navbar-violet)
 }
 
-.main-navbar-box .navLinkBtn[data-icon="fa-laptop-code"]:hover::after {
+ .navLinkBtn[data-icon="fa-laptop-code"]:hover::after {
   color:var(--navbar-violet)
 }
-.main-navbar-box .navLinkBtn[data-icon="fa-database"]::after {
+ .navLinkBtn[data-icon="fa-database"]::after {
   content: "\f1c0";
   color: var(--navbar-yellow)
 }
 
-.main-navbar-box .navLinkBtn[data-icon="fa-database"]:hover::after {
+ .navLinkBtn[data-icon="fa-database"]:hover::after {
   color: var(--navbar-yellow)
 }
-.main-navbar-box .navLinkBtn[data-icon="fa-file-code"]::after {
+ .navLinkBtn[data-icon="fa-file-code"]::after {
   content: "\f1c9";
   color: var(--navbar-green)
 }
 
-.main-navbar-box .navLinkBtn[data-icon="fa-file-code"]:hover::after {
+ .navLinkBtn[data-icon="fa-file-code"]:hover::after {
   color: var(--navbar-green)
 }
 
-.main-navbar-box .navLinkBtn[data-icon="fa-house-laptop"]::after {
+ .navLinkBtn[data-icon="fa-house-laptop"]::after {
   content: "\e066";
   color: var(--navbar-red) 
 }
-.main-navbar-box .navLinkBtn[data-icon="fa-house-laptop"]:hover::after {
+ .navLinkBtn[data-icon="fa-house-laptop"]:hover::after {
   color: var(--navbar-red)
 }
 
-.main-navbar-box .navLinkBtn[data-icon="fa-helmet-safety"]::after {
+ .navLinkBtn[data-icon="fa-helmet-safety"]::after {
   content: "\f807";
   color: var(--navbar-orange)
 }
-.main-navbar-box .navLinkBtn[data-icon="fa-helmet-safety"]:hover::after {
+ .navLinkBtn[data-icon="fa-helmet-safety"]:hover::after {
   color: var(--navbar-orange)
 }
-.main-navbar-box .navLinkBtn[data-icon="fa-list-check"]::after {
+ .navLinkBtn[data-icon="fa-list-check"]::after {
   content: "\f0ae";
   color: var(--navbar-pink);
   margin-left: 50px;
 }
-.main-navbar-box .navLinkBtn[data-icon="fa-list-check"]:hover::after {
+ .navLinkBtn[data-icon="fa-list-check"]:hover::after {
   color: var(--navbar-pink)
 }
-.main-navbar-box .navLinkBtn[data-icon="fa-id-card-clip"]::after {
+ .navLinkBtn[data-icon="fa-id-card-clip"]::after {
   content: "\f47f";
   color: var(--navbar-bluey);
   margin-left: 50px;
 
 }
-.main-navbar-box .navLinkBtn[data-icon="fa-id-card-clip"]:hover::after {
+ .navLinkBtn[data-icon="fa-id-card-clip"]:hover::after {
   color: var(--navbar-bluey);
   
 }
-.main-navbar-box .navLinkBtn[data-icon="fa-bars"]::after {
+ .navLinkBtn[data-icon="fa-bars"]::after {
   content: "\f0c9";
   color: var(--navbar-bluey);
 
 }
-.main-navbar-box .navLinkBtn[data-icon="fa-bars"]:hover::after {
+ .navLinkBtn[data-icon="fa-bars"]:hover::after {
   color: var(--navbar-bluey);
   
 }
@@ -139,4 +153,3 @@
 .collapsing{
   scale:2
 }
-

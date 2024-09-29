@@ -14,7 +14,7 @@ function ExplanationComponent({ color, titulo, explicación, cine, cocina, depor
   };
 
   return (
-    <div className="explanation-box">
+    <div className="explanation-box" data-aos="fade-up">
       <section id="expl-section1">
         <h3 className="explanation-title">{titulo}</h3>
         <p style={{ backgroundColor: color }} className="explanation-text">

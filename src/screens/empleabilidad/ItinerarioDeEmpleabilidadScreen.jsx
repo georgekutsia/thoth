@@ -1,9 +1,10 @@
+
 import { ExplanationComponent } from "../../components"
-import {progData} from "../../data"; 
+import data from "../../data/empleabilidadData"; // Ajusta la ruta si es necesario
 import { useState } from "react";
 
-function ProgramacionScreen() {
-  const [dataSistemas, setDataSistemas] = useState(progData);
+function ItinerarioDeEmpleabilidadScreen() {
+  const [dataSistemas, setDataSistemas] = useState(data);
 
   return (
     <div className="screen-box">
@@ -24,4 +25,4 @@ function ProgramacionScreen() {
   )
 }
 
-export default ProgramacionScreen
+export default ItinerarioDeEmpleabilidadScreen

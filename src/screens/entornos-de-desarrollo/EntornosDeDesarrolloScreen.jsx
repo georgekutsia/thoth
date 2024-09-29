@@ -6,7 +6,8 @@ function EntornosDeDesarrolloScreen() {
   const [dataSistemas, setDataSistemas] = useState(entData);
 
   return (
-    <>
+    <div className="screen-box">
+
       {dataSistemas.map((sistData, index) => (
         <ExplanationComponent
           key={index}
@@ -19,7 +20,7 @@ function EntornosDeDesarrolloScreen() {
           random={sistData.random}
         />
       ))}
-    </>
+    </div>
   )
 }
 

@@ -6,7 +6,8 @@ function LenguajeDeMarcasScreen() {
   const [dataSistemas, setDataSistemas] = useState(ldmData);
 
   return (
-    <>
+    <div className="screen-box">
+
       {dataSistemas.map((sistData, index) => (
         <ExplanationComponent
           key={index}
@@ -19,7 +20,7 @@ function LenguajeDeMarcasScreen() {
           random={sistData.random}
         />
       ))}
-    </>
+    </div>
   )
 }
 

@@ -4,16 +4,22 @@ import "./mainNavbar.css";
 
 function MainNavbarComponent() {
   const [collapsed, setCollapsed] = useState(false);
+  const [mainNavbarClass, setmainNavbarClass] = useState(false);
 
   // Manejo del scroll
   useEffect(() => {
     const handleScroll = () => {
-      const navbar = document.querySelector(".main-navbar-box");
-      if (window.scrollY > navbar.offsetHeight-20) {
-        setCollapsed(true); // Colapsar si el scroll es mayor al tamaño del navbar
-      } else {
+      let navbar = document.querySelector(".main-navbar-box");
+      if(window.scrollY <= navbar.offsetHeight + 199 ){
         setCollapsed(false); // Restaurar si el scroll es menor
-      }
+        setmainNavbarClass(false)
+      } else if (window.scrollY >= navbar.offsetHeight + 200 && window.scrollY <= navbar.offsetHeight + 400) {
+        setCollapsed(true); // Colapsar si el scroll es mayor al tamaño del navbar
+        setmainNavbarClass(false)
+
+      }  else if(window.scrollY > navbar.offsetHeight + 401){
+        setmainNavbarClass(true)
+      } 
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -24,9 +30,11 @@ function MainNavbarComponent() {
 
   const handleClickCollapsed = () => {
     setCollapsed(!collapsed)
+    setmainNavbarClass(false)
+
   }
   return (
-    <div  className={`main-navbar-box ${collapsed ? "collapsed" : ""}`}>
+    <div  className={`main-navbar-box ${collapsed ? "collapsed" : ""}`}  style={{width: mainNavbarClass? "0px": "", left: mainNavbarClass ? "3vw": "",}}>
       {!collapsed &&   //no es ternario por que interfiere con el fading de AOS del primer componente al hacer scroll hacia arriba. raro
       <>
           <MainNavbarBtnComponent
