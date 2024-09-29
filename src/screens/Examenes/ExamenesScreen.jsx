@@ -80,7 +80,7 @@ function ExamenesScreen() {
   }
 
   return (
-    <div data-aos="fade-in" data-aos-duration="500">
+    <div data-aos="fade-in" data-aos-duration="500"  className="pt-20" >
       <h1 className="text-3xl font-bold mb-4">{subjectTests[selectedSubject].name}</h1>
       <button
         onClick={() => setSelectedSubject(null)}
