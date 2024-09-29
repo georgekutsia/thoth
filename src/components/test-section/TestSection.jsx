@@ -1,5 +1,4 @@
-import React from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 
 /**
@@ -21,14 +20,6 @@ import PropTypes from "prop-types";
  * @param {number} props.totalQuestions - El número total de preguntas en el test.
  *
  * @returns {React.Element} Un elemento React que representa la sección de preguntas.
- *
- * @example
- * <TestSection
- *   question={{id: 1, text: "¿Cuál es la capital de Francia?", options: ["Londres", "París", "Berlín"], correctAnswer: 1}}
- *   onAnswer={(index) => console.log(`Respuesta seleccionada: ${index}`)}
- *   currentQuestionIndex={0}
- *   totalQuestions={10}
- * />
  */
 const TestSection = ({
   question,
@@ -36,6 +27,12 @@ const TestSection = ({
   currentQuestionIndex,
   totalQuestions,
 }) => {
+  useEffect(() => {
+    if (window.AOS) {
+      window.AOS.refresh();
+    }
+  }, [currentQuestionIndex]);
+
   if (!question) {
     return <div>No hay preguntas disponibles.</div>;
   }
@@ -45,34 +42,31 @@ const TestSection = ({
       <h2>
         Pregunta {currentQuestionIndex + 1} de {totalQuestions}
       </h2>
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={currentQuestionIndex}
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -50 }}
-          transition={{ duration: 0.3 }}
-        >
-          <p>{question.text || "Texto de la pregunta no disponible"}</p>
-          <div className="options">
-            {question.options && question.options.length > 0 ? (
-              question.options.map((option, index) => (
-                <motion.button
-                  key={index}
-                  onClick={() => onAnswer(index)}
-                  className="option-button"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  {option}
-                </motion.button>
-              ))
-            ) : (
-              <p>No hay opciones disponibles</p>
-            )}
-          </div>
-        </motion.div>
-      </AnimatePresence>
+      <div
+        key={currentQuestionIndex}
+        data-aos="fade-left"
+        data-aos-duration="300"
+      >
+        <p>{question.text || "Texto de la pregunta no disponible"}</p>
+        <div className="options">
+          {question.options && question.options.length > 0 ? (
+            question.options.map((option, index) => (
+              <button
+                key={index}
+                onClick={() => onAnswer(index)}
+                className="option-button"
+                data-aos="fade-up"
+                data-aos-duration="300"
+                data-aos-delay={index * 100}
+              >
+                {option}
+              </button>
+            ))
+          ) : (
+            <p>No hay opciones disponibles</p>
+          )}
+        </div>
+      </div>
     </div>
   );
 };

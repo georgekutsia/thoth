@@ -1,5 +1,4 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 
 /**
@@ -23,19 +22,6 @@ import PropTypes from "prop-types";
  * @param {string} [props.testTitle] - El título del test (opcional).
  *
  * @returns {React.Element} Un elemento React que representa el modal de resultados.
- *
- * @example
- * <ResultsModal
- *   results={[
- *     { question: "¿Cuál es la capital de Francia?", userAnswer: "París", correctAnswer: "París", isCorrect: true },
- *     { question: "¿Cuál es la capital de España?", userAnswer: "Barcelona", correctAnswer: "Madrid", isCorrect: false }
- *   ]}
- *   score={1}
- *   totalQuestions={2}
- *   onRetry={() => console.log("Reintentar test")}
- *   onClose={() => console.log("Cerrar modal")}
- *   testTitle="Test de Capitales Europeas"
- * />
  */
 const ResultsModal = ({
   results,
@@ -45,19 +31,19 @@ const ResultsModal = ({
   onClose,
   testTitle,
 }) => {
+  useEffect(() => {
+    if (window.AOS) {
+      window.AOS.refresh();
+    }
+  }, []);
+
   return (
-    <motion.div
-      className="modal-overlay"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-    >
-      <motion.div
+    <div className="modal-overlay" data-aos="fade-in" data-aos-duration="300">
+      <div 
         className="modal-content"
-        initial={{ scale: 0.8, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        exit={{ scale: 0.8, opacity: 0 }}
-        transition={{ duration: 0.3 }}
+        data-aos="zoom-in"
+        data-aos-duration="300"
+        data-aos-delay="150"
       >
         <h2>Resultados del Test</h2>
         {testTitle && <p>Test: {testTitle}</p>}
@@ -66,41 +52,43 @@ const ResultsModal = ({
         </p>
         <div className="test-results-modal">
           {results.map((result, index) => (
-            <motion.div
+            <div
               key={index}
               className={`result-item ${
                 result.isCorrect ? "correct" : "incorrect"
               }`}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
+              data-aos="fade-up"
+              data-aos-duration="300"
+              data-aos-delay={100 + index * 50}
             >
               <h3>
                 Pregunta {index + 1}: {result.question}
               </h3>
               <p>Tu respuesta: {result.userAnswer}</p>
               <p>Respuesta correcta: {result.correctAnswer}</p>
-            </motion.div>
+            </div>
           ))}
         </div>
         <div className="modal-footer">
-          <motion.button
+          <button
             onClick={onRetry}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+            data-aos="fade-up"
+            data-aos-duration="300"
+            data-aos-delay="200"
           >
             Reintentar
-          </motion.button>
-          <motion.button
+          </button>
+          <button
             onClick={onClose}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+            data-aos="fade-up"
+            data-aos-duration="300"
+            data-aos-delay="250"
           >
             Cerrar
-          </motion.button>
+          </button>
         </div>
-      </motion.div>
-    </motion.div>
+      </div>
+    </div>
   );
 };
 

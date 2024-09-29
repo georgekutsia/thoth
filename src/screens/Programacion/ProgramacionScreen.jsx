@@ -1,5 +1,4 @@
-import React from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import React, { useEffect } from "react";
 import {
   ExplanationComponent,
   SimulacroSelection,
@@ -9,7 +8,7 @@ import {
 import { useTestSimulator } from "../../hooks/useTestSimulator";
 import { programacionTest } from "../../data";
 
-function EntornosDeDesarrolloScreen() {
+function ProgramacionScreen() {
   const {
     selectedSimulacro,
     testCompleted,
@@ -26,53 +25,54 @@ function EntornosDeDesarrolloScreen() {
 
   const simulacros = getSimulacroList();
 
+  useEffect(() => {
+    if (window.AOS) {
+      window.AOS.refreshHard();
+    }
+  }, [selectedSimulacro, testCompleted]);
+
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.5 }}
-    >
-      <ExplanationComponent color={"var(--light-red)"} />
-      <div className="entornos-de-desarrollo-screen">
-        <AnimatePresence mode="wait">
-          {!selectedSimulacro ? (
-            <motion.div
-              key="simulacro-selection"
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -50 }}
-              transition={{ duration: 0.5 }}
-            >
-              <SimulacroSelection
-                title="Selecciona un simulacro:"
-                options={simulacros}
-                onSelect={handleSimulacroSelect}
+    <div data-aos="fade-in" data-aos-duration="500">
+      <ExplanationComponent color={"var(--light-green)"} />
+      <div className="programacion-screen">
+        {!selectedSimulacro ? (
+          <div
+            key="simulacro-selection"
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-delay="100"
+          >
+            <SimulacroSelection
+              title="Selecciona un simulacro:"
+              options={simulacros}
+              onSelect={handleSimulacroSelect}
+            />
+          </div>
+        ) : (
+          <div
+            key="test-section"
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-delay="100"
+            className="test-container"
+          >
+            <div className="question-card">
+              <TestSection
+                question={currentQuestion}
+                onAnswer={handleNextQuestion}
+                currentQuestionIndex={currentQuestionIndex}
+                totalQuestions={totalQuestions}
               />
-            </motion.div>
-          ) : (
-            <motion.div
-              key="test-section"
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -50 }}
-              transition={{ duration: 0.5 }}
-              className="test-container"
-            >
-              <div className="question-card">
-                <TestSection
-                  question={currentQuestion}
-                  onAnswer={handleNextQuestion}
-                  currentQuestionIndex={currentQuestionIndex}
-                  totalQuestions={totalQuestions}
-                />
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
+            </div>
+          </div>
+        )}
       </div>
-      <AnimatePresence>
-        {testCompleted && testResults && (
+      {testCompleted && testResults && (
+        <div
+          key="results-modal"
+          data-aos="fade-in"
+          data-aos-duration="500"
+        >
           <ResultsModal
             results={testResults.results}
             score={testResults.score}
@@ -85,10 +85,10 @@ function EntornosDeDesarrolloScreen() {
                 : selectedSimulacro
             }
           />
-        )}
-      </AnimatePresence>
-    </motion.div>
+        </div>
+      )}
+    </div>
   );
 }
 
-export default EntornosDeDesarrolloScreen;
+export default ProgramacionScreen;
