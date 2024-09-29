@@ -1,26 +1,44 @@
-.explanation-box #expl-section1{
+/* Ajuste general para la caja de explicación */
+.explanation-box {
+  margin-top: 5vh;
+}
+
+#expl-section1 {
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: space-between;
   width: 80%;
-  margin: 10vh auto 0vh auto;
+  margin: 0px auto;
 }
-.explanation-box #expl-section2{
+
+#expl-section2 {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  margin: 2vh auto 0vh auto;
+  background-color: blue;
+}
+
+#expl-section3 {
   display: flex;
   text-align: center;
   justify-content: end;
   gap: calc(10px + 0.3vw);
   width: 80%;
-  margin: 10vh auto 0vh auto;
-  font-size: calc(12px + 2vw);
+  margin: 3vh auto 0vh auto;
+  font-size: calc(12px + 1vw);
 }
-.explanation-title{
+
+.explanation-title {
   padding: 5px 10px;
   font-size: calc(16px + 0.5vw);
   max-width: 300px;
 }
-.explanation-text{
+
+.explanation-text {
   padding: 10px 10px;
   width: 70%;
   background-color: rgba(255, 166, 0, 0.099);
@@ -29,38 +47,102 @@
   overflow: scroll;
   border-radius: 10px;
   text-align: justify;
-text-indent: 10px;
+  text-indent: 10px;
+  box-shadow: 0 2px 25px var(--white);
+  margin: 10px 5px;
 }
 
-.extra-icons{
-  transition: 0.2s ease-in-out;
-}
-.extra-icons:hover{
-  scale: 1.1;
-
-}
-.fa-kitchen-set:hover{
-  color: rgb(152, 51, 51);
-}
-.fa-video:hover{
-  color: rgb(29, 114, 39);
-}
-.fa-baseball:hover{
-  color: rgb(46, 46, 129);
-}
-.fa-shuffle:hover{
-  color: rgb(113, 27, 141);
+/* Iconos extra - uso de pseudo-elementos para hover animado similar al navbar */
+.extra-icons {
+  position: relative;
+  font-size: calc(20px + 1vw);
+  border: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  
 }
 
+.extra-icons::after {
+  content: attr(data-icon);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: calc(20px + 1vw);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease, color 0.3s ease;
+  transform-origin: 100% 100%;
+}
 
+.extra-icons:hover::after {
+  z-index: -1;
+  transform:translateY(15px);
+  color: rgb(235, 31, 31);
+}
 
+/* Colores específicos para cada ícono */
+.fa-utensils::after {
+  content: "\f2e7";
+  color: var(--grey);
+}
+
+.fa-utensils:hover::after {
+  color: var(--red);
+
+}
+
+.fa-video::after {
+  content: "\f03d";
+  color: var(--grey);
+
+}
+
+.fa-video:hover::after {
+  color: var(--green);
+
+}
+
+.fa-baseball::after {
+  content: "\f433";
+  color: var(--grey);
+
+}
+
+.fa-baseball:hover::after {
+  color: var(--blue);
+
+}
+
+.fa-shuffle::after {
+  content: "\f074";
+  color: var(--grey);
+
+}
+
+.fa-shuffle:hover::after {
+  color: var(--orange);
+
+}
+
+/* Ajustes para dispositivos pequeños */
 @media only screen and (max-width: 600px) {
-  .explanation-box #expl-section1{
-display: block;
-align-items: center;
-justify-content: center;
+  #expl-section1 {
+    display: block;
+    align-items: center;
+    justify-content: center;
   }
-  .explanation-text{
+
+  .explanation-text {
     width: 90%;
+    max-height: 350px;
   }
 }
