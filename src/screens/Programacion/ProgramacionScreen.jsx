@@ -1,12 +1,8 @@
-import { ExplanationComponent, NavbarPizzaComponent } from "../../components"
+import { ExplanationComponent } from "../../components"
 
 function ProgramacionScreen() {
   return (
-    <>
-
     <ExplanationComponent color={"var(--light-violet)"}/>
-<NavbarPizzaComponent/>
-    </>
   )
 }
 

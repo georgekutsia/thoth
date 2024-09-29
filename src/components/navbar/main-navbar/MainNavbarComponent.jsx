@@ -9,7 +9,6 @@ function MainNavbarComponent() {
       <MainNavbarBtnComponent classN={"fa-solid fa-database"} dataI={"fa-database"} navL={"/dbs"} btnT={"Bases de datos"}/>
       <MainNavbarBtnComponent classN={"fa-solid fa-file-code"} dataI={"fa-file-code"} navL={"/ldm"} btnT={"Lenguajes de Marca"}/>
       <MainNavbarBtnComponent classN={"fa-solid fa-house-laptop"} dataI={"fa-house-laptop"} navL={"/entornos"} btnT={"Entornos "}/>
-      
     </div>
   );
 }
