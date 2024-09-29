@@ -16,11 +16,11 @@ body {
   --black: #000000;
   --violet: rgb(255, 0, 255);
   --red: #ff0000;
-  --blue:rgb(0, 0, 255);
+  --blue: rgb(0, 0, 255);
   --yellow: rgb(255, 255, 0);
   --orange: #ffa200;
-  --green:rgb(0, 255, 0);
-  --pink:#ff0080;
+  --green: rgb(0, 255, 0);
+  --pink: #ff0080;
 
 --navbar-blue: rgba(31, 153, 235, 0.7);
 --navbar-violet: rgba(176, 31, 235, 0.7);
@@ -37,11 +37,11 @@ body {
 
   --nav-violet: rgb(250, 93, 250);
   --nav-red: #ff6e6e;
-  --nav-blue:rgb(100, 100, 249);
+  --nav-blue: rgb(100, 100, 249);
   --nav-yellow: rgb(255, 255, 66);
   --nav-orange: #feca72;
-  --nav-green:rgb(0, 236, 0);
-  --nav-pink:#f771b4;
+  --nav-green: rgb(0, 236, 0);
+  --nav-pink: #f771b4;
   
   --default-game-box: #dedcff;
   --web-background: #f3f5ff;
@@ -55,8 +55,6 @@ body {
   --dark-yellow: rgb(147, 152, 39);
   --dark-pink: #c90165;
 
-
-
   --light-white: rgba(255, 255, 255, 0.461);
   --light-grey: rgba(218, 218, 218, 0.461);
   --light-blue: rgba(31, 153, 235, 0.108);
@@ -67,7 +65,7 @@ body {
   --light-yellow: rgba(243, 255, 7, 0.115);
   --light-black: #1c1c1c3e;
   
-  
+
 }
 
 * {
@@ -83,10 +81,302 @@ a {
   color: inherit;
   text-decoration: none;
 }
-button{
+
+button {
   cursor: pointer;
+}
+
+/* Estilos para el componente MultipleChoiceTest */
+.test-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.question-card {
+  background-color: var(--light-blue);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.question-card h2 {
+  color: var(--dark-blue);
+  margin-bottom: 20px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option-button {
+  background-color: var(--white);
+  border: 2px solid var(--blue);
+  color: var(--dark-blue);
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.option-button:hover {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.progress {
+  text-align: center;
+  color: var(--dark-grey);
+  margin-top: 20px;
+}
+
+/* Estilos para la tarjeta de inicio */
+.start-card {
+  text-align: center;
+}
+
+.start-card p {
+  margin-bottom: 20px;
+}
+
+.start-button {
+  background-color: var(--blue);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.start-button:hover {
+  background-color: var(--dark-blue);
+}
+
+/* Estilos para el modal personalizado */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.modal-content h2 {
+  color: var(--dark-blue);
+  margin-bottom: 15px;
+}
+
+.modal-content > p {
+  color: var(--dark-grey);
+  margin-bottom: 20px;
+}
+
+.test-results-modal {
+  max-height: 50vh;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.test-results-modal .result-item {
+  background-color: var(--light-grey);
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 15px;
+  color: var(--dark-blue);
+}
+
+.test-results-modal .result-item.correct {
+  border-left: 5px solid var(--green);
+}
+
+.test-results-modal .result-item.incorrect {
+  border-left: 5px solid var(--red);
+}
+
+.test-results-modal .result-item h3 {
+  color: var(--dark-blue);
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.test-results-modal .result-item p {
+  margin: 5px 0;
+  color: var(--dark-grey);
+  font-size: 0.9rem;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.modal-footer button {
+  background-color: var(--blue);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-footer button:hover {
+  background-color: var(--dark-blue);
+}
+
+.simulacro-selection {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.simulacro-selection h2 {
+  color: var(--dark-blue);
+  margin-bottom: 20px;
+}
+
+.simulacro-selection button {
+  background-color: var(--blue);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px 10px 0;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.simulacro-selection button:hover {
+  background-color: var(--dark-blue);
+}
+
+.simulacro-selection button.mix-button {
+  background-color: var(--orange);
+  color: var(--white);
+  margin-top: 20px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.simulacro-selection button.mix-button:hover {
+  background-color: var(--dark-orange);
+}
+/* Estilos para el selector de asignaturas */
+.subject-selection {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .screen-box{
   margin-top: 15vh;
+.subject-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+}
+
+.subject-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-blue);
+  border: 2px solid var(--blue);
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  height: 150px;
+}
+
+.subject-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: var(--blue);
+}
+
+.subject-card-bottom {
+  grid-column: span 3;
+  width: calc(66.66% - 10px);
+  justify-self: center;
+}
+
+.subject-icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: var(--dark-blue);
+}
+
+.subject-card:hover .subject-icon {
+  color: var(--white);
+}
+
+.subject-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--dark-blue);
+}
+
+.subject-card:hover .subject-name {
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .subject-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .subject-card-bottom {
+    grid-column: span 2;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .subject-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .subject-card,
+  .subject-card-bottom {
+    grid-column: span 1;
+    width: 100%;
+  }
+
+  .subject-card {
+    height: 120px;
+  }
+
+  .subject-icon {
+    font-size: 2.5rem;
+  }
+
+  .subject-name {
+    font-size: 1rem;
+  }
 }

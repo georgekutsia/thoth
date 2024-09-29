@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { ExplanationComponent } from "../../components";
-import data from "../../data/sistemasData"; // Ajusta la ruta si es necesario
+import {sisData} from "../../data";
 
 function SistemasInformáticosScreen() {
-  const [dataSistemas, setDataSistemas] = useState(data);
+  const [dataSistemas, setDataSistemas] = useState(sisData);
 
   return (
     <div className="screen-box">

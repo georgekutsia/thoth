@@ -1,12 +1,9 @@
-
-
-
 import { ExplanationComponent } from "../../components"
-import data from "../../data/entornosData"; // Ajusta la ruta si es necesario
+import {entData} from "../../data"; 
 import { useState } from "react";
 
 function EntornosDeDesarrolloScreen() {
-  const [dataSistemas, setDataSistemas] = useState(data);
+  const [dataSistemas, setDataSistemas] = useState(entData);
 
   return (
     <div className="screen-box">

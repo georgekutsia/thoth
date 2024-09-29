@@ -4,3 +4,4 @@ export {default as EntornosDeDesarrolloScreen} from "./entornos-de-desarrollo/En
 export {default as LenguajeDeMarcasScreen} from "./lenguajes-de-marcas/LenguajeDeMarcasScreen.jsx"
 export {default as SistemasInformáticosScreen} from "./sistemas-informáticos/SistemasInformáticosScreen.jsx"
 export {default as ItinerarioDeEmpleabilidadScreen} from "./empleabilidad/ItinerarioDeEmpleabilidadScreen.jsx"
+export {default as ExamenesScreen} from "./Examenes/ExamenesScreen.jsx"
