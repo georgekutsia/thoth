@@ -18,7 +18,7 @@ const subjectTests = {
   dbs: { name: "Bases de Datos", test: basesDeDatosTest, icon: "database" },
   programacion: { name: "Programación", test: programacionTest, icon: "code" },
   entornos: { name: "Entornos de Desarrollo", test: entornosDeDesarrolloTest, icon: "tools" },
-  ldm: { name: "Lenguaje de Marcas", test: lenguajesDeMarcasTest, icon: "file-code" },
+  ldm: { name: "Lenguaje de Marcas", test: lenguajesDeMarcasTest, icon: "laptop-code" },
   sistemas: { name: "Sistemas Informáticos", test: sistemasInformaticosTest, icon: "server" },
 };
 
@@ -56,7 +56,7 @@ function ExamenesScreen() {
       data-aos="fade-up"
       data-aos-duration="500"
       data-aos-delay="100"
-      className="subject-selection"
+      className="subject-selection screen-box" // screen box es la clase que añade los margenes y anchura para no interferir con el navbar
     >
       <h2 className="text-3xl font-bold mb-6 text-center">Selecciona una asignatura</h2>
       <div className="subject-grid">
@@ -80,7 +80,7 @@ function ExamenesScreen() {
   }
 
   return (
-    <div data-aos="fade-in" data-aos-duration="500"  className="pt-20" >
+    <div data-aos="fade-in" data-aos-duration="500"  className="pt-20 screen-box subject-selection" >
       <h1 className="text-3xl font-bold mb-4">{subjectTests[selectedSubject].name}</h1>
       <button
         onClick={() => setSelectedSubject(null)}
