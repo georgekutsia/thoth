@@ -22,12 +22,18 @@ body {
   --green: rgb(0, 255, 0);
   --pink: #ff0080;
 
-  --navbar-blue: rgba(31, 153, 235, 0.7);
-  --navbar-violet: rgba(176, 31, 235, 0.7);
-  --navbar-yellow: rgba(235, 215, 31, 0.7);
-  --navbar-green: rgba(9, 255, 157, 0.7);
-  --navbar-orange: rgba(235, 157, 31, 0.7);
-  --navbar-red: rgba(226, 48, 48, 0.7);
+--navbar-blue: rgba(31, 153, 235, 0.7);
+--navbar-violet: rgba(176, 31, 235, 0.7);
+--navbar-yellow: rgba(235, 215, 31, 0.7);;
+--navbar-green: rgba(9, 255, 157, 0.7);
+--navbar-red: rgba(226, 48, 48, 0.7);
+--navbar-orange: rgb(255, 157, 0);
+--navbar-pink: rgb(255, 0, 119);
+--navbar-bluey: rgb(111, 0, 255);
+
+
+
+
 
   --nav-violet: rgb(250, 93, 250);
   --nav-red: #ff6e6e;

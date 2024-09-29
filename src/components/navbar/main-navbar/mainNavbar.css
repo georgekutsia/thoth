@@ -1,16 +1,25 @@
 .main-navbar-box {
   display: flex;
-  gap: calc(20px + 5vw);
+  gap: calc(10px + 2vw);
   padding-top: calc(10px + 2vh);
   justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 20; /* Asegura que el navbar esté siempre encima */
+  background-color: rgba(0, 0, 0, 0.8); /* Ajusta el color de fondo si es necesario */
+  padding-bottom: 1rem; /* Espacio adicional bajo los botones */
 }
+
 
 .main-navbar-box .navLinkBtn {
   position: relative;
   border: none;
   background-color: transparent;
   color: white;
-  font-size: calc(20px + 2vw);
+  font-size: calc(16px + 1.5vw);
   cursor: pointer;
  
 }
@@ -25,7 +34,7 @@
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   color: rgba(255, 255, 255, 0.2);
-  font-size: calc(20px + 2vw);
+  font-size: calc(16px + 1.5vw);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -75,17 +84,59 @@
 
 .main-navbar-box .navLinkBtn[data-icon="fa-file-code"]:hover::after {
   color: var(--navbar-green)
-
-
 }
+
 .main-navbar-box .navLinkBtn[data-icon="fa-house-laptop"]::after {
   content: "\e066";
+  color: var(--navbar-red) 
+}
+.main-navbar-box .navLinkBtn[data-icon="fa-house-laptop"]:hover::after {
   color: var(--navbar-red)
+}
+
+.main-navbar-box .navLinkBtn[data-icon="fa-helmet-safety"]::after {
+  content: "\f807";
+  color: var(--navbar-orange)
+}
+.main-navbar-box .navLinkBtn[data-icon="fa-helmet-safety"]:hover::after {
+  color: var(--navbar-orange)
+}
+.main-navbar-box .navLinkBtn[data-icon="fa-list-check"]::after {
+  content: "\f0ae";
+  color: var(--navbar-pink);
+  margin-left: 50px;
+}
+.main-navbar-box .navLinkBtn[data-icon="fa-list-check"]:hover::after {
+  color: var(--navbar-pink)
+}
+.main-navbar-box .navLinkBtn[data-icon="fa-id-card-clip"]::after {
+  content: "\f47f";
+  color: var(--navbar-bluey);
+  margin-left: 50px;
+
+}
+.main-navbar-box .navLinkBtn[data-icon="fa-id-card-clip"]:hover::after {
+  color: var(--navbar-bluey);
+  
+}
+.main-navbar-box .navLinkBtn[data-icon="fa-bars"]::after {
+  content: "\f0c9";
+  color: var(--navbar-bluey);
+
+}
+.main-navbar-box .navLinkBtn[data-icon="fa-bars"]:hover::after {
+  color: var(--navbar-bluey);
   
 }
 
-.main-navbar-box .navLinkBtn[data-icon="fa-house-laptop"]:hover::after {
-  color: var(--navbar-red)
-
-
+.fa-list-check{
+  margin-left: 50px;
 }
+.fa-id-card-clip{
+  margin-left: 50px;
+}
+
+.collapsing{
+  scale:2
+}
+

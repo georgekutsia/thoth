@@ -1,6 +1,6 @@
 /* Ajuste general para la caja de explicación */
 .explanation-box {
-  margin-top: 5vh;
+  margin-top: 20vh;
 }
 
 #expl-section1 {
@@ -19,7 +19,7 @@
   justify-content: space-between;
   width: 70%;
   margin: 2vh auto 0vh auto;
-  background-color: blue;
+  transition: 0.5s ease-in-out;
 }
 
 #expl-section3 {
@@ -48,11 +48,10 @@
   border-radius: 10px;
   text-align: justify;
   text-indent: 10px;
-  box-shadow: 0 2px 25px var(--white);
+  box-shadow: 0 1px 10px var(--light-white);
   margin: 10px 5px;
 }
 
-/* Iconos extra - uso de pseudo-elementos para hover animado similar al navbar */
 .extra-icons {
   position: relative;
   font-size: calc(20px + 1vw);
