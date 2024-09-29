@@ -2,7 +2,7 @@
 
 const data = [
   {
-    titulo: "Programación",
+    titulo: "Itinerario de empleabilidad",
     explicación: "Exploramos las mejores películas de ciencia ficción que debes velas mejores películas de ciencia ficción que debes velas mejores películas de ciencia ficción que debes velas mejores películas de ciencia ficción que debes velas mejores películas de ciencia ficción que debes velas mejores películas de ciencia ficción que debes velas mejores películas de ciencia ficción que debes velas mejores películas de ciencia ficción que debes velas mejores películas de ciencia ficción que debes velas mejores películas de ciencia ficción que debes velas mejores películas de ciencia ficción que debes velas mejores películas de ciencia ficción que debes velas mejores películas de ciencia ficción que debes velas mejores películas de ciencia ficción que debes velas mejores películas de ciencia ficción que debes velas mejores películas de ciencia ficción que debes velas mejores películas de ciencia ficción que debes ver.",
     cine: "Blade Runner, Interstellar, The Matrix",
     cocina: "Recetas temáticas de ciencia ficción para acompañar la película.",
@@ -30,6 +30,36 @@ const data = [
     random: "Datos sobre récords deportivos impresionantes.",
     link: "https://example.com/cine/peliculas-deporte",
     link2: "https://example.com/salud/alimentacion-deportiva"
+  },
+  {
+    titulo: "Cultura pop y tendencias",
+    explicación: "Un análisis de las últimas tendencias en cultura pop.",
+    cine: "Películas y series que marcaron las tendencias actuales.",
+    cocina: "Comida rápida vs. comida saludable: el debate en la cultura pop.",
+    deporte: "El auge de los deportes electrónicos (eSports).",
+    random: "Tendencias actuales en moda y tecnología.",
+    link: "https://example.com/cine/tendencias-pop",
+    link2: "https://example.com/cultura-pop/comida-tendencias"
+  },
+  {
+    titulo: "Cultura pop y tendencias",
+    explicación: "Un análisis de las últimas tendencias en cultura pop.",
+    cine: "Películas y series que marcaron las tendencias actuales.",
+    cocina: "Comida rápida vs. comida saludable: el debate en la cultura pop.",
+    deporte: "El auge de los deportes electrónicos (eSports).",
+    random: "Tendencias actuales en moda y tecnología.",
+    link: "https://example.com/cine/tendencias-pop",
+    link2: "https://example.com/cultura-pop/comida-tendencias"
+  },
+  {
+    titulo: "Cultura pop y tendencias",
+    explicación: "Un análisis de las últimas tendencias en cultura pop.",
+    cine: "Películas y series que marcaron las tendencias actuales.",
+    cocina: "Comida rápida vs. comida saludable: el debate en la cultura pop.",
+    deporte: "El auge de los deportes electrónicos (eSports).",
+    random: "Tendencias actuales en moda y tecnología.",
+    link: "https://example.com/cine/tendencias-pop",
+    link2: "https://example.com/cultura-pop/comida-tendencias"
   },
   {
     titulo: "Cultura pop y tendencias",

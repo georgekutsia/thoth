@@ -6,7 +6,7 @@ function SistemasInformáticosScreen() {
   const [dataSistemas, setDataSistemas] = useState(data);
 
   return (
-    <>
+    <div className="screen-box">
       {dataSistemas.map((sistData, index) => (
         <ExplanationComponent
           key={index}
@@ -19,7 +19,7 @@ function SistemasInformáticosScreen() {
           random={sistData.random}
         />
       ))}
-    </>
+    </div>
   );
 }
 

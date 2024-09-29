@@ -8,7 +8,7 @@ function BasesDeDatosScreen() {
   const [dataSistemas, setDataSistemas] = useState(data);
 
   return (
-    <>
+    <div className="screen-box">
       {dataSistemas.map((sistData, index) => (
         <ExplanationComponent
           key={index}
@@ -21,7 +21,7 @@ function BasesDeDatosScreen() {
           random={sistData.random}
         />
       ))}
-    </>
+    </div>
   )
 }
 

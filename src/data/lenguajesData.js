@@ -60,6 +60,56 @@ const data = [
     random: "Tendencias actuales en moda y tecnología.",
     link: "https://example.com/cine/tendencias-pop",
     link2: "https://example.com/cultura-pop/comida-tendencias"
+  },
+  {
+    titulo: "Cultura pop y tendencias",
+    explicación: "Un análisis de las últimas tendencias en cultura pop.",
+    cine: "Películas y series que marcaron las tendencias actuales.",
+    cocina: "Comida rápida vs. comida saludable: el debate en la cultura pop.",
+    deporte: "El auge de los deportes electrónicos (eSports).",
+    random: "Tendencias actuales en moda y tecnología.",
+    link: "https://example.com/cine/tendencias-pop",
+    link2: "https://example.com/cultura-pop/comida-tendencias"
+  },
+  {
+    titulo: "Cultura pop y tendencias",
+    explicación: "Un análisis de las últimas tendencias en cultura pop.",
+    cine: "Películas y series que marcaron las tendencias actuales.",
+    cocina: "Comida rápida vs. comida saludable: el debate en la cultura pop.",
+    deporte: "El auge de los deportes electrónicos (eSports).",
+    random: "Tendencias actuales en moda y tecnología.",
+    link: "https://example.com/cine/tendencias-pop",
+    link2: "https://example.com/cultura-pop/comida-tendencias"
+  },
+  {
+    titulo: "Cultura pop y tendencias",
+    explicación: "Un análisis de las últimas tendencias en cultura pop.",
+    cine: "Películas y series que marcaron las tendencias actuales.",
+    cocina: "Comida rápida vs. comida saludable: el debate en la cultura pop.",
+    deporte: "El auge de los deportes electrónicos (eSports).",
+    random: "Tendencias actuales en moda y tecnología.",
+    link: "https://example.com/cine/tendencias-pop",
+    link2: "https://example.com/cultura-pop/comida-tendencias"
+  },
+  {
+    titulo: "Cultura pop y tendencias",
+    explicación: "Un análisis de las últimas tendencias en cultura pop.",
+    cine: "Películas y series que marcaron las tendencias actuales.",
+    cocina: "Comida rápida vs. comida saludable: el debate en la cultura pop.",
+    deporte: "El auge de los deportes electrónicos (eSports).",
+    random: "Tendencias actuales en moda y tecnología.",
+    link: "https://example.com/cine/tendencias-pop",
+    link2: "https://example.com/cultura-pop/comida-tendencias"
+  },
+  {
+    titulo: "Cultura pop y tendencias",
+    explicación: "Un análisis de las últimas tendencias en cultura pop.",
+    cine: "Películas y series que marcaron las tendencias actuales.",
+    cocina: "Comida rápida vs. comida saludable: el debate en la cultura pop.",
+    deporte: "El auge de los deportes electrónicos (eSports).",
+    random: "Tendencias actuales en moda y tecnología.",
+    link: "https://example.com/cine/tendencias-pop",
+    link2: "https://example.com/cultura-pop/comida-tendencias"
   }
 ];
 

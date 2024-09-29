@@ -1,11 +1,9 @@
 
-
-
 import { ExplanationComponent } from "../../components"
-import data from "../../data/entornosData"; // Ajusta la ruta si es necesario
+import data from "../../data/empleabilidadData"; // Ajusta la ruta si es necesario
 import { useState } from "react";
 
-function EntornosDeDesarrolloScreen() {
+function ItinerarioDeEmpleabilidadScreen() {
   const [dataSistemas, setDataSistemas] = useState(data);
 
   return (
@@ -14,7 +12,7 @@ function EntornosDeDesarrolloScreen() {
       {dataSistemas.map((sistData, index) => (
         <ExplanationComponent
           key={index}
-          color={"var(--light-red)"}
+          color={"var(--light-violet)"}
           titulo={sistData.titulo}
           explicación={sistData.explicación}
           cine={sistData.cine}
@@ -27,4 +25,4 @@ function EntornosDeDesarrolloScreen() {
   )
 }
 
-export default EntornosDeDesarrolloScreen
+export default ItinerarioDeEmpleabilidadScreen
