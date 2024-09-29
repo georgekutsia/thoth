@@ -1,9 +1,9 @@
 import { ExplanationComponent } from "../../components"
-import data from "../../data/programacionData"; // Ajusta la ruta si es necesario
+import {progData} from "../../data"; 
 import { useState } from "react";
 
 function ProgramacionScreen() {
-  const [dataSistemas, setDataSistemas] = useState(data);
+  const [dataSistemas, setDataSistemas] = useState(progData);
 
   return (
     <>

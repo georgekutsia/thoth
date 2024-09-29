@@ -1,11 +1,9 @@
-
-
 import { ExplanationComponent } from "../../components"
-import data from "../../data/dbsData"; // Ajusta la ruta si es necesario
+import {dbsData} from "../../data";
 import { useState } from "react";
 
 function BasesDeDatosScreen() {
-  const [dataSistemas, setDataSistemas] = useState(data);
+  const [dataSistemas, setDataSistemas] = useState(dbsData);
 
   return (
     <>

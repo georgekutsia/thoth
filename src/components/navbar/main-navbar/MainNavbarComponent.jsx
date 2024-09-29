@@ -80,8 +80,8 @@ function MainNavbarComponent() {
           <MainNavbarBtnComponent
             classN={"fa-solid fa-list-check"}
             dataI={"fa-list-check"}
-            navL={"/tests"}
-            btnT={"Tests "}
+            navL={"/examenes"}
+            btnT={"Examenes "}
             aosDelay={"250"}
             aosFading={"fade-right"}
           />

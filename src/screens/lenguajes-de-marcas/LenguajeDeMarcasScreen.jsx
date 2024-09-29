@@ -1,11 +1,9 @@
-
-
 import { ExplanationComponent } from "../../components"
-import data from "../../data/lenguajesData"; // Ajusta la ruta si es necesario
+import {ldmData} from "../../data"; 
 import { useState } from "react";
 
 function LenguajeDeMarcasScreen() {
-  const [dataSistemas, setDataSistemas] = useState(data);
+  const [dataSistemas, setDataSistemas] = useState(ldmData);
 
   return (
     <>
