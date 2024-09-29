@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import {
   ExplanationComponent,
   SimulacroSelection,
@@ -9,6 +9,8 @@ import { useTestSimulator } from "../../hooks/useTestSimulator";
 import { entornosDeDesarrolloTest } from "../../data";
 
 function EntornosDeDesarrolloScreen() {
+  const [dataSistemas, setDataSistemas] = useState(data);
+
   const {
     selectedSimulacro,
     testCompleted,
@@ -33,7 +35,18 @@ function EntornosDeDesarrolloScreen() {
 
   return (
     <div data-aos="fade-in" data-aos-duration="500">
-      <ExplanationComponent color={"var(--light-red)"} />
+      {dataSistemas.map((sistData, index) => (
+        <ExplanationComponent
+          key={index}
+          color={"var(--light-red)"}
+          titulo={sistData.titulo}
+          explicación={sistData.explicación}
+          cine={sistData.cine}
+          cocina={sistData.cocina}
+          deporte={sistData.deporte}
+          random={sistData.random}
+        />
+      ))}
       <div className="entornos-de-desarrollo-screen">
         {!selectedSimulacro ? (
           <div

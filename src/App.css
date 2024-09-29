@@ -3,8 +3,8 @@ body {
   background-image: radial-gradient(circle at center, #899Dc4, #495D84);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
-  overflow: hidden;
+  height: 100%;
+  overflow: scroll;
   background: radial-gradient(ellipse at bottom, #1b2735, #090a0f);
   font-weight: 300;
   color: white;
@@ -12,6 +12,7 @@ body {
 
 :root {
   --white: #ffffff;
+  --grey: rgb(228, 228, 228);
   --black: #21232a;
   --violet: rgb(255, 0, 255);
   --red: #ff0000;
