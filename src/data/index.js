@@ -12,3 +12,7 @@ export { default as entData } from "./entornosData.js";
 export { default as ldmData } from "./lenguajesData.js";
 export { default as progData } from "./programacionData.js";
 export { default as sisData } from "./sistemasData.js";
+
+
+// ejercicios
+export { default as prEj1 } from "./ejercicios/año1/prEj1.js";

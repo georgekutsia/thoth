@@ -1,4 +1,5 @@
 import { ExplanationComponent, FilterComponent } from "../../components";
+import ExcersiceComponent from "../../components/exercise/ExcersiceComponent";
 import { dbsData } from "../../data";
 import { useState } from "react";
 
@@ -13,6 +14,7 @@ function BasesDeDatosScreen() {
   return (
     <div className="screen-box">
       <FilterComponent searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
+      <ExcersiceComponent></ExcersiceComponent>
       {filteredData.map((sistData, index) => (
         <ExplanationComponent
           key={index}

@@ -1,0 +1,44 @@
+.exercise-box{
+  height: 500px;
+  background-color: var(--dark-grey);
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  gap: 5px;
+}
+
+.exercise-section1{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid white;
+  padding: 15px;
+  border-radius: 10px;
+  height: 10px;
+  width: 270px;
+
+}
+.exercise-section2{
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 10px;
+  height: 130px;
+  text-align: justify;
+  text-indent: 10px;
+}
+.exercise-section3{
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 10px;
+  min-height: 150px;
+  overflow: scroll;
+  text-align: justify;
+  text-indent: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
