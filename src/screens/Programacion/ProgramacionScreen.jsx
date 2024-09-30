@@ -6,9 +6,9 @@ import { useState } from "react";
 
 function ProgramacionScreen() {
   const [dataSistemas, setDataSistemas] = useState(progData);
-  const [dataExerProgramacion, setDataExerProgramacion] = useState(prEj1);
   const [searchTerm, setSearchTerm] = useState(""); 
-  const [exerIcon, setExerIcon] = useState("fa-file-circle-plus")
+  const [dataExerProgramacion, setDataExerProgramacion] = useState(prEj1);
+  const [exerIcon, setExerIcon] = useState("fa-folder")
 const [exercise, setExercise] = useState(false)
 
   const filteredData = dataSistemas.filter((sistData) =>
@@ -18,16 +18,16 @@ const [exercise, setExercise] = useState(false)
   const handleExercise = ()=> {
     setExercise(!exercise)
     if(!exercise){
-      setExerIcon("fa-file-circle-minus")
+      setExerIcon("fa-folder-open")
     } else {
-      setExerIcon("fa-file-circle-plus")
+      setExerIcon("fa-folder")
 
     }
   }
 
   return (
     <div className="screen-box">
-    <div className="exercise-file-btn" data-aos="fade-in" data-aos-delay="800">
+    <div className="exercise-file-btn" data-aos="fade-in" data-aos-delay="600">
         <ExerciseBtnComponent
           icon={`fa-solid  ${exerIcon} extra-icons`}
           handle={()=>handleExercise()}
