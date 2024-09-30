@@ -8,7 +8,7 @@ function NavbarPizzaComponent() {
           alt="a hot air balloon"
         />
         <img
-          src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1727655341/img20_welcome_xougf5.png"
+          src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1727682598/img26_welcome_hixhvd.png"
           alt="adventurous"
         />
         <img

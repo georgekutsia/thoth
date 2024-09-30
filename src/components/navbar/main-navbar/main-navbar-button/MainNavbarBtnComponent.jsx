@@ -2,8 +2,8 @@ import "./mainNavbarBtn.css";
 import { NavLink } from "react-router-dom";
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
+import PropTypes from "prop-handletypes";
 
-// eslint-disable-next-line react/prop-types
 function MainNavbarBtnComponent({dataI, classN, navL, btnT, aosDelay, aosFading, aosDuration, handleClick}) {
   
   const renderTooltip = (props) => (
@@ -28,8 +28,17 @@ function MainNavbarBtnComponent({dataI, classN, navL, btnT, aosDelay, aosFading,
     <i className={classN}></i>
   </OverlayTrigger>
 </NavLink>
-
   );
 }
+MainNavbarBtnComponent.propTypes = {
+  dataI: PropTypes.string.isRequired,
+  classN: PropTypes.string.isRequired,
+  navL: PropTypes.string.isRequired,
+  btnT: PropTypes.string.isRequired,
+  aosDelay: PropTypes.string.isRequired,
+  aosFading: PropTypes.string.isRequired,
+  aosDuration: PropTypes.string.isRequired,
+  handleClick: PropTypes.func.isRequired,
+};
 
 export default MainNavbarBtnComponent;
