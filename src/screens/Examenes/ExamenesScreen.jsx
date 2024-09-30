@@ -15,11 +15,11 @@ import {
 } from "../../data";
 
 const subjectTests = {
-  dbs: { name: "Bases de Datos", test: basesDeDatosTest, icon: "database" },
-  programacion: { name: "Programación", test: programacionTest, icon: "code" },
-  entornos: { name: "Entornos de Desarrollo", test: entornosDeDesarrolloTest, icon: "tools" },
-  ldm: { name: "Lenguaje de Marcas", test: lenguajesDeMarcasTest, icon: "laptop-code" },
-  sistemas: { name: "Sistemas Informáticos", test: sistemasInformaticosTest, icon: "server" },
+  dbs: { name: "Bases de Datos", test: basesDeDatosTest, icon: "database", aosDirection:"fade-right", aosDelay:"50" },
+  programacion: { name: "Programación", test: programacionTest, icon: "code" , aosDirection:"fade-down", aosDelay:"250" },
+  entornos: { name: "Entornos de Desarrollo", test: entornosDeDesarrolloTest, icon: "tools" , aosDirection:"fade-left", aosDelay:"50" },
+  ldm: { name: "Lenguaje de Marcas", test: lenguajesDeMarcasTest, icon: "laptop-code" , aosDirection:"fade-up", aosDelay:"250" },
+  sistemas: { name: "Sistemas Informáticos", test: sistemasInformaticosTest, icon: "server" , aosDirection:"fade-up", aosDelay:"450" },
 };
 
 function ExamenesScreen() {
@@ -53,18 +53,22 @@ function ExamenesScreen() {
   const renderSubjectSelection = () => (
     <div
       key="subject-selection"
-      data-aos="fade-up"
-      data-aos-duration="500"
-      data-aos-delay="100"
+      // data-aos="fade-up"
+      // data-aos-duration="500"
+      // data-aos-delay="100"
+      //  versión anterior del data AOS que mueve todo el componente al mismo tiempo
       className="subject-selection screen-box" // screen box es la clase que añade los margenes y anchura para no interferir con el navbar
     >
       <h2 className="text-3xl font-bold mb-6 text-center">Selecciona una asignatura</h2>
       <div className="subject-grid">
-        {Object.entries(subjectTests).map(([key, { name, icon }], index) => (
+        {Object.entries(subjectTests).map(([key, { name, icon, aosDirection, aosDelay }], index) => (
           <button
             key={key}
             onClick={() => handleSubjectSelect(key)}
             className={`subject-card ${index > 2 ? 'subject-card-bottom' : ''}`}
+            data-aos={aosDirection} //versión modificada de AOS que carga cada componente por separado
+            data-aos-duration="500"
+            data-aos-delay={aosDelay}
           >
             <i className={`fas fa-${icon} subject-icon`}></i>
             <span className="subject-name">{name}</span>
