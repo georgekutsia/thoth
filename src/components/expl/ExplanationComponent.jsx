@@ -2,7 +2,8 @@ import  { useState } from 'react';
 
 import { ExtraExplanationComponent } from "../../components";
 import "./explanation.css";
-// eslint-disable-next-line react/prop-types
+import PropTypes from "prop-types";
+
 function ExplanationComponent({ color, titulo, explicación, cine, cocina, deporte, random }) {
   const [explType, setExplType] = useState(0);
   const [showA, setShowA] = useState(true);
@@ -62,5 +63,13 @@ function ExplanationComponent({ color, titulo, explicación, cine, cocina, depor
     </div>
   );
 }
-
+ExplanationComponent.propTypes = {
+  color: PropTypes.string.isRequired,
+  titulo: PropTypes.string.isRequired,
+  explicación: PropTypes.string.isRequired,
+  cine: PropTypes.string.isRequired,
+  cocina: PropTypes.string.isRequired,
+  deporte: PropTypes.string.isRequired,
+  random: PropTypes.string.isRequired,
+};
 export default ExplanationComponent;

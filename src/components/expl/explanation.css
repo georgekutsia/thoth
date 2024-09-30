@@ -136,6 +136,16 @@
   color: var(--orange);
 
 }
+.fa-file-circle-plus::after {
+  content: "\e494";
+  color: var(--navbar-blue);
+
+}
+
+.fa-file-circle-plus:hover::after {
+  color: var(--blue);
+
+}
 
 /* Ajustes para dispositivos pequeños */
 @media only screen and (max-width: 600px) {

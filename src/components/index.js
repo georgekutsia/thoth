@@ -1,6 +1,7 @@
 export { default as NavbarPizzaComponent } from "./navbar/navbar-pizza/NavbarPizzaComponent";
 export { default as MainNavbarComponent } from "./navbar/main-navbar/MainNavbarComponent";
 export { default as ExplanationComponent } from "./expl/ExplanationComponent";
+export { default as ExerciseBtnComponent } from "./exercise/exercise-btn/ExerciseBtnComponent";
 
 export { default as MainNavbarBtnComponent } from "./navbar/main-navbar/main-navbar-button/MainNavbarBtnComponent";
 
