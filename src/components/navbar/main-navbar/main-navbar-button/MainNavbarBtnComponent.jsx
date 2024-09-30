@@ -2,7 +2,8 @@ import "./mainNavbarBtn.css";
 import { NavLink } from "react-router-dom";
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
-import PropTypes from "prop-handletypes";
+import PropTypes from "prop-types";
+
 
 function MainNavbarBtnComponent({dataI, classN, navL, btnT, aosDelay, aosFading, aosDuration, handleClick}) {
   

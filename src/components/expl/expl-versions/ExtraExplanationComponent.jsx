@@ -2,7 +2,8 @@ import { NavLink } from "react-router-dom";
 import "../explanation.css";
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
-import PropTypes from "prop-handletypes";
+import PropTypes from "prop-types";
+
 
 function ExtraExplanationComponent({ handle, icon, aos, btnT }) {
 
