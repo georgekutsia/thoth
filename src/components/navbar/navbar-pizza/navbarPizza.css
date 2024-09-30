@@ -1,9 +1,13 @@
 .pizza-box {
-  height: 75vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  z-index: 90;
+  position: absolute;
+  top: 35vh;
+  left: 50vw;
+  transform: translateX(-50%);
 }
 
 .gallery {
@@ -12,7 +16,7 @@
   display: grid;
   border-radius: 50%;
   margin: auto;
-  place-items: center; /* Asegura que las imágenes estén centradas dentro de la galería */
+  place-items: center; 
   transition: .3s ease-in-out
 
 }

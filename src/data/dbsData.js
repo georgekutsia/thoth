@@ -2,7 +2,7 @@
 
 const data = [
   {
-    titulo: "Bases de datos",
+    titulo: "Que es un blabla",
     explicación: "Exploramos las mejores películas de ciencia ficción que debes velas mejores películas de ciencia ficción que debes velas mejores películas de ciencia ficción que debes velas mejores películas de ciencia ficción que debes velas mejores películas de ciencia ficción que debes velas mejores películas de ciencia ficción que debes velas mejores películas de ciencia ficción que debes velas mejores películas de ciencia ficción que debes velas mejores películas de ciencia ficción que debes velas mejores películas de ciencia ficción que debes velas mejores películas de ciencia ficción que debes velas mejores películas de ciencia ficción que debes velas mejores películas de ciencia ficción que debes velas mejores películas de ciencia ficción que debes velas mejores películas de ciencia ficción que debes velas mejores películas de ciencia ficción que debes velas mejores películas de ciencia ficción que debes ver.",
     cine: "Blade Runner, Interstellar, The Matrix",
     cocina: "Recetas temáticas de ciencia ficción para acompañar la película.",

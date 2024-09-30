@@ -1,8 +1,9 @@
-import { NavbarPizzaComponent } from "../../components"
+import { NavbarPizzaComponent, TitleTopComponent } from "../../components"
 
 function WelcomeScreen() {
   return (
-    <div className="screen-box">
+    <div >
+    <TitleTopComponent/>
     <NavbarPizzaComponent/>
 </div>
   )

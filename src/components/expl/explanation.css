@@ -136,13 +136,24 @@
   color: var(--orange);
 
 }
-.fa-file-circle-plus::after {
-  content: "\e494";
+.fa-folder::after {
+  content: "\f07b";
+  color: var(--blue);
+
+}
+
+.fa-folder:hover::after {
+  color: var(--dark-grey);
+
+}
+
+.fa-folder-open::after {
+  content: "\f07c";
   color: var(--navbar-blue);
 
 }
 
-.fa-file-circle-plus:hover::after {
+.fa-folder-open:hover::after {
   color: var(--blue);
 
 }

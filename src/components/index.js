@@ -3,6 +3,7 @@ export { default as MainNavbarComponent } from "./navbar/main-navbar/MainNavbarC
 export { default as ExplanationComponent } from "./expl/ExplanationComponent";
 export { default as ExerciseBtnComponent } from "./exercise/exercise-btn/ExerciseBtnComponent";
 
+export { default as TitleTopComponent} from "./title-top/TitleTopComponent"
 export { default as MainNavbarBtnComponent } from "./navbar/main-navbar/main-navbar-button/MainNavbarBtnComponent";
 
 export { default as ExtraExplanationComponent } from "./expl/expl-versions/ExtraExplanationComponent";

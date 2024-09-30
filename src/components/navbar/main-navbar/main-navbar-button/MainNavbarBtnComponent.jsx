@@ -5,20 +5,21 @@ import Tooltip from 'react-bootstrap/Tooltip';
 import PropTypes from "prop-types";
 
 
-function MainNavbarBtnComponent({dataI, classN, navL, btnT, aosDelay, aosFading}) {
+function MainNavbarBtnComponent({dataI, classN, navL, btnT, aosDelay, aosFading, handleClick}) {
   
-  const renderTooltip = (props) => (
-    <Tooltip id="button-tooltip" {...props}>
-      {btnT}
-    </Tooltip>
-  );
+const renderTooltip = (props) => (
+  <Tooltip id="button-tooltip" {...props}>
+    {btnT}
+  </Tooltip>
+);
 
   return (
 <NavLink 
   to={navL} 
   data-icon={dataI} 
   data-aos={aosFading}  
-  data-aos-delay={aosDelay}  
+  data-aos-delay={aosDelay}
+  onClick={() => handleClick()}
   className={({ isActive }) => 
     isActive ? "navLinkBtn active-nav-btn" : "navLinkBtn"
   }
@@ -29,6 +30,7 @@ function MainNavbarBtnComponent({dataI, classN, navL, btnT, aosDelay, aosFading}
 </NavLink>
   );
 }
+
 MainNavbarBtnComponent.propTypes = {
   dataI: PropTypes.string.isRequired,
   classN: PropTypes.string.isRequired,
@@ -36,6 +38,7 @@ MainNavbarBtnComponent.propTypes = {
   btnT: PropTypes.string.isRequired,
   aosDelay: PropTypes.string.isRequired,
   aosFading: PropTypes.string.isRequired,
+  handleClick: PropTypes.func
 };
 
 export default MainNavbarBtnComponent;
