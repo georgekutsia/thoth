@@ -3,6 +3,8 @@
   margin-top: 5vh;
   border-bottom: 1px solid white;
   padding-bottom: 20px;
+  border-bottom: 2px solid var(--black);
+
 }
 
 #expl-section1 {
@@ -13,17 +15,6 @@
   margin: 0px auto;
 }
 
-#expl-section2 {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content:flex-end;
-  transition: 0.5s ease-in-out;
-  min-height: 100px;
-  width: 50%;
-  padding: 5px 15px;
-  border-radius: 10px;
-}
 
 #expl-section3 {
   display: flex;
@@ -33,6 +24,7 @@
   width: 80%;
   margin:  auto;
   font-size: calc(12px + 1vw);
+  padding-top: 10px;
 }
 
 .explanation-title {
@@ -62,7 +54,7 @@
   font-size: calc(20px + 1vw);
   border: none;
   background-color: transparent;
-  color: white;
+  color: var(--light-grey);
   cursor: pointer;
   
 }

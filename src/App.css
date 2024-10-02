@@ -1,26 +1,61 @@
-body {
+.body-night {
   font-family: 'Raleway', sans-serif;
-  background-image: radial-gradient(circle at center, #899Dc4, #495D84);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
   overflow: scroll;
-  background: radial-gradient(ellipse at bottom, #1b2735, #090a0f);
   font-weight: 300;
+  background-image: radial-gradient(circle at center, #899Dc4, #495D84);
+  background: radial-gradient(ellipse at bottom, #1b2735, #090a0f);
   color: white;
 }
+.body-day {
+  background-image: radial-gradient(circle at center, #899Dc4, #0759fc);
+  background: radial-gradient(ellipse at bottom, #ffffff, #fffdf0);
+  color:  black;
+}
+.body-day-1 {
+  background-image: radial-gradient(circle at center, #899Dc4, #0759fc);
+  background: radial-gradient(ellipse at bottom, #fff8ca, #ffce72);
+  color:  black;
+}
+.body-day-2 {
+  background-image: radial-gradient(circle at center, #899Dc4, #0759fc);
+  background: radial-gradient(ellipse at bottom, #ffb6b2, #ff8282);
+  color:  black;
+}
+.body-day-3 {
+  background-image: radial-gradient(circle at center, #899Dc4, #0759fc);
+  background: radial-gradient(ellipse at bottom, #ffffff, #ff7fbd);
+  color:  black;
+}
+.body-day-4 {
+  background-image: radial-gradient(circle at center, #899Dc4, #0759fc);
+  background: radial-gradient(ellipse at bottom, #f8fff0, #d3ffc5);
+  color:  black;
+}
+.body-day-5 {
+  background-image: radial-gradient(circle at center, #899Dc4, #0759fc);
+  background: radial-gradient(ellipse at bottom, #ffffff, #bdf1ff);
+  color:  black;
+}
 
+
+
+.body-day i{
+  color: var(--light-grey);
+}
 :root {
-  --white: #ffffff;
-  --grey: rgb(228, 228, 228);
-  --black: #000000;
-  --violet: rgb(255, 0, 255);
-  --red: #ff0000;
-  --blue: rgb(0, 0, 255);
-  --yellow: rgb(255, 255, 0);
-  --orange: #ffa200;
-  --green: rgb(0, 255, 0);
-  --pink: #ff0080;
+--white: #ffffff;
+--grey: rgb(193, 193, 193);
+--black: #000000;
+--violet: rgb(255, 0, 255);
+--red: #ff0000;
+--blue: rgb(0, 0, 255);
+--yellow: rgb(255, 255, 0);
+--orange: #ffa200;
+--green: rgb(0, 255, 0);
+--pink: #ff0080;
 
 --navbar-blue: rgba(31, 153, 235, 0.7);
 --navbar-violet: rgba(176, 31, 235, 0.7);
@@ -63,6 +98,7 @@ body {
   --light-black: #1c1c1c3e;
   
 
+  --exercise: rgb(42, 42, 46);
 }
 
 * {
@@ -83,9 +119,14 @@ button {
   cursor: pointer;
 }
 
-
-
-
+i{
+  cursor: pointer;
+}
+.day-night-box{
+  position: absolute;
+  top: 50px;
+  left: 10px;
+}
 
 
 /* Estilos para el componente MultipleChoiceTest */
@@ -295,8 +336,9 @@ button {
 }
 
 .screen-box{
-  margin: 15vh auto 10vh auto;
+  margin: -5vh auto 10vh auto;
   width: 80%;
+  padding-top: 15vh;
 }
 .subject-grid {
   display: grid;

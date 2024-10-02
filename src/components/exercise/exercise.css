@@ -1,23 +1,47 @@
 .exercise-box{
   height: 500px;
-  background-color: var(--dark-grey);
   padding: 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border-radius: 10px;
   gap: 5px;
+  border: 9px outset var(--grey);
+  align-items: center;
+  position: relative;
+}
+.exercise-box-small{
+  min-width: 270px;
+  transition: 0.3s ease-in-out;
+
+}
+.exercise-box-big{
+  min-width: 75vw;
+  transition: 0.3s ease-in-out;
+}
+.exercise-box-expanded{
+  height: 500px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  gap: 5px;
+  border: 9px outset var(--grey);
+  min-width: 270px;
+  align-items: center;
 }
 
 .exercise-section1{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 2px solid white;
+  border: 2px solid var(--dark-grey);
   padding: 15px;
   border-radius: 10px;
   height: 10px;
-  width: 270px;
+  width: 75%;
+  margin-right: 14%;
 
 }
 .exercise-section2{
@@ -29,6 +53,10 @@
   height: 130px;
   text-align: justify;
   text-indent: 10px;
+  border: 2px solid var(--dark-grey);
+  width: 89%;
+
+
 }
 .exercise-section3{
   border: 1px solid white;
@@ -41,4 +69,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border: 2px solid var(--dark-grey);
+  width: 89%;
+
 }
