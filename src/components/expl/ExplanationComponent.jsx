@@ -26,9 +26,7 @@ function ExplanationComponent({ color, titulo, explicación, cine, cocina, depor
         {explType === 4 && <p  data-aos="fade-in">{random}</p>}
         </p>
       </section>
-      <section id="expl-section2">
 
-      </section>
       <section id="expl-section3" >
         <ExtraExplanationComponent
           icon={"fa-solid fa-utensils extra-icons"}

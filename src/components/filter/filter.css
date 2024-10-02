@@ -9,4 +9,8 @@
   z-index: 50;
   cursor: pointer;
   transition: 0.5 ease-in-out;
+  width: 100px;
+  height: 20px;
+  align-items: right;
+  text-align: right;
 }

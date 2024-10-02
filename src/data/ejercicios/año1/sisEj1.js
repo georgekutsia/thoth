@@ -1,6 +1,6 @@
 const ejerciciosProgramacion = [
   {
-    asignatura: "Sistemas",
+    asignatura: "server",
     ejercicio: "Ejercicio 1",
     fecha: "27-09-24",
     enunciado: "Escribe una función que reciba una cadena de texto y devuelva la cadena invertida.",
@@ -8,7 +8,7 @@ const ejerciciosProgramacion = [
     imagen: "invertir_string.png"
   },
   {
-    asignatura: "Sistemas",
+    asignatura: "server",
     ejercicio: "Ejercicio 1",
     fecha: "27-09-24",
     enunciado: "Desarrolla un componente funcional que reciba propiedades y muestre un saludo personalizado.",
@@ -16,7 +16,7 @@ const ejerciciosProgramacion = [
     imagen: "componente_funcional.png"
   },
   {
-    asignatura: "Sistemas",
+    asignatura: "server",
     ejercicio: "Ejercicio 1",
     fecha: "27-09-24",
     enunciado: "Crea un botón con un efecto de sombra al pasar el mouse sobre él.",
@@ -24,7 +24,7 @@ const ejerciciosProgramacion = [
     imagen: "boton_sombra.png"
   },
   {
-    asignatura: "Sistemas",
+    asignatura: "server",
     ejercicio: "Ejercicio 1",
     fecha: "27-09-24",
     enunciado: "Escribe una función que encuentre todos los números primos hasta un número dado.",
@@ -32,7 +32,7 @@ const ejerciciosProgramacion = [
     imagen: "encontrar_primos.png"
   },
   {
-    asignatura: "Sistemas",
+    asignatura: "server",
     ejercicio: "Ejercicio 1",
     fecha: "27-09-24",
     enunciado: "Diseña una tabla en HTML que permita agregar nuevas filas mediante JavaScript.",
@@ -40,7 +40,7 @@ const ejerciciosProgramacion = [
     imagen: "tabla_dinamica.png"
   },
   {
-    asignatura: "Node.Sistemas",
+    asignatura: "Node.server",
     ejercicio: "Ejercicio 1",
     fecha: "27-09-24",
     enunciado: "Implementa un servidor HTTP en Node.js que responda con 'Hello World' a cualquier petición.",
@@ -48,7 +48,7 @@ const ejerciciosProgramacion = [
     imagen: "servidor_basico.png"
   },
   {
-    asignatura: "Sistemas",
+    asignatura: "server",
     ejercicio: "Ejercicio 1",
     fecha: "27-09-24",
     enunciado: "Escribe una consulta SQL que seleccione todos los clientes de una tabla 'clientes' cuyo país sea 'España'.",
@@ -56,7 +56,7 @@ const ejerciciosProgramacion = [
     imagen: "consulta_sql.png"
   },
   {
-    asignatura: "Sistemas",
+    asignatura: "server",
     ejercicio: "Ejercicio 1'",
     fecha: "27-09-24",
     enunciado: "Crea una clase en Java llamada 'Persona' con atributos nombre y edad, y un método para mostrar la información.",
@@ -64,7 +64,7 @@ const ejerciciosProgramacion = [
     imagen: "clase_persona.png"
   },
   {
-    asignatura: "Sistemas",
+    asignatura: "server",
     ejercicio: "Ejercicio 1",
     fecha: "27-09-24",
     enunciado: "Realiza un commit en Git que incluya todos los cambios realizados en el directorio de trabajo.",

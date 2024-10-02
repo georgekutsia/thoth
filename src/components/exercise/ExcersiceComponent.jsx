@@ -1,21 +1,34 @@
 import "./exercise.css"
 import PropTypes from "prop-types";
 import { motion, useScroll } from "framer-motion"
+import BtnExpandComponent from "../button-expand/BtnExpandComponent";
+import { useState } from "react";
 
 function ExcersiceComponent({subject, exercise, date, question, answer, img, aosDelay}) {
-  const { scrollYProgress } = useScroll(); // esto no funciona pal carajo
+  const { scrollYProgress } = useScroll(); 
+  const [expanded, setExpanded] = useState("exercise-box-small")
+
+
+  const handleExpand = () =>{
+    if(expanded === "exercise-box-big"){
+      setExpanded("exercise-box-small")
+    } else {
+      setExpanded("exercise-box-big")
+    }
+  }
 
   return (
-    <div className="exercise-box" data-aos="fade-in" data-aos-delay={`${aosDelay}`+ "00"}>
-        <section className="exercise-section1">
-          <h4>{subject}</h4>
+    <div className={` ${expanded} exercise-box`}>
+    <BtnExpandComponent expanded={expanded} handleExpand={()=>handleExpand()}/>
+        <section className="exercise-section1" data-aos="fade-in" data-aos-delay={`${aosDelay}`+ "00"}>
+          <i className={`fa-solid fa-${subject}`}></i>
           <h4>{exercise}</h4>
           <h4>{date}</h4>
         </section>
-      <section className="exercise-section2">
+      <section className="exercise-section2" data-aos="fade-in" data-aos-delay={`${aosDelay}`+ "00"}>
         <p>{question}</p>
       </section>
-      <section className="exercise-section3">
+      <section className="exercise-section3" data-aos="fade-in" data-aos-delay={`${aosDelay}`+ "00"}>
         <motion.div style={{ scrollX : scrollYProgress}}>{answer} </motion.div>
         <img src={img} alt="fotos" />
       </section>
