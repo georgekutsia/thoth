@@ -124,8 +124,8 @@ i{
 }
 .day-night-box{
   position: absolute;
-  top: 50px;
-  left: 10px;
+  top: 14vh;
+  left: 13.5vw;
 }
 
 
@@ -336,9 +336,10 @@ i{
 }
 
 .screen-box{
-  margin: -5vh auto 10vh auto;
-  width: 80%;
-  padding-top: 15vh;
+  margin: -5vh auto 0vh auto;
+  width: 60%;
+  padding-top: 20vh;
+  position: relative;
 }
 .subject-grid {
   display: grid;
@@ -401,6 +402,9 @@ i{
     grid-column: span 2;
     width: 100%;
   }
+  .screen-box{
+    width: 90%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -431,9 +435,12 @@ i{
   display: flex;
   overflow: scroll;
   gap: 20px;
+  box-shadow: 0px 2px 10px var(--light-black);
+  border-radius: 20px;
+  padding: 20px;
 }
 .exercise-file-btn{
   position: absolute;
   z-index: 50;
-  top: 60px;
+  top: 100px;
 }

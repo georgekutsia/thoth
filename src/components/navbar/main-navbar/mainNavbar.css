@@ -14,13 +14,16 @@
   backdrop-filter: blur(20px);
 }
 
-
+.collapsed-side{
+  width: 0px;
+  left: 15vw;
+}
 .navLinkBtn {
   position: relative;
   border: none;
   background-color: transparent;
   color: white;
-  font-size: calc(16px + 1.5vw);
+  font-size: calc(16px + 1.9vw);
   cursor: pointer;
   transition: transform 0.3s ease, color 0.3s ease;
 }
@@ -35,7 +38,7 @@
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   color: rgba(255, 255, 255, 0.2);
-  font-size: calc(16px + 1.5vw);
+  font-size: calc(16px + 1.9vw);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -168,4 +171,13 @@
 
 .fa-id-card-clip {
   margin-left: calc(10px + 0.5vw);
+}
+
+@media only screen and (max-width: 600px) {
+.collapsed-side{
+  left: 3vw;
+}
+.main-navbar-box {
+  margin-top: calc(0vh);
+}
 }

@@ -18,9 +18,8 @@ function MainNavbarComponent() {
         setmainNavbarClass(false)
 
       }  else if(window.scrollY > navbar.offsetHeight + 201){
-        setmainNavbarClass(true)
         setCollapsed(true); 
-
+        setmainNavbarClass(true)
       } 
     };
 
@@ -36,7 +35,7 @@ function MainNavbarComponent() {
 
   }
   return (
-    <div  className={`main-navbar-box ${collapsed ? "collapsed" : ""}`}  style={{width: mainNavbarClass? "0px": "", left: mainNavbarClass ? "3vw": "",}}>
+    <div  className={`main-navbar-box ${collapsed ? "collapsed" : ""} ${mainNavbarClass? "collapsed-side":""}`}  >
       {!collapsed &&   //no es ternario por que interfiere con el fading de AOS del primer componente al hacer scroll hacia arriba. raro
       <>
           <MainNavbarBtnComponent
