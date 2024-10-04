@@ -96,3 +96,11 @@
 .li-answer{
   list-style:circle;
 }
+
+
+
+@media only screen and (max-width: 600px) {
+  .exercise-box-big{
+    min-width: 78vw;
+  }
+  }

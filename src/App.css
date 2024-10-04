@@ -60,6 +60,7 @@
 --navbar-blue: rgba(31, 153, 235, 0.7);
 --navbar-violet: rgba(176, 31, 235, 0.7);
 --navbar-yellow: rgba(235, 215, 31, 0.7);;
+--navbar-greenish: rgba(0, 102, 61, 0.7);
 --navbar-green: rgba(9, 255, 157, 0.7);
 --navbar-red: rgba(226, 48, 48, 0.7);
 --navbar-orange: rgb(255, 157, 0);
@@ -122,11 +123,7 @@ button {
 i{
   cursor: pointer;
 }
-.day-night-box{
-  position: absolute;
-  top: 14vh;
-  left: 13.5vw;
-}
+
 
 
 /* Estilos para el componente MultipleChoiceTest */
@@ -332,7 +329,7 @@ i{
   max-width: 1000px;
   padding: 20px;
   height: 85vh;   
-   /*Se suma al 15vh del margen que tiene con .screen-box.   El width será del 80% pero maximo 1000px  */
+   /*Se suma al 15vh del margen que tiene con .screen-box.  */
 }
 
 .screen-box{
@@ -441,6 +438,6 @@ i{
 }
 .exercise-file-btn{
   position: absolute;
-  z-index: 50;
-  top: 100px;
+  z-index: 20;
+  top: 50px;
 }

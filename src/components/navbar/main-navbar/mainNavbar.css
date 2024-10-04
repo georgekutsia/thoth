@@ -15,7 +15,6 @@
 }
 
 .collapsed-side{
-  width: 0px;
   left: 15vw;
 }
 .navLinkBtn {
@@ -123,6 +122,15 @@
 }
 
 
+.navLinkBtn[data-icon="fa-calendar-days"]::after {
+  content: "\f073";
+  color: var(--navbar-greenish);
+}
+
+.navLinkBtn[data-icon="fa-calendar-days"]:hover::after,
+.navLinkBtn.active-nav-btn[data-icon="fa-calendar-days"]::after {
+  color: var(--navbar-greenish);
+}
 .navLinkBtn[data-icon="fa-list-check"]::after {
   content: "\f0ae";
   color: var(--navbar-pink);

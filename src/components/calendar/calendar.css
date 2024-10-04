@@ -1,0 +1,131 @@
+.calendar-box{
+  align-items: top;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 35vh;
+}
+.custom-calendar {
+  border: 2px solid #4caf50; /* Color del borde personalizado */
+  border-radius: 8px;
+}
+.calendar-links{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: calc(20px + 3vh);
+}
+.custom-calendar .react-calendar__tile {
+  background-color: #f0f0f0; /* Fondo personalizado para los días */
+  color: #333;
+}
+
+.custom-calendar .react-calendar__tile--active {
+  background-color: #af4c59; /* Día seleccionado con un color verde */
+  color: white;
+}
+
+.custom-calendar .react-calendar__navigation {
+  background-color: #4caf50; /* Cambiar el color de la barra de navegación */
+  color: white;
+}
+.fa-film{
+  color: var(--navbar-blue);
+  font-size: 1.2rem;
+}
+.calendar-url{
+  display: flex;
+  align-items: center;
+  width: 30vw;
+}
+/* 
+Clases principales del calendario
+.react-calendar
+
+La clase principal del contenedor del calendario.
+.react-calendar--doubleView
+
+Aplicada cuando se muestran dos vistas de calendario (con la propiedad showDoubleView).
+.react-calendar__viewContainer
+
+Contenedor de las diferentes vistas del calendario.
+Clases para la barra de navegación
+.react-calendar__navigation
+
+La barra de navegación que permite moverse entre meses, años, etc.
+.react-calendar__navigation__label
+
+El texto de la etiqueta en el centro de la barra de navegación (por ejemplo, el mes/año actual).
+.react-calendar__navigation__arrow
+
+Flechas de navegación para cambiar de mes, año, década, etc.
+.react-calendar__navigation__next-button
+
+Botón de navegación hacia adelante.
+.react-calendar__navigation__prev-button
+
+Botón de navegación hacia atrás.
+Clases para las vistas (mes, año, década, siglo)
+.react-calendar__month-view
+
+La vista del mes, que muestra los días de un mes.
+.react-calendar__year-view
+
+La vista del año, que muestra los meses de un año.
+.react-calendar__decade-view
+
+La vista de la década, que muestra los años de una década.
+.react-calendar__century-view
+
+La vista del siglo, que muestra las décadas de un siglo.
+Clases para los días, meses y años en las vistas
+.react-calendar__tile
+
+Una celda o "tile" en el calendario. Representa un día en la vista de mes, un mes en la vista de año, etc.
+.react-calendar__tile--now
+
+Aplicada a la celda que representa la fecha actual.
+.react-calendar__tile--active
+
+Aplicada a la celda que está actualmente seleccionada.
+.react-calendar__tile--range
+
+Aplicada a las celdas seleccionadas como parte de un rango.
+.react-calendar__tile--rangeStart
+
+Aplicada a la celda que marca el inicio de un rango de fechas.
+.react-calendar__tile--rangeEnd
+
+Aplicada a la celda que marca el final de un rango de fechas.
+.react-calendar__tile--weekend
+
+Aplicada a los días de fin de semana (generalmente sábado y domingo).
+.react-calendar__tile--neighboringMonth
+
+Aplicada a los días que pertenecen al mes anterior o siguiente al mes actual (días visibles para completar la cuadrícula del mes).
+Clases para la cabecera del calendario
+.react-calendar__month-view__weekdays
+
+Contenedor para los nombres de los días de la semana en la vista del mes.
+.react-calendar__month-view__weekdays__weekday
+
+Clase para un nombre de día de la semana (lunes, martes, etc.).
+.react-calendar__month-view__days
+
+Contenedor para los días en la vista del mes.
+.react-calendar__year-view__months
+
+Contenedor para los meses en la vista del año.
+.react-calendar__decade-view__years
+
+Contenedor para los años en la vista de la década.
+.react-calendar__century-view__decades
+
+Contenedor para las décadas en la vista del siglo.
+Clases para semanas y números de semana
+.react-calendar__month-view__weekNumbers
+
+Contenedor para los números de las semanas (si está habilitado showWeekNumbers).
+.react-calendar__month-view__weekNumbers__weekNumber
+
+Clase para un número de semana.
+ */

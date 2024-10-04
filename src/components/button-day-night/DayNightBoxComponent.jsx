@@ -3,7 +3,7 @@ import DayButtonsComponent from "./day-buttons/DayButtonsComponent";
 import GearBtnComponent from "./gear-button/GearBtnComponent";
 import PropTypes from "prop-types";
 import DayNightBtn from "./day-night/DayNightBtn";
-
+import "./dayNightBox.css"
 function DayNightBoxComponent({ handleChangeTheme, handleDayNight, isNightMode }) {
   const [showDayNight, setshowDayNight] = useState(false);
 
@@ -12,10 +12,10 @@ function DayNightBoxComponent({ handleChangeTheme, handleDayNight, isNightMode }
   };
 
   return (
-    <div>
+    <div className="day-night-box">
       <GearBtnComponent showDayNight={showDayNight} handleShowDayNight={handleShowDayNight} />
       {showDayNight && (
-        <div className='day-night-box'>
+        <div className='day-night-box-mini'>
           <DayNightBtn handleClick={handleDayNight} isNightMode={isNightMode} />
           {isNightMode !== "body-night" && (
             <div className='day-btns-box' data-aos="fade-down">

@@ -1,11 +1,11 @@
-import "./gearBtng.css";
+import "./gearBtn.css";
 import PropTypes from "prop-types";
 
 function GearBtnComponent({ showDayNight, handleShowDayNight }) {
   return (
     <i
       className={showDayNight ? `fa-solid fa-gear fa-spin` : `fa-solid fa-gear`}
-      style={{ color: "var(--grey)" }}
+      style={{ color: "var(--white)" }}
       onClick={() => handleShowDayNight()}
     ></i>
   );
