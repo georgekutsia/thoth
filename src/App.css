@@ -1,10 +1,12 @@
-.body-night {
+.body{
+  min-height: 100vh;
+  overflow: scroll;
+  font-weight: 300;
   font-family: 'Raleway', sans-serif;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100%;
-  overflow: scroll;
-  font-weight: 300;
+}
+.body-night {
   background-image: radial-gradient(circle at center, #899Dc4, #495D84);
   background: radial-gradient(ellipse at bottom, #1b2735, #090a0f);
   color: white;
