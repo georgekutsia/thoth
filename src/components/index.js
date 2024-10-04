@@ -5,7 +5,8 @@ export { default as ExerciseBtnComponent } from "./exercise/exercise-btn/Exercis
 
 export { default as TitleTopComponent} from "./title-top/TitleTopComponent"
 export { default as MainNavbarBtnComponent } from "./navbar/main-navbar/main-navbar-button/MainNavbarBtnComponent";
-export { default as DayNightBtn } from "./button-day-night/DayNightBtn";
+export { default as DayNightBtn } from "./button-day-night/day-night/DayNightBtn";
+export { default as DayNightBoxComponent } from "./button-day-night/DayNightBoxComponent";
 export { default as DayButtonsComponent } from "./button-day-night/day-buttons/DayButtonsComponent";
 export { default as BtnExpandComponent } from "./button-expand/BtnExpandComponent";
 export { default as GearBtnComponent } from "./button-day-night/gear-button/GearBtnComponent";

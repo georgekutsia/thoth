@@ -60,6 +60,7 @@
 --navbar-blue: rgba(31, 153, 235, 0.7);
 --navbar-violet: rgba(176, 31, 235, 0.7);
 --navbar-yellow: rgba(235, 215, 31, 0.7);;
+--navbar-greenish: rgba(0, 102, 61, 0.7);
 --navbar-green: rgba(9, 255, 157, 0.7);
 --navbar-red: rgba(226, 48, 48, 0.7);
 --navbar-orange: rgb(255, 157, 0);
@@ -122,11 +123,7 @@ button {
 i{
   cursor: pointer;
 }
-.day-night-box{
-  position: absolute;
-  top: 50px;
-  left: 10px;
-}
+
 
 
 /* Estilos para el componente MultipleChoiceTest */
@@ -332,13 +329,14 @@ i{
   max-width: 1000px;
   padding: 20px;
   height: 85vh;   
-   /*Se suma al 15vh del margen que tiene con .screen-box.   El width será del 80% pero maximo 1000px  */
+   /*Se suma al 15vh del margen que tiene con .screen-box.  */
 }
 
 .screen-box{
-  margin: -5vh auto 10vh auto;
-  width: 80%;
-  padding-top: 15vh;
+  margin: -5vh auto 0vh auto;
+  width: 60%;
+  padding-top: 20vh;
+  position: relative;
 }
 .subject-grid {
   display: grid;
@@ -401,6 +399,9 @@ i{
     grid-column: span 2;
     width: 100%;
   }
+  .screen-box{
+    width: 90%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -431,9 +432,12 @@ i{
   display: flex;
   overflow: scroll;
   gap: 20px;
+  box-shadow: 0px 2px 10px var(--light-black);
+  border-radius: 20px;
+  padding: 20px;
 }
 .exercise-file-btn{
   position: absolute;
-  z-index: 50;
-  top: 60px;
+  z-index: 20;
+  top: 50px;
 }

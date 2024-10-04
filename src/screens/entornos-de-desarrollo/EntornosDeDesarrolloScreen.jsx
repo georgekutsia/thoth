@@ -39,10 +39,11 @@ const [exercise, setExercise] = useState(false)
           key={index}
           subject={sistData.asignatura}
           exercise={sistData.ejercicio}
+          exImage={sistData.imagenEj}
           date={sistData.fecha}
           question={sistData.enunciado}
           answer={sistData.respuesta}
-          img={sistData.imagen}
+          img={sistData.imagenes}
           aosDelay={index}
         />
       ))}

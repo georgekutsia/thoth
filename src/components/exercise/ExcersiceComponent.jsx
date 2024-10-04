@@ -1,11 +1,9 @@
 import "./exercise.css"
 import PropTypes from "prop-types";
-import { motion, useScroll } from "framer-motion"
 import BtnExpandComponent from "../button-expand/BtnExpandComponent";
 import { useState } from "react";
 
-function ExcersiceComponent({subject, exercise, date, question, answer, img, aosDelay}) {
-  const { scrollYProgress } = useScroll(); 
+function ExcersiceComponent({subject, exercise,exImage, date, question, answer, img, aosDelay}) {
   const [expanded, setExpanded] = useState("exercise-box-small")
 
 
@@ -16,7 +14,7 @@ function ExcersiceComponent({subject, exercise, date, question, answer, img, aos
       setExpanded("exercise-box-big")
     }
   }
-
+console.log(answer)
   return (
     <div className={` ${expanded} exercise-box`}>
     <BtnExpandComponent expanded={expanded} handleExpand={()=>handleExpand()}/>
@@ -26,11 +24,20 @@ function ExcersiceComponent({subject, exercise, date, question, answer, img, aos
           <h4>{date}</h4>
         </section>
       <section className="exercise-section2" data-aos="fade-in" data-aos-delay={`${aosDelay}`+ "00"}>
+        <h5 className="exercise-section4">Enunciado</h5>
         <p>{question}</p>
+        <img src={exImage} alt="fotos" />
       </section>
       <section className="exercise-section3" data-aos="fade-in" data-aos-delay={`${aosDelay}`+ "00"}>
-        <motion.div style={{ scrollX : scrollYProgress}}>{answer} </motion.div>
-        <img src={img} alt="fotos" />
+          <ul>
+        <h5 className="exercise-section4">Solución</h5>
+        {answer.map((ans, index)=>(
+        <li className="li-answer"  key={index}> {ans} </li>
+        ))}
+          </ul>
+          {img.map((ans, index)=>(
+        <img key={index} src={ans} alt="fotos" />
+          ))}
       </section>
     </div>
   )
@@ -38,10 +45,11 @@ function ExcersiceComponent({subject, exercise, date, question, answer, img, aos
 ExcersiceComponent.propTypes = {
   subject: PropTypes.string.isRequired,
   exercise: PropTypes.string.isRequired,
+  exImage: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
   aosDelay: PropTypes.number.isRequired,
   question: PropTypes.string.isRequired,
-  answer: PropTypes.string.isRequired,
-  img: PropTypes.string.isRequired,
+  answer: PropTypes.array.isRequired,
+  img: PropTypes.array.isRequired,
 };
 export default ExcersiceComponent

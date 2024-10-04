@@ -39,10 +39,11 @@ const [exercise, setExercise] = useState(false)
           key={index}
           subject={sistData.asignatura}
           exercise={sistData.ejercicio}
+          exImage={sistData.imagenEj}
           date={sistData.fecha}
           question={sistData.enunciado}
           answer={sistData.respuesta}
-          img={sistData.imagen}
+          img={sistData.imagenes}
           aosDelay={index}
         />
       ))}
@@ -52,13 +53,14 @@ const [exercise, setExercise] = useState(false)
       {filteredData.map((sistData, index) => (
         <ExplanationComponent
           key={index}
-          color={"var(--light-green)"}
-          titulo={sistData.titulo}
-          explicación={sistData.explicación}
-          cine={sistData.cine}
-          cocina={sistData.cocina}
-          deporte={sistData.deporte}
-          random={sistData.random}
+          subject={sistData.asignatura}
+          exercise={sistData.ejercicio}
+          exImage={sistData.imagenEj}
+          date={sistData.fecha}
+          question={sistData.enunciado}
+          answer={sistData.respuesta}
+          img={sistData.imagenes}
+          aosDelay={index}
         />
       ))}
     </div>

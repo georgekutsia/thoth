@@ -1,44 +1,60 @@
 import { useState, useEffect } from "react";
 import MainNavbarBtnComponent from "./main-navbar-button/MainNavbarBtnComponent";
 import "./mainNavbar.css";
+import DayNightBoxComponent from "../../button-day-night/DayNightBoxComponent";
 
-function MainNavbarComponent() {
+// eslint-disable-next-line react/prop-types
+function MainNavbarComponent({ handleDayNight, handleChangeTheme, isNightMode }) {
   const [collapsed, setCollapsed] = useState(false);
   const [mainNavbarClass, setmainNavbarClass] = useState(false);
 
-  
   useEffect(() => {
-    const handleScroll = () => {
+    const handleScrollOrResize = () => {
       let navbar = document.querySelector(".main-navbar-box");
-      if(window.scrollY <= navbar.offsetHeight + 50 ){
-        setCollapsed(false); 
-        setmainNavbarClass(false)
-      } else if (window.scrollY >= navbar.offsetHeight + 51 && window.scrollY <= navbar.offsetHeight + 200) {
-        setCollapsed(true); 
-        setmainNavbarClass(false)
-
-      }  else if(window.scrollY > navbar.offsetHeight + 201){
-        setmainNavbarClass(true)
-        setCollapsed(true); 
-
-      } 
+      
+      // Detectar tamaño de la pantalla
+      if (window.innerWidth <= 900) {
+        setCollapsed(true);
+        setmainNavbarClass(true);
+      } else {
+        // Detectar el desplazamiento (scroll)
+        if (window.scrollY <= navbar.offsetHeight + 50) {
+          setCollapsed(false);
+          setmainNavbarClass(false);
+        } else if (window.scrollY >= navbar.offsetHeight + 51 && window.scrollY <= navbar.offsetHeight + 200) {
+          setCollapsed(true);
+          setmainNavbarClass(false);
+        } else if (window.scrollY > navbar.offsetHeight + 201) {
+          setCollapsed(true);
+          setmainNavbarClass(true);
+        }
+      }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    // Agregar evento para detectar scroll y cambio de tamaño
+    window.addEventListener("scroll", handleScrollOrResize);
+    window.addEventListener("resize", handleScrollOrResize);
+
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", handleScrollOrResize);
+      window.removeEventListener("resize", handleScrollOrResize);
     };
   }, []);
 
   const handleClickCollapsed = () => {
-    setCollapsed(!collapsed)
-    setmainNavbarClass(false)
+    setCollapsed(!collapsed);
+    setmainNavbarClass(false);
+  };
 
-  }
   return (
-    <div  className={`main-navbar-box ${collapsed ? "collapsed" : ""}`}  style={{width: mainNavbarClass? "0px": "", left: mainNavbarClass ? "3vw": "",}}>
-      {!collapsed &&   //no es ternario por que interfiere con el fading de AOS del primer componente al hacer scroll hacia arriba. raro
-      <>
+    <div className={`main-navbar-box ${collapsed ? "collapsed" : ""} ${mainNavbarClass ? "collapsed-side" : ""}`}>
+      {!collapsed && (
+        <>
+          <DayNightBoxComponent
+            handleDayNight={handleDayNight}
+            handleChangeTheme={handleChangeTheme}
+            isNightMode={isNightMode}
+          />
           <MainNavbarBtnComponent
             classN={"fa-solid fa-server"}
             dataI={"fa-server"}
@@ -88,6 +104,14 @@ function MainNavbarComponent() {
             aosFading={"fade-right"}
           />
           <MainNavbarBtnComponent
+            classN={"fa-solid fa-calendar-days"}
+            dataI={"fa-calendar-days"}
+            navL={"/calendario"}
+            btnT={"Clases y videos "}
+            aosDelay={"300"}
+            aosFading={"fade-right"}
+          />
+          <MainNavbarBtnComponent
             classN={"fa-solid fa-list-check"}
             dataI={"fa-list-check"}
             navL={"/examenes"}
@@ -103,18 +127,18 @@ function MainNavbarComponent() {
             aosDelay={"300"}
             aosFading={"fade-right"}
           />
-      </>
-      }
-      {collapsed &&
+        </>
+      )}
+      {collapsed && (
         <MainNavbarBtnComponent
-            classN={"fa-solid fa-bars"}
-            dataI={"fa-bars"}
-            btnT={"Abrir Pestañas "}
-            aosDelay={"100"}
-            aosFading={"zoom-in-down"}
-            handleClick={handleClickCollapsed}
-          />
-      }
+          classN={"fa-solid fa-bars"}
+          dataI={"fa-bars"}
+          btnT={"Abrir Pestañas "}
+          aosDelay={"100"}
+          aosFading={"zoom-in-down"}
+          handleClick={handleClickCollapsed}
+        />
+      )}
     </div>
   );
 }

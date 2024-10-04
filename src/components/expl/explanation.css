@@ -1,10 +1,9 @@
 /* Ajuste general para la caja de explicación */
 .explanation-box {
-  margin-top: 5vh;
+  margin-top: 0.5vh;
   border-bottom: 1px solid white;
   padding-bottom: 20px;
   border-bottom: 2px solid var(--black);
-
 }
 
 #expl-section1 {
@@ -19,7 +18,7 @@
 #expl-section3 {
   display: flex;
   text-align: center;
-  justify-content: end;
+  justify-content: right;
   gap: calc(10px + 0.3vw);
   width: 80%;
   margin:  auto;
@@ -36,7 +35,7 @@
 
 .explanation-text {
   padding: 20px;
-  width: 70%;
+  width: 100%;
   background-color: rgba(255, 166, 0, 0.099);
   font-size: calc(12px + 0.3vw);
   max-height: 150px;
@@ -47,8 +46,11 @@
   text-indent: 10px;
   box-shadow: 0 1px 10px var(--light-white);
   margin: 10px 5px;
+  transition: 0.3s ease-in-out;
 }
-
+.explanation-text:hover{
+  scale:1.2
+}
 .extra-icons {
   position: relative;
   font-size: calc(20px + 1vw);

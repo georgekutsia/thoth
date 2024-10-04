@@ -7,12 +7,12 @@ export { default as programacionTest } from "./programacionTest.js";
 export { default as sistemasInformaticosTest } from "./sistemasInformaticosTest.js";
 
 //Data
-export { default as dbsData } from "./dbsData.js";
-export { default as entData } from "./entornosData.js";
-export { default as ldmData } from "./lenguajesData.js";
-export { default as progData } from "./programacionData.js";
-export { default as sisData } from "./sistemasData.js";
-export { default as empData } from "./empleabilidadData.js";
+export { default as dbsData } from "./data-conceptos/dbsData.js";
+export { default as entData } from "./data-conceptos/entornosData.js";
+export { default as ldmData } from "./data-conceptos/lenguajesData.js";
+export { default as progData } from "./data-conceptos/programacionData.js";
+export { default as sisData } from "./data-conceptos/sistemasData.js";
+export { default as empData } from "./data-conceptos/empleabilidadData.js";
 
 
 // ejercicios

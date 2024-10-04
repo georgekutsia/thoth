@@ -6,7 +6,7 @@
   justify-content: space-between;
   border-radius: 10px;
   gap: 5px;
-  border: 9px outset var(--grey);
+  border: 9px outset var(--black);
   align-items: center;
   position: relative;
 }
@@ -16,7 +16,7 @@
 
 }
 .exercise-box-big{
-  min-width: 75vw;
+  min-width: 48vw;
   transition: 0.3s ease-in-out;
 }
 .exercise-box-expanded{
@@ -27,7 +27,7 @@
   justify-content: space-between;
   border-radius: 10px;
   gap: 5px;
-  border: 9px outset var(--grey);
+  border: 9px outset var(--black);
   min-width: 270px;
   align-items: center;
 }
@@ -36,40 +36,71 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 2px solid var(--dark-grey);
+  border: 2px solid var(--light-black);
   padding: 15px;
   border-radius: 10px;
   height: 10px;
   width: 75%;
   margin-right: 14%;
-
+  backdrop-filter: grayscale(30%);
 }
+.exercise-section4{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 2px solid var(--light-black);
+  border-top: none;
+  border-left: none;
+  padding: 5px;
+  border-radius: 10px;
+  height: 10px;
+  width: 100px;
+  backdrop-filter: grayscale(30%);
+}
+
 .exercise-section2{
   align-items: center;
   justify-content: space-between;
-  border: 1px solid white;
-  padding: 10px;
+  border: 1px solid #ffffff;
+  padding: 25px 15px; 
   border-radius: 10px;
-  height: 130px;
+  min-height: 120px;
   text-align: justify;
   text-indent: 10px;
-  border: 2px solid var(--dark-grey);
+  border: 2px solid var(--light-black);
   width: 89%;
-
-
+  backdrop-filter: grayscale(30%);
+  overflow: scroll;
 }
 .exercise-section3{
   border: 1px solid white;
-  padding: 10px;
+  padding: 25px 15px;
+  padding-left: 20px;
   border-radius: 10px;
   min-height: 150px;
-  overflow: scroll;
   text-align: justify;
   text-indent: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 2px solid var(--dark-grey);
+  border: 2px solid var(--light-black);
   width: 89%;
-
+  backdrop-filter: grayscale(30%);
+  overflow: scroll;
 }
+
+.li-answer{
+  list-style:circle;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .exercise-box-big{
+    min-width: 78vw;
+  }
+  }
