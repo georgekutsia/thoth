@@ -23,7 +23,6 @@ function SistemasInformáticosScreen() {
 
     }
   }
-
   return (
     <div className="screen-box">
         <div className="exercise-file-btn" data-aos="fade-in" data-aos-delay="600">
@@ -66,5 +65,4 @@ function SistemasInformáticosScreen() {
     </div>
   );
 }
-
 export default SistemasInformáticosScreen;
