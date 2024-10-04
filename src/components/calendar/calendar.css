@@ -14,6 +14,13 @@
   flex-direction: column;
   gap: calc(20px + 3vh);
 }
+.calendar-class {
+  transition: 0.3s ease-in-out;
+}
+.calendar-class:hover {
+  scale: 1.05;
+  color: var(--blue);
+}
 .custom-calendar .react-calendar__tile {
   background-color: #f0f0f0; /* Fondo personalizado para los días */
   color: #333;

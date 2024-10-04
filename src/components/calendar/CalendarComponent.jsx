@@ -14,20 +14,19 @@ function CalendarComponent() {
 
   const renderInfoForDate = (date) => {
     const formattedDate = formatDate(date);
-    console.log("Fecha seleccionada:", formattedDate);
 
     if (videData[formattedDate]) {
       return (
         <div>
-          <h3>Contenido para {formattedDate}:</h3>
+          {/* <h3>Contenido para {formattedDate}:</h3> */}
+          <h3>Links y Videos de clase</h3>
           <ul className="calendar-links">
             {videData[formattedDate].map((item, index) => {
               const iconClass = (item.clase === "Programación" || item.clase === "Lenguaje de marcas" || item.clase === "Tutoria Lenguaje de marcas") 
-                ? "fa-solid fa-cloud-arrow-down" 
-                : "fa-solid fa-link";
-
+                ? "fa-solid fa-cloud-arrow-down " 
+                : "fa-solid fa-link ";
               return (
-                <a href={item.url} key={index} target="_blank">
+                <a href={item.url} key={index} target="_blank" className="calendar-class" data-aos="flip-left">
                   {item.url && <i className="fa-solid fa-film"></i>} {item.clase} <i className={iconClass}></i>
                 </a>
               );
