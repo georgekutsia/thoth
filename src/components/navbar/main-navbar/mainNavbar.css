@@ -6,17 +6,20 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  padding: 5px 10px;
+  padding: 10px 20px;
   margin-top: calc(10px + 2vh);
   border-radius: 30px;
   z-index: 20; 
   transition: all 0.5s ease-in-out;
   backdrop-filter: blur(20px);
+  background: rgb(130,212,195);
+  background: radial-gradient(circle, rgba(130,212,195,0.5) 0%, rgba(0,36,79,0.5) 100%);
 }
 
-.collapsed-side{
+.collapsed-side {
   left: 15vw;
 }
+
 .navLinkBtn {
   position: relative;
   border: none;
@@ -25,8 +28,8 @@
   font-size: calc(16px + 1.9vw);
   cursor: pointer;
   transition: transform 0.3s ease, color 0.3s ease;
+  display: inline-block; /* Asegura que los botones se comporten como elementos en línea */
 }
-
 .navLinkBtn::after {
   content: attr(data-icon);
   position: absolute;
@@ -187,5 +190,6 @@
 }
 .main-navbar-box {
   margin-top: calc(0vh);
+  flex-wrap: wrap;
 }
 }

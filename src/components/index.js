@@ -3,6 +3,7 @@ export { default as MainNavbarComponent } from "./navbar/main-navbar/MainNavbarC
 export { default as ExplanationComponent } from "./expl/ExplanationComponent";
 export { default as ExerciseBtnComponent } from "./exercise/exercise-btn/ExerciseBtnComponent";
 
+export { default as CarouselGalleryGallery} from "./foto-gallery/carousel-gallery/CarouselGalleryGallery"
 export { default as TitleTopComponent} from "./title-top/TitleTopComponent"
 export { default as MainNavbarBtnComponent } from "./navbar/main-navbar/main-navbar-button/MainNavbarBtnComponent";
 export { default as DayNightBtn } from "./button-day-night/day-night/DayNightBtn";
@@ -10,6 +11,8 @@ export { default as DayNightBoxComponent } from "./button-day-night/DayNightBoxC
 export { default as DayButtonsComponent } from "./button-day-night/day-buttons/DayButtonsComponent";
 export { default as BtnExpandComponent } from "./button-expand/BtnExpandComponent";
 export { default as GearBtnComponent } from "./button-day-night/gear-button/GearBtnComponent";
+export { default as TeachersContactComponent } from "./contact-info/teachers-contact/TeachersContactComponent";
+export { default as TeacherComponent } from "./contact-info/teachers-contact/teacher/TeacherComponent";
 
 export { default as ExtraExplanationComponent } from "./expl/expl-versions/ExtraExplanationComponent";
 export { default as FilterComponent } from "./filter/FilterComponent";

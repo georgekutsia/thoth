@@ -1,0 +1,35 @@
+.teachers-big-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 30px; 
+}
+.teacher-box{
+  display: flex;
+  border-radius: 20px;
+  border: 3px solid var(--dark-grey) ;
+  padding: 10px 14px;
+  width: 400px;
+  background: rgb(34,139,195);
+  background: linear-gradient(0deg, rgba(34,139,195,1) 0%, rgba(27,152,182,1) 10%, rgba(9,95,135,1) 48%, rgba(7,37,43,1) 100%);
+  color: var(--white);
+}
+.teacher-box img{
+  width: 80px;
+  border-radius: 20px;
+}
+.teacher-box div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-right: 10px;
+}
+@media (max-width: 768px) {
+  .teacher-box{
+    border-radius: 20px;
+    border: 1px solid var(--dark-grey) ;
+    padding: 10px 14px;
+    max-width: 80vw;
+    background-color: var(--black);
+  }
+}

@@ -34,7 +34,7 @@ const renderTooltip = (props) => (
 MainNavbarBtnComponent.propTypes = {
   dataI: PropTypes.string.isRequired,
   classN: PropTypes.string.isRequired,
-  navL: PropTypes.string.isRequired,
+  navL: PropTypes.string,
   btnT: PropTypes.string.isRequired,
   aosDelay: PropTypes.string.isRequired,
   aosFading: PropTypes.string.isRequired,

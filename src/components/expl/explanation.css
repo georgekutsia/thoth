@@ -1,9 +1,12 @@
-/* Ajuste general para la caja de explicación */
+
+
 .explanation-box {
   margin-top: 0.5vh;
   border-bottom: 1px solid white;
   padding-bottom: 20px;
   border-bottom: 2px solid var(--black);
+  position: relative;
+  transition: width 0.6s ease-in-out, all 0.3s ease-in-out; 
 }
 
 #expl-section1 {
@@ -12,8 +15,15 @@
   align-items: center;
   justify-content: space-between;
   margin: 0px auto;
-}
+  background: radial-gradient(circle at 20% 0%, #ffffff41, #e2e2e248, #c6c6c646, #aaaaaa49, #8f8f8f30, #76767617, #7f7f7f1e, #45454513); /* made at https://learnui.design/tools/gradient-generator.html */
+  transition: 0.3s ease-in-out;
+  border-radius: 10px;
+  box-shadow: 0 1px 10px var(--light-white);
 
+}
+#expl-section1:hover{
+  scale:1.2
+}
 
 #expl-section3 {
   display: flex;
@@ -28,29 +38,22 @@
 
 .explanation-title {
   padding: 5px 10px;
-  font-size: calc(16px + 0.5vw);
+  font-size: calc(12px + 0.5vw);
   max-width: 300px;
   cursor: pointer;
 }
 
 .explanation-text {
-  padding: 20px;
   width: 100%;
-  background-color: rgba(255, 166, 0, 0.099);
   font-size: calc(12px + 0.3vw);
-  max-height: 150px;
-  min-height: 50px;
+  height: 150px;
   overflow: scroll;
-  border-radius: 10px;
   text-align: justify;
   text-indent: 10px;
-  box-shadow: 0 1px 10px var(--light-white);
-  margin: 10px 5px;
+  padding: 20px;
   transition: 0.3s ease-in-out;
 }
-.explanation-text:hover{
-  scale:1.2
-}
+
 .extra-icons {
   position: relative;
   font-size: calc(20px + 1vw);
@@ -58,6 +61,7 @@
   background-color: transparent;
   color: var(--light-grey);
   cursor: pointer;
+  margin-left: 10px;
   
 }
 
@@ -144,12 +148,18 @@
 .fa-folder-open::after {
   content: "\f07c";
   color: var(--navbar-blue);
-
 }
 
 .fa-folder-open:hover::after {
   color: var(--blue);
+}
+.fa-address-book::after {
+  content: "\f2b9";
+  color: var(--navbar-green);
+}
 
+.fa-address-book:hover::after {
+  color: var(--green);
 }
 
 /* Ajustes para dispositivos pequeños */

@@ -4,3 +4,7 @@
   right: 12px;
   top: 12px;
 }
+.btn-expand:hover{
+scale: 1.05;
+color: var(--blue);
+}

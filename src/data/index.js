@@ -22,3 +22,6 @@ export { default as entEj1 } from "./ejercicios/año1/entEj1.js";
 export { default as langEj1 } from "./ejercicios/año1/langEj1.js";
 export { default as empEj1 } from "./ejercicios/año1/empEj1.js";
 export { default as sisEj1 } from "./ejercicios/año1/sisEj1.js";
+
+
+export { default as teachersData } from "./teachersData";

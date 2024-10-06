@@ -1,5 +1,5 @@
 
-import { ExerciseBtnComponent, ExplanationComponent, FilterComponent } from "../../components"
+import { ExerciseBtnComponent, ExplanationComponent, FilterComponent, TeachersContactComponent } from "../../components"
 import ExcersiceComponent from "../../components/exercise/ExcersiceComponent";
 import { useState } from "react";
 import { empData, empEj1 } from "../../data";
@@ -31,6 +31,8 @@ const [exercise, setExercise] = useState(false)
           handle={()=>handleExercise()}
           btnT={"Ejercicios"}
         />
+        <TeachersContactComponent />
+
     </div>
     {exercise &&
     <div className="exercise-map-box" data-aos="fade-down">
@@ -50,6 +52,8 @@ const [exercise, setExercise] = useState(false)
     </div>
     }
       <FilterComponent searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
+      <div  className="explanation-map-box">
+
       {filteredData.map((sistData, index) => (
         <ExplanationComponent
           key={index}
@@ -62,6 +66,7 @@ const [exercise, setExercise] = useState(false)
           random={sistData.random}
         />
       ))}
+    </div>
     </div>
   )
 }
