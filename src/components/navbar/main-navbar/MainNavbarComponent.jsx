@@ -12,12 +12,10 @@ function MainNavbarComponent({ handleDayNight, handleChangeTheme, isNightMode })
     const handleScrollOrResize = () => {
       let navbar = document.querySelector(".main-navbar-box");
       
-      // Detectar tamaño de la pantalla
       if (window.innerWidth <= 900) {
         setCollapsed(true);
         setmainNavbarClass(true);
       } else {
-        // Detectar el desplazamiento (scroll)
         if (window.scrollY <= navbar.offsetHeight + 50) {
           setCollapsed(false);
           setmainNavbarClass(false);

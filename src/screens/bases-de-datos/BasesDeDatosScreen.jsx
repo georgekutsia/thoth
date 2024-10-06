@@ -1,4 +1,4 @@
-import { ExerciseBtnComponent, ExplanationComponent, FilterComponent } from "../../components";
+import { CarouselGalleryGallery, ExerciseBtnComponent, ExplanationComponent, FilterComponent, TeachersContactComponent } from "../../components";
 import ExcersiceComponent from "../../components/exercise/ExcersiceComponent";
 import { dbsData, dbsEj1 } from "../../data";
 import { useState } from "react";
@@ -24,12 +24,13 @@ const [exercise, setExercise] = useState(false)
   }
   return (
     <div className="screen-box">
-            <div className="exercise-file-btn" data-aos="fade-in" data-aos-delay="600">
+      <div className="exercise-file-btn" data-aos="fade-in" data-aos-delay="600">
         <ExerciseBtnComponent
           icon={`fa-solid  ${exerIcon} extra-icons`}
           handle={()=>handleExercise()}
           btnT={"Ejercicios"}
         />
+        <TeachersContactComponent />
     </div>
     {exercise &&
     <div className="exercise-map-box" data-aos="fade-down">
@@ -48,6 +49,7 @@ const [exercise, setExercise] = useState(false)
       ))}
     </div>
     }
+      <div  className="explanation-map-box">
       <FilterComponent searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
       {filteredData.map((sistData, index) => (
         <ExplanationComponent
@@ -61,6 +63,7 @@ const [exercise, setExercise] = useState(false)
           random={sistData.random}
         />
       ))}
+      </div>
     </div>
   );
 }
