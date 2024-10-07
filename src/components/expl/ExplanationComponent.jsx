@@ -27,7 +27,7 @@ function ExplanationComponent({ color, titulo, explicación, cine, cocina, depor
   <section id="expl-section1">
     <BtnExpandComponent handleExpand={handleExpand} />
     <p style={{ backgroundColor: color }} className="explanation-text">
-      <title className="explanation-title" onClick={() => handleExplType(0)}>{titulo}</title>
+      <header className="explanation-title" onClick={() => handleExplType(0)}>{titulo}</header>
       {explType === 0 && explicación}
       {explType === 1 && cocina}
       {explType === 2 && cine}

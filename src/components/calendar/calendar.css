@@ -1,7 +1,7 @@
 .calendar-box{
   align-items: top;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   padding-bottom: 35vh;
 }
 .custom-calendar {
@@ -12,7 +12,8 @@
   margin-top: 30px;
   display: flex;
   flex-direction: column;
-  gap: calc(20px + 3vh);
+  gap: calc(10px + 1vh);
+  justify-content: center;
 }
 .calendar-class {
   transition: 0.3s ease-in-out;
@@ -42,6 +43,7 @@
 .calendar-url{
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 30vw;
 }
 /* 

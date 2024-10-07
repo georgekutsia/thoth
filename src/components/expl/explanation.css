@@ -37,9 +37,10 @@
 }
 
 .explanation-title {
-  padding: 5px 10px;
+  padding-bottom:  10px;
   font-size: calc(12px + 0.5vw);
   max-width: 300px;
+  font-weight: 700;
   cursor: pointer;
 }
 

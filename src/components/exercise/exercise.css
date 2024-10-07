@@ -9,6 +9,9 @@
   border: 9px outset var(--black);
   align-items: center;
   position: relative;
+  backdrop-filter: grayscale(30%);
+
+
 }
 .exercise-box-small{
   min-width: 270px;
@@ -42,7 +45,7 @@
   height: 10px;
   width: 75%;
   margin-right: 14%;
-  backdrop-filter: grayscale(30%);
+  background: linear-gradient(150deg, #f9f9f910, #d4dad630, #afbbb630, #8b9d9b30, #69808330, #49636f30, #2c475c30, #142b4e30); /* made at https://learnui.design/tools/gradient-generator.html */
 }
 .exercise-section4{
   display: flex;
@@ -59,7 +62,7 @@
   border-radius: 10px;
   height: 10px;
   width: 100px;
-  backdrop-filter: grayscale(30%);
+  background: linear-gradient(150deg, #f9f9f910, #d4dad630, #afbbb630, #8b9d9b30, #69808330, #49636f30, #2c475c30, #142b4e30); /* made at https://learnui.design/tools/gradient-generator.html */
 }
 
 .exercise-section2{
@@ -73,8 +76,10 @@
   text-indent: 10px;
   border: 2px solid var(--light-black);
   width: 89%;
-  backdrop-filter: grayscale(30%);
+  backdrop-filter: grayscale(0%);   /*Por alguna razón si quito o esto cambia la posición de section 4  */
   overflow: scroll;
+  background: linear-gradient(150deg, #f9f9f910, #d4dad630, #afbbb630, #8b9d9b30, #69808330, #49636f30, #2c475c30, #142b4e30); /* made at https://learnui.design/tools/gradient-generator.html */
+  
 }
 .exercise-section3{
   border: 1px solid white;
@@ -89,8 +94,10 @@
   justify-content: space-between;
   border: 2px solid var(--light-black);
   width: 89%;
-  backdrop-filter: grayscale(30%);
+  backdrop-filter: grayscale(0%);   /*Por alguna razón si quito o esto cambia la posición de section 4  */
+
   overflow: scroll;
+  background: linear-gradient(150deg, #f9f9f910, #d4dad630, #afbbb630, #8b9d9b30, #69808330, #49636f30, #2c475c30, #142b4e30); /* made at https://learnui.design/tools/gradient-generator.html */
 }
 
 .li-answer{
