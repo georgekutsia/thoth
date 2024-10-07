@@ -1,7 +1,7 @@
 const teachers = [
   { 
     img: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1728075480/Captura_de_pantalla_2024-10-04_a_las_21.57.14_uz2fty.png",
-    subject:"Programación y Lenguaje de Marcas",
+    subject:"Programación, entornos de desarrollo y Lenguaje de Marcas",
     name: "Jose David Ventura Roldán",
     email:"josedavid.ventura@thepower.education"
   },    { 

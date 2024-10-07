@@ -1,6 +1,6 @@
 const videos = {
 
-  "Tue Sep 24 2024": [{ clase: "Fundamentos de bases de datos (MPO)", url: "" }],
+  "Tue Sep 24 2024": [{ clase: "Fundamentos de bases de datos (MPO)", url: "https://drive.google.com/file/d/1YnuNZpgUTg8_Ok6fj2Sh0_6t5q4fE3pe/view" }],
   "Wed Sep 25 2024": [
     { clase: "Tutoria Entornos", url: "" },
     { clase: "Tutoria Fundamentos de bases de datos (MPO)", url: "" },
@@ -19,24 +19,25 @@ const videos = {
   "Mon Sep 30 2024": [
     { clase: "Bases de datos", url: "https://drive.google.com/file/d/1o_NuN6YD1c00ndKZymbJndEIXA6j9nyz/view" },
     { clase: "Itinerario Para Empleabilidad", url: "https://drive.google.com/file/d/1lMMGaySuOAH-fR7OxLcyRfSf_L8siriX/view" },
-    { clase: "Entornos", url: "" }
+    { clase: "Entornos", url: "https://thepowerfp.alexiaclassroom.com/pluginfile.php/27891/mod_folder/content/0/TUTORIA%20COLECTIVA%20ENTORNOS%20DE%20DESARROLLO%20%282024-09-30%2017_07%20GMT%2B2%29.mp4?forcedownload=1" }
   ],
-  "Tue Oct 01 2024": [{ clase: "Fundamentos de bases de datos (MPO)", url: "" }],
+  "Tue Oct 01 2024": [{ clase: "Fundamentos de bases de datos (MPO)", url: "https://drive.google.com/drive/folders/1NNrpOwCg2xaPjnifOtq7Gy1eG-fYaPUs" }],
   "Wed Oct 02 2024": [
-    { clase: "Tutoria Entornos", url: "" },
-    { clase: "Tutoria Fundamentos de bases de datos (MPO)", url: "https://drive.google.com/file/d/1V0zC84uVaWukbzLBnhqGUexZF9KO-URB/view" },
+    { clase: "Tutoria Entornos", url: "https://thepowerfp.alexiaclassroom.com/pluginfile.php/27891/mod_folder/content/0/TUTORIA%20INDIVIDUAL%20DAW%20%282024-10-02%2015_04%20GMT%2B2%29%20ERRORES%20XAMPP.mp4?forcedownload=1" },
+    { clase: "Tutoria Fundamentos de bases de datos (MPO)", url: "https://drive.google.com/drive/folders/1-K8_JWzgKL4CQomt3UlMM8tBjUVYciEr" },
     { clase: "Tutoria Bases de datos", url: "https://drive.google.com/file/d/1V0zC84uVaWukbzLBnhqGUexZF9KO-URB/view" }
   ],
-
   "Thu Oct 03 2024": [
     { clase: "Lenguaje de marcas", url:   "https://thepowerfp.alexiaclassroom.com/pluginfile.php/26043/mod_folder/content/0/TUTORIA%20COLECTIVA%20LAM%20DAW%20%282024-10-03%2015_00%20GMT%2B2%29.mp4?forcedownload=1" },
     { clase: "Sistemas informáticos", url: "03.10.2024.Clase en directo. Unidad1" },
     { clase: "Tutoria Lenguaje de marcas", url: "https://thepowerfp.alexiaclassroom.com/pluginfile.php/26043/mod_folder/content/0/TUTORIA%20INDIVIDUAL%20LM%20DAW%20%282024-10-03%2017_03%20GMT%2B2%29.mp4?forcedownload=1"}
   ],
   "Fri Oct 04 2024": [
-    { clase: "Programación", url: "" },
-    { clase: "Tutoria Itinerario Para Empleabilidad", url: "" },
-    { clase: "Tutoria Sistemas informáticos", url: "" }
+    { clase: "Programación", url: "https://thepowerfp.alexiaclassroom.com/pluginfile.php/26095/mod_folder/content/0/TUTORIA%20COLECTIVA%20PROGRAMACION%20DAW%20%282024-10-04%2015_13%20GMT%2B2%29.mp4?forcedownload=1" },
+    { clase: "Tutoria Itinerario Para Empleabilidad", url: "https://drive.google.com/file/d/1yaau2m9-B1m1tmJvDNf6rasfe4viRrMS/view" },
+    { clase: "Tutoria Sistemas informáticos", url: "https://drive.google.com/file/d/1qPjWcBf-F8ww5lYSiJWXtRUPNrJvJn51/view" },
+    { clase: "Tutoria Extra Instalación MySQL", url: "https://drive.google.com/file/d/1jLBaYQbS23H1guGf3FnHLS5Bk3nxAS8r/view" },
+    { clase: "Programación Tutoría Colectiva", url: "https://thepowerfp.alexiaclassroom.com/pluginfile.php/26095/mod_folder/content/0/TUTORIA%20INDIVIDUAL%20PROGRAMACION%20DAW%20%282024-10-04%2019_17%20GMT%2B2%29.mp4?forcedownload=1" },
   ],
   "Mon Oct 07 2024": [
     { clase: "Bases de datos", url: "" },

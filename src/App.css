@@ -13,7 +13,7 @@
 }
 .body-day {
   background-image: radial-gradient(circle at center, #899Dc4, #0759fc);
-  background: radial-gradient(ellipse at bottom, #ffffff, #fffdf0);
+  background: radial-gradient(ellipse at bottom, #ffffff, #edfdff);
   color:  black;
 }
 .body-day-1 {
@@ -451,4 +451,15 @@ i{
   flex-wrap: wrap;
   gap: 10px;
   justify-content: space-evenly;
+}
+
+.horarios-clases{
+  display: flex;
+  width: 400px;
+  margin: auto;
+  margin-top: -120px;
+  transition: 0.5s ease-in-out;
+}
+.horarios-clases:hover{
+  scale: 1.8;
 }
