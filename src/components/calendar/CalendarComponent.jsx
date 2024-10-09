@@ -19,6 +19,7 @@ function CalendarComponent() {
       return (
         <div>
           {/* <h3>Contenido para {formattedDate}:</h3> */}
+          
           <h3>Links y Videos de clase</h3>
           <ul className="calendar-links">
             {videData[formattedDate].map((item, index) => {

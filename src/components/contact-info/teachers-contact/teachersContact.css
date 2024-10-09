@@ -3,6 +3,9 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 30px; 
+  backdrop-filter: blur(20px);
+  padding: 10px;
+  border-radius: 20px;
 }
 .teacher-box{
   display: flex;

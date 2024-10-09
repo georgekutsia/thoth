@@ -453,12 +453,15 @@ i{
 }
 
 .horarios-clases{
-  display: flex;
   width: calc(200px + 10vw);
-  margin: auto;
-  margin-top: -120px;
   transition: 0.5s ease-in-out;
+  margin: 30px 0px;
 }
 .horarios-clases:hover{
   scale: 1.8;
+}
+
+.calendar-class-box{
+  align-items: center;
+  text-align: center;
 }

@@ -16,10 +16,10 @@ const teachers = [
     email:"carlos.moreno-manzanaro@thepower.education"
   },
   { 
-    img: "",
-    subject:"",
-    name: "",
-    email:""
+    img: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1728314007/chatgpt_hiacje.png",
+    subject:"Todas las asignaturas y lo que no son asignaturas",
+    name: "ChatGPT",
+    email:"https://chatgpt.com/"
   },
 ]
 
