@@ -102,6 +102,24 @@
   
 
   --exercise: rgb(42, 42, 46);
+
+
+
+
+  --hor-entornos1:rgba(68,109,46,255);
+  --hor-entornos2:rgba(211,241,195,255);
+  --hor-bases1:rgba(255,44,147,255);
+  --hor-bases2:rgba(255,233,247,255);
+  --hor-itinerario1:rgba(105,22,156,255);
+  --hor-itinerario2:rgba(240,226,255,255);
+  --hor-fundamentos1:rgba(255,118,49,255);
+  --hor-fundamentos2:rgba(255,238,223,255);
+  --hor-lenguaje1:rgba(255,222,78,255);
+  --hor-lenguaje2:rgba(253,255,209,255);
+  --hor-programacion1:rgba(218,218,218,255);
+  --hor-programacion2:rgba(242,242,242,255);
+  --hor-sistemas1:rgba(47,192,246,255);
+  --hor-sistemas2:rgba(220,234,255,255);
 }
 
 * {
@@ -452,14 +470,6 @@ i{
   justify-content: space-evenly;
 }
 
-.horarios-clases{
-  width: calc(200px + 10vw);
-  transition: 0.5s ease-in-out;
-  margin: 30px 0px;
-}
-.horarios-clases:hover{
-  scale: 1.8;
-}
 
 .calendar-class-box{
   align-items: center;

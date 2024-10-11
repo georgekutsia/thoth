@@ -4,6 +4,10 @@
   top: calc(20px + 4vh);
   display: flex;
   flex-direction: column;
+  z-index: 80;
+  backdrop-filter: blur(20px);
+  padding: 10px;
+  border-radius: 15px;
 }
 
 .fa-gear{

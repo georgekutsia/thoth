@@ -15,13 +15,13 @@ const renderTooltip = (props) => (
 
   return (
 <NavLink 
-  to={navL} 
-  data-icon={dataI} 
-  data-aos={aosFading}  
-  data-aos-delay={aosDelay}
-  onClick={() => handleClick()}
-  className={({ isActive }) => 
-    isActive ? "navLinkBtn active-nav-btn" : "navLinkBtn"
+    to={navL} 
+    data-icon={dataI} 
+    data-aos={aosFading}  
+    data-aos-delay={aosDelay}
+    onClick={() => handleClick()}
+    className={({ isActive }) => 
+      isActive ? "navLinkBtn active-nav-btn" : "navLinkBtn"
   }
 >
   <OverlayTrigger placement="bottom" delay={{ hide: 200 }} overlay={renderTooltip}>

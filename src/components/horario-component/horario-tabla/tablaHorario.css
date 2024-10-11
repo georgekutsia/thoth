@@ -1,0 +1,95 @@
+.tabla-box{
+  
+}
+.horarios-table{
+  transition: 0.5s ease-in-out;
+  margin: 30px 0px;
+  position: absolute;
+  z-index: 50;
+  backdrop-filter: blur(40px);
+  background-color: rgb(40, 40, 40);
+  font-size: calc(10px + 0.4vw);
+}
+
+.horarios-table-thead-tr th{
+  width: 30vw;
+}
+
+.horarios-table-tbody-tr td{
+height: 50px;
+}
+.tb-entornos {
+  background: linear-gradient(to right, green 0%, green 53%, red 53%);
+  background-size: 200% 100%;
+  background-position: right;
+  transition: background-position 0.5s ease-in-out;
+}
+.tb-entornos:hover {
+  background-position: left;
+}
+
+.tb-entornos {
+  background: linear-gradient(to right, var(--hor-entornos1) 0%, var(--hor-entornos1) 53%, var(--hor-entornos2) 53%);
+  
+
+}
+.tb-entornos:hover {
+  background-position: left;
+  color: white;
+  text-shadow: 1px 1px black;
+
+}
+.tb-programacion {
+  background: linear-gradient(to right, var(--hor-programacion1) 0%, var(--hor-programacion1) 53%, var(--hor-programacion2) 53%);
+  
+
+}
+.tb-bases {
+  background: linear-gradient(to right, var(--hor-bases1) 0%, var(--hor-bases1) 53%, var(--hor-bases2) 53%);
+  
+
+}
+.tb-itinerario {
+  background: linear-gradient(to right, var(--hor-itinerario1) 0%, var(--hor-itinerario1) 53%, var(--hor-itinerario2) 53%);
+  
+
+}
+.tb-lenguaje {
+  background: linear-gradient(to right, var(--hor-lenguaje1) 0%, var(--hor-lenguaje1) 53%, var(--hor-lenguaje2) 53%);
+  
+
+}
+.tb-sistemas {
+  background: linear-gradient(to right, var(--hor-sistemas1) 0%, var(--hor-sistemas1) 53%, var(--hor-sistemas2) 53%);
+  
+
+}
+.tb-fundamentos {
+  background: linear-gradient(to right, var(--hor-fundamentos1) 0%, var(--hor-fundamentos1) 53%, var(--hor-fundamentos2) 53%);
+  
+
+}
+
+.tb-style{
+  background-size: 200% 100%;
+  background-position: right;
+  transition: background-position 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition-delay: text-shadow 0.5s;
+  color: black;
+  font-weight: 300;
+  padding: 5px;
+}
+
+.tb-style:hover{
+  background-position: left;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+@media (max-width: 480px) {
+  .horarios-table{
+    font-size: calc(11px);
+  }
+  .tb-style{
+    padding: 3px;
+  }
+}

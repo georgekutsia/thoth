@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import './App.css';
-import { DayNightBoxComponent, MainNavbarComponent } from './components';
+import { MainNavbarComponent } from './components';
 import Routers from './Routers';
 import { Context } from './shared/context';
-import CalendarComponent from './components/calendar/CalendarComponent';
-import CalendarVIdeosScreen from './screens/calendar-videos/CalendarVIdeosScreen';
 
 function App() {
   const [isNightMode, setIsNightMode] = useState(() => {

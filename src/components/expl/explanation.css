@@ -63,7 +63,6 @@
   color: var(--light-grey);
   cursor: pointer;
   margin-left: 10px;
-  
 }
 
 .extra-icons::after {
@@ -160,6 +159,14 @@
 }
 
 .fa-address-book:hover::after {
+  color: var(--green);
+}
+.fa-calendar::after {
+  content: "\f133";
+  color: var(--navbar-yellow);
+}
+
+.fa-calendar:hover::after {
   color: var(--green);
 }
 

@@ -40,15 +40,15 @@ const videos = {
     { clase: "Programación Tutoría Colectiva", url: "https://thepowerfp.alexiaclassroom.com/pluginfile.php/26095/mod_folder/content/0/TUTORIA%20INDIVIDUAL%20PROGRAMACION%20DAW%20%282024-10-04%2019_17%20GMT%2B2%29.mp4?forcedownload=1" },
   ],
   "Mon Oct 07 2024": [
-    { clase: "Bases de datos", url: "" },
-    { clase: "Itinerario Para Empleabilidad", url: "" },
+    { clase: "Bases de datos", url: "https://drive.google.com/file/d/1URXkdx-3IVy4ijlWLUMPKXO5l7eDwraA/view" },
+    { clase: "Itinerario Para Empleabilidad", url: "https://drive.google.com/file/d/17TYVFqNksftkf_HvdHCE0MpJO3E0Cape/view" },
     { clase: "Entornos", url: "" }
   ],
-  "Tue Oct 08 2024": [{ clase: "Fundamentos de bases de datos (MPO)", url: "" }],
+  "Tue Oct 08 2024": [{ clase: "Fundamentos de bases de datos (MPO)", url: "https://drive.google.com/file/d/1tIB33UXkdJnvyHNdOuIP92vgLDuyT2VT/view?ts=67056542" }],
   "Wed Oct 09 2024": [
-    { clase: "Tutoria Entornos", url: "" },
+    { clase: "Tutoria Entornos", url: "https://thepowerfp.alexiaclassroom.com/pluginfile.php/27891/mod_folder/content/0/TUTOR%C3%8DA%20INDIVIDUAL%20ENTORNOS%20DAW%282024-10-09%2015_19%20GMT%2B2%29.mp4?forcedownload=1" },
     { clase: "Tutoria Fundamentos de bases de datos (MPO)", url: "" },
-    { clase: "Tutoria Bases de datos", url: "" }
+    { clase: "Tutoria Bases de datos", url: "https://drive.google.com/file/d/10xnI_3GSA0goC4Euzp08uClYO0DxKchY/view" }
   ],
   "Thu Oct 10 2024": [
     { clase: "Lenguaje de marcas", url: "" },

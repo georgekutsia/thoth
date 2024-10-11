@@ -13,9 +13,11 @@ export { default as BtnExpandComponent } from "./button-expand/BtnExpandComponen
 export { default as GearBtnComponent } from "./button-day-night/gear-button/GearBtnComponent";
 export { default as TeachersContactComponent } from "./contact-info/teachers-contact/TeachersContactComponent";
 export { default as TeacherComponent } from "./contact-info/teachers-contact/teacher/TeacherComponent";
+export { default as TablaHorarioComponent } from "./horario-component/horario-tabla/TablaHorarioComponent";
 
 export { default as ExtraExplanationComponent } from "./expl/expl-versions/ExtraExplanationComponent";
 export { default as FilterComponent } from "./filter/FilterComponent";
+export { default as HorarioComponent } from "./horario-component/HorarioComponent";
 
 export { default as TestSection } from "./test-section/TestSection";
 export { default as ResultsModal } from "./results-modal/ResultsModal";
