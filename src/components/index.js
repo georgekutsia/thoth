@@ -14,6 +14,7 @@ export { default as GearBtnComponent } from "./button-day-night/gear-button/Gear
 export { default as TeachersContactComponent } from "./contact-info/teachers-contact/TeachersContactComponent";
 export { default as TeacherComponent } from "./contact-info/teachers-contact/teacher/TeacherComponent";
 export { default as TablaHorarioComponent } from "./horario-component/horario-tabla/TablaHorarioComponent";
+export { default as HorarioTdComponent } from "./horario-component/horario-td/HorarioTdComponent";
 
 export { default as ExtraExplanationComponent } from "./expl/expl-versions/ExtraExplanationComponent";
 export { default as FilterComponent } from "./filter/FilterComponent";

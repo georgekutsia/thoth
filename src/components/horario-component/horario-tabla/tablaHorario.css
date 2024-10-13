@@ -18,6 +18,17 @@
 .horarios-table-tbody-tr td{
 height: 50px;
 }
+.horarios-table-tbody-tr i{
+  margin-left: 10px;
+color: var(--nav-blue);
+}
+.horarios-table-tbody-tr i:hover{
+  margin-left: 10px;
+color: var(--blue);
+}
+.horarios-table-tbody-tr a:hover{
+color: var(--navbar-red);
+}
 .tb-entornos {
   background: linear-gradient(to right, green 0%, green 53%, red 53%);
   background-size: 200% 100%;
@@ -30,44 +41,24 @@ height: 50px;
 
 .tb-entornos {
   background: linear-gradient(to right, var(--hor-entornos1) 0%, var(--hor-entornos1) 53%, var(--hor-entornos2) 53%);
-  
-
-}
-.tb-entornos:hover {
-  background-position: left;
-  color: white;
-  text-shadow: 1px 1px black;
-
 }
 .tb-programacion {
   background: linear-gradient(to right, var(--hor-programacion1) 0%, var(--hor-programacion1) 53%, var(--hor-programacion2) 53%);
-  
-
 }
 .tb-bases {
   background: linear-gradient(to right, var(--hor-bases1) 0%, var(--hor-bases1) 53%, var(--hor-bases2) 53%);
-  
-
 }
 .tb-itinerario {
   background: linear-gradient(to right, var(--hor-itinerario1) 0%, var(--hor-itinerario1) 53%, var(--hor-itinerario2) 53%);
-  
-
 }
 .tb-lenguaje {
   background: linear-gradient(to right, var(--hor-lenguaje1) 0%, var(--hor-lenguaje1) 53%, var(--hor-lenguaje2) 53%);
-  
-
 }
 .tb-sistemas {
   background: linear-gradient(to right, var(--hor-sistemas1) 0%, var(--hor-sistemas1) 53%, var(--hor-sistemas2) 53%);
-  
-
 }
 .tb-fundamentos {
   background: linear-gradient(to right, var(--hor-fundamentos1) 0%, var(--hor-fundamentos1) 53%, var(--hor-fundamentos2) 53%);
-  
-
 }
 
 .tb-style{
