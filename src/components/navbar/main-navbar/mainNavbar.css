@@ -40,7 +40,7 @@
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   color: rgba(255, 255, 255, 0.2);
-  font-size: calc(16px + 1.9vw);
+  font-size: calc(16px + 2.1vw);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,6 +67,7 @@
 .navLinkBtn[data-icon="fa-server"]:hover::after,
 .navLinkBtn.active-nav-btn[data-icon="fa-server"]::after {
   color: var(--navbar-blue);
+
 }
 
 
@@ -78,6 +79,7 @@
 .navLinkBtn[data-icon="fa-laptop-code"]:hover::after,
 .navLinkBtn.active-nav-btn[data-icon="fa-laptop-code"]::after {
   color: var(--navbar-violet);
+
 }
 
 
@@ -89,6 +91,7 @@
 .navLinkBtn[data-icon="fa-database"]:hover::after,
 .navLinkBtn.active-nav-btn[data-icon="fa-database"]::after {
   color: var(--navbar-yellow);
+
 }
 
 
@@ -100,6 +103,7 @@
 .navLinkBtn[data-icon="fa-file-code"]:hover::after,
 .navLinkBtn.active-nav-btn[data-icon="fa-file-code"]::after {
   color: var(--navbar-green);
+
 }
 
 
@@ -111,6 +115,7 @@
 .navLinkBtn[data-icon="fa-house-laptop"]:hover::after,
 .navLinkBtn.active-nav-btn[data-icon="fa-house-laptop"]::after {
   color: var(--navbar-red);
+
 }
 
 
@@ -122,6 +127,7 @@
 .navLinkBtn[data-icon="fa-helmet-safety"]:hover::after,
 .navLinkBtn.active-nav-btn[data-icon="fa-helmet-safety"]::after {
   color: var(--navbar-orange);
+
 }
 
 
@@ -133,6 +139,7 @@
 .navLinkBtn[data-icon="fa-calendar-days"]:hover::after,
 .navLinkBtn.active-nav-btn[data-icon="fa-calendar-days"]::after {
   color: var(--navbar-greenish);
+
 }
 .navLinkBtn[data-icon="fa-calden"]::after {
   content: "\f073";
@@ -142,6 +149,7 @@
 .navLinkBtn[data-icon="fa-calden"]:hover::after,
 .navLinkBtn.active-nav-btn[data-icon="fa-calden"]::after {
   color: var(--navbar-greenish);
+
 }
 .navLinkBtn[data-icon="fa-list-check"]::after {
   content: "\f0ae";
@@ -152,6 +160,17 @@
 .navLinkBtn[data-icon="fa-list-check"]:hover::after,
 .navLinkBtn.active-nav-btn[data-icon="fa-list-check"]::after {
   color: var(--navbar-pink);
+
+}
+.navLinkBtn[data-icon="fa-shield-halved"]::after {
+  content: "\f3ed";
+  color: var(--navbar-electro);
+  margin-left: calc(10px + 0.5vw);
+}
+
+.navLinkBtn[data-icon="fa-shield-halved"]:hover::after,
+.navLinkBtn.active-nav-btn[data-icon="fa-shield-halved"]::after {
+  color: var(--navbar-electro);
 }
 
 
@@ -187,10 +206,21 @@
 
 .fa-list-check {
   margin-left: calc(10px + 0.5vw);
+  color: var(--black);
+  margin-left: calc(10px + 0.55vw);
+}
+
+.fa-shield-halved {
+  color: var(--black);
+  margin-left: calc(10px + 0.55vw);
+  font-size: calc(19px + 2.3vw);
+
 }
 
 .fa-id-card-clip {
   margin-left: calc(10px + 0.5vw);
+  color: var(--black);
+  margin-left: calc(10px + 0.55vw);
 }
 
 @media only screen and (max-width: 600px) {

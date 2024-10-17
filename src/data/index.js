@@ -25,3 +25,10 @@ export { default as sisEj1 } from "./ejercicios/año1/sisEj1.js";
 
 
 export { default as teachersData } from "./teachersData";
+
+export { default as entornosNotas } from "./notas/entornosNotas.js";
+export { default as sistemasNotas } from "./notas/sistemasNotas.js";
+export { default as dbsNotas } from "./notas/dbsNotas.js";
+export { default as programacionNotas } from "./notas/programacionNotas.js";
+export { default as empleabilidadNotas } from "./notas/empleabilidadNotas.js";
+export { default as lenguajesNotas } from "./notas/lenguajesNotas.js";

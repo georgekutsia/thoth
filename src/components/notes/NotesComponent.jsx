@@ -1,10 +1,10 @@
 import { NavLink } from "react-router-dom";
-import "./exerciseBtn.css";
+import "./notes.css";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
 import PropTypes from "prop-types";
 
-function ExerciseBtnComponent({ handle, icon, btnT }) {
+function NotesComponent({ handle, icon, btnT }) {
   const renderTooltip = (props) => (
     <Tooltip id="button-tooltip" {...props}>
       {btnT}
@@ -19,10 +19,10 @@ function ExerciseBtnComponent({ handle, icon, btnT }) {
     </>
   );
 }
-ExerciseBtnComponent.propTypes = {
+NotesComponent.propTypes = {
   icon: PropTypes.string.isRequired,
   btnT: PropTypes.string.isRequired,
   handle: PropTypes.func.isRequired,
 };
 
-export default ExerciseBtnComponent;
+export default NotesComponent;

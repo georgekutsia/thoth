@@ -23,13 +23,13 @@ function ExplanationComponent({ color, titulo, explicación, cine, cocina, depor
   }
 
   return (
-<div className={`explanation-box `} data-aos="fade-up" style={{ width: window.innerWidth >= 775 ? expanded : "80vw"}}>
+<div className={`explanation-box `} data-aos="fade-up" style={{ width: window.innerWidth >= 775 ? expanded : "80vw", transition: "0.5s ease-in-out"}}>
   <section id="expl-section1">
 {window.innerWidth>= 775&&
     <BtnExpandComponent handleExpand={handleExpand} />
 }
     <p style={{ backgroundColor: color }} className="explanation-text">
-      <header className="explanation-title" onClick={() => handleExplType(0)}>{titulo}</header>
+      <span className="explanation-title" onClick={() => handleExplType(0)}>{titulo}</span>
       {explType === 0 && explicación}
       {explType === 1 && cocina}
       {explType === 2 && cine}

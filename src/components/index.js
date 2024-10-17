@@ -2,6 +2,7 @@ export { default as NavbarPizzaComponent } from "./navbar/navbar-pizza/NavbarPiz
 export { default as MainNavbarComponent } from "./navbar/main-navbar/MainNavbarComponent";
 export { default as ExplanationComponent } from "./expl/ExplanationComponent";
 export { default as ExerciseBtnComponent } from "./exercise/exercise-btn/ExerciseBtnComponent";
+export { default as BtnSliderNavComponent } from "./button-slider-nav/BtnSliderNavComponent";
 
 export { default as CarouselGalleryGallery} from "./foto-gallery/carousel-gallery/CarouselGalleryGallery"
 export { default as TitleTopComponent} from "./title-top/TitleTopComponent"
@@ -15,10 +16,23 @@ export { default as TeachersContactComponent } from "./contact-info/teachers-con
 export { default as TeacherComponent } from "./contact-info/teachers-contact/teacher/TeacherComponent";
 export { default as TablaHorarioComponent } from "./horario-component/horario-tabla/TablaHorarioComponent";
 export { default as HorarioTdComponent } from "./horario-component/horario-td/HorarioTdComponent";
+export { default as DpfDownloaderComponent } from "./pdf-downloader/DpfDownloaderComponent";
 
+
+
+export { default as TitleScreenComponent} from "./title-screen/TitleScreenComponent";
 export { default as ExtraExplanationComponent } from "./expl/expl-versions/ExtraExplanationComponent";
 export { default as FilterComponent } from "./filter/FilterComponent";
 export { default as HorarioComponent } from "./horario-component/HorarioComponent";
+export { default as NotesComponent } from "./notes/NotesComponent";
+
+export { default as EmpleabilidadSliderComponent } from "./slider/EmpleabilidadSliderComponent";
+export { default as DbsSliderComponent } from "./slider/DbsSliderComponent";
+export { default as EntornosSliderComponent } from "./slider/EntornosSliderComponent";
+export { default as LenguajesSliderComponent } from "./slider/LenguajesSliderComponent";
+export { default as ProgramacionSliderComponent } from "./slider/ProgramacionSliderComponent";
+export { default as SistemasSliderComponent } from "./slider/SistemasSliderComponent";
+export { default as CardSlider } from "./slider/CardSlider";
 
 export { default as TestSection } from "./test-section/TestSection";
 export { default as ResultsModal } from "./results-modal/ResultsModal";

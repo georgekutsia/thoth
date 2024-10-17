@@ -2,7 +2,10 @@ import {
   ExerciseBtnComponent,
   ExplanationComponent,
   FilterComponent,
+  NotesComponent,
+  ProgramacionSliderComponent,
   TeachersContactComponent,
+  TitleScreenComponent,
 } from "../../components";
 import ExcersiceComponent from "../../components/exercise/ExcersiceComponent";
 import { progData, prEj1 } from "../../data";
@@ -10,13 +13,15 @@ import { progData, prEj1 } from "../../data";
 import { useState } from "react";
 
 function ProgramacionScreen() {
-  const [dataSistemas, setDataSistemas] = useState(progData);
+  const [dataProgramacion, setdataProgramacion] = useState(progData);
   const [searchTerm, setSearchTerm] = useState("");
   const [dataExerProgramacion, setDataExerProgramacion] = useState(prEj1);
   const [exerIcon, setExerIcon] = useState("fa-folder");
+  const [noteIcon, setnoteIcon] = useState("fa-book");
   const [exercise, setExercise] = useState(false);
+  const [notes, setNotes] = useState(false);
 
-  const filteredData = dataSistemas.filter((sistData) =>
+  const filteredData = dataProgramacion.filter((sistData) =>
     sistData.titulo.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
@@ -24,25 +29,39 @@ function ProgramacionScreen() {
     setExercise(!exercise);
     if (!exercise) {
       setExerIcon("fa-folder-open");
+    setNotes(false);
     } else {
       setExerIcon("fa-folder");
+    }
+  };
+  const handleNotes = () => {
+    setNotes(!notes);
+    if (!notes) {
+    setnoteIcon("fa-book-open");
+    setExercise(false);
+    } else {
+      setnoteIcon("fa-book");
     }
   };
 
   return (
     <div className="screen-box">
-      <div
-        className="exercise-file-btn"
-        data-aos="fade-in"
-        data-aos-delay="600"
-      >
+      <div className="exercise-file-btn" data-aos="fade-in" data-aos-delay="600">
         <ExerciseBtnComponent
           icon={`fa-solid  ${exerIcon} extra-icons`}
           handle={() => handleExercise()}
           btnT={"Ejercicios"}
         />
+        <NotesComponent
+          icon={`fa-solid  ${noteIcon} extra-icons`}
+          handle={() => handleNotes()}
+          btnT={"Apuntes"}
+        />
         <TeachersContactComponent />
+        <FilterComponent searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       </div>
+      {notes && <ProgramacionSliderComponent/>}
+
       {exercise && (
         <div className="exercise-map-box" data-aos="fade-down">
           {dataExerProgramacion.map((sistData, index) => (
@@ -60,7 +79,7 @@ function ProgramacionScreen() {
           ))}
         </div>
       )}
-      <FilterComponent searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+      <TitleScreenComponent   subject="Programación"/>
       <div className="explanation-map-box">
         {filteredData.map((sistData, index) => (
           <ExplanationComponent

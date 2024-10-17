@@ -56,6 +56,8 @@
 --blue: rgb(0, 0, 255);
 --yellow: rgb(255, 255, 0);
 --orange: #ffa200;
+--brown: rgb(165, 42, 42);
+
 --green: rgb(0, 255, 0);
 --pink: #ff0080;
 
@@ -68,6 +70,7 @@
 --navbar-orange: rgb(255, 157, 0);
 --navbar-pink: rgb(255, 0, 119);
 --navbar-bluey: rgb(111, 0, 255);
+--navbar-electro: rgb(0, 247, 255);
 
 
   --nav-violet: rgb(250, 93, 250);
@@ -85,6 +88,7 @@
   --dark-blue: rgb(46, 46, 129);
   --dark-red: rgb(152, 51, 51);
   --dark-orange: rgb(137, 80, 16);
+  --dark-brown: rgb(165, 42, 42);
   --dark-violet: rgb(113, 27, 141);
   --dark-green: rgb(29, 114, 39);
   --dark-yellow: rgb(147, 152, 39);
@@ -92,7 +96,7 @@
 
   --light-white: rgba(255, 255, 255, 0.461);
   --light-grey: rgba(218, 218, 218, 0.461);
-  --light-blue: rgba(0, 153, 255, 0.038);
+  --light-blue: rgba(0, 153, 255, 0.228);
   --light-red: rgba(255, 0, 0, 0.05);
   --light-orange: rgba(255, 170, 0, 0.047);
   --light-violet: rgba(191, 0, 255, 0.047);
@@ -144,6 +148,9 @@ i{
   cursor: pointer;
 }
 
+input:focus {
+  outline: none;
+}
 
 
 /* Estilos para el componente MultipleChoiceTest */
@@ -461,6 +468,7 @@ i{
   position: absolute;
   z-index: 20;
   top: 50px;
+  width: 70vw;
 }
 
 .explanation-map-box{
@@ -474,4 +482,8 @@ i{
 .calendar-class-box{
   align-items: center;
   text-align: center;
+}
+.ciberseguridad-box{
+display: flex;
+justify-content: center;
 }

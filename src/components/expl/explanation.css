@@ -54,7 +54,9 @@
   padding: 20px;
   transition: 0.3s ease-in-out;
 }
-
+.explanation-text span{
+  display: block;
+}
 .extra-icons {
   position: relative;
   font-size: calc(20px + 1vw);
@@ -137,11 +139,10 @@
 .fa-folder::after {
   content: "\f07b";
   color: var(--blue);
-
 }
 
 .fa-folder:hover::after {
-  color: var(--dark-grey);
+  color: var(--dark-blue);
 
 }
 
@@ -153,6 +154,25 @@
 .fa-folder-open:hover::after {
   color: var(--blue);
 }
+.fa-book::after {
+  content: "\f02d";
+  color: var(--brown);
+}
+
+.fa-book:hover::after {
+  color: var(--dark-brown);
+
+}
+
+.fa-book-open::after {
+  content: "\f518";
+  color: var(--navbar-brown);
+}
+
+.fa-book-open:hover::after {
+  color: var(--brown);
+}
+
 .fa-address-book::after {
   content: "\f2b9";
   color: var(--navbar-green);

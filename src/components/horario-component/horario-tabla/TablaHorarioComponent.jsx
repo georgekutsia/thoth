@@ -23,8 +23,6 @@ function TablaHorarioComponent() {
         <tr className="horarios-table-tbody-tr">
             <td>15:00 - 16:00</td>
             <HorarioTdComponent linkClase={"https://thepowerfp.alexiaclassroom.com/course/view.php?id=566"} linkZoom={"https://meet.google.com/sfz-afik-hfs"} texto={"Base de datos"} style="bases"/>
-            <HorarioTdComponent linkClase={"https://thepowerfp.alexiaclassroom.com/course/view.php?id=566"} linkZoom={"https://meet.google.com/sfz-afik-hfs"} texto={"Base de datos"}/>
-
             <td></td>
             <td  className="tb-style tb-entornos">
              <a href="https://thepowerfp.alexiaclassroom.com/course/view.php?id=611" target="_blank" rel="noopener noreferrer">

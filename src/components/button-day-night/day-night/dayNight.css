@@ -72,6 +72,4 @@ input:checked + .day-night-btn + .background {
 
 input:active:after {
   width: 52px;  /* 260px / 5 */
-}
-
-  
+}  

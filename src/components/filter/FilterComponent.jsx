@@ -1,37 +1,44 @@
-import { useState, useEffect, useRef } from "react";
+import { useRef, useState } from "react";
 import "./filter.css";
 
 // eslint-disable-next-line react/prop-types
 function FilterComponent({ searchTerm, setSearchTerm }) {
-  const [search, setSearch] = useState(false);
   const inputRef = useRef(null);
 
-  useEffect(() => {
-    function handleClickOutside(event) {
-      if (search && inputRef.current && !inputRef.current.contains(event.target)) {
-        setSearch(false);
-      }
-    }
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [search]);
+  const [inputBorder, setInputBorder] = useState("");
+
+  const handleFocus = () => {
+    setInputBorder("300px");
+  };
+
+  const handleBlur = () => {
+    setInputBorder("");
+  };
+
+  const clearInput = () => {
+    setSearchTerm(""); // Limpiar el input
+    inputRef.current.focus(); // Enfocar el input después de limpiar
+  };
 
   return (
     <>
-      {search ? (
-        <input
-          ref={inputRef} 
-          type="text"
-          placeholder="Filtrar..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          className="search-input"
-          data-aos="slide-left"
-        />
-      ) : (
-        <i onClick={() => setSearch(true)} className="fa-solid fa-magnifying-glass search-input" data-aos="slide-left"
+      <i className="fa-solid fa-magnifying-glass search-icon"></i>
+      <input
+        ref={inputRef}
+        type="text"
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+        onFocus={handleFocus}
+        onBlur={handleBlur}
+        className={`search-input`}
+        style={{ width: inputBorder, transition: "0.4s ease-in-out" }}
+        data-aos="slide-left"
+      />
+      {searchTerm && ( // Mostrar el botón "X" solo si hay texto en el input
+        <i
+          className={`fa-solid fa-x delete-input-info`}
+          onClick={clearInput} // Borrar el contenido del input
+          style={{ cursor: "pointer" }}
         ></i>
       )}
     </>

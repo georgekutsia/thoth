@@ -1,27 +1,40 @@
 
-import { ExerciseBtnComponent, ExplanationComponent, FilterComponent, TeachersContactComponent } from "../../components"
+import { EmpleabilidadSliderComponent, ExerciseBtnComponent, ExplanationComponent, FilterComponent, NotesComponent, TeachersContactComponent, TitleScreenComponent } from "../../components"
 import ExcersiceComponent from "../../components/exercise/ExcersiceComponent";
 import { useState } from "react";
 import { empData, empEj1 } from "../../data";
 
 function ItinerarioDeEmpleabilidadScreen() {
-  const [dataSistemas, setDataSistemas] = useState(empData);
+  const [dataEmpleabilidad, setdataEmpleabilidad] = useState(empData);
   const [searchTerm, setSearchTerm] = useState(""); 
   const [dataExerProgramacion, setDataExerProgramacion] = useState(empEj1);
-  const [exerIcon, setExerIcon] = useState("fa-folder")
-const [exercise, setExercise] = useState(false)
-  const filteredData = dataSistemas.filter((sistData) =>
+  const [exerIcon, setExerIcon] = useState("fa-folder");
+  const [noteIcon, setnoteIcon] = useState("fa-book");
+  const [exercise, setExercise] = useState(false);
+  const [notes, setNotes] = useState(false);
+
+  const filteredData = dataEmpleabilidad.filter((sistData) =>
     sistData.titulo.toLowerCase().includes(searchTerm.toLowerCase())
   );
-  const handleExercise = ()=> {
-    setExercise(!exercise)
-    if(!exercise){
-      setExerIcon("fa-folder-open")
-    } else {
-      setExerIcon("fa-folder")
 
+  const handleExercise = () => {
+    setExercise(!exercise);
+    if (!exercise) {
+      setExerIcon("fa-folder-open");
+    setNotes(false);
+    } else {
+      setExerIcon("fa-folder");
     }
-  }
+  };
+  const handleNotes = () => {
+    setNotes(!notes);
+    if (!notes) {
+    setnoteIcon("fa-book-open");
+    setExercise(false);
+    } else {
+      setnoteIcon("fa-book");
+    }
+  };
 
   return (
     <div className="screen-box">
@@ -31,9 +44,15 @@ const [exercise, setExercise] = useState(false)
           handle={()=>handleExercise()}
           btnT={"Ejercicios"}
         />
+      <NotesComponent
+          icon={`fa-solid  ${noteIcon} extra-icons`}
+          handle={() => handleNotes()}
+          btnT={"Apuntes"}
+        />
         <TeachersContactComponent />
-
+        <FilterComponent searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
     </div>
+    {notes && <EmpleabilidadSliderComponent/>}
     {exercise &&
     <div className="exercise-map-box" data-aos="fade-down">
       {dataExerProgramacion.map((sistData, index) => (
@@ -51,9 +70,8 @@ const [exercise, setExercise] = useState(false)
       ))}
     </div>
     }
-      <FilterComponent searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
+    <TitleScreenComponent   subject="Itinerario de Empleabilidad"/>
       <div  className="explanation-map-box">
-
       {filteredData.map((sistData, index) => (
         <ExplanationComponent
           key={index}

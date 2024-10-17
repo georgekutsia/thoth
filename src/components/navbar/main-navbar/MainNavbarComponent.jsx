@@ -118,11 +118,19 @@ function MainNavbarComponent({ handleDayNight, handleChangeTheme, isNightMode })
             aosFading={"fade-right"}
           />
           <MainNavbarBtnComponent
+            classN={"fa-solid fa-shield-halved"}
+            dataI={"fa-shield-halved"}
+            navL={"/ciberseguridad"}
+            btnT={"Master de Ciberseguridad "}
+            aosDelay={"300"}
+            aosFading={"fade-right"}
+          />
+          <MainNavbarBtnComponent
             classN={"fa-solid fa-id-card-clip"}
             dataI={"fa-id-card-clip"}
             navL={"/desarrolladores"}
             btnT={"Desarrolladores "}
-            aosDelay={"300"}
+            aosDelay={"350"}
             aosFading={"fade-right"}
           />
         </>

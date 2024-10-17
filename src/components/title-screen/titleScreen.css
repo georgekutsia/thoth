@@ -1,0 +1,5 @@
+.title-screen-box{
+text-align: center;
+margin: calc(10px + 1vh) 0px calc(20px + 5vh) 0px;
+font-size: calc(12px + 1vw);
+}

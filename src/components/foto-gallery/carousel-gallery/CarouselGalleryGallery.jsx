@@ -1,19 +1,19 @@
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./carouselGallery.css";
-
+import { entornosNotas } from "../../../data";
 function CarouselGalleryGallery() {
   const spinnerRef = useRef(null);
   var angle = 0;
 
-  // Arreglo de URLs de tus imágenes
-  const imageUrls = [
-    "https://example.com/image1.jpg",
-    "https://example.com/image2.jpg",
-    "https://example.com/image3.jpg",
-    "https://example.com/image4.jpg",
-    "https://example.com/image5.jpg",
-    "https://example.com/image6.jpg"
-  ];
+  const [data, setdata] = useState([]);
+
+  useEffect(() => {
+    setdata(entornosNotas.ejemplo);
+  }, [entornosNotas]);
+
+  const handleClick = () => {
+    alert("Clicked on image");
+  };
 
   function galleryspin(sign) {
     if (spinnerRef.current) {
@@ -29,18 +29,21 @@ function CarouselGalleryGallery() {
   return (
     <>
       <div id="carousel">
+        <div className="left-right-arrow">
+          <button  onClick={() => galleryspin("-")}>
+          <i className="fa-solid fa-chevron-left"></i>
+            
+          </button>
+          <button  onClick={() => galleryspin("")}>
+          <i className="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
         <figure id="spinner" ref={spinnerRef}>
-          {imageUrls.map((url, index) => (
-            <img key={index} src={url} alt={`carousel-img-${index}`} />
+          {data.map((url, index) => (
+            <img onClick={()=>handleClick()} key={index} src={url} alt={`carousel-img-${index}`} />
           ))}
         </figure>
       </div>
-      <span style={{ float: "left" }} className="ss-icon" onClick={() => galleryspin("-")}>
-        &lt;
-      </span>
-      <span style={{ float: "right" }} className="ss-icon" onClick={() => galleryspin("")}>
-        &gt;
-      </span>
     </>
   );
 }
