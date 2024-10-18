@@ -46,9 +46,9 @@ export default function LenguajesSliderComponent() {
 
         <SwiperSlide>
           <Swiper className="mySwiper2 swiper-v" direction={'vertical'} spaceBetween={50} pagination={{ clickable: true }} modules={[Pagination]}>
-             <SwiperSlide>          
-             <CardSlider fromData={lenguajesNotas.basicoHtml} text={"Etiquetas y atributos básicos"}/>
-           </SwiperSlide>
+            <SwiperSlide>          
+            <CardSlider fromData={lenguajesNotas.basicoHtml} text={"Etiquetas y atributos básicos"}/>
+            </SwiperSlide>
             <SwiperSlide>
               <CardSlider fromData={lenguajesNotas.basicoForm} text={"Form Básico"}/>
             </SwiperSlide>

@@ -26,7 +26,6 @@ function LenguajeDeMarcasScreen() {
   );
 
   const handleExercise = () => {
-    // Si ya está abierto, lo cerramos. Si está cerrado, lo abrimos y cerramos los otros.
     setExercise(!exercise);
     setNotes(false);    // Cerrar apuntes
     setshowInfo(false); // Cerrar información del profesor
@@ -35,7 +34,6 @@ function LenguajeDeMarcasScreen() {
   };
 
   const handleNotes = () => {
-    // Si ya está abierto, lo cerramos. Si está cerrado, lo abrimos y cerramos los otros.
     setNotes(!notes);
     setExercise(false); // Cerrar ejercicios
     setshowInfo(false); // Cerrar información del profesor
@@ -44,7 +42,6 @@ function LenguajeDeMarcasScreen() {
   };
 
   const handleTeacher = () => {
-    // Si ya está abierto, lo cerramos. Si está cerrado, lo abrimos y cerramos los otros.
     setshowInfo(!showInfo);
     setExercise(false); // Cerrar ejercicios
     setNotes(false);    // Cerrar apuntes

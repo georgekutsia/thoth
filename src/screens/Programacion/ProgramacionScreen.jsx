@@ -9,7 +9,6 @@ import {
 } from "../../components";
 import ExcersiceComponent from "../../components/exercise/ExcersiceComponent";
 import { progData, prEj1 } from "../../data";
-
 import { useState } from "react";
 
 function ProgramacionScreen() {
@@ -20,6 +19,7 @@ function ProgramacionScreen() {
   const [noteIcon, setnoteIcon] = useState("fa-book");
   const [exercise, setExercise] = useState(false);
   const [notes, setNotes] = useState(false);
+  const [showInfo, setshowInfo] = useState(false);
 
   const filteredData = dataProgramacion.filter((sistData) =>
     sistData.titulo.toLowerCase().includes(searchTerm.toLowerCase())
@@ -27,22 +27,28 @@ function ProgramacionScreen() {
 
   const handleExercise = () => {
     setExercise(!exercise);
-    if (!exercise) {
-      setExerIcon("fa-folder-open");
-    setNotes(false);
-    } else {
-      setExerIcon("fa-folder");
-    }
+    setNotes(false);    // Cerrar apuntes
+    setshowInfo(false); // Cerrar información del profesor
+    setExerIcon(!exercise ? "fa-folder-open" : "fa-folder"); // Cambiar el icono según el estado
+    setnoteIcon("fa-book");  // Restaurar icono de apuntes
   };
+
   const handleNotes = () => {
     setNotes(!notes);
-    if (!notes) {
-    setnoteIcon("fa-book-open");
-    setExercise(false);
-    } else {
-      setnoteIcon("fa-book");
-    }
+    setExercise(false); // Cerrar ejercicios
+    setshowInfo(false); // Cerrar información del profesor
+    setnoteIcon(!notes ? "fa-book-open" : "fa-book"); // Cambiar el icono según el estado
+    setExerIcon("fa-folder");  // Restaurar icono de ejercicios
   };
+
+  const handleTeacher = () => {
+    setshowInfo(!showInfo);
+    setExercise(false); // Cerrar ejercicios
+    setNotes(false);    // Cerrar apuntes
+    setExerIcon("fa-folder");  // Restaurar icono de ejercicios
+    setnoteIcon("fa-book");    // Restaurar icono de apuntes
+  };
+
 
   return (
     <div className="screen-box">
@@ -57,7 +63,10 @@ function ProgramacionScreen() {
           handle={() => handleNotes()}
           btnT={"Apuntes"}
         />
-        <TeachersContactComponent />
+        <TeachersContactComponent
+          handleTeacher={handleTeacher}
+          showInfo={showInfo}
+        />
         <FilterComponent searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       </div>
       {notes && <ProgramacionSliderComponent/>}

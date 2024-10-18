@@ -6,6 +6,7 @@ import { EffectCards } from 'swiper/modules';
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import BtnExpandComponent from '../button-expand/BtnExpandComponent';
+import BtnCopyComponent from '../button-copy/BtnCopyComponent';
 
 export default function CardSlider({ fromData, text }) {
   const [gallery, setGallery] = useState([]);
@@ -27,10 +28,13 @@ showFull === "mySwiperCard" ?  setshowFull("mySwiperCard-big") : setshowFull("my
       <Swiper effect="cards" grabCursor={true} modules={[EffectCards]} className={showFull} nested={true}>
       <h4>{text}</h4>
         {gallery.length > 0 ? (
-          gallery.map((url, index) => (
+          gallery.map((ans, index) => (
             <SwiperSlide key={index}>
               <BtnExpandComponent handleExpand={handleShowFull} />
-              <img src={url} alt={`slide-${index}`} />
+              <div className='btn-copy-slider'>
+              <BtnCopyComponent copiarTexto={ans.code} />
+              </div>
+              <img src={ans.url} alt={`slide-${index}`} />
             </SwiperSlide>
           ))
         ) : (

@@ -1,8 +1,8 @@
 .btn-expand{
   position: absolute;
   font-size: 20px;
-  right: 12px;
-  top: 12px;
+  right: 20px;
+  top: 10px;
 }
 .btn-expand:hover{
 scale: 1.05;

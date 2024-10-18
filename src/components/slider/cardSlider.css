@@ -84,3 +84,8 @@ padding: 5px;
 }
 
 /* Añade más colores si es necesario */
+.btn-copy-slider{
+  position: absolute;
+  right: 20px;
+  top: 40px;
+}

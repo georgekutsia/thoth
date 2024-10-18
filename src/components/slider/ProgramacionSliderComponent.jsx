@@ -24,23 +24,30 @@ export default function ProgramacionSliderComponent() {
       <Swiper className="mySwiper swiper-h" spaceBetween={50} pagination={{ clickable: true }} modules={[Pagination]} onSwiper={setSwiperRef} >
         <SwiperSlide>
         <>
-            <CardSlider fromData={"ejemplo"} class />
+            <CardSlider fromData={programacionNotas.ejemplo} text='Programación (java)' />
             <div className='pdf-downloader'>
-            <DpfDownloaderComponent text='Ir a la sala principal en Alexia '  url={"https://thepowerfp.alexiaclassroom.com/course/view.php?id=607&section=1"} nav/>   
-            <DpfDownloaderComponent text='Contenido lenguaje de marcas' url={"https://thepowerfp.alexiaclassroom.com/pluginfile.php/26044/mod_resource/content/1/CONTENIDO%20LENGUAJE%20DE%20MARCAS.pdf"}/>
-            <DpfDownloaderComponent text='Programación didáctica Lenguaje de marcas ' textPlus={"y sistemas de gestión de información"} url={"https://thepowerfp.alexiaclassroom.com/pluginfile.php/26047/mod_resource/content/1/Programacio%CC%81n%20dida%CC%81ctica%20Lenguaje%20de%20marcas%20y%20sistemas%20de%20gestio%CC%81n%20de%20informacio%CC%81n.pdf"}/>       
+            <DpfDownloaderComponent text='Ir a la sala principal en Alexia '  url={"https://thepowerfp.alexiaclassroom.com/course/view.php?id=594&section=1"} nav/>   
+            <DpfDownloaderComponent text='Programación didáctica Programación ' textPlus={"y sistemas de gestión de información"} url={"https://thepowerfp.alexiaclassroom.com/pluginfile.php/26093/mod_resource/content/1/Programacio%CC%81n%20dida%CC%81ctica%20Programacio%CC%81n.pdf"}/>       
             </div>
         </>
-            </SwiperSlide>
+        </SwiperSlide>
         <SwiperSlide>
-        <>
-            <CardSlider fromData={"ejemplo"} class />
+        <Swiper className="mySwiper2 swiper-v" direction={'vertical'} spaceBetween={50} pagination={{ clickable: true }} modules={[Pagination]}>
+        <SwiperSlide>          
+          <CardSlider fromData={programacionNotas.basicJava} text='Básico Programación (java)' />
             <div className='pdf-downloader'>
-            <DpfDownloaderComponent text='Ir a unidad 1 en Alexia '  url={"https://thepowerfp.alexiaclassroom.com/course/view.php?id=607&section=2"} nav/>   
-            <DpfDownloaderComponent text='Presentación de la asignatura' url={"https://thepowerfp.alexiaclassroom.com/pluginfile.php/21965/mod_resource/content/1/PRESENTACION%20ASIGNATURA.pdf"}/>
-            <DpfDownloaderComponent text='Configuración de Netbeans y XAMPP '  url={"https://thepowerfp.alexiaclassroom.com/pluginfile.php/21966/mod_resource/content/1/Netbeans%20%20XAMPP.pdf"}/>       
+            <DpfDownloaderComponent text='Inicio a la Programación' url={"https://thepowerfp.alexiaclassroom.com/pluginfile.php/26102/mod_resource/content/1/UD1.%20Inicio%20a%20la%20Programaci%C3%B3n.pdf"}/>
+            <DpfDownloaderComponent text='Configuración de Netbeans y XAMPP '  url={"https://thepowerfp.alexiaclassroom.com/pluginfile.php/29572/mod_resource/content/1/Netbeans%20%20XAMPP.pdf"}/>       
             </div>
-        </>
+            </SwiperSlide>
+        <SwiperSlide>          
+          <CardSlider fromData={programacionNotas.conditionalJava} text='Condicionales (java)' />
+            <div className='pdf-downloader'>
+            <DpfDownloaderComponent text='Inicio a la Programación' url={"https://thepowerfp.alexiaclassroom.com/pluginfile.php/26102/mod_resource/content/1/UD1.%20Inicio%20a%20la%20Programaci%C3%B3n.pdf"}/>
+            <DpfDownloaderComponent text='Configuración de Netbeans y XAMPP '  url={"https://thepowerfp.alexiaclassroom.com/pluginfile.php/29572/mod_resource/content/1/Netbeans%20%20XAMPP.pdf"}/>       
+            </div>
+            </SwiperSlide>
+          </Swiper>
             </SwiperSlide>
         <SwiperSlide>
           <Swiper className="mySwiper2 swiper-v" direction={'vertical'} spaceBetween={50} pagination={{ clickable: true }} modules={[Pagination]}>
