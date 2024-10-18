@@ -5,10 +5,10 @@ import TeacherComponent from "./teacher/TeacherComponent"
 import {teachersData} from "../../../data"
 import Tooltip from 'react-bootstrap/Tooltip';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import PropTypes from "prop-types";
 
 
-function TeachersContactComponent() {
-  const [showInfo, setshowInfo] = useState("")
+function TeachersContactComponent({handleTeacher, showInfo}) {
   const [teacherData, setteacherData] = useState(teachersData)
 
   const renderTooltip = (props) => (
@@ -19,7 +19,7 @@ function TeachersContactComponent() {
   return (
     <>
       <OverlayTrigger placement="top" delay={{ hide: 50 }} overlay={renderTooltip}>
-      <i className="fa-solid fa-address-book extra-icons" onClick={()=>setshowInfo(!showInfo)}></i>
+      <i className="fa-solid fa-address-book extra-icons" onClick={()=>handleTeacher()}></i>
       </OverlayTrigger>
 
       <div className="teachers-big-box">
@@ -32,5 +32,9 @@ function TeachersContactComponent() {
     </>
   )
 }
+TeachersContactComponent.propTypes = {
+  handleTeacher: PropTypes.func.isRequired,
+  showInfo: PropTypes.bool.isRequired,
 
+};
 export default TeachersContactComponent

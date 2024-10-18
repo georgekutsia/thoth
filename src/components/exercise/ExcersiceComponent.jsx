@@ -56,7 +56,7 @@ ExcersiceComponent.propTypes = {
   date: PropTypes.string.isRequired,
   aosDelay: PropTypes.number.isRequired,
   question: PropTypes.string.isRequired,
-  answer: PropTypes.array.isRequired,
+  answer: PropTypes.string.isRequired,
   img: PropTypes.array.isRequired,
 };
 

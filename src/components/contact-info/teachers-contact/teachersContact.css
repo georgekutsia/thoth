@@ -18,10 +18,18 @@
   background: rgb(34,139,195);
   background: linear-gradient(0deg, rgba(34,139,195,1) 0%, rgba(27,152,182,1) 10%, rgba(9,95,135,1) 48%, rgba(7,37,43,1) 100%);
   color: var(--white);
+  justify-content: center;
+  align-items: center;
 }
+
 .teacher-box img{
   width: 80px;
+  height: 80px;
   border-radius: 20px;
+  transition: 0.3s ease-in-out;
+}
+.teacher-box img:hover{
+scale: 1.4;
 }
 .teacher-box div{
   display: flex;
@@ -29,6 +37,16 @@
   justify-content: space-evenly;
   margin-right: 10px;
 }
+.teacher-box-text{
+  min-width: 250px;
+  }
+  .teacher-box-text h5{
+    color: var(--white);
+    text-shadow: 1px 1px var(--black);
+  }
+  .teacher-box-text h6{
+display: flex;
+  }
 @media (max-width: 768px) {
   .teacher-box{
     border-radius: 20px;

@@ -10,29 +10,24 @@ function MainNavbarComponent({ handleDayNight, handleChangeTheme, isNightMode })
 
   useEffect(() => {
     const handleScrollOrResize = () => {
-      let navbar = document.querySelector(".main-navbar-box");
-      
       if (window.innerWidth <= 900) {
         setCollapsed(true);
         setmainNavbarClass(true);
       } else {
-        if (window.scrollY <= navbar.offsetHeight + 30) {
+        if (window.scrollY <= 1 ) {
           setCollapsed(false);
           setmainNavbarClass(false);
-        } else if (window.scrollY >= navbar.offsetHeight + 31 && window.scrollY <= navbar.offsetHeight + 90) {
+        } else if (window.scrollY >= 2 && window.scrollY <= 30) {
           setCollapsed(true);
           setmainNavbarClass(false);
-        } else if (window.scrollY > navbar.offsetHeight + 91) {
+        } else if (window.scrollY > 31) {
           setCollapsed(true);
           setmainNavbarClass(true);
         }
       }
     };
-
-    // Agregar evento para detectar scroll y cambio de tamaño
     window.addEventListener("scroll", handleScrollOrResize);
     window.addEventListener("resize", handleScrollOrResize);
-
     return () => {
       window.removeEventListener("scroll", handleScrollOrResize);
       window.removeEventListener("resize", handleScrollOrResize);

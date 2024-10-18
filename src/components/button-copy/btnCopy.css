@@ -7,10 +7,9 @@
 
 }
 .btn-copy-success{
-  position: absolute;
-  z-index: 920;
+position: absolute;
+z-index: 920;
 font-size: 26px;
-top: 30px;
 animation: moveUp 2s ease-in-out;
 color: var(--green);
 }

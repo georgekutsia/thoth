@@ -14,7 +14,7 @@ function DpfDownloaderComponent({text, textPlus, url, nav}) {
     < >
       <div className="buttons-container">
         <OverlayTrigger placement="top" delay={{ hide: 200 }} overlay={renderTooltip}>
-          <a href={url} download="document.pdf" id="ms-download-link">
+          <a target="_blank" rel="noopener noreferrer" href={url} download="document.pdf" id="ms-download-link">
             {nav ? 
               (
             <button className="button-arounders">
