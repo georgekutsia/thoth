@@ -9,7 +9,10 @@ const sistemasNotas = {
   "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1728314007/chatgpt_hiacje.png",
   "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1728252149/6fb9c75d-74fc-4761-b413-dd09c0a251e6.png",
 ],
-indice:["Unidad1", "Unidad2", "Unidad3", "Unidad4"]
+indice:["Aula General", "Unidad1", "Unidad2", "Unidad3", "Unidad4","unidad5","unidad6"
+
+
+]
 };
 
 export default sistemasNotas;

@@ -1,13 +1,21 @@
 import PropTypes from "prop-types";
 import BtnSliderNavComponent from "../button-slider-nav/BtnSliderNavComponent";
-import "./slider.css"
+import "./slider.css";
 
 function NavigationSliderComponent({ slideTo, fromData, navData }) {
   return (
     <div className="navigation-buttons">
-      {navData[fromData].map((data, index) => (
-        <BtnSliderNavComponent key={index} slideTo={() => slideTo(index)} data={data}/>
-      ))}
+      {navData[fromData].map((data, index) => {
+        const icon = index === 0 ? "fa-location-dot" : `fa-${index}`;
+        return (
+          <BtnSliderNavComponent
+            key={index}
+            slideTo={() => slideTo(index)}
+            data={data}
+            icon={icon} // Pasamos el icono correcto
+          />
+        );
+      })}
     </div>
   );
 }

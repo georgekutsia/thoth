@@ -16,13 +16,13 @@ function MainNavbarComponent({ handleDayNight, handleChangeTheme, isNightMode })
         setCollapsed(true);
         setmainNavbarClass(true);
       } else {
-        if (window.scrollY <= navbar.offsetHeight + 50) {
+        if (window.scrollY <= navbar.offsetHeight + 30) {
           setCollapsed(false);
           setmainNavbarClass(false);
-        } else if (window.scrollY >= navbar.offsetHeight + 51 && window.scrollY <= navbar.offsetHeight + 200) {
+        } else if (window.scrollY >= navbar.offsetHeight + 31 && window.scrollY <= navbar.offsetHeight + 90) {
           setCollapsed(true);
           setmainNavbarClass(false);
-        } else if (window.scrollY > navbar.offsetHeight + 201) {
+        } else if (window.scrollY > navbar.offsetHeight + 91) {
           setCollapsed(true);
           setmainNavbarClass(true);
         }

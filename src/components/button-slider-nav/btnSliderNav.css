@@ -1,5 +1,3 @@
-
-
 .btnNavSlider {
   position: relative;
   background: var(--light-black);
@@ -8,8 +6,8 @@
   text-transform: uppercase;
   border: none;
   letter-spacing: 0.1rem;
-  font-size: 1rem;
-  padding: 10px 20px;
+  font-size: calc(10px + 0.2vw);
+  padding: 10px 13px;
   transition: 0.2s;
   border-radius: 10px;
 }
@@ -20,24 +18,29 @@
   background-color: var(--light-blue);
 }
 
+.btnNavSlider:hover i {
+  color: var(--grey); 
+}
+
 .btnNavSlider::before {
   content: "";
   position: absolute;
   inset: 2px;
- backdrop-filter: grayscale(10px);
+  backdrop-filter: grayscale(10px);
 }
 
 .btnNavSlider span {
   position: relative;
   z-index: 1;
 }
-.btnNavSlider i {
+
+.btnNavSlider .i-slider {
   position: absolute;
   inset: 0;
   display: block;
 }
 
-.btnNavSlider i::before {
+.btnNavSlider .i-slider::before {
   content: "";
   position: absolute;
   width: 10px;
@@ -45,17 +48,19 @@
   left: 80%;
   top: -2px;
   border: 2px solid var(--clr);
-  background: var(--grey);
+  background: var(--white);
   transition: 0.2s;
 }
 
-.btnNavSlider:hover i::before {
+.btnNavSlider:hover .i-slider::before {
   width: 15px;
   left: 20%;
   animation: move 3s infinite;
+  background: var(--grey);
+
 }
 
-.btnNavSlider i::after {
+.btnNavSlider .i-slider::after {
   content: "";
   position: absolute;
   width: 10px;
@@ -63,14 +68,16 @@
   left: 20%;
   bottom: -2px;
   border: 2px solid var(--clr);
-  background: var(--grey);
+  background: var(--white);
   transition: 0.2s;
 }
 
-.btnNavSlider:hover i::after {
+.btnNavSlider:hover .i-slider::after {
   width: 15px;
   left: 80%;
   animation: move 3s infinite;
+  background: var(--grey);
+
 }
 
 @keyframes move {
@@ -95,4 +102,11 @@
   100% {
     box-shadow: #27272c;
   }
+}
+
+.btnNavSlider i {
+  color: var(--white);
+  margin-right: 10px;
+  font-size: calc(13px + 0.2vw);
+
 }

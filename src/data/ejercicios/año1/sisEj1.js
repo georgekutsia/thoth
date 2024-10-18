@@ -5,13 +5,13 @@ const ejerciciosProgramacion = [
     imagenEj: "tabla_dinamica.png",
     fecha: "09-24",
     enunciado: "Califica los siguientes componentes Hardware en función de la tarea que realizan (procesamiento, almacenamiento, entrada, salida, entrada/salida)",
-    respuesta:  [
-      "Disco Duro: Almacenamiento -> El disco duro se encarga de almacenar datos de manera permanente, como archivos, programas y el sistema operativo.",
-      "Memoria RAM: Almacenamiento (temporal) -> La memoria RAM es un tipo de almacenamiento temporal que guarda datos e instrucciones que se están utilizando en ese momento.",
-      "CPU: Procesamiento -> La CPU (Unidad Central de Procesamiento) es el componente que realiza las operaciones de procesamiento de datos y ejecución de instrucciones en el ordenador.",
-      "Impresora: Salida -> La impresora convierte la información digital en una representación física, imprimiendo documentos o imágenes en papel.",
-      "Teclado: Entrada -> El teclado es un dispositivo de entrada que permite al usuario introducir información o comandos al ordenador mediante teclas.",
-    ],
+    respuesta:  `
+Almacenamiento -> El disco duro se encarga de almacenar datos de manera permanente, como archivos, programas y el sistema operativo.
+Almacenamiento (temporal) -> La memoria RAM es un tipo de almacenamiento temporal que guarda datos e instrucciones que se están utilizando en ese momento.
+Procesamiento -> La CPU (Unidad Central de Procesamiento) es el componente que realiza las operaciones de procesamiento de datos y ejecución de instrucciones en el ordenador.
+Salida -> La impresora convierte la información digital en una representación física, imprimiendo documentos o imágenes en papel.
+Entrada -> El teclado es un dispositivo de entrada que permite al usuario introducir información o comandos al ordenador mediante teclas.
+`,
         imagenes:[
       "",
     ]

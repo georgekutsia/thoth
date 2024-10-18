@@ -1,40 +1,9 @@
 .swiper {
-  width: 70vw;
-  height: 100%;
-  border-radius: 90px 10px 90px 10px;
-  
+  width: 50vw;
+  padding: 0px;
 }
 .navigation-buttons{
   display: flex;
   justify-content: center;
   gap: 10px;
 }
-.swiper-h {
-  width: 70vw;
-  height: 60vh; 
-}
-
-.swiper-v {
-  width: 70vw;
-  height: 80vh; 
-  background: transparent;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: linear-gradient(209.94deg, #76767639 1%, #e0e0e078 100%);
-  display: flex;  
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-padding: 40px;
-
-}
-

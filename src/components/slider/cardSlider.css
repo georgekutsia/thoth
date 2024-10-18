@@ -1,14 +1,13 @@
-/* Estilos para el slider principal */
 .mySwiper {
   width: 70vw;
-  height: 100%;
+  height: 10vw;
   border-radius: 90px 10px 90px 10px;
   margin-bottom: 10vh;
 }
 
 .swiper-h {
   width: 70vw;
-  height: 60vh;
+  height: calc(300px + 20vw);
 }
 
 .swiper-v {
@@ -28,15 +27,24 @@
 
 .swiper-slide img {
   display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 99%;
+  height: 99%;
 }
 
 /* Estilos para los cards en el slider de tarjetas */
 .mySwiperCard {
-  width: 240px;
-  height: 320px;
+  max-width: calc(300px + 10vw);
+  object-fit: cover;
+
+  
+}
+.mySwiperCard-big {
+  position: absolute;
+  height: 60vh;
+  width: 100%;
+  z-index: 80;
+  
+
 }
 
 .mySwiperCard .swiper-slide {
@@ -63,16 +71,16 @@ padding: 5px;
   background-color: rgb(10, 184, 111);
 }
 .mySwiperCard .swiper-slide:nth-child(4n) {
-  background-color: rgb(10, 184, 111);
+  background-color: rgb(161, 184, 10);
 }
 .mySwiperCard .swiper-slide:nth-child(5n) {
-  background-color: rgb(10, 184, 111);
+  background-color: rgb(170, 10, 184);
 }
 .mySwiperCard .swiper-slide:nth-child(6n) {
-  background-color: rgb(10, 184, 111);
+  background-color: rgb(184, 10, 62);
 }
 .mySwiperCard .swiper-slide:nth-child(7n) {
-  background-color: rgb(10, 184, 111);
+  background-color: rgb(160, 155, 77);
 }
 
 /* Añade más colores si es necesario */

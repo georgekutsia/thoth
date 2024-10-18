@@ -1,4 +1,4 @@
-.exercise-box{
+.exercise-box {
   height: 500px;
   padding: 5px;
   display: flex;
@@ -10,32 +10,25 @@
   align-items: center;
   position: relative;
   backdrop-filter: grayscale(30%);
-
-
+  overflow: hidden;
 }
-.exercise-box-small{
-  min-width: 270px;
-  transition: 0.3s ease-in-out;
 
-}
-.exercise-box-big{
-  min-width: 48vw;
+.exercise-box-small {
+  min-width: 310px;
   transition: 0.3s ease-in-out;
 }
-.exercise-box-expanded{
-  height: 500px;
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border-radius: 10px;
-  gap: 5px;
-  border: 9px outset var(--black);
-  min-width: 270px;
-  align-items: center;
+
+.exercise-box-big {
+  min-width: 100%;
+  min-height: 80vh;
+  transition: 0.3s ease-in-out;
 }
 
-.exercise-section1{
+.exImage-enunciado {
+  width: 100%;
+}
+
+.exercise-section1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -45,9 +38,10 @@
   height: 10px;
   width: 75%;
   margin-right: 14%;
-  background: linear-gradient(150deg, #f9f9f910, #d4dad630, #afbbb630, #8b9d9b30, #69808330, #49636f30, #2c475c30, #142b4e30); /* made at https://learnui.design/tools/gradient-generator.html */
+  background: linear-gradient(150deg, #f9f9f910, #d4dad630, #afbbb630, #8b9d9b30, #69808330, #49636f30, #2c475c30, #142b4e30);
 }
-.exercise-section4{
+
+.exercise-section4 {
   display: flex;
   align-items: center;
   text-align: center;
@@ -60,56 +54,75 @@
   border-left: none;
   padding: 5px;
   border-radius: 10px;
-  height: 10px;
-  width: 100px;
-  background: linear-gradient(150deg, #f9f9f910, #d4dad630, #afbbb630, #8b9d9b30, #69808330, #49636f30, #2c475c30, #142b4e30); /* made at https://learnui.design/tools/gradient-generator.html */
+  background: linear-gradient(150deg, #f9f9f910, #d4dad630, #afbbb630, #8b9d9b30, #69808330, #49636f30, #2c475c30, #142b4e30);
 }
 
-.exercise-section2{
+.exercise-section2 {
   align-items: center;
   justify-content: space-between;
   border: 1px solid #ffffff;
-  padding: 25px 15px; 
+  padding: 35px 15px;
+  min-height: 200px;
   border-radius: 10px;
-  min-height: 120px;
   text-align: justify;
   text-indent: 10px;
   border: 2px solid var(--light-black);
-  width: 89%;
-  backdrop-filter: grayscale(0%);   /*Por alguna razón si quito o esto cambia la posición de section 4  */
-  overflow: scroll;
-  background: linear-gradient(150deg, #f9f9f910, #d4dad630, #afbbb630, #8b9d9b30, #69808330, #49636f30, #2c475c30, #142b4e30); /* made at https://learnui.design/tools/gradient-generator.html */
-  
+  backdrop-filter: grayscale(0%);
+  overflow: auto; /* Habilitar scroll vertical y horizontal */
+  width: 100%;
+
+  background: linear-gradient(150deg, #f9f9f910, #d4dad630, #afbbb630, #8b9d9b30, #69808330, #49636f30, #2c475c30, #142b4e30);
 }
-.exercise-section3{
+
+.exercise-section3 {
   border: 1px solid white;
-  padding: 25px 15px;
+  padding: 40px 10px;
   padding-left: 20px;
   border-radius: 10px;
-  min-height: 150px;
+  min-height: 250px;
   text-align: justify;
   text-indent: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border: 2px solid var(--light-black);
-  width: 89%;
-  backdrop-filter: grayscale(0%);   /*Por alguna razón si quito o esto cambia la posición de section 4  */
-
-  overflow: scroll;
-  background: linear-gradient(150deg, #f9f9f910, #d4dad630, #afbbb630, #8b9d9b30, #69808330, #49636f30, #2c475c30, #142b4e30); /* made at https://learnui.design/tools/gradient-generator.html */
+  backdrop-filter: grayscale(0%);
+  width: 100%;
+  overflow: auto; /* Habilitar scroll vertical y horizontal */
+  background: linear-gradient(150deg, #f9f9f910, #d4dad630, #afbbb630, #8b9d9b30, #69808330, #49636f30, #2c475c30, #142b4e30);
 }
 
-.li-answer{
-  list-style:circle;
+/* Estilos específicos para pre y code */
+pre {
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  white-space: pre-wrap; /* Para asegurar que los saltos de línea se respeten */
+  overflow-x: auto; /* Scroll horizontal si el contenido se desborda */
+  overflow-y: auto; /* Scroll vertical si el contenido es muy largo */
+  word-wrap: normal; /* Evitar que las líneas se rompan */
+  max-height: 250px; /* Limitar el alto del bloque de código */
+  font-size: calc(3.5px);
 }
 
 
+code {
+  line-height: 2;
+  display: block;
+  white-space: pre; /* Preservar espacios y saltos de línea */
+
+}
+
+.exercise-box-big  pre {
+  font-size: calc(10px + 0.2vw); /* Tamaño de fuente más grande cuando el contenedor es grande */
+}
+
+.ul-answer {
+  padding: 0px;
+  margin: 0px;
+}
 
 @media only screen and (max-width: 600px) {
-  .exercise-box-big{
+  .exercise-box-big {
     min-width: 78vw;
   }
-  }
-
-  
+}

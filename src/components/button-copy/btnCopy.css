@@ -1,0 +1,35 @@
+.btn-copy-box{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 90;
+  font-size: calc(12px + 0.7vw);
+
+}
+.btn-copy-success{
+  position: absolute;
+  z-index: 920;
+font-size: 26px;
+top: 30px;
+animation: moveUp 2s ease-in-out;
+color: var(--green);
+}
+
+
+@keyframes moveUp {
+  0%{
+    opacity: 0.2;
+    transform: translateY(0px);
+  }
+  20%{
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  50%{
+    transform: rotate(20deg);
+  }
+  90%{
+    opacity: 1;
+    transform: translateY(-90px);
+  }
+}

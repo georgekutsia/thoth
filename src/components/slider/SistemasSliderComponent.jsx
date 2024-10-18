@@ -10,12 +10,11 @@ import DpfDownloaderComponent from '../pdf-downloader/DpfDownloaderComponent';
 import { sistemasNotas } from "../../data";
 
 export default function SistemasSliderComponent() {
-  const [swiperRef, setSwiperRef] = useState(null); // Guardar referencia al Swiper
+  const [swiperRef, setSwiperRef] = useState(null); 
 
-  // Función para ir a una diapositiva específica
   const slideTo = (index) => {
     if (swiperRef) {
-      swiperRef.slideTo(index, 0); // Navega a la diapositiva específica
+      swiperRef.slideTo(index, 0); 
     }
   };
 

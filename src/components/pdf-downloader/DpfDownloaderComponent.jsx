@@ -1,27 +1,30 @@
-import "./PdfDownloader.css";
+import "./pdfDownloader.css";
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 import PropTypes from "prop-types";
 
-function DpfDownloaderComponent({text}) {
+function DpfDownloaderComponent({text, textPlus, url, nav}) {
   const renderTooltip = (props) => (
-    <Tooltip id="button-tooltip" {...props}>
-      Descargar {text}
+    <Tooltip id="button-tooltip" {...props} >
+      {text} <br /> {textPlus}
     </Tooltip>
   );
 
   return (
-    <>
-      <div className="buttons-container pdf-downloader">
-        <OverlayTrigger
-          placement="top"  /* Cambiado a "top" para asegurarse de que el tooltip aparece encima */
-          delay={{ hide: 200 }}
-          overlay={renderTooltip}
-        >
-          <a href="https://thepowerfp.alexiaclassroom.com/pluginfile.php/32140/mod_resource/content/1/UD1.2-%20UBUNTU.pdf" download="document.pdf" id="ms-download-link">
-            <button className="button-arounder">
-              <i className="fa-solid fa-download"></i>
+    < >
+      <div className="buttons-container">
+        <OverlayTrigger placement="top" delay={{ hide: 200 }} overlay={renderTooltip}>
+          <a href={url} download="document.pdf" id="ms-download-link">
+            {nav ? 
+              (
+            <button className="button-arounders">
+                <img src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729169456/classAlexia_xyyusd.png" className="bulala"/>
             </button>
+                ):
+            <button className="button-arounder">
+              <i className= "fa-solid fa-download" style={{color: "white"}}></i>
+            </button>
+            }
           </a>
         </OverlayTrigger>
       </div>
@@ -30,6 +33,9 @@ function DpfDownloaderComponent({text}) {
 }
 DpfDownloaderComponent.propTypes = {
   text: PropTypes.string.isRequired,
+  textPlus: PropTypes.string.isRequired,
+  url: PropTypes.string,
+  nav: PropTypes.bool,
 };
 
 export default DpfDownloaderComponent;
