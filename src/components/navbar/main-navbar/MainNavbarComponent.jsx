@@ -61,6 +61,14 @@ function MainNavbarComponent({ handleDayNight, handleChangeTheme, isNightMode })
     }
   };
 
+  const renderIcons = () => {
+    const icons = [];
+    for (let i = 0; i < 10; i++) {
+      icons.push(<i key={i} className="fa-solid fa-chevron-left"></i>);
+    }
+    return icons;
+  };
+
   return (
     <div
       className={`main-navbar-box ${collapsed ? "collapsed" : ""} ${mainNavbarClass ? "collapsed-side" : ""}`}
@@ -156,11 +164,7 @@ function MainNavbarComponent({ handleDayNight, handleChangeTheme, isNightMode })
             aosFading={"fade-right"}
           />
           <div className="mainNavbar-chevron-collapse">
-          <i className="fa-solid fa-chevron-left"></i>
-          <i className="fa-solid fa-chevron-left"></i>
-          <i className="fa-solid fa-chevron-left"></i>
-          <i className="fa-solid fa-chevron-left"></i>
-          <i className="fa-solid fa-chevron-left"></i>
+            {renderIcons()}
           </div>
         </>
       )}

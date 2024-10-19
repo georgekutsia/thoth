@@ -13,7 +13,7 @@ import {
   lenguajesDeMarcasTest,
   sistemasInformaticosTest,
 } from "../../data";
-
+import "./examenes.css"
 const subjectTests = {
   dbs: { name: "Bases de Datos", test: basesDeDatosTest, icon: "database", aosDirection:"fade-right", aosDelay:"50" },
   programacion: { name: "Programación", test: programacionTest, icon: "code" , aosDirection:"fade-down", aosDelay:"250" },

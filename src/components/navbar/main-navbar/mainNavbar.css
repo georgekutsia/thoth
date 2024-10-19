@@ -9,7 +9,7 @@
   padding: 10px 20px;
   margin-top: calc(10px + 2vh);
   border-radius: 30px;
-  z-index: 4git 0; 
+  z-index:  80; 
   transition: all 0.5s ease-in-out;
   backdrop-filter: blur(20px);
   background: rgb(130,212,195);
@@ -205,25 +205,14 @@
   scale: 2;
 }
 
-.fa-list-check {
-  margin-left: calc(10px + 0.5vw);
+.fa-list-check ,
+.fa-shield-halved ,
+.fa-id-card-clip {
   color: var(--black);
   margin-left: calc(10px + 0.55vw);
-}
-
-.fa-shield-halved {
-  color: var(--black);
-  margin-left: calc(10px + 0.55vw);
-  font-size: calc(19px + 2.3vw);
-
 }
 .mainNavbar-chevron-collapse{
   display: none;
-}
-.fa-id-card-clip {
-  margin-left: calc(10px + 0.5vw);
-  color: var(--black);
-  margin-left: calc(10px + 0.55vw);
 }
 
 @media only screen and (max-width: 600px) {
@@ -251,4 +240,13 @@
   color: var(--dark-grey);
   padding-right: 20px;
 }
+.fa-list-check,
+.fa-shield-halved,
+.fa-id-card-clip,
+.navLinkBtn[data-icon="fa-list-check"]::after,
+.navLinkBtn[data-icon="fa-shield-halved"]::after,
+.navLinkBtn[data-icon="fa-id-card-clip"]::after {
+  margin-left: 0px;
+}
+
 }
