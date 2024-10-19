@@ -2,13 +2,12 @@ import { useState, useEffect } from "react";
 import MainNavbarBtnComponent from "./main-navbar-button/MainNavbarBtnComponent";
 import "./mainNavbar.css";
 import DayNightBoxComponent from "../../button-day-night/DayNightBoxComponent";
+import PropTypes from "prop-types"
 
-// eslint-disable-next-line react/prop-types
 function MainNavbarComponent({ handleDayNight, handleChangeTheme, isNightMode }) {
   const [collapsed, setCollapsed] = useState(false);
   const [mainNavbarClass, setmainNavbarClass] = useState(false);
 
-  // Variables para manejar el deslizamiento (swipe)
   let touchStartX = 0;
   let touchEndX = 0;
 
@@ -72,9 +71,6 @@ function MainNavbarComponent({ handleDayNight, handleChangeTheme, isNightMode })
   return (
     <div
       className={`main-navbar-box ${collapsed ? "collapsed" : ""} ${mainNavbarClass ? "collapsed-side" : ""}`}
-      onTouchStart={handleTouchStart}
-      onTouchMove={handleTouchMove}
-      onTouchEnd={handleTouchEnd} // Agregar eventos de toque
     >
       {!collapsed && (
         <>
@@ -163,7 +159,9 @@ function MainNavbarComponent({ handleDayNight, handleChangeTheme, isNightMode })
             aosDelay={"350"}
             aosFading={"fade-right"}
           />
-          <div className="mainNavbar-chevron-collapse">
+          <div className="mainNavbar-chevron-collapse"       onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd} >
             {renderIcons()}
           </div>
         </>
@@ -181,5 +179,9 @@ function MainNavbarComponent({ handleDayNight, handleChangeTheme, isNightMode })
     </div>
   );
 }
-
+MainNavbarComponent.propTypes = {
+  handleDayNight: PropTypes.func.isRequired,
+  handleChangeTheme: PropTypes.func.isRequired,
+  isNightMode: PropTypes.bool.isRequired,
+}
 export default MainNavbarComponent;

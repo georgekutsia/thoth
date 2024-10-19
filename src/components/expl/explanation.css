@@ -15,11 +15,10 @@
   align-items: center;
   justify-content: space-between;
   margin: 0px auto;
-  background: radial-gradient(circle at 20% 0%, #ffffff41, #e2e2e248, #c6c6c646, #aaaaaa49, #8f8f8f30, #76767617, #7f7f7f1e, #45454513); /* made at https://learnui.design/tools/gradient-generator.html */
+  background: radial-gradient(circle at 20% 0%, #ffffff41, #e2e2e248, #c6c6c646, #aaaaaa49, #8f8f8f30, #76767617, #7f7f7f1e, #45454513); 
   transition: 0.3s ease-in-out;
   border-radius: 10px;
   box-shadow: 0 1px 10px var(--light-white);
-
 }
 #expl-section1:hover{
   scale:1.2
@@ -56,6 +55,9 @@
 }
 .explanation-text span{
   display: block;
+}
+.explanation-text p{
+  margin: 0px ;
 }
 .extra-icons {
   position: relative;
