@@ -8,13 +8,17 @@ function MainNavbarComponent({ handleDayNight, handleChangeTheme, isNightMode })
   const [collapsed, setCollapsed] = useState(false);
   const [mainNavbarClass, setmainNavbarClass] = useState(false);
 
+  // Variables para manejar el deslizamiento (swipe)
+  let touchStartX = 0;
+  let touchEndX = 0;
+
   useEffect(() => {
     const handleScrollOrResize = () => {
       if (window.innerWidth <= 900) {
         setCollapsed(true);
         setmainNavbarClass(true);
       } else {
-        if (window.scrollY <= 1 ) {
+        if (window.scrollY <= 1) {
           setCollapsed(false);
           setmainNavbarClass(false);
         } else if (window.scrollY >= 2 && window.scrollY <= 30) {
@@ -26,6 +30,7 @@ function MainNavbarComponent({ handleDayNight, handleChangeTheme, isNightMode })
         }
       }
     };
+
     window.addEventListener("scroll", handleScrollOrResize);
     window.addEventListener("resize", handleScrollOrResize);
     return () => {
@@ -39,8 +44,30 @@ function MainNavbarComponent({ handleDayNight, handleChangeTheme, isNightMode })
     setmainNavbarClass(false);
   };
 
+  // Funciones para manejar el deslizamiento (swipe)
+  const handleTouchStart = (e) => {
+    touchStartX = e.touches[0].clientX;
+  };
+
+  const handleTouchMove = (e) => {
+    touchEndX = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStartX - touchEndX > 50) {
+      // Si el usuario desliza más de 50px a la izquierda, colapsar el menú
+      setCollapsed(true);
+      setmainNavbarClass(false);
+    }
+  };
+
   return (
-    <div className={`main-navbar-box ${collapsed ? "collapsed" : ""} ${mainNavbarClass ? "collapsed-side" : ""}`}>
+    <div
+      className={`main-navbar-box ${collapsed ? "collapsed" : ""} ${mainNavbarClass ? "collapsed-side" : ""}`}
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd} // Agregar eventos de toque
+    >
       {!collapsed && (
         <>
           <DayNightBoxComponent
@@ -128,6 +155,13 @@ function MainNavbarComponent({ handleDayNight, handleChangeTheme, isNightMode })
             aosDelay={"350"}
             aosFading={"fade-right"}
           />
+          <div className="mainNavbar-chevron-collapse">
+          <i className="fa-solid fa-chevron-left"></i>
+          <i className="fa-solid fa-chevron-left"></i>
+          <i className="fa-solid fa-chevron-left"></i>
+          <i className="fa-solid fa-chevron-left"></i>
+          <i className="fa-solid fa-chevron-left"></i>
+          </div>
         </>
       )}
       {collapsed && (

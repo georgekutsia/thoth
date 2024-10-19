@@ -1,15 +1,40 @@
 const programacionNotas = {
-  ejemplo:[
-    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259267/java000000_jt2gfr.png", code: "java_code1" },
-    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259333/java00_z5kyqk.png", code: "java_code2" },
-    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259331/java001_q43th4.png", code: "java_code3" },
-    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259258/java1_tea7by.png", code: "java_code4" },
-    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259254/java2_kkgp4s.png", code: "java_code5" },
+  ejemplo: [
+    {
+      url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259267/java000000_jt2gfr.png",
+      code: "java_code1",
+    },
+    {
+      url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259333/java00_z5kyqk.png",
+      code: "java_code2",
+    },
+    {
+      url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259331/java001_q43th4.png",
+      code: "java_code3",
+    },
+    {
+      url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259258/java1_tea7by.png",
+      code: "java_code4",
+    },
+    {
+      url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259254/java2_kkgp4s.png",
+      code: "java_code5",
+    },
   ],
-  indice:["Aula General", "Unidad1", "Unidad2", "Unidad3", "Unidad4","unidad5","unidad6"],
+  indice: [
+    "Aula General",
+    "Unidad1",
+    "Unidad2",
+    "Unidad3",
+    "Unidad4",
+    "unidad5",
+    "unidad6",
+  ],
 
   basicJava: [
-    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259267/java000000_jt2gfr.png", code: `
+    {
+      url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259267/java000000_jt2gfr.png",
+      code: `
 /**
  *
  * @author jdavi
@@ -20,10 +45,7 @@ const programacionNotas = {
 
 package _1curso_java; //Creamos paquete de java y lo nombramos con _1curso_java//
  /*Un paquete es una forma de organizar las clases en Java. En este caso, creaste el paquete llamado _1curso_java. 
-Los paquetes también evitan conflictos de nombres cuando tienes muchas clases.*/
-
-
-public class HolaMundo {
+Los paquetes también evitan conflictos de nombres cuando tienes muchas clases.*/public class HolaMundo {
     //public: Es un modificador de acceso que indica que esta clase será accesible desde cualquier parte del programa.
     //class: Define una clase en Java. Todo el código de Java está contenido en clases.
 /**
@@ -45,8 +67,11 @@ Métodos: Son las acciones o comportamientos que los objetos pueden realizar (co
     }
 }
 
-` },
-    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259333/java00_z5kyqk.png", code: `/*
+`,
+    },
+    {
+      url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259333/java00_z5kyqk.png",
+      code: `/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
@@ -69,8 +94,11 @@ public class _4constante {
         System.out.println("El numero es: "+numero);//sale por pantalla El numero es: + el valor de la variable
    
 }
-}` },
-    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259331/java001_q43th4.png", code: `/*
+}`,
+    },
+    {
+      url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259331/java001_q43th4.png",
+      code: `/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
@@ -104,8 +132,11 @@ public class _5Datos {
         System.out.println("El numero es: "+numero);//sale por pantalla El numero es: + el valor de la variable
 }
 }
-` },
-    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259258/java1_tea7by.png", code: `/*@author jdavi*/
+`,
+    },
+    {
+      url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259258/java1_tea7by.png",
+      code: `/*@author jdavi*/
 
 /*VARIABLES PRIMITIVAS
 Una Variable es un espacio de memoria que almacena un valor, es decir como si tuvieramos una caja y guardamos algo*/
@@ -147,8 +178,11 @@ int: Variable para enteros grandes, la más usada. Puede almacenar valores entre
 long: Variable para enteros extremadamente grandes, entre -9,223,372,036,854,775,808 y 9,223,372,036,854,775,807. 
 
 Para los valores de long, se añade una L al final del número para indicar que es un long.
-*/` },
-    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259254/java2_kkgp4s.png", code: `/*
+*/`,
+    },
+    {
+      url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259254/java2_kkgp4s.png",
+      code: `/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
@@ -196,8 +230,11 @@ public class _1variable_decimal {
         //OJO SOLO SE PUEDEN PONER NÚMEROS DECIMALES, NO SE PUEDE PONER NÚMEROS ENTEROS.
         }
         }
-` },
-    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259286/java3_kjizzf.png", code: `package _1curso_java;
+`,
+    },
+    {
+      url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259286/java3_kjizzf.png",
+      code: `package _1curso_java;
 
 public class _1variable_decimalbis {
     public static void main(String[] args) {
@@ -225,8 +262,11 @@ public class _1variable_decimalbis {
         
         // NOTA: En general, se prefiere usar 'double' para la mayoría de los cálculos que involucran decimales
     }
-}` },
-    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259262/java4_dj0kxr.png", code: `/*
+}`,
+    },
+    {
+      url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259262/java4_dj0kxr.png",
+      code: `/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
@@ -257,8 +297,11 @@ public class _2variable_booleana {
 
         }
         }
-` },
-    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259285/java5_aw1y3q.png", code: `/*
+`,
+    },
+    {
+      url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259285/java5_aw1y3q.png",
+      code: `/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
@@ -308,8 +351,11 @@ public class _2variable_booleanabis {
         System.out.println("¿Son ambos números positivos?: " + esPositivo);  // Salida: true
     }
 }
-` },
-    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259278/java6_obcfvg.png", code: `/*
+`,
+    },
+    {
+      url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259278/java6_obcfvg.png",
+      code: `/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
@@ -354,16 +400,16 @@ public class _3datos_no_primitivos_y_cadenas {
         
         
         }
-        }` },
-    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259281/java05_nopf8g.png", code: `/*@author jdavi*/
+        }`,
+    },
+    {
+      url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259281/java05_nopf8g.png",
+      code: `/*@author jdavi*/
 
 /*VARIABLES PRIMITIVAS
 Una Variable es un espacio de memoria que almacena un valor, es decir como si tuvieramos una caja y guardamos algo*/
 
-package _1curso_java;
-
-
-public class _0variable_0_entero {
+package _1curso_java;public class _0variable_0_entero {
         public static void main(String[] args) {
         // Función principal, todo el código empezará desde el main
         
@@ -418,9 +464,6 @@ public class _0variable_0_entero {
         //OJO SOLO SE PUEDEN PONER NÚMEROS ENTEROS, NO SE PUEDE PONER NÚMEROS CON DECIMALES.
         }
         }
-
-
-
 /*
 Explicación breve:
 byte: Variable para almacenar números enteros pequeños, entre -128 y 127.
@@ -432,89 +475,13 @@ int: Variable para enteros grandes, la más usada. Puede almacenar valores entre
 long: Variable para enteros extremadamente grandes, entre -9,223,372,036,854,775,808 y 9,223,372,036,854,775,807. 
 
 Para los valores de long, se añade una L al final del número para indicar que es un long.
-*/` },
-    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259236/java06_o0rke8.png", code: `/*@author jdavi*/
-
-/*VARIABLES PRIMITIVAS
-Una Variable es un espacio de memoria que almacena un valor, es decir como si tuvieramos una caja y guardamos algo*/
-
-package _1curso_java;
-
-
-public class _0variable_0_entero {
-        public static void main(String[] args) {
-        // Función principal, todo el código empezará desde el main
-        
-        /*byte es una variable en este caso entero, almacena datos de números enteros. Esta variable "byte va del número 
-        -128 a 127. Qué quiere decir esto, que si ponemos en variable entero el número 130 no lo reconocería*/
-        
-        byte entero ;
-        entero = 1;
-       
-        //También podemos hacerlo de esta forma "byte entero = 1";
-
-        System.out.println("Entero: "+entero);//sale por pantalla Entero + el valor de la variable
-
-        
-        /*Variable tipo short en este caso entero, almacena datos de números enteros. Esta variable "byte va del número 
-        -32.768 a 32.767. Qué quiere decir esto, que si ponemos en variable entero el número 33000 no lo reconocería
-        
-        short entero;
-        entero = 11000;
-        
-        //También podemos hacerlo de esta forma "short entero = 11000";
-
-        System.out.println("Entero: "+entero);//sale por pantalla Entero + el valor de la variable
-        */
-        
-        
-        
-        /*Variable tipo Int en este caso entero (es el más utilizado), almacena datos de números enteros. 
-        Esta variable "int va del número -2.147.483.648 a 2.147.483.647. Qué quiere decir esto, que si ponemos en variable entero el número 3.000.000.000 no lo reconocería
-        
-        int entero;
-        entero = 2000000000;
-        
-        //También podemos hacerlo de esta forma "int entero = 1";
-
-        System.out.println("Entero: "+entero);//sale por pantalla Entero + el valor de la variable
-        */
-        
-        
-        /*Variable tipo long en este caso entero, almacena datos de números enteros. 
-        Esta variable "int va del número -9.223.372.036.854.775.808 a 9.223.372.854.775.807 
-        Qué quiere decir esto, que si ponemos en variable entero el número 3.000.000.000 no lo reconocería
-        
-        long entero;
-        entero = 2000000000000000000;
-        
-        //También podemos hacerlo de esta forma "int entero = 1";
-
-        System.out.println("Entero: "+entero);//sale por pantalla Entero + el valor de la variable
-        */
-        
-        //OJO SOLO SE PUEDEN PONER NÚMEROS ENTEROS, NO SE PUEDE PONER NÚMEROS CON DECIMALES.
-        }
-        }
-
-
-
-/*
-Explicación breve:
-byte: Variable para almacenar números enteros pequeños, entre -128 y 127.
-
-short: Variable para almacenar enteros un poco más grandes, entre -32,768 y 32,767.
-
-int: Variable para enteros grandes, la más usada. Puede almacenar valores entre -2,147,483,648 y 2,147,483,647.
-
-long: Variable para enteros extremadamente grandes, entre -9,223,372,036,854,775,808 y 9,223,372,036,854,775,807. 
-
-Para los valores de long, se añade una L al final del número para indicar que es un long.
-*/` },
+*/`,
+    },
   ],
-
   conditionalJava: [
-    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729266559/cond1_llbelx.png", code: `/*
+    {
+      url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729266559/cond1_llbelx.png",
+      code: `/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
@@ -551,8 +518,11 @@ public class Mayor_Menor_Igualesbis {  // Definición de la clase principal "May
       }
    } 
 }
-` },
-    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729266464/cond2_t6n7em.png", code: `/*Los operadores condicionales en Java son aquellos que evalúan dos expresiones booleanas.
+`,
+    },
+    {
+      url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729266464/cond2_t6n7em.png",
+      code: `/*Los operadores condicionales en Java son aquellos que evalúan dos expresiones booleanas.
 Operador	Descripción
 &&	        Operador condicional AND
 ||	        Operador condicional OR
@@ -583,8 +553,11 @@ public class Mayor_Menor_Iguales {
       }
    } 
 }
-` },
-    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729266489/cond3_ijr4vf.png", code: `/*
+`,
+    },
+    {
+      url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729266489/cond3_ijr4vf.png",
+      code: `/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
@@ -617,8 +590,11 @@ public class Mayor_Menorbis {  // Definición de la clase principal "Mayor_Menor
       }
    }
 }
-` },
-    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729266538/cond4_xobtwu.png", code: `/*Los operadores condicionales en Java son aquellos que evalúan dos expresiones booleanas.
+`,
+    },
+    {
+      url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729266538/cond4_xobtwu.png",
+      code: `/*Los operadores condicionales en Java son aquellos que evalúan dos expresiones booleanas.
 Operador	Descripción
 &&	        Operador condicional AND
 ||	        Operador condicional OR
@@ -648,8 +624,11 @@ public class Mayor_Menor {
       }
    }
 }
-` },
-    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729266561/cond5_xoxb9g.png", code: `/*
+`,
+    },
+    {
+      url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729266561/cond5_xoxb9g.png",
+      code: `/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
@@ -704,8 +683,11 @@ public class Ecuacion_segundogradobis {  // Definición de la clase principal "E
       }
    }
 }
-` },
-    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729266525/cond6_agdjng.png", code: `/*Los operadores condicionales en Java son aquellos que evalúan dos expresiones booleanas.
+`,
+    },
+    {
+      url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729266525/cond6_agdjng.png",
+      code: `/*Los operadores condicionales en Java son aquellos que evalúan dos expresiones booleanas.
 Operador	Descripción
 &&	        Operador condicional AND
 ||	        Operador condicional OR
@@ -754,8 +736,11 @@ public class Ecuacion_segundogrado {
    }
 }
 
-` },
-    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729266552/cond7_wfswr2.png", code: `/*
+`,
+    },
+    {
+      url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729266552/cond7_wfswr2.png",
+      code: `/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
@@ -801,8 +786,11 @@ public class Dia_semanabis {  // Definición de la clase principal "Dia_semana".
       }
    }
 }
-` },
-    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729266515/cond8_vlo2n2.png", code: `/*Los operadores condicionales en Java son aquellos que evalúan dos expresiones booleanas.
+`,
+    },
+    {
+      url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729266515/cond8_vlo2n2.png",
+      code: `/*Los operadores condicionales en Java son aquellos que evalúan dos expresiones booleanas.
 Operador	Descripción
 &&	        Operador condicional AND
 ||	        Operador condicional OR
@@ -834,8 +822,11 @@ public class Dia_semana {
          case 7 -> System.out.println("domingo");
       }
    }
-}` },
-    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729266556/cond9_ttoowf.png", code: `/*
+}`,
+    },
+    {
+      url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729266556/cond9_ttoowf.png",
+      code: `/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
@@ -888,8 +879,11 @@ public class Calificacion_nota2bis {  // Definición de la clase principal "Cali
         }
     }
 }
-` },
-    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729266445/cond10_mptcxo.png", code: `/*Los operadores condicionales en Java son aquellos que evalúan dos expresiones booleanas.
+`,
+    },
+    {
+      url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729266445/cond10_mptcxo.png",
+      code: `/*Los operadores condicionales en Java son aquellos que evalúan dos expresiones booleanas.
 Operador	Descripción
 &&	        Operador condicional AND
 ||	        Operador condicional OR
@@ -897,10 +891,7 @@ Operador	Descripción
 instanceof	Operador instanceof
 
 https://www.manualweb.net/java/operadores-condicionales-java/
-*/
-
-
-package _1Condicionales;
+*/package _1Condicionales;
 
 import java.util.Scanner;
 
@@ -930,8 +921,11 @@ public class Calificacion_nota {
          System.out.println("Error: nota no válida");
       }
    }
-}` },
-    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729266439/cond11_dqvnhn.png", code: `/*Los operadores condicionales en Java son aquellos que evalúan dos expresiones booleanas.
+}`,
+    },
+    {
+      url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729266439/cond11_dqvnhn.png",
+      code: `/*Los operadores condicionales en Java son aquellos que evalúan dos expresiones booleanas.
 Operador	Descripción
 &&	        Operador condicional AND
 ||	        Operador condicional OR
@@ -973,8 +967,11 @@ public class Calificacion_nota2 {
                 System.out.println("Error: nota no válida");//Solicitamos imprimir por pantalla
         }
     }
-}` },
-    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729266495/cond12_w43lnq.png", code: `/*
+}`,
+    },
+    {
+      url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729266495/cond12_w43lnq.png",
+      code: `/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
@@ -1018,7 +1015,8 @@ public class Calificacion_notabis {  // Definición de la clase principal "Calif
       }
    }
 }
-` },
+`,
+    },
   ],
 };
 

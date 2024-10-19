@@ -18,6 +18,7 @@
 
 .collapsed-side {
   left: 15vw;
+  transition: 0.3s ease-in-out;
 }
 
 .navLinkBtn {
@@ -216,7 +217,9 @@
   font-size: calc(19px + 2.3vw);
 
 }
-
+.mainNavbar-chevron-collapse{
+  display: none;
+}
 .fa-id-card-clip {
   margin-left: calc(10px + 0.5vw);
   color: var(--black);
@@ -225,10 +228,27 @@
 
 @media only screen and (max-width: 600px) {
 .collapsed-side{
-  left: 3vw;
+  left: 1px;
+  margin-left: 0px;
+  transition: 0.3s ease-in-out;
 }
 .main-navbar-box {
   margin-top: calc(0vh);
-  flex-wrap: wrap;
+  transform: translateX(0%);
+  border-radius:  0px 00px 40px 0px;
+  left: 0px;
+  flex-direction: column;
+  padding: 10px 50px 10px 30px;
+  justify-content: center;
+
+}
+.mainNavbar-chevron-collapse{
+  position: absolute;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: var(--dark-grey);
+  padding-right: 20px;
 }
 }
