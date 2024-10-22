@@ -46,7 +46,7 @@
 }
 
 .explanation-text {
-  font-size: calc(12px + 0.3vw);
+  font-size: calc(12px + 0.1vw);
   height: 150px;
   overflow: scroll;
   width: 100%;

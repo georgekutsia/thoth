@@ -4,7 +4,6 @@ import "./filter.css";
 // eslint-disable-next-line react/prop-types
 function FilterComponent({ searchTerm, setSearchTerm }) {
   const inputRef = useRef(null);
-
   const [inputBorder, setInputBorder] = useState("");
 
   const handleFocus = () => {
@@ -16,8 +15,11 @@ function FilterComponent({ searchTerm, setSearchTerm }) {
   };
 
   const clearInput = () => {
-    setSearchTerm(""); // Limpiar el input
-    inputRef.current.focus(); // Enfocar el input después de limpiar
+    console.log("Clear button clicked"); // Depuración: Asegúrate de que se dispara el evento
+    setSearchTerm(); // Limpiar el valor del input
+    if (inputRef.current) {
+      inputRef.current.focus(); // Enfocar el input después de limpiar
+    }
   };
 
   return (
@@ -27,17 +29,17 @@ function FilterComponent({ searchTerm, setSearchTerm }) {
         ref={inputRef}
         type="text"
         value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
+        onChange={(e) => setSearchTerm(e.target.value)} // Actualiza el valor del estado
         onFocus={handleFocus}
         onBlur={handleBlur}
-        className={`search-input`}
+        className="search-input"
         style={{ width: inputBorder, transition: "0.4s ease-in-out" }}
         data-aos="slide-left"
       />
       {searchTerm && ( // Mostrar el botón "X" solo si hay texto en el input
         <i
-          className={`fa-solid fa-x delete-input-info`}
-          onClick={clearInput} // Borrar el contenido del input
+          className="fa-solid fa-x delete-input-info"
+          onClick={()=>setSearchTerm("")} // Llamada a clearInput para borrar el contenido
           style={{ cursor: "pointer" }}
         ></i>
       )}

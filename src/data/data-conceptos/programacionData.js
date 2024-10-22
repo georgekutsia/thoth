@@ -66,9 +66,108 @@ const data = [
     "random": "Curiosamente, algunos errores solo ocurren en tiempo de ejecución, cuando ya es demasiado tarde para corregirlos fácilmente.",
     "link": "https://example.com/tiempo-ejecucion",
     "link2": "https://example.com/cocina/ejecucion-recetas"
-  }
+  },
+    {
+      "titulo": "Depuración",
+      "explicación": "La depuración es el proceso de identificar y corregir errores o bugs en un programa. Involucra el análisis del código, la ejecución controlada y la observación de los resultados para solucionar problemas.",
+      "cine": "En películas como 'The Matrix', depurar el código del sistema podría salvar a los personajes de fallas en la simulación.",
+      "cocina": "Depurar en cocina sería como revisar una receta y corregir los pasos que se han hecho mal para evitar que el platillo final falle.",
+      "deporte": "Analizar errores de ejecución en deportes, como fallas en estrategias durante un partido, es similar a depurar un programa en tiempo real.",
+      "random": "El término 'debugging' proviene de la eliminación de un insecto (bug) en una computadora real que estaba causando fallas.",
+      "link": "https://example.com/depuracion",
+      "link2": "https://example.com/cocina/depuracion-recetas"
+    },
+    {
+      "titulo": "Estructuras de Datos",
+      "explicación": "Las estructuras de datos son formas de organizar y almacenar datos para que puedan ser utilizados de manera eficiente. Ejemplos incluyen listas, pilas, colas y árboles.",
+      "cine": "En películas como 'Tron', la representación visual de datos puede ser vista como estructuras de datos en acción.",
+      "cocina": "Una estructura de datos es como una despensa organizada donde cada ingrediente está en su lugar y puede ser accedido fácilmente según sea necesario.",
+      "deporte": "En los deportes, las estructuras de datos se utilizan para almacenar y organizar datos sobre el rendimiento de los jugadores, lo que permite un análisis más eficiente.",
+      "random": "Las estructuras de datos son esenciales en la informática, pero el concepto puede aplicarse también a cómo organizamos nuestras tareas diarias.",
+      "link": "https://example.com/estructuras-datos",
+      "link2": "https://example.com/cocina/estructuras-recetas"
+    },
+    {
+      "titulo": "Algoritmos de Búsqueda",
+      "explicación": "Los algoritmos de búsqueda son procesos que se utilizan para encontrar un valor específico dentro de una estructura de datos. Ejemplos incluyen la búsqueda binaria y la búsqueda secuencial.",
+      "cine": "En 'Minority Report', se usan algoritmos avanzados para predecir crímenes, lo que es similar a algoritmos de búsqueda prediciendo datos en grandes bases de datos.",
+      "cocina": "Buscar un ingrediente en una receta puede compararse con el uso de un algoritmo de búsqueda para encontrar la información necesaria.",
+      "deporte": "Los algoritmos de búsqueda ayudan a encontrar patrones específicos en datos de jugadores o equipos, optimizando estrategias en tiempo real.",
+      "random": "El algoritmo de búsqueda más eficiente en estructuras ordenadas es la búsqueda binaria, que reduce el número de pasos necesarios a la mitad en cada iteración.",
+      "link": "https://example.com/algoritmos-busqueda",
+      "link2": "https://example.com/cocina/recetas-busqueda"
+    },
+    {
+      "titulo": "Algoritmos de Ordenación",
+      "explicación": "Los algoritmos de ordenación organizan elementos en un conjunto de datos según un criterio definido, como de menor a mayor. Ejemplos incluyen QuickSort y MergeSort.",
+      "cine": "En 'The Social Network', los algoritmos de ordenación juegan un papel clave en la clasificación de las conexiones sociales.",
+      "cocina": "Ordenar los ingredientes de una receta según el orden de preparación es comparable a un algoritmo de ordenación.",
+      "deporte": "En deportes, los algoritmos de ordenación pueden ayudar a clasificar jugadores o equipos según su rendimiento.",
+      "random": "El algoritmo de ordenación QuickSort es uno de los más eficientes en la mayoría de los casos, pero fue inventado en 1960 por Tony Hoare.",
+      "link": "https://example.com/algoritmos-ordenacion",
+      "link2": "https://example.com/cocina/orden-recetas"
+    },
+    {
+      "titulo": "Recursividad",
+      "explicación": "La recursividad es una técnica en programación donde una función se llama a sí misma para resolver subproblemas más pequeños de un problema más grande. Es utilizada en algoritmos como la búsqueda de profundidad y la ordenación.",
+      "cine": "En 'Origen', el concepto de 'sueños dentro de sueños' es un buen ejemplo de recursividad aplicada en la narrativa.",
+      "cocina": "Una receta que implica repetición de pasos, como hornear múltiples capas de un pastel, puede asemejarse a la recursividad en programación.",
+      "deporte": "En la táctica deportiva, ciertas estrategias repetitivas pueden ser vistas como recursivas, ajustándose constantemente al comportamiento del oponente.",
+      "random": "La recursividad es tan fundamental que puede utilizarse para resolver problemas tan diversos como el cálculo de factoriales o la generación de fractales.",
+      "link": "https://example.com/recursividad",
+      "link2": "https://example.com/cocina/recetas-recursivas"
+    },
+    {
+      "titulo": "Funciones",
+      "explicación": "Una función en programación es un bloque de código reutilizable que realiza una tarea específica. Las funciones ayudan a organizar y modular el código, haciéndolo más mantenible y legible.",
+      "cine": "En 'Iron Man', la creación de módulos para el traje de Tony Stark es similar a cómo las funciones modulares se usan para estructurar código.",
+      "cocina": "Una función en la cocina sería como una técnica que aplicas repetidamente, como 'mezclar', que puede usarse en múltiples recetas.",
+      "deporte": "En deportes, se utilizan funciones para modelar y simular comportamientos específicos, como la trayectoria de una pelota o el rendimiento de un jugador.",
+      "random": "Las funciones anónimas, conocidas como lambdas, permiten escribir código más compacto y eficiente.",
+      "link": "https://example.com/funciones-programacion",
+      "link2": "https://example.com/cocina/funciones-cocina"
+    },
+    {
+      "titulo": "Condicionales",
+      "explicación": "Los condicionales son estructuras de control que permiten que el programa tome decisiones basadas en si una condición es verdadera o falsa. Las instrucciones comunes incluyen 'if', 'else' y 'switch'.",
+      "cine": "En 'The Matrix', las decisiones de Neo pueden ser vistas como condicionales: elegir la pastilla azul o la pastilla roja.",
+      "cocina": "En la cocina, usar condicionales sería como decidir qué ingrediente agregar dependiendo del sabor que buscas.",
+      "deporte": "Los condicionales se utilizan en simulaciones deportivas para prever decisiones tácticas dependiendo del comportamiento del oponente.",
+      "random": "El uso de condicionales permite que los programas sean dinámicos y se adapten a diferentes entradas de datos.",
+      "link": "https://example.com/condicionales",
+      "link2": "https://example.com/cocina/condicionales-cocina"
+    },
+    {
+      "titulo": "Bucles",
+      "explicación": "Los bucles son estructuras que permiten repetir un bloque de código varias veces. Existen varios tipos de bucles, como 'for', 'while' y 'do-while'.",
+      "cine": "En la película 'Edge of Tomorrow', el protagonista vive un bucle temporal, lo que es una excelente metáfora de un bucle en programación.",
+      "cocina": "En la cocina, un bucle sería como repetir una acción, por ejemplo, batir huevos hasta que alcancen la consistencia deseada.",
+      "deporte": "Los bucles se usan en el entrenamiento de atletas, donde repiten los mismos ejercicios varias veces para mejorar su rendimiento.",
+      "random": "Algunos bucles mal diseñados pueden causar que un programa nunca termine de ejecutarse, lo que se conoce como 'bucles infinitos'.",
+      "link": "https://example.com/bucles",
+      "link2": "https://example.com/cocina/bucles-recetas"
+    },
+    {
+      "titulo": "Compilador",
+      "explicación": "Un compilador es un programa que traduce el código fuente escrito en un lenguaje de alto nivel a código máquina, que es ejecutable por una computadora.",
+      "cine": "El concepto de un compilador puede relacionarse con películas como 'Transcendence', donde el conocimiento humano es transferido y compilado en una máquina.",
+      "cocina": "El compilador en la cocina es como un chef que traduce una receta escrita en instrucciones precisas que los ayudantes de cocina pueden seguir.",
+      "deporte": "En simulaciones deportivas, el compilador traduce las reglas del deporte a un formato que la computadora puede procesar rápidamente.",
+      "random": "El primer compilador fue creado por Grace Hopper en los años 50, lo que revolucionó el mundo de la programación.",
+      "link": "https://example.com/compiladores",
+      "link2": "https://example.com/cocina/compilacion-recetas"
+    },
+    {
+      "titulo": "Inteligencia Artificial",
+      "explicación": "La inteligencia artificial (IA) es el campo de la informática que se centra en la creación de sistemas capaces de realizar tareas que normalmente requieren inteligencia humana, como el reconocimiento de voz, el aprendizaje y la resolución de problemas.",
+      "cine": "Películas como 'Ex Machina' o 'Her' exploran los límites de la inteligencia artificial y su interacción con los humanos.",
+      "cocina": "En la cocina, las IA pueden ser usadas para crear recetas personalizadas basadas en preferencias alimenticias y restricciones dietéticas.",
+      "deporte": "En deportes, la IA se utiliza para analizar el rendimiento de los jugadores, predecir el resultado de los juegos y optimizar tácticas en tiempo real.",
+      "random": "El campo de la inteligencia artificial comenzó en los años 50, cuando los científicos soñaban con máquinas que pudieran 'pensar' como humanos.",
+      "link": "https://example.com/inteligencia-artificial",
+      "link2": "https://example.com/cocina/recetas-ia"
+    }
+  ];
   
-
-];
-
-export default data;
+  export default data;
+  

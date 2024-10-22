@@ -40,3 +40,7 @@ export { default as CardSlider } from "./slider/CardSlider";
 export { default as TestSection } from "./test-section/TestSection";
 export { default as ResultsModal } from "./results-modal/ResultsModal";
 export { default as SimulacroSelection } from "./simulacro-selection/SimulacroSelection";
+
+
+export { default as MonacoComponentJavascript } from "./monaco-vscode/MonacoComponentJavascript";
+export { default as MonacoComponentJava } from "./monaco-vscode/MonacoComponentJava";

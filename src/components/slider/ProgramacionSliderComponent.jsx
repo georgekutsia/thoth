@@ -11,6 +11,7 @@ import { programacionNotas } from "../../data";
 
 export default function ProgramacionSliderComponent() {
   const [swiperRef, setSwiperRef] = useState(null); 
+  
 
   const slideTo = (index) => {
     if (swiperRef) {

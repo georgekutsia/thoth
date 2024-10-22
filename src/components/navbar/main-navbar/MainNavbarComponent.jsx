@@ -182,6 +182,6 @@ function MainNavbarComponent({ handleDayNight, handleChangeTheme, isNightMode })
 MainNavbarComponent.propTypes = {
   handleDayNight: PropTypes.func.isRequired,
   handleChangeTheme: PropTypes.func.isRequired,
-  isNightMode: PropTypes.bool.isRequired,
+  isNightMode: PropTypes.string.isRequired,
 }
 export default MainNavbarComponent;

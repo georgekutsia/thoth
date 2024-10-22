@@ -12,7 +12,7 @@
 
 .swiper-v {
   width: 70vw;
-  height: 100%;
+  height: 100%; /* ajusta los pequeños sliders cuando son varios en la grande */
   background: transparent;
 }
 

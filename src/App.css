@@ -1,5 +1,7 @@
 :root {
   --bambam: var(--black);
+  --filter-color: white;
+
 --white: #ffffff;
 --grey: rgb(193, 193, 193);
 --black: #000000;
@@ -9,7 +11,6 @@
 --yellow: rgb(255, 255, 0);
 --orange: #ffa200;
 --brown: rgb(165, 42, 42);
-
 --green: rgb(0, 255, 0);
 --pink: #ff0080;
 
@@ -91,6 +92,7 @@
   background: radial-gradient(ellipse at bottom, #ffffff, #edfdff);
   color:  black;
  --bambam: var(--white);
+ --filter-color: var(--black);
 
 }
 .body-day-1 {

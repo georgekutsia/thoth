@@ -34,6 +34,8 @@ function BasesDeDatosScreen() {
       setnoteIcon("fa-book");
     }
   };
+
+  
   return (
     <div className="screen-box">
       <div className="exercise-file-btn" data-aos="fade-in" data-aos-delay="600">
