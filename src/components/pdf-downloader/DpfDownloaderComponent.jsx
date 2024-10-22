@@ -1,8 +1,7 @@
-import "./pdfDownloader.css";
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 import PropTypes from "prop-types";
-
+import "./pdfDown.css"
 function DpfDownloaderComponent({text, textPlus, url, nav}) {
   const renderTooltip = (props) => (
     <Tooltip id="button-tooltip" {...props} >
