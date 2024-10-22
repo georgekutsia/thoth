@@ -1,51 +1,5 @@
-.body{
-  min-height: 100vh;
-  overflow: scroll;
-  font-weight: 300;
-  font-family: 'Raleway', sans-serif;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.body-night {
-  background-image: radial-gradient(circle at center, #899Dc4, #495D84);
-  background: radial-gradient(ellipse at bottom, #1b2735, #090a0f);
-  color: white;
-}
-.body-day {
-  background-image: radial-gradient(circle at center, #899Dc4, #0759fc);
-  background: radial-gradient(ellipse at bottom, #ffffff, #edfdff);
-  color:  black;
-}
-.body-day-1 {
-  background-image: radial-gradient(circle at center, #899Dc4, #0759fc);
-  background: radial-gradient(ellipse at bottom, #fff8ca, #ffce72);
-  color:  black;
-}
-.body-day-2 {
-  background-image: radial-gradient(circle at center, #899Dc4, #0759fc);
-  background: radial-gradient(ellipse at bottom, #ffb6b2, #ff8282);
-  color:  black;
-}
-.body-day-3 {
-  background-image: radial-gradient(circle at center, #899Dc4, #0759fc);
-  background: radial-gradient(ellipse at bottom, #ffffff, #ff7fbd);
-  color:  black;
-}
-.body-day-4 {
-  background-image: radial-gradient(circle at center, #899Dc4, #0759fc);
-  background: radial-gradient(ellipse at bottom, #f8fff0, #d3ffc5);
-  color:  black;
-}
-.body-day-5 {
-  background-image: radial-gradient(circle at center, #899Dc4, #0759fc);
-  background: radial-gradient(ellipse at bottom, #ffffff, #bdf1ff);
-  color:  black;
-}
-
-.body-day i{
-  color: var(--light-grey);
-}
 :root {
+  --bambam: var(--black);
 --white: #ffffff;
 --grey: rgb(193, 193, 193);
 --black: #000000;
@@ -116,6 +70,53 @@
   --hor-programacion2:rgba(242,242,242,255);
   --hor-sistemas1:rgba(47,192,246,255);
   --hor-sistemas2:rgba(220,234,255,255);
+}
+
+
+.body{
+  min-height: 100vh;
+  overflow: scroll;
+  font-weight: 300;
+  font-family: 'Raleway', sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.body-night {
+  background-image: radial-gradient(circle at center, #899Dc4, #495D84);
+  background: radial-gradient(ellipse at bottom, #1b2735, #090a0f);
+  color: white;
+}
+.body-day {
+  background-image: radial-gradient(circle at center, #899Dc4, #0759fc);
+  background: radial-gradient(ellipse at bottom, #ffffff, #edfdff);
+  color:  black;
+ --bambam: var(--white);
+
+}
+.body-day-1 {
+  background-image: radial-gradient(circle at center, #899Dc4, #0759fc);
+  background: radial-gradient(ellipse at bottom, #fff8ca, #ffce72);
+  color:  black;
+}
+.body-day-2 {
+  background-image: radial-gradient(circle at center, #899Dc4, #0759fc);
+  background: radial-gradient(ellipse at bottom, #ffb6b2, #ff8282);
+  color:  black;
+}
+.body-day-3 {
+  background-image: radial-gradient(circle at center, #899Dc4, #0759fc);
+  background: radial-gradient(ellipse at bottom, #ffffff, #ff7fbd);
+  color:  black;
+}
+.body-day-4 {
+  background-image: radial-gradient(circle at center, #899Dc4, #0759fc);
+  background: radial-gradient(ellipse at bottom, #f8fff0, #d3ffc5);
+  color:  black;
+}
+.body-day-5 {
+  background-image: radial-gradient(circle at center, #899Dc4, #0759fc);
+  background: radial-gradient(ellipse at bottom, #ffffff, #bdf1ff);
+  color:  black;
 }
 
 * {

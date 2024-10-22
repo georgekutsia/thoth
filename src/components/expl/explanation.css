@@ -21,7 +21,8 @@
   box-shadow: 0 1px 10px var(--light-white);
 }
 #expl-section1:hover{
-  scale:1.2
+  scale:1.1;
+  z-index: 800;
 }
 
 #expl-section3 {
@@ -37,21 +38,24 @@
 
 .explanation-title {
   padding-bottom:  10px;
-  font-size: calc(12px + 0.5vw);
+  font-size: calc(12px + 0.3vw);
   max-width: 300px;
   font-weight: 700;
   cursor: pointer;
+  text-shadow: 1px 1px var(--bambam);
 }
 
 .explanation-text {
-  width: 100%;
   font-size: calc(12px + 0.3vw);
   height: 150px;
   overflow: scroll;
+  width: 100%;
   text-align: justify;
   text-indent: 10px;
-  padding: 20px;
+  padding: 10px;
   transition: 0.3s ease-in-out;
+  text-shadow: 1px 1px var(--bambam);
+
 }
 .explanation-text span{
   display: block;
@@ -201,7 +205,6 @@
   }
 
   .explanation-text {
-    width: 90%;
-    max-height: 350px;
+    max-height: 40vh;
   }
 }

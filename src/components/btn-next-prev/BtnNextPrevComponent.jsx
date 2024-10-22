@@ -5,8 +5,8 @@ function BtnNextPrevComponent({handlePrev, handleNext}) {
   return (
     <div >
 
-    <button className="btnNavNextPrevLeft" onClick={handlePrev}>   <span><i className={`fa-solid fa-chevron-left ch-left-slide`} ></i></span><i className="i-slider"></i></button>
-    <button className="btnNavNextPrevRight" onClick={handleNext}>   <span><i className={`fa-solid fa-chevron-right ch-right-slide`} ></i></span><i className="i-slider"></i></button>
+    <button className="btnNavNextPrevLeft" onClick={handlePrev}>   <span className='span-btnNextPrev'><i className={`fa-solid fa-chevron-left ch-left-slide`} ></i></span><i className="i-slider"></i></button>
+    <button className="btnNavNextPrevRight" onClick={handleNext}>   <span className='span-btnNextPrev'><i className={`fa-solid fa-chevron-right ch-right-slide`} ></i></span><i className="i-slider"></i></button>
   </div>
   )
 }

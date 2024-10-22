@@ -15,7 +15,7 @@
 }
 
 .question-card h2 {
-  color: var(--dark-blue);
+  color: var(--nav-blue);
   margin-bottom: 20px;
 }
 
@@ -32,7 +32,7 @@
   padding: 10px 15px;
   border-radius: 4px;
   font-size: 16px;
-  transition: all 0.3s ease;
+  transition: all 0.9s ease;
 }
 
 .option-button:hover {
@@ -54,7 +54,7 @@
 .start-card p {
   margin-bottom: 20px;
 }
-
+/* 
 .start-button {
   background-color: var(--blue);
   color: var(--white);
@@ -64,11 +64,12 @@
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  transition: 0.5s ease-in-out;
 }
 
 .start-button:hover {
   background-color: var(--dark-blue);
-}
+} */
 
 /* Estilos para el modal personalizado */
 .modal-overlay {
@@ -199,6 +200,7 @@
 }
 /* Estilos para el selector de asignaturas */
 .subject-selection {
+  margin-top: 5vh;
   max-width: 1000px;
   padding: 20px;
   height: 85vh;   
@@ -222,6 +224,7 @@
   padding: 20px;
   transition: all 0.3s ease;
   height: 150px;
+
 }
 
 .subject-card:hover {
@@ -239,7 +242,7 @@
 .subject-icon {
   font-size: 3rem;
   margin-bottom: 10px;
-  color: var(--dark-blue);
+  color: var(--nav-blue);
 }
 
 .subject-card:hover .subject-icon {
@@ -250,13 +253,29 @@
   font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
-  color: var(--dark-blue);
+  color: var(--blue);
 }
 
 .subject-card:hover .subject-name {
   color: var(--white);
 }
+.btn-change-subject{
+  padding: 10px 20px;
+  background-color: var(--light-blue);
+  color: white;
+  border-radius: 10px;
+  transform: rotate(180deg);
+  transition: 0.2s ease-in-out;
+  font-size: calc(12px + 0.4vw);
+}
+.btn-change-subject:hover{
+  padding: 10px 20px;
+  background-color: var(--dark-blue);
+  font-size: calc(20px + 0.4vw);
+  padding: 4px 16px;
 
+
+}
 @media (max-width: 768px) {
   .subject-grid {
     grid-template-columns: repeat(2, 1fr);

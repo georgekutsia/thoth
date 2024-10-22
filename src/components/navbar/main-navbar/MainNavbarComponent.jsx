@@ -20,10 +20,10 @@ function MainNavbarComponent({ handleDayNight, handleChangeTheme, isNightMode })
         if (window.scrollY <= 1) {
           setCollapsed(false);
           setmainNavbarClass(false);
-        } else if (window.scrollY >= 2 && window.scrollY <= 30) {
+        } else if (window.scrollY >= 20 && window.scrollY <= 80) {
           setCollapsed(true);
           setmainNavbarClass(false);
-        } else if (window.scrollY > 31) {
+        } else if (window.scrollY > 81) {
           setCollapsed(true);
           setmainNavbarClass(true);
         }

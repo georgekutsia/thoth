@@ -2,5 +2,8 @@
   border-radius: 50%;
   width: 20px;
   height: 20px;
-
+  transition: 0.5s ease-in-out;
+}
+.day-btns:hover{
+  border-radius: 20%;
 }

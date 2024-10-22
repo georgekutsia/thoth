@@ -4,6 +4,7 @@ import {
   SimulacroSelection,
   TestSection,
   ResultsModal,
+  BtnChangeSubjectComponent,
 } from "../../components";
 import { useTestSimulator } from "../../hooks/useTestSimulator";
 import {
@@ -50,13 +51,12 @@ function ExamenesScreen() {
     setSelectedSubject(subject);
   };
 
+  const handleChangeSubject = () => {
+    setSelectedSubject(null)
+  }
   const renderSubjectSelection = () => (
     <div
       key="subject-selection"
-      // data-aos="fade-up"
-      // data-aos-duration="500"
-      // data-aos-delay="100"
-      //  versión anterior del data AOS que mueve todo el componente al mismo tiempo
       className="subject-selection screen-box" // screen box es la clase que añade los margenes y anchura para no interferir con el navbar
     >
       <h2 className="text-3xl font-bold mb-6 text-center">Selecciona una asignatura</h2>
@@ -86,12 +86,7 @@ function ExamenesScreen() {
   return (
     <div data-aos="fade-in" data-aos-duration="500"  className="pt-20 screen-box subject-selection" >
       <h1 className="text-3xl font-bold mb-4">{subjectTests[selectedSubject].name}</h1>
-      <button
-        onClick={() => setSelectedSubject(null)}
-        className="mb-4 bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
-      >
-        Cambiar asignatura
-      </button>
+      <BtnChangeSubjectComponent handleSubject={()=>handleChangeSubject()} tooltipText={"Cambiar de asignatura"}/>
       <div className="exam-screen">
         {!selectedSimulacro ? (
           <div

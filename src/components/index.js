@@ -6,6 +6,7 @@ export { default as BtnSliderNavComponent } from "./button-slider-nav/BtnSliderN
 export { default as BtnNextPrevComponent } from "./btn-next-prev/BtnNextPrevComponent";
 export { default as BtnExpandComponent } from "./button-expand/BtnExpandComponent";
 export { default as BtnCopyComponent } from "./button-copy/BtnCopyComponent";
+export { default as BtnChangeSubjectComponent } from "./btn-change-subject/BtnChangeSubjectComponent";
 
 export { default as CarouselGalleryGallery} from "./foto-gallery/carousel-gallery/CarouselGalleryGallery"
 export { default as TitleTopComponent} from "./title-top/TitleTopComponent"

@@ -13,7 +13,10 @@
   width: 80px;
   height: 40px;
   align-items: center;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
 }
+
 
 .btnNavNextPrevLeft:hover {
   color: var(--clr);
@@ -48,7 +51,7 @@
   position: absolute;
   width: 10px;
   height: 4px;
-  left: 80%;
+  left: 80%; /* posicion inicial left bajo*/
   top: -2px;
   border: 2px solid var(--clr);
   background: var(--white);
@@ -57,8 +60,8 @@
 
 .btnNavNextPrevLeft:hover .i-slider::before {
   width: 15px;
-  left: -10%;
-  animation: move 3s infinite;
+  left: 30%;/* posicion final left bajo */
+  animation: moveRight 3s infinite;
   background: var(--grey);
 
 }
@@ -68,7 +71,7 @@
   position: absolute;
   width: 10px;
   height: 4px;
-  left: 80%;
+  left: 80%; ;/* posicion inicial left */
   bottom: -2px;
   border: 2px solid var(--clr);
   background: var(--white);
@@ -77,31 +80,38 @@
 
 .btnNavNextPrevLeft:hover .i-slider::after {
   width: 15px;
-  left: -10%;
-  animation: move 3s infinite;
+  left: 30%;/* posicion final left  bajo*/
+  animation: moveRight 3s infinite;
   background: var(--grey);
 
 }
-.btnNavNextPrevLeft:hover .ch-left-slide {
-  position: absolute;
-    right: 40px;
-    top: -5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: 0.5s ease-in-out;
+.btnNavNextPrevLeft:hover .span-btnNextPrev {
+  transition: 1s ease-in-out;
+  margin-left: -1800px;
 }
 
-@keyframes move {
+
+@keyframes moveLeft {
   0% {
     transform: translateX(0);
   }
   50% {
-    transform: translateX(5px);
     opacity: 0;
   }
   100% {
-    transform: translateX(10px);
+    transform: translateX(20px);
+  }
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-20px);
   }
 }
 
@@ -110,11 +120,9 @@
     box-shadow: #27272c;
   }
   50% {
-    box-shadow: 0 0 25px var(--clr);
   }
   100% {
     box-shadow: #27272c;
-
   }
 }
 
@@ -139,6 +147,8 @@
   border-radius: 10px;
   width: 80px;
   height: 40px;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
 }
 
 .btnNavNextPrevRight:hover {
@@ -174,7 +184,7 @@
   position: absolute;
   width: 10px;
   height: 4px;
-  left: 20%;
+  left: 10%;/* posicion inicial right top */
   top: -2px;
   border: 2px solid var(--clr);
   background: var(--white);
@@ -183,8 +193,8 @@
 
 .btnNavNextPrevRight:hover .i-slider::before {
   width: 15px;
-  left: 110%;
-  animation: move 3s infinite;
+  left: 60%;/* posicion inicial right top */
+  animation: moveLeft 3s infinite;
   background: var(--grey);
 
 }
@@ -194,7 +204,7 @@
   position: absolute;
   width: 10px;
   height: 4px;
-  left: 20%;
+  left: 10%; /* posicion inicial right bot */
   bottom: -2px;
   border: 2px solid var(--clr);
   background: var(--white);
@@ -203,8 +213,8 @@
 
 .btnNavNextPrevRight:hover .i-slider::after {
   width: 15px;
-  left: 110%;
-  animation: move 3s infinite;
+  left: 60%;/* posicion inicial right bot */
+  animation: moveLeft 3s infinite;
   background: var(--grey);
 
 }
@@ -214,12 +224,7 @@
   font-size: calc(13px + 0.2vw);
 
 }
-.btnNavNextPrevRight:hover .ch-right-slide {
-  position: absolute;
-    left: 40px;
-    top: -5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: 0.5s ease-in-out;
+.btnNavNextPrevRight:hover .span-btnNextPrev {
+    transition: 1.2s ease-in-out;
+    margin-left: 1800px;
 }
