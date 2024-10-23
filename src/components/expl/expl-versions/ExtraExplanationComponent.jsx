@@ -17,7 +17,7 @@ function ExtraExplanationComponent({ handle, icon, aos, btnT }) {
     <>
       <OverlayTrigger placement="top" delay={{ hide: 50 }} overlay={renderTooltip}>
     <NavLink
-    data-aos="zoom-in" data-aos-delay={aos}
+      data-aos="zoom-in" data-aos-delay={aos}
       className={icon}
       onClick={handle ? handle : () => {}} 
     ></NavLink>

@@ -1,6 +1,6 @@
 import  { useEffect, useState } from 'react';
 import * as monaco from 'monaco-editor';
-
+import "./monaco.css"
 function MonacoComponent() {
   const [editor, setEditor] = useState(null);
   const [output, setOutput] = useState('');   
@@ -46,13 +46,12 @@ function MonacoComponent() {
 
   return (
     <div>
-      <div id="editor" style={{ width: '800px', height: '400px', border: '1px solid grey' }}></div>
+      <div id="editor"   className='monaco-editor-input'></div>
       <button onClick={ejecutarCodigo} style={{ marginTop: '20px', padding: '10px', backgroundColor: '#28a745', color: 'white', border: 'none', cursor: 'pointer' }}>
         Ejecutar Código
       </button>
 
-      {/* Área para mostrar el resultado */}
-      <div style={{ marginTop: '20px', padding: '10px', border: '1px solid grey', backgroundColor: 'black', whiteSpace: 'pre-wrap', color: 'white' }}>
+      <div className='monaco-editor-output' style={{ marginTop: '20px', padding: '10px', border: '1px solid grey', backgroundColor: 'black', whiteSpace: 'pre-wrap', color: 'white' }}>
         <h3>Resultado:</h3>
         <h5>{output}</h5>
       </div>

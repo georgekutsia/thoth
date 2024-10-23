@@ -51,7 +51,7 @@ function App() {
     <div className={`${isNightMode} body`}>
       <Context.Provider value={{ handleChangeTheme, isNightMode }}>
         <div className='screen-box'>
-          <MainNavbarComponent     handleDayNight={handleDayNight} handleChangeTheme={handleChangeTheme} isNightMode={isNightMode}
+          <MainNavbarComponent  handleDayNight={handleDayNight} handleChangeTheme={handleChangeTheme} isNightMode={isNightMode}
           />
         </div>
         <Routers />

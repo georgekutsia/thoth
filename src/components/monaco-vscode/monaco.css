@@ -1,0 +1,7 @@
+.monaco-editor-input{
+  width: 600px;
+  height: 400px;
+  max-width: 90vw;
+  max-height: 70vh;
+  border: 1px solid var(--grey);
+}

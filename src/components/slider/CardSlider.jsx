@@ -10,9 +10,8 @@ import {BtnExpandComponent, BtnCopyComponent, BtnNextPrevComponent} from '../ind
 export default function CardSlider({ fromData, text }) {
   const [gallery, setGallery] = useState([]);
   const [showFull, setshowFull] = useState("mySwiperCard");
-  const swiperRef = useRef(null); // Crear una referencia para el Swiper
+  const swiperRef = useRef(null); 
 
-  // Efecto para actualizar la galería cuando cambia 'fromData'
   useEffect(() => {
     if (Array.isArray(fromData)) {
       setGallery(fromData);
@@ -26,22 +25,16 @@ export default function CardSlider({ fromData, text }) {
   };
 
   const handleNext = () => {
-    if (swiperRef.current) swiperRef.current.slideNext(); // Ir a la siguiente diapositiva
+    if (swiperRef.current) swiperRef.current.slideNext();
   };
 
   const handlePrev = () => {
-    if (swiperRef.current) swiperRef.current.slidePrev(); // Ir a la diapositiva anterior
+    if (swiperRef.current) swiperRef.current.slidePrev();
   };
 
   return (
     <>
-      <Swiper
-        effect="cards"
-        grabCursor={true}
-        modules={[EffectCards]}
-        className={showFull}
-        nested={true}
-        onSwiper={(swiper) => (swiperRef.current = swiper)} // Obtener la instancia de Swiper
+      <Swiper effect="cards" grabCursor={true} modules={[EffectCards]} className={showFull} nested={true} onSwiper={(swiper) => (swiperRef.current = swiper)}
       >
         <h4>{text}</h4>
         {gallery.length > 0 ? (

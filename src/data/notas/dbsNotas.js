@@ -3,6 +3,8 @@ const dbsNotas = {
     { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729204217/marcas2_xolned.png", code: "html_intro_code2" },
     { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729204210/marcas3_jtrwa1.png", code: "html_intro_code3" },
     { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729204220/marcas4_shcoss.png", code: "html_intro_code4" },
+    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729204220/marcas4_shcoss.png", code: "html_intro_code4" },
+    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729204220/marcas4_shcoss.png", code: "html_intro_code4" },
   ],
 
   introHtml: [

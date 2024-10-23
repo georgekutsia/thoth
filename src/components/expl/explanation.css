@@ -29,7 +29,7 @@
   display: flex;
   text-align: center;
   justify-content: right;
-  gap: calc(10px + 0.3vw);
+  gap: calc( 0.3vw);
   width: 80%;
   margin:  auto;
   font-size: calc(12px + 1vw);
@@ -65,7 +65,7 @@
 }
 .extra-icons {
   position: relative;
-  font-size: calc(20px + 1vw);
+  font-size: calc(15px + 0.5vw);
   border: none;
   background-color: transparent;
   color: var(--light-grey);
@@ -103,39 +103,37 @@
 .fa-utensils::after {
   content: "\f2e7";
   color: var(--grey);
+  font-size: calc(15px + 0.5vw);
 }
 
 .fa-utensils:hover::after {
   color: var(--red);
-
 }
 
 .fa-video::after {
   content: "\f03d";
   color: var(--grey);
-
+  font-size: calc(15px + 0.5vw);
 }
 
 .fa-video:hover::after {
   color: var(--green);
-
 }
 
 .fa-baseball::after {
   content: "\f433";
   color: var(--grey);
-
+  font-size: calc(15px + 0.5vw);
 }
 
 .fa-baseball:hover::after {
   color: var(--blue);
-
 }
 
 .fa-shuffle::after {
   content: "\f074";
   color: var(--grey);
-
+  font-size: calc(15px + 0.5vw);
 }
 
 .fa-shuffle:hover::after {
@@ -145,6 +143,7 @@
 .fa-folder::after {
   content: "\f07b";
   color: var(--blue);
+  font-size: calc(15px + 0.5vw);
 }
 
 .fa-folder:hover::after {
@@ -155,6 +154,8 @@
 .fa-folder-open::after {
   content: "\f07c";
   color: var(--navbar-blue);
+  font-size: calc(15px + 0.5vw);
+
 }
 
 .fa-folder-open:hover::after {
@@ -163,16 +164,18 @@
 .fa-book::after {
   content: "\f02d";
   color: var(--brown);
+  font-size: calc(15px + 0.5vw);
+
 }
 
 .fa-book:hover::after {
   color: var(--dark-brown);
-
 }
 
 .fa-book-open::after {
   content: "\f518";
   color: var(--navbar-brown);
+  font-size: calc(15px + 0.5vw);
 }
 
 .fa-book-open:hover::after {
@@ -182,6 +185,7 @@
 .fa-address-book::after {
   content: "\f2b9";
   color: var(--navbar-green);
+  font-size: calc(15px + 0.5vw);
 }
 
 .fa-address-book:hover::after {
