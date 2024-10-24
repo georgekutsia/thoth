@@ -42,55 +42,58 @@ const videos = {
   "Mon Oct 07 2024": [
     { clase: "Bases de datos", url: "https://drive.google.com/file/d/1URXkdx-3IVy4ijlWLUMPKXO5l7eDwraA/view" },
     { clase: "Itinerario Para Empleabilidad", url: "https://drive.google.com/file/d/17TYVFqNksftkf_HvdHCE0MpJO3E0Cape/view" },
-    { clase: "Entornos", url: "" }
+    { clase: "Entornos", url: "https://thepowerfp.alexiaclassroom.com/pluginfile.php/27891/mod_folder/content/0/TUTORIA%20COLECTIVA%20ENTORNOS%20DAW%20%282024-10-07%2017_07%20GMT%2B2%29.mp4?forcedownload=1" }
   ],
   "Tue Oct 08 2024": [{ clase: "Fundamentos de bases de datos (MPO)", url: "https://drive.google.com/file/d/1tIB33UXkdJnvyHNdOuIP92vgLDuyT2VT/view?ts=67056542" }],
   "Wed Oct 09 2024": [
     { clase: "Tutoria Entornos", url: "https://thepowerfp.alexiaclassroom.com/pluginfile.php/27891/mod_folder/content/0/TUTOR%C3%8DA%20INDIVIDUAL%20ENTORNOS%20DAW%282024-10-09%2015_19%20GMT%2B2%29.mp4?forcedownload=1" },
-    { clase: "Tutoria Fundamentos de bases de datos (MPO)", url: "" },
+    { clase: "Tutoria Fundamentos de bases de datos (MPO)", url: "https://drive.google.com/file/d/10xnI_3GSA0goC4Euzp08uClYO0DxKchY/view" },
     { clase: "Tutoria Bases de datos", url: "https://drive.google.com/file/d/10xnI_3GSA0goC4Euzp08uClYO0DxKchY/view" }
   ],
   "Thu Oct 10 2024": [
-    { clase: "Lenguaje de marcas", url: "" },
-    { clase: "Sistemas informáticos", url: "" },
-    { clase: "Tutoria Lenguaje de marcas", url: "" }
+    { clase: "Lenguaje de marcas", url: "https://thepowerfp.alexiaclassroom.com/pluginfile.php/26043/mod_folder/content/0/TUTORIA%20COLECTIVA%20LM%20DAW%20%282024-10-10%2015_01%20GMT%2B2%29.mp4?forcedownload=1"  },
+    { clase: "Sistemas informáticos", url: "https://drive.google.com/file/d/17_xC9W11JgQjB7sdkB4-L6HRqyqZc6M8/view" },
+    { clase: "Tutoria Lenguaje de marcas", url: "https://thepowerfp.alexiaclassroom.com/pluginfile.php/26043/mod_folder/content/0/TUTORIA%20INDIVIDUAL%20LM%20DAW%282024-10-10%2017_09%20GMT%2B2%29.mp4?forcedownload=1" }
   ],
+
   "Fri Oct 11 2024": [
-    { clase: "Programación", url: "" },
-    { clase: "Tutoria Itinerario Para Empleabilidad", url: "" },
-    { clase: "Tutoria Sistemas informáticos", url: "" }
+    { clase: "Programación", url: "https://thepowerfp.alexiaclassroom.com/pluginfile.php/26095/mod_folder/content/0/TUTORIA%20COLECTIVA%20PROGRAMACION%20DAW%20%282024-10-11%2015_18%20GMT%2B2%29.mp4?forcedownload=1" },
+    { clase: "Tutoria Itinerario Para Empleabilidad", url: "https://drive.google.com/file/d/1W4qdqejNT9Jqky-SpC0W01a2h9Q9Og3S/view" },
+    { clase: "Tutoria Sistemas informáticos", url: "https://drive.google.com/file/d/1DZwpH-XwZ6IBtT5KZCJvJ5ko6q91oXp0/view" },
+    { clase: "Tutoría Programación", url: "https://thepowerfp.alexiaclassroom.com/pluginfile.php/26095/mod_folder/content/0/TUTORIA%20INDIVIDUAL%20PROGRAMACION%20DAW%20%282024-10-11%2019_02%20GMT%2B2%29.mp4?forcedownload=1" },
   ],
   "Mon Oct 14 2024": [
-    { clase: "Bases de datos", url: "" },
-    { clase: "Itinerario Para Empleabilidad", url: "" },
-    { clase: "Entornos", url: "" }
+    { clase: "Bases de datos", url: "https://drive.google.com/file/d/1prh-HluGilJK0QNBRDFLtrzyRgP7_vlZ/view" },
+    { clase: "Itinerario Para Empleabilidad", url: "https://drive.google.com/file/d/1kcrMxIqb2v96xA7fLPUwMjncTINwZx_1/view" },
+    { clase: "Entornos", url: "https://drive.google.com/file/d/1vcX2Ovwh8asuKjxwXZ7FvbaCBh6MSM8l/view" }
   ],
-  "Tue Oct 15 2024": [{ clase: "Fundamentos de bases de datos (MPO)", url: "" }],
+  "Tue Oct 15 2024": [{ clase: "Fundamentos de bases de datos (MPO)", url: "https://drive.google.com/file/d/19rsjyUhFQqE8O6Q7PjTAcPhT_kSR5suv/view" }],
   "Wed Oct 16 2024": [
-    { clase: "Tutoria Entornos", url: "" },
-    { clase: "Tutoria Fundamentos de bases de datos (MPO)", url: "" },
-    { clase: "Tutoria Bases de datos", url: "" }
+    { clase: "Tutoria Entornos", url: "https://drive.google.com/file/d/1MGtU2t6o45JIX2hSDnclFyd7WYQWRPjA/view" },
+    { clase: "Tutoria Fundamentos de bases de datos (MPO)", url: "https://drive.google.com/file/d/1wnsoF54xYEEkDChB2kGLcOTm-eTo6i1n/view" },
+    { clase: "Tutoria Bases de datos", url: "https://drive.google.com/file/d/1MLP2I_zD6c1QainYx10m6wThte6e-S5q/view" }
   ],
   "Thu Oct 17 2024": [
-    { clase: "Lenguaje de marcas", url: "" },
-    { clase: "Sistemas informáticos", url: "" },
-    { clase: "Tutoria Lenguaje de marcas", url: "" }
+    { clase: "Lenguaje de marcas", url: "https://drive.google.com/file/d/1aWm6lj0sryJUEDCBxxKHrEuuYxg_9gqJ/view" },
+    { clase: "Sistemas informáticos", url: "https://drive.google.com/file/d/12ov_CBaIXUw6lyGTNOVJ_eoNJqkqGFiF/view" },
+    { clase: "Tutoria Lenguaje de marcas", url: "https://drive.google.com/file/d/10rZwejw0qVHck8ImmLdI6TZQZO2qM3fx/view" }
   ],
   "Fri Oct 18 2024": [
-    { clase: "Programación", url: "" },
-    { clase: "Tutoria Itinerario Para Empleabilidad", url: "" },
-    { clase: "Tutoria Sistemas informáticos", url: "" }
+    { clase: "Programación", url: "https://drive.google.com/file/d/17ZR_kVnvfXDd2NfGslFW9lhBdeYkrV_d/view" },
+    { clase: "Tutoria Itinerario Para Empleabilidad", url: "https://drive.google.com/file/d/1kcrMxIqb2v96xA7fLPUwMjncTINwZx_1/view" },
+    { clase: "Tutoria Sistemas informáticos", url: "https://drive.google.com/file/d/1E6LKOWjVCI8ycOlQSal4g_qLRg3gnX-p/view" },
+    { clase: "Tutoría Programación", url: "https://drive.google.com/file/d/1U5T269aTRe9IEZl0xpIvPbpblJKn6bcO/view" },
   ],
   "Mon Oct 21 2024": [
-    { clase: "Bases de datos", url: "" },
-    { clase: "Itinerario Para Empleabilidad", url: "" },
-    { clase: "Entornos", url: "" }
+    { clase: "Bases de datos", url: "https://drive.google.com/file/d/18Y-YWNPs9tVjZ6y7W9CNq9uKhg60muQ9/view" },
+    { clase: "Itinerario Para Empleabilidad", url: "https://drive.google.com/file/d/1hy2WnYwVg1Hfbk106WFiogltXasStcL0/view" },
+    { clase: "Entornos", url: "https://drive.google.com/file/d/1JTLT1WqlhZhO8JtvuN4taS1CVXtJCD8Z/view" }
   ],
-  "Tue Oct 22 2024": [{ clase: "Fundamentos de bases de datos (MPO)", url: "" }],
+  "Tue Oct 22 2024": [{ clase: "Fundamentos de bases de datos (MPO)", url: "https://drive.google.com/file/d/11T6Vyx4e-nSR_yvYTnCxJTRr9j27_12Y/view" }],
   "Wed Oct 23 2024": [
-    { clase: "Tutoria Entornos", url: "" },
-    { clase: "Tutoria Fundamentos de bases de datos (MPO)", url: "" },
-    { clase: "Tutoria Bases de datos", url: "" }
+    { clase: "Tutoria Entornos", url: "https://drive.google.com/file/d/16r07nRte-3PqW9Rdc58Uz_fH9soFp_Uc/view" },
+    { clase: "Tutoria Fundamentos de bases de datos (MPO)", url: "https://drive.google.com/file/d/1UgptKT7d8yqwjnXG1B9m6etPBVWWEqbf/view" },
+    { clase: "Tutoria Bases de datos", url: "https://drive.google.com/file/d/18Mcfg2BhVeqDzSgV-tRf075FSxOqE-cL/view" }
   ],
   "Thu Oct 24 2024": [
     { clase: "Lenguaje de marcas", url: "" },

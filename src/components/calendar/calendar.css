@@ -16,11 +16,10 @@
   justify-content: center;
 }
 .calendar-class {
-  transition: 0.3s ease-in-out;
+  transition: 0.9s ease-in-out;
 }
 .calendar-class:hover {
-  scale: 1.05;
-  color: var(--blue);
+  color: var(--nav-blue);
 }
 .custom-calendar .react-calendar__tile {
   background-color: #f0f0f0; /* Fondo personalizado para los días */

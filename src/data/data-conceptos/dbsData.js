@@ -33,7 +33,7 @@ const data = [
     },
     {
       "titulo": "Datos",
-      "explicación": "Los datos son hechos brutos y sin procesar que, por sí solos, no tienen un significado claro. Son el resultado de la observación o medición de elementos específicos y suelen estar organizados de manera estructurada, como en listas, tablas o números. Los datos pueden ser números, palabras o cualquier forma que represente un hecho.",
+      "explicación": "Datos es un término que se refiere a hechos, eventos, transacciones, etc., que han sido registrados. Es la entrada sin procesar de la cual se produce la información. Los datos son hechos brutos y sin procesar que, por sí solos, no tienen un significado claro. Son el resultado de la observación o medición de elementos específicos y suelen estar organizados de manera estructurada, como en listas, tablas o números. Los datos pueden ser números, palabras o cualquier forma que represente un hecho.",
       "cine": "En 'The Matrix', los datos son los códigos sin procesar que representan la simulación antes de que los personajes los interpreten.",
       "cocina": "En la cocina, los datos podrían ser las cantidades exactas de ingredientes de una receta, sin relación entre ellos hasta que se combinan.",
       "deporte": "En el deporte, los datos son las estadísticas en bruto, como la cantidad de goles o minutos jugados por un jugador.",
@@ -43,7 +43,7 @@ const data = [
     },
     {
       "titulo": "Información",
-      "explicación": "La información es el conjunto de datos procesados y organizados de manera que adquieren significado. Los datos se transforman en información cuando se les añade un contexto, permitiendo su interpretación y uso en la toma de decisiones. La información implica una mayor comprensión y relevancia para los agentes que la reciben.",
+      "explicación": "Información se refiere a los datos que han sido procesados y comunicados de tal manera que pueden ser entendidos e interpretados por el receptor. La información es el conjunto de datos procesados y organizados de manera que adquieren significado. Los datos se transforman en información cuando se les añade un contexto, permitiendo su interpretación y uso en la toma de decisiones. La información implica una mayor comprensión y relevancia para los agentes que la reciben.",
       "cine": "En 'Minority Report', la información que predice un crimen está basada en datos que han sido procesados y contextualizados para que los agentes puedan tomar decisiones.",
       "cocina": "En la cocina, la información sería la receta completa, donde los datos (ingredientes) se organizan en un orden específico para crear un platillo.",
       "deporte": "En el deporte, la información es el análisis que se deriva de las estadísticas de un jugador, como su rendimiento en un partido, que permite ajustar estrategias.",

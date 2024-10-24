@@ -1,6 +1,7 @@
 import  { useEffect, useState } from 'react';
-import * as monaco from 'monaco-editor';
+import * as monaco from 'monaco-editor';   // why de fuck asteristco
 import "./monaco.css"
+
 function MonacoComponent() {
   const [editor, setEditor] = useState(null);
   const [output, setOutput] = useState('');   
@@ -34,7 +35,6 @@ function MonacoComponent() {
         };
 
         eval(codigo);
-
         console.log = originalConsoleLog;
 
         setOutput(resultado || 'Código ejecutado sin errores.');

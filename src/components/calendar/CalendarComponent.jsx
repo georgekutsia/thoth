@@ -23,12 +23,10 @@ function CalendarComponent() {
           <h3>Links y Videos de clase</h3>
           <ul className="calendar-links">
             {videData[formattedDate].map((item, index) => {
-              const iconClass = (item.clase === "Programación" || item.clase === "Lenguaje de marcas" || item.clase === "Tutoria Lenguaje de marcas") 
-                ? "fa-solid fa-cloud-arrow-down " 
-                : "fa-solid fa-link ";
+              console.log(item)
               return (
                 <a href={item.url} key={index} target="_blank" className="calendar-class" data-aos="flip-left">
-                  {item.url && <i className="fa-solid fa-film"></i>} {item.clase} <i className={iconClass}></i>
+                  {item.clase} {item.url ? <i className="fa-solid fa-cloud-arrow-down"></i> : <i className="fa-solid fa-xmark fa-fade"></i> }
                 </a>
               );
             })}
