@@ -21,12 +21,14 @@ function ExcersiceComponent({ subject, exercise, exImage, date, question, answer
       <BtnExpandComponent expanded={expanded} handleExpand={() => handleExpand()} />
       <section className="exercise-section1" data-aos="fade-in" data-aos-delay={`${aosDelay}` + "00"}>
         <i className={`fa-solid fa-${subject}`}></i>
-        <h6>{exercise}</h6>
-        <h6>{date}</h6>
+        <h6 className="ex-title">{exercise}</h6>
+        <h6 className="ex-title">{date}</h6>
       </section>
       <section className="exercise-section2" data-aos="fade-in" data-aos-delay={`${aosDelay}` + "00"}>
         <h5 className="exercise-section4">Enunciado</h5>
-        <p>{question}</p>
+              <pre>
+                <code>{question}</code>
+              </pre>
         <img className="exImage-enunciado" src={exImage} alt="fotos" />
       </section>
       <section className="exercise-section3" data-aos="fade-in" data-aos-delay={`${aosDelay}` + "00"}>

@@ -1018,6 +1018,284 @@ public class Calificacion_notabis {  // Definición de la clase principal "Calif
 `,
     },
   ],
+  conditional2Java: [
+   {
+     url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729862114/calculadoraimc_fbak4i.png",
+     code: `
+/*
+IMC = Peso/(altura)^2
+Locale localeUS = Locale.US;       // Inglés de EE.UU.
+Locale localeUK = Locale.UK;       // Inglés del Reino Unido
+Locale localeFR = Locale.FRANCE;   // Francés de Francia
+Locale localeES = Locale.SPAIN;    // Español de España
+ */
+
+package _1Condicionales2;
+
+//Para evitar la excepción al poner . en double
+//import java.util.Locale;  
+
+import java.util.Scanner;
+
+public class CalculadoraIMC {
+    public static void main(String[] args) {
+        
+        //Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Introduce tu peso en kg: ");
+        double peso = scanner.nextDouble();
+
+        System.out.print("Introduce tu altura en metros: ");
+        double altura = scanner.nextDouble();
+
+        double imc = peso / (altura * altura);
+
+        System.out.println("Tu índice de masa corporal es: " + imc);
+
+        if (imc < 18.5) {
+            System.out.println("Estás en la categoría de bajo peso.");
+        } else if (imc >= 18.5 && imc < 24.9) {
+            System.out.println("Estás en la categoría de peso normal.");
+        } else if (imc >= 25 && imc < 29.9) {
+            System.out.println("Estás en la categoría de sobrepeso.");
+        } else {
+            System.out.println("Estás en la categoría de obesidad.");
+        }
+    }
+}
+
+`
+   },
+   {
+     url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729862114/diassemana_oghiue.png",
+     code: `/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package _1Condicionales2;
+
+import java.util.Scanner;
+
+public class DiasSemana {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicitar al usuario que introduzca un número entre 1 y 7
+        System.out.print("Introduce un número entre 1 y 7 para seleccionar un día de la semana: ");
+        int opcion = scanner.nextInt();
+
+        // Estructura switch para los días de la semana  java 12
+        switch (opcion) {
+            case 1:
+                System.out.println("Lunes");
+                break;
+            case 2:
+                System.out.println("Martes");
+                break;
+            case 3:
+                System.out.println("Miércoles");
+                break;
+            case 4:
+                System.out.println("Jueves");
+                break;
+            case 5:
+                System.out.println("Viernes");
+                break;
+            case 6:
+                System.out.println("Sábado");
+                break;
+            case 7:
+                System.out.println("Domingo");
+                break;
+            default:
+                System.out.println("Número no válido. Por favor, introduce un número entre 1 y 7.");
+                break;
+        }
+    }
+}`
+   },
+   {
+     url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729862245/parimpar_oobrlw.png",
+     code: `/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package _1Condicionales2;
+
+import java.util.Scanner;
+
+public class ParImpar {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Introduce un número entero: ");
+        int numero = scanner.nextInt();
+        
+        // Operador modulo en java %  y se usa para obtener resto
+        //Si numero % 2 es 0, significa que numero es divisible por 2 sin dejar un resto, lo que indica que el número es par.
+        if (numero % 2 == 0) {
+            System.out.println(numero + " es un número par.");
+        } else {
+            System.out.println(numero + " es un número impar.");
+        }
+    }
+}
+`
+   },
+   {
+     url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729862114/calculadoradescuento_vubjpd.png",
+     code: `/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package _1Condicionales2;
+
+import java.util.Scanner;
+
+public class CalculadoraDescuento {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Introduce el precio original: ");
+        double precioOriginal = scanner.nextDouble();
+
+        System.out.print("Introduce el porcentaje de descuento: ");
+        double descuento = scanner.nextDouble();
+
+        if (descuento >= 0 && descuento <= 100) {
+            double precioFinal = precioOriginal - (precioOriginal * descuento / 100);
+            System.out.println("El precio con descuento es: " + precioFinal);
+        } else {
+            System.out.println("Porcentaje de descuento no válido.");
+        }
+    }
+}
+
+`
+   },
+   {
+     url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729862116/cajeroautomatico_m4qgmp.png",
+     code: `
+package _1Condicionales2;
+
+import java.util.Scanner;
+
+public class CajeroAutomatico {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double saldo = 500.0; // Saldo inicial
+        System.out.println("Bienvenido al cajero automático.");
+        System.out.println("1. Consultar saldo");
+        System.out.println("2. Depositar dinero");
+        System.out.println("3. Retirar dinero");
+        System.out.print("Selecciona una opción: ");
+        int opcion = scanner.nextInt();
+        // Ejecutar la opción seleccionada
+        if (opcion == 1) {
+            System.out.println("Tu saldo actual es: " + saldo);
+        } else if (opcion == 2) {
+            System.out.print("Introduce la cantidad a depositar: ");
+            double deposito = scanner.nextDouble();
+            saldo += deposito;
+            System.out.println("Has depositado " + deposito + ". Tu nuevo saldo es: " + saldo);
+        } else if (opcion == 3) {
+            System.out.print("Introduce la cantidad a retirar: ");
+            double retiro = scanner.nextDouble();
+            if (retiro <= saldo) {
+                saldo -= retiro;
+                System.out.println("Has retirado " + retiro + ". Tu nuevo saldo es: " + saldo);
+            } else {
+                System.out.println("Fondos insuficientes.");
+            }
+        } else {
+            System.out.println("Opción no válida.");
+        }
+    }
+}
+`
+   },
+   {
+     url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729862116/calculotarifa_ptnqhb.png",
+     code: `/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package _1Condicionales2;
+
+import java.util.Scanner;
+
+public class CalculoTarifa {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Tarifa base
+        double tarifaBase = 100.0;
+
+        // Solicitar la edad del usuario
+        System.out.print("Introduce tu edad: ");
+        int edad = scanner.nextInt();
+
+        double tarifaFinal = tarifaBase;
+
+        // Verificar condiciones de descuento
+        if (edad < 12) {
+            tarifaFinal = tarifaBase * 0.5; // 50% de descuento
+            System.out.println("Te corresponde un 50% de descuento.");
+        } else if (edad >= 65) {
+            tarifaFinal = tarifaBase * 0.7; // 30% de descuento
+            System.out.println("Te corresponde un 30% de descuento.");
+        } else {
+            System.out.println("No tienes descuento.");
+        }
+
+        System.out.println("El total a pagar es: " + tarifaFinal);
+    }
+}
+`
+   },
+   {
+     url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729862120/calculadoraconcondicionales_oraup1.png",
+     code: `package _1Condicionales2;
+import java.util.Scanner;
+public class CalculadoraConCondicionales {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);         // Solicitar números al usuario
+        System.out.print("Introduce el primer número: ");
+        double numero1 = scanner.nextDouble();
+        System.out.print("Introduce el segundo número: ");
+        double numero2 = scanner.nextDouble();         // Solicitar la operación al usuario
+        System.out.print("Introduce la operación (+, -, *, /): ");
+        char operacion = scanner.next().charAt(0);         // Variables para almacenar el resultado
+        double resultado = 0;
+        boolean operacionValida = true;         // Condicionales para realizar la operación correspondiente
+        if (operacion == '+') {
+            resultado = numero1 + numero2;
+        } else if (operacion == '-') {
+            resultado = numero1 - numero2;
+        } else if (operacion == '*') {
+            resultado = numero1 * numero2;
+        } else if (operacion == '/') {
+            if (numero2 != 0) {
+                resultado = numero1 / numero2;
+            } else {
+                System.out.println("Error: No se puede dividir entre cero.");
+                operacionValida = false;
+            }
+        } else {
+            System.out.println("Operación no válida.");
+            operacionValida = false;
+        }
+        // Mostrar el resultado si la operación fue válida
+        if (operacionValida) {
+            System.out.println("El resultado es: " + resultado);
+        }
+    }
+}
+
+`
+   },
+   ]
 };
 
 export default programacionNotas;

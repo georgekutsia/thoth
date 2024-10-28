@@ -6,7 +6,6 @@ import './calendar.css';
 
 function CalendarComponent() {
   const [value, setValue] = useState(new Date());
-
   const formatDate = (date) => {
     const dateString = date.toDateString();
     return dateString.split(' ').slice(0, 4).join(' ');
@@ -14,12 +13,10 @@ function CalendarComponent() {
 
   const renderInfoForDate = (date) => {
     const formattedDate = formatDate(date);
-
     if (videData[formattedDate]) {
       return (
         <div>
           {/* <h3>Contenido para {formattedDate}:</h3> */}
-          
           <h3>Links y Videos de clase</h3>
           <ul className="calendar-links">
             {videData[formattedDate].map((item, index) => {

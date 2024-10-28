@@ -194,6 +194,8 @@
 .fa-calendar::after {
   content: "\f133";
   color: var(--navbar-yellow);
+  font-size: calc(15px + 0.5vw);
+
 }
 
 .fa-calendar:hover::after {

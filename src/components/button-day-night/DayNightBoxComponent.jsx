@@ -1,20 +1,38 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import DayButtonsComponent from "./day-buttons/DayButtonsComponent";
 import GearBtnComponent from "./gear-button/GearBtnComponent";
-
 import PropTypes from "prop-types";
 import DayNightBtn from "./day-night/DayNightBtn";
-import "./dayNightBox.css"
+import "./dayNightBox.css";
+
 function DayNightBoxComponent({ handleChangeTheme, handleDayNight, isNightMode }) {
   const [showDayNight, setshowDayNight] = useState(false);
+  const boxRef = useRef(null); 
 
   const handleShowDayNight = () => {
     setshowDayNight(!showDayNight);
   };
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      // Verificamos si se hizo clic fuera del componente
+      if (boxRef.current && !boxRef.current.contains(event.target)) {
+        setshowDayNight(false); // Ocultamos el menú si el clic fue fuera del componente
+      }
+    };
+
+    // Agregamos un listener de clic en el documento
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      // Limpiamos el listener cuando el componente se desmonta
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [boxRef]);
+
   return (
-    <div className="day-night-box">
-        <GearBtnComponent showDayNight={showDayNight} handleShowDayNight={handleShowDayNight} />
+    <div className="day-night-box" ref={boxRef}> {/* Asociamos la referencia */}
+      <GearBtnComponent showDayNight={showDayNight} handleShowDayNight={handleShowDayNight} />
       {showDayNight && (
         <div className='day-night-box-mini'>
           <DayNightBtn handleClick={handleDayNight} isNightMode={isNightMode} />

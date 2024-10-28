@@ -8,7 +8,8 @@
   z-index: 50;
   backdrop-filter: blur(40px);
   background-color: rgb(40, 40, 40);
-  font-size: calc(10px + 0.4vw);
+  font-size: calc(10px + 0.2vw);
+  max-width: 1000px;
 }
 
 .horarios-table-thead-tr th{
@@ -17,18 +18,18 @@
 
 .horarios-table-tbody-tr td{
 height: 50px;
+padding-left: 10px;
+border: 1px solid var(--grey);
+
 }
 .horarios-table-tbody-tr i{
   margin-left: 10px;
 color: var(--nav-blue);
 }
 .horarios-table-tbody-tr i:hover{
-  margin-left: 10px;
 color: var(--blue);
 }
-.horarios-table-tbody-tr a:hover{
-color: var(--navbar-red);
-}
+
 .tb-entornos {
   background: linear-gradient(to right, green 0%, green 53%, red 53%);
   background-size: 200% 100%;
@@ -73,8 +74,7 @@ color: var(--navbar-red);
 
 .tb-style:hover{
   background-position: left;
-  color: rgb(255, 255, 255);
-  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
 @media (max-width: 480px) {
   .horarios-table{

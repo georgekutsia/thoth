@@ -1,5 +1,4 @@
 const videos = {
-
   "Tue Sep 24 2024": [{ clase: "Fundamentos de bases de datos (MPO)", url: "https://drive.google.com/file/d/1YnuNZpgUTg8_Ok6fj2Sh0_6t5q4fE3pe/view" }],
   "Wed Sep 25 2024": [
     { clase: "Tutoria Entornos", url: "" },
@@ -96,9 +95,9 @@ const videos = {
     { clase: "Tutoria Bases de datos", url: "https://drive.google.com/file/d/18Mcfg2BhVeqDzSgV-tRf075FSxOqE-cL/view" }
   ],
   "Thu Oct 24 2024": [
-    { clase: "Lenguaje de marcas", url: "" },
-    { clase: "Sistemas informáticos", url: "" },
-    { clase: "Tutoria Lenguaje de marcas", url: "" }
+    { clase: "Lenguaje de marcas", url: "https://drive.google.com/file/d/1fTPRR3ZIP3tYYbWBsog2NJljcIAzYzbw/view" },
+    { clase: "Sistemas informáticos", url: "https://drive.google.com/file/d/1xMigaW8BldyrTUmf0LxI95xwwnkqZI3A/view" },
+    { clase: "Tutoria Lenguaje de marcas", url: "https://drive.google.com/file/d/1_KW8d8MjG8ypfDOkFXvUxKdgUD2sina3/view" }
   ],
   "Fri Oct 25 2024": [
     { clase: "Programación", url: "" },
@@ -120,7 +119,97 @@ const videos = {
     { clase: "Lenguaje de marcas", url: "" },
     { clase: "Sistemas informáticos", url: "" },
     { clase: "Tutoria Lenguaje de marcas", url: "" }
+  ],
+    "Fri Nov 01 2024": [
+    { clase: "Programación", url: "" },
+    { clase: "Tutoria Itinerario Para Empleabilidad", url: "" },
+    { clase: "Tutoria Sistemas informáticos", url: "" }
+  ],
+  "Mon Nov 04 2024": [
+    { clase: "Bases de datos", url: "" },
+    { clase: "Itinerario Para Empleabilidad", url: "" },
+    { clase: "Entornos", url: "" }
+  ],
+  "Tue Nov 05 2024": [{ clase: "Fundamentos de bases de datos (MPO)", url: "" }],
+  "Wed Nov 06 2024": [
+    { clase: "Tutoria Entornos", url: "" },
+    { clase: "Tutoria Fundamentos de bases de datos (MPO)", url: "" },
+    { clase: "Tutoria Bases de datos", url: "" }
+  ],
+  "Thu Nov 07 2024": [
+    { clase: "Lenguaje de marcas", url: "" },
+    { clase: "Sistemas informáticos", url: "" },
+    { clase: "Tutoria Lenguaje de marcas", url: "" }
+  ],
+  "Fri Nov 08 2024": [
+    { clase: "Programación", url: "" },
+    { clase: "Tutoria Itinerario Para Empleabilidad", url: "" },
+    { clase: "Tutoria Sistemas informáticos", url: "" }
+  ],
+  "Mon Nov 11 2024": [
+    { clase: "Bases de datos", url: "" },
+    { clase: "Itinerario Para Empleabilidad", url: "" },
+    { clase: "Entornos", url: "" }
+  ],
+  "Tue Nov 12 2024": [{ clase: "Fundamentos de bases de datos (MPO)", url: "" }],
+  "Wed Nov 13 2024": [
+    { clase: "Tutoria Entornos", url: "" },
+    { clase: "Tutoria Fundamentos de bases de datos (MPO)", url: "" },
+    { clase: "Tutoria Bases de datos", url: "" }
+  ],
+  "Thu Nov 14 2024": [
+    { clase: "Lenguaje de marcas", url: "" },
+    { clase: "Sistemas informáticos", url: "" },
+    { clase: "Tutoria Lenguaje de marcas", url: "" }
+  ],
+  "Fri Nov 15 2024": [
+    { clase: "Programación", url: "" },
+    { clase: "Tutoria Itinerario Para Empleabilidad", url: "" },
+    { clase: "Tutoria Sistemas informáticos", url: "" }
+  ],
+  "Mon Nov 18 2024": [
+    { clase: "Bases de datos", url: "" },
+    { clase: "Itinerario Para Empleabilidad", url: "" },
+    { clase: "Entornos", url: "" }
+  ],
+  "Tue Nov 19 2024": [{ clase: "Fundamentos de bases de datos (MPO)", url: "" }],
+  "Wed Nov 20 2024": [
+    { clase: "Tutoria Entornos", url: "" },
+    { clase: "Tutoria Fundamentos de bases de datos (MPO)", url: "" },
+    { clase: "Tutoria Bases de datos", url: "" }
+  ],
+  "Thu Nov 21 2024": [
+    { clase: "Lenguaje de marcas", url: "" },
+    { clase: "Sistemas informáticos", url: "" },
+    { clase: "Tutoria Lenguaje de marcas", url: "" }
+  ],
+  "Fri Nov 22 2024": [
+    { clase: "Programación", url: "" },
+    { clase: "Tutoria Itinerario Para Empleabilidad", url: "" },
+    { clase: "Tutoria Sistemas informáticos", url: "" }
+  ],
+  "Mon Nov 25 2024": [
+    { clase: "Bases de datos", url: "" },
+    { clase: "Itinerario Para Empleabilidad", url: "" },
+    { clase: "Entornos", url: "" }
+  ],
+  "Tue Nov 26 2024": [{ clase: "Fundamentos de bases de datos (MPO)", url: "" }],
+  "Wed Nov 27 2024": [
+    { clase: "Tutoria Entornos", url: "" },
+    { clase: "Tutoria Fundamentos de bases de datos (MPO)", url: "" },
+    { clase: "Tutoria Bases de datos", url: "" }
+  ],
+  "Thu Nov 28 2024": [
+    { clase: "Lenguaje de marcas", url: "" },
+    { clase: "Sistemas informáticos", url: "" },
+    { clase: "Tutoria Lenguaje de marcas", url: "" }
+  ],
+  "Fri Nov 29 2024": [
+    { clase: "Programación", url: "" },
+    { clase: "Tutoria Itinerario Para Empleabilidad", url: "" },
+    { clase: "Tutoria Sistemas informáticos", url: "" }
   ]
+
 };
 
 export default videos;

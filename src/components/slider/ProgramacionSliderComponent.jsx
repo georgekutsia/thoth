@@ -32,18 +32,31 @@ export default function ProgramacionSliderComponent() {
         </SwiperSlide>
         <SwiperSlide>
         <Swiper className="mySwiper2 swiper-v" direction={'vertical'} spaceBetween={50} pagination={{ clickable: true }} modules={[Pagination]}>
+        
               <SwiperSlide>          
                 <CardSlider fromData={programacionNotas.basicJava} text='Básico Programación (java)' />
                   <div className='pdf-downloader'>
                   <DpfDownloaderComponent text='Inicio a la Programación' url={"https://thepowerfp.alexiaclassroom.com/pluginfile.php/26102/mod_resource/content/1/UD1.%20Inicio%20a%20la%20Programaci%C3%B3n.pdf"}/>
                   <DpfDownloaderComponent text='Configuración de Netbeans y XAMPP '  url={"https://thepowerfp.alexiaclassroom.com/pluginfile.php/29572/mod_resource/content/1/Netbeans%20%20XAMPP.pdf"}/>       
                   </div>
-                  </SwiperSlide>
+              </SwiperSlide>
+
               <SwiperSlide>          
                 <CardSlider fromData={programacionNotas.conditionalJava} text='Condicionales (java)' />
                   <div className='pdf-downloader'>
                   <DpfDownloaderComponent text='Inicio a la Programación' url={"https://thepowerfp.alexiaclassroom.com/pluginfile.php/26102/mod_resource/content/1/UD1.%20Inicio%20a%20la%20Programaci%C3%B3n.pdf"}/>
                   <DpfDownloaderComponent text='Configuración de Netbeans y XAMPP '  url={"https://thepowerfp.alexiaclassroom.com/pluginfile.php/29572/mod_resource/content/1/Netbeans%20%20XAMPP.pdf"}/>       
+                  </div>
+            </SwiperSlide>
+
+        </Swiper>
+            </SwiperSlide>
+        <SwiperSlide>
+        <Swiper className="mySwiper2 swiper-v" direction={'vertical'} spaceBetween={50} pagination={{ clickable: true }} modules={[Pagination]}>
+              <SwiperSlide>          
+              <CardSlider fromData={programacionNotas.conditional2Java} text='Más condicionales (java)' />
+                  <div className='pdf-downloader'>
+                  <DpfDownloaderComponent text='Import Java Utils '  url={"https://thepowerfp.alexiaclassroom.com/pluginfile.php/33305/mod_resource/content/1/Funciones%20Import%20java.util.pdf"}/>       
                   </div>
             </SwiperSlide>
         </Swiper>

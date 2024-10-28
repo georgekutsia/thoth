@@ -12,7 +12,9 @@
   backdrop-filter: grayscale(30%);
   overflow: hidden;
 }
-
+.ex-title{
+  font-size: calc(10px + 0.2vw);
+}
 .exercise-box-small {
   min-width: 310px;
   transition: 0.3s ease-in-out;
@@ -101,7 +103,7 @@ pre {
   overflow-y: auto; /* Scroll vertical si el contenido es muy largo */
   word-wrap: normal; /* Evitar que las líneas se rompan */
   max-height: 250px; /* Limitar el alto del bloque de código */
-  font-size: calc(3.5px);
+  font-size: calc(11.5px);
 }
 
 
