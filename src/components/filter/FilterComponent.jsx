@@ -1,7 +1,6 @@
 import { useRef, useState } from "react";
 import "./filter.css";
 
-// eslint-disable-next-line react/prop-types
 function FilterComponent({ searchTerm, setSearchTerm }) {
   const inputRef = useRef(null);
   const [inputBorder, setInputBorder] = useState("");
@@ -10,13 +9,15 @@ function FilterComponent({ searchTerm, setSearchTerm }) {
     setInputBorder("300px");
   };
 
-  const handleBlur = () => {
+  const handleBlur = (e) => {
+    if (e.relatedTarget?.className === "fa-solid fa-x delete-input-info") {
+      return; // No colapsar el input si el objetivo es la X
+    }
     setInputBorder("");
   };
 
   const clearInput = () => {
-    console.log("Clear button clicked"); // Depuración: Asegúrate de que se dispara el evento
-    setSearchTerm(); // Limpiar el valor del input
+    setSearchTerm(""); // Limpiar el valor del input
     if (inputRef.current) {
       inputRef.current.focus(); // Enfocar el input después de limpiar
     }
@@ -36,10 +37,10 @@ function FilterComponent({ searchTerm, setSearchTerm }) {
         style={{ width: inputBorder, transition: "0.4s ease-in-out" }}
         data-aos="slide-left"
       />
-      {searchTerm && ( // Mostrar el botón "X" solo si hay texto en el input
+      {searchTerm && (
         <i
           className="fa-solid fa-x delete-input-info"
-          onClick={()=>setSearchTerm("")} // Llamada a clearInput para borrar el contenido
+          onMouseDown={clearInput} // Usa onMouseDown en lugar de onClick
           style={{ cursor: "pointer" }}
         ></i>
       )}

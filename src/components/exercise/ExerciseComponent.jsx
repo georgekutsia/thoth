@@ -4,7 +4,7 @@ import BtnExpandComponent from "../button-expand/BtnExpandComponent";
 import { useState } from "react";
 import BtnCopyComponent from "../button-copy/BtnCopyComponent";
 
-function ExcersiceComponent({ subject, exercise, exImage, date, question, answer, img, aosDelay }) {
+function ExerciseComponent({ subject, exercise, exImage, date, question, answer, img, aosDelay }) {
   const [expanded, setExpanded] = useState("exercise-box-small");
 
   const handleExpand = () => {
@@ -51,7 +51,7 @@ function ExcersiceComponent({ subject, exercise, exImage, date, question, answer
   );
 }
 
-ExcersiceComponent.propTypes = {
+ExerciseComponent.propTypes = {
   subject: PropTypes.string.isRequired,
   exercise: PropTypes.string.isRequired,
   exImage: PropTypes.string.isRequired,
@@ -62,4 +62,4 @@ ExcersiceComponent.propTypes = {
   img: PropTypes.array.isRequired,
 };
 
-export default ExcersiceComponent;
+export default ExerciseComponent;

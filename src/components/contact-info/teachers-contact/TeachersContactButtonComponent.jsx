@@ -8,7 +8,7 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import PropTypes from "prop-types";
 
 
-function TeachersContactComponent({handleTeacher, showInfo}) {
+function TeachersContactButtonComponent({handleTeacher, showInfo}) {
   const [teacherData, setteacherData] = useState(teachersData)
 
   const renderTooltip = (props) => (
@@ -32,9 +32,9 @@ function TeachersContactComponent({handleTeacher, showInfo}) {
     </>
   )
 }
-TeachersContactComponent.propTypes = {
+TeachersContactButtonComponent.propTypes = {
   handleTeacher: PropTypes.func.isRequired,
   showInfo: PropTypes.bool.isRequired,
 
 };
-export default TeachersContactComponent
+export default TeachersContactButtonComponent

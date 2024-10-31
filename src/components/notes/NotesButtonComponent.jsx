@@ -4,7 +4,7 @@ import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
 import PropTypes from "prop-types";
 
-function NotesComponent({ handle, icon, btnT }) {
+function NotesButtonComponent({ handle, icon, btnT }) {
   const renderTooltip = (props) => (
     <Tooltip id="button-tooltip" {...props}>
       {btnT}
@@ -19,10 +19,10 @@ function NotesComponent({ handle, icon, btnT }) {
     </>
   );
 }
-NotesComponent.propTypes = {
+NotesButtonComponent.propTypes = {
   icon: PropTypes.string.isRequired,
   btnT: PropTypes.string.isRequired,
   handle: PropTypes.func.isRequired,
 };
 
-export default NotesComponent;
+export default NotesButtonComponent;

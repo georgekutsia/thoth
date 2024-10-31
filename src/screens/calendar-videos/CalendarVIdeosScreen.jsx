@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { HorarioComponent, TeachersContactComponent } from '../../components'
+import { HorarioComponent, TeachersContactButtonComponent } from '../../components'
 import CalendarComponent from '../../components/calendar/CalendarComponent'
 
 function CalendarVIdeosScreen() {
@@ -10,7 +10,7 @@ function CalendarVIdeosScreen() {
   return (
     <div className='screen-box'>
     <div className='calendar-class-box'>
-        <TeachersContactComponent handleTeacher={handleTeacher}  showInfo={showInfo}/>
+        <TeachersContactButtonComponent handleTeacher={handleTeacher}  showInfo={showInfo}/>
         <HorarioComponent />
     </div>
       <CalendarComponent/>

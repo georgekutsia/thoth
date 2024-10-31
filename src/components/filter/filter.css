@@ -10,7 +10,7 @@
   width: 50px;
   height: 40px;
   background-color: transparent;
-  color: var(--filter-color);
+  color: var(--textChangeColor);
   position: relative;
   padding: 10px 25px 0px 40px;
 }
@@ -29,12 +29,13 @@
   position: absolute;
   margin-left: -20px;
   transition: .3s ease-in-out;
-  top: 35%;
   z-index: 60;
+  color: var(--textChangeColor);
   text-shadow: 0.5px 0.5px  var(--red);
+  font-size: calc(10px + 0.8vw);
 }
 
 .delete-input-info:hover{
   text-shadow: 1.5px 1.5px  var(--red);
-  transform: rotate(180deg);
+  transform: rotate(360deg);
 }

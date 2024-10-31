@@ -19,7 +19,7 @@ export default function LenguajesSliderComponent() {
   };
 
   return (
-    <div data-aos="zoom-out-down">
+    <div className='sliders-box' data-aos="zoom-out-down">
       <NavigationSliderComponent slideTo={slideTo} fromData='indice' navData={lenguajesNotas}/>
       <Swiper
         className="mySwiper swiper-h"

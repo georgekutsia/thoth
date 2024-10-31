@@ -1,6 +1,6 @@
 :root {
-  --bambam: var(--black);
-  --filter-color: white;
+  --invertColor: var(--black);
+  --textChangeColor: var(--white);
 
 --white: #ffffff;
 --grey: rgb(193, 193, 193);
@@ -91,8 +91,8 @@
   background-image: radial-gradient(circle at center, #899Dc4, #0759fc);
   background: radial-gradient(ellipse at bottom, #ffffff, #edfdff);
   color:  black;
- --bambam: var(--white);
- --filter-color: var(--black);
+ --invertColor: var(--white);
+ --textChangeColor: var(--black);
 
 }
 .body-day-1 {
@@ -163,12 +163,10 @@ input:focus {
   box-shadow: 0px 2px 10px var(--light-black);
   border-radius: 20px;
   padding: 20px;
-  margin-top: -50px;
 }
 .exercise-file-btn{
-  position: absolute;
   z-index: 20;
-  top: 50px;
+  margin-top: -15vh; /*para que con el margin */
   width: 70vw;
 }
 

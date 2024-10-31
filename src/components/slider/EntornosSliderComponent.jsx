@@ -19,7 +19,8 @@ export default function EntornosSliderComponent() {
   };
 
   return (
-    <div data-aos="zoom-out-down">
+    <div className='sliders-box' data-aos="zoom-out-down">
+
     <NavigationSliderComponent slideTo={slideTo} fromData='indice' navData={entornosNotas}/>
       <Swiper
         className="mySwiper swiper-h"
@@ -33,6 +34,9 @@ export default function EntornosSliderComponent() {
         <SwiperSlide>
           <Swiper className="mySwiper2 swiper-v" direction={'vertical'} spaceBetween={50} pagination={{ clickable: true }} modules={[Pagination]}>
             <SwiperSlide>Vertical Slide 1</SwiperSlide>
+            <SwiperSlide>Vertical Slide 2</SwiperSlide>
+            <SwiperSlide>Vertical Slide 2</SwiperSlide>
+            <SwiperSlide>Vertical Slide 2</SwiperSlide>
             <SwiperSlide>Vertical Slide 2</SwiperSlide>
           </Swiper>
         </SwiperSlide>

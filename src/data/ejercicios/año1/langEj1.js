@@ -78,10 +78,7 @@ const ejerciciosProgramacion = [
     imagenEj:
     "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729190906/ej2_yd1mes.png",
        fecha: "17-10-24",
-    enunciado:`
-    
-    
-    `,
+    enunciado:"",
             respuesta:  [
 `
 <!DOCTYPE html>

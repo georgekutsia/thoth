@@ -12,7 +12,7 @@ function NavigationSliderComponent({ slideTo, fromData, navData }) {
             key={index}
             slideTo={() => slideTo(index)}
             data={data}
-            icon={icon} // Pasamos el icono correcto
+            icon={icon} 
           />
         );
       })}

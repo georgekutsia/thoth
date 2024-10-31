@@ -19,7 +19,8 @@ export default function EmpleabilidadSliderComponent() {
   };
 
   return (
-    <div data-aos="zoom-out-down">
+    <div className='sliders-box' data-aos="zoom-out-down">
+
     <NavigationSliderComponent slideTo={slideTo} fromData='indice' navData={empleabilidadNotas}/>
       <Swiper
         className="mySwiper swiper-h"

@@ -7,3 +7,7 @@
   justify-content: center;
   gap: 10px;
 }
+
+.sliders-box{
+  overflow: hidden;
+}
