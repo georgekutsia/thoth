@@ -9,7 +9,7 @@ import PropTypes from "prop-types";
 
 
 function TeachersContactButtonComponent({handleTeacher, showInfo}) {
-  const [teacherData, setteacherData] = useState(teachersData)
+  const [teacherData] = useState(teachersData)
 
   const renderTooltip = (props) => (
     <Tooltip id="button-tooltip" {...props}>

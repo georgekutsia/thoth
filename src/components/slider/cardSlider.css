@@ -1,17 +1,17 @@
 .mySwiper {
-  width: 70vw;
+  width: 80vw;
   height: 10vw;
   border-radius: 90px 10px 90px 10px;
   margin-bottom: 10vh;
 }
 
 .swiper-h {
-  width: 70vw;
+  width: 80vw;
   height: calc(300px + 20vw);
 }
 
 .swiper-v {
-  width: 70vw;
+  width: 80vw;
   height: 100%; /* ajusta los pequeños sliders cuando son varios en la grande */
   background: transparent;
 }

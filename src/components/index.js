@@ -10,6 +10,7 @@ export { default as BtnCopyComponent } from "./button-copy/BtnCopyComponent";
 export { default as BtnChangeSubjectComponent } from "./btn-change-subject/BtnChangeSubjectComponent";
 export { default as ButtonSliderSidesComponent } from "./button-slider-sides/ButtonSliderSidesComponent";
 
+export { default as CheatSheetComponent} from "./cheatsheet/cheatProgramation/CheatSheetComponent"
 export { default as CarouselGalleryGallery} from "./foto-gallery/carousel-gallery/CarouselGalleryGallery"
 export { default as TitleTopComponent} from "./title-top/TitleTopComponent"
 export { default as MainNavbarBtnComponent } from "./navbar/main-navbar/main-navbar-button/MainNavbarBtnComponent";

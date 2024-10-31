@@ -1,19 +1,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import React, { useState } from "react";
-import {
-  CheatSheetButtonComponent,
-  ExerciseButtonComponent,
-  NotesButtonComponent,
-  TeachersContactButtonComponent,
-  FilterComponent,
-  ProgramacionSliderComponent,
-  ExerciseComponent,
-  EntornosSliderComponent,
-  SistemasSliderComponent,
-  LenguajesSliderComponent,
-  EmpleabilidadSliderComponent,
-  DbsSliderComponent,
+import {  CheatSheetButtonComponent,  ExerciseButtonComponent,  NotesButtonComponent,  TeachersContactButtonComponent,  FilterComponent,  ProgramacionSliderComponent,  ExerciseComponent,  EntornosSliderComponent,  SistemasSliderComponent,  LenguajesSliderComponent,  EmpleabilidadSliderComponent,  DbsSliderComponent, CheatSheetComponent,
 } from "../../components";
 
 function ExtraNavbarComponents({
@@ -31,32 +19,32 @@ function ExtraNavbarComponents({
     setVisibleComponent(visibleComponent === "exercise" ? null : "exercise");
     setExerIcon(visibleComponent === "exercise" ? "fa-folder" : "fa-folder-open");
     setNoteIcon("fa-book");
-    setCheatIcon("fa-sun");
+    setCheatIcon("fa-cloud-sun");
   };
 
   const handleNotes = () => {
     setVisibleComponent(visibleComponent === "notes" ? null : "notes");
     setNoteIcon(visibleComponent === "notes" ? "fa-book" : "fa-book-open");
     setExerIcon("fa-folder");
-    setCheatIcon("fa-sun");
+    setCheatIcon("fa-cloud-sun");
   };
 
   const handleCheat = () => {
     setVisibleComponent(visibleComponent === "cheat" ? null : "cheat");
-    setCheatIcon(visibleComponent === "cheat" ? "fa-sun" : "fa-cloud-sun");
+    setCheatIcon(visibleComponent === "cheat" ? "fa-cloud-sun" : "fa-sun");
     setNoteIcon("fa-book");
     setExerIcon("fa-folder");
   };
 
   const handleTeacher = () => {
     setVisibleComponent(visibleComponent === "teacher" ? null : "teacher");
-    setCheatIcon("fa-sun");
+    setCheatIcon("fa-cloud-sun");
     setExerIcon("fa-folder");
     setNoteIcon("fa-book");
   };
 
   return (
-    <div className="exercise-file-btn" data-aos="fade-in" data-aos-delay="600">
+    <div className="eextra-nav-icons" data-aos="fade-in" data-aos-delay="600">
       <ExerciseButtonComponent
         icon={`fa-solid ${exerIcon} extra-icons`}
         handle={handleExercise}
@@ -102,7 +90,8 @@ function ExtraNavbarComponents({
       {visibleComponent === "notes" && typeData === "entType"  && <EntornosSliderComponent />}
       {visibleComponent === "notes" && typeData === "empType"  && <EmpleabilidadSliderComponent />}
       {visibleComponent === "notes" && typeData === "dbsType"  && <DbsSliderComponent />}
-      {visibleComponent === "cheat" && <h3>bulala</h3>}
+
+      {visibleComponent === "cheat" && <CheatSheetComponent/>}
     </div>
   );
 }
