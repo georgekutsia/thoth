@@ -39,12 +39,7 @@ const handleExpand = () =>{
       </div>
       {first.map((data, index)=>
       <div key={index} className="cheat-sheet-card" style={{width: cardWidth, minHeight:cardHeight}}>
-      <div className="cheat-sheet-card-texts">
         <h3 style={{fontSize : titleSize}}>{data.title}</h3>
-        <p  style={{fontSize : textSize}}>{data.text}</p>
-        <p  style={{fontSize : textSize}}>{data.text1}</p>
-        <p  style={{fontSize : textSize}}>{data.text2}</p>
-      </div>
         <div className="cheat-sheet-card-imgs">
             <img  src={data.url} alt="index" />
             {data.url1 &&
@@ -57,6 +52,16 @@ const handleExpand = () =>{
             <img  src={data.url3} alt="index" />
             }
         </div>
+      <div className="cheat-sheet-card-texts">
+        <p  style={{fontSize : textSize}}>{data.text}</p>
+        <p  style={{fontSize : textSize}}>{data.text1}</p>
+        <p  style={{fontSize : textSize}}>{data.text2}</p>
+        <p  style={{fontSize : textSize}}>{data.text3}</p>
+        <p  style={{fontSize : textSize}}>{data.text4}</p>
+        <p  style={{fontSize : textSize}}>{data.text5}</p>
+        <p  style={{fontSize : textSize}}>{data.text6}</p>
+      </div>
+
       </div>
       )}
     </div>

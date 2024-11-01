@@ -1,12 +1,18 @@
 const programationCheatsheetsData = [
   {title:"Hello, world",
-    text:"Un sencillo Hola Mundo en Java",
+    text:`La imagen muestra la estructura básica de un programa en Java, específicamente el clásico programa "Hello World"`,
+    text1:`En Java, el nombre de la clase debe coincidir con el nombre del archivo (en este caso, HelloWorld.java). La clase se define usando la palabra clave "public class", seguida del nombre de la clase.`,
+    text2:"public static void main(String[] args) es el método principal de un programa Java. Es el punto de entrada de cualquier aplicación Java; es decir, es el primer método que se ejecuta cuando inicias el programa.",
+    text3:`"public": Hace que el método sea accesible desde cualquier lugar.`,
+text4:`"static": Permite que el método se ejecute sin crear una instancia de la clase.`,
+text5:`"void": Indica que el método no retorna ningún valor.`,
+text6:`"main": Es el nombre específico que Java busca como punto de entrada en una aplicación.`,
     url:"https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730246072/1_nr7e1o.png",
     url1:"",
     url2:""
   },
   {title:"Editar, Compilar y Ejecutar",
-    text:"Proceso por el que pasa un código como el Hello, World para obtenerlo como output de texto",
+    text:"Este flujo es esencial para convertir el código fuente que escribes en un editor de texto en un programa ejecutable que la máquina pueda entender y ejecutar. ",
     url:"https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730246073/2_hfpjns.png",
     url1:"",
     url2:""
@@ -30,7 +36,7 @@ const programationCheatsheetsData = [
     url2:""
   },
   {title:"Números de punto flotante (o floating-point numbers) ",
-    text:"en programación, que son usados para representar números reales. Estos incluyen tanto números enteros como decimales, y permiten representar valores fraccionarios y muy grandes o muy pequeños, en comparación con los enteros.",
+    text:"En programación, que son usados para representar números reales. Estos incluyen tanto números enteros como decimales, y permiten representar valores fraccionarios y muy grandes o muy pequeños, en comparación con los enteros.",
     url:"https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730246066/6.1_jbmhey.png",
     url1:"https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730246065/6.2_zzhpm2.png",
     url2:""
@@ -48,9 +54,10 @@ const programationCheatsheetsData = [
     url2:""
   },
   {title:"Impresión en Java (printing)",
-    text:"System.out.print(String s): Imprime el contenido de s (cadena o cualquier otro valor convertido a texto) en la consola, pero no agrega una nueva línea al final. Si usas print varias veces, el siguiente valor se imprimirá justo al lado del anterior, sin salto de línea. ",
-    text1:"System.out.println(String s): Imprime el contenido de s en la consola y agrega una nueva línea al final. Esto significa que cualquier impresión posterior comenzará en una nueva línea.",
-    text2:"System.out.println(): No imprime ningún contenido, simplemente agrega una nueva línea en la consola. Es útil para crear espacios en blanco en la salida de la consola.",
+    text:"Los métodos de impresión en Java se utilizan para mostrar texto u otros valores en la consola. Estos métodos son parte de la clase System.out, que es una herramienta estándar para la salida en consola en Java.",
+    text1:"System.out.print(String s): Imprime el contenido de s (cadena o cualquier otro valor convertido a texto) en la consola, pero no agrega una nueva línea al final. Si usas print varias veces, el siguiente valor se imprimirá justo al lado del anterior, sin salto de línea. ",
+    text2:"System.out.println(String s): Imprime el contenido de s en la consola y agrega una nueva línea al final. Esto significa que cualquier impresión posterior comenzará en una nueva línea.",
+    text3:"System.out.println(): No imprime ningún contenido, simplemente agrega una nueva línea en la consola. Es útil para crear espacios en blanco en la salida de la consola.",
     url:"https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730246061/9_em7ick.png",
     url1:"",
     url2:""
