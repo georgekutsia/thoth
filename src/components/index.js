@@ -48,3 +48,7 @@ export { default as SimulacroSelection } from "./simulacro-selection/SimulacroSe
 
 export { default as MonacoComponentJavascript } from "./monaco-vscode/MonacoComponentJavascript";
 export { default as MonacoComponentJava } from "./monaco-vscode/MonacoComponentJava";
+
+
+
+export { default as FormattedTextComponent } from "./utils/formattedText/FormattedTextComponent";

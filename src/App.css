@@ -102,6 +102,8 @@
   background-image: radial-gradient(circle at center, #899Dc4, #0759fc);
   background: radial-gradient(ellipse at bottom, #fff8ca, #fff0d3);
   color:  black;
+  --invertColorBlack: var(--white);
+  --invertColorWhite: var(--black);
  --transImgs: var(--transparent);
 
 }
@@ -109,6 +111,8 @@
   background-image: radial-gradient(circle at center, #899Dc4, #0759fc);
   background: radial-gradient(ellipse at bottom, #ffb6b2, #ffdcdc);
   color:  black;
+  --invertColorBlack: var(--white);
+  --invertColorWhite: var(--black);
  --transImgs: var(--transparent);
 
 }
@@ -116,6 +120,8 @@
   background-image: radial-gradient(circle at center, #899Dc4, #0759fc);
   background: radial-gradient(ellipse at bottom, #ffffff, #f9b7d7);
   color:  black;
+  --invertColorBlack: var(--white);
+  --invertColorWhite: var(--black);
  --transImgs: var(--transparent);
 
 }
@@ -123,6 +129,8 @@
   background-image: radial-gradient(circle at center, #899Dc4, #0759fc);
   background: radial-gradient(ellipse at bottom, #f8fff0, #e7f9e1);
   color:  black;
+  --invertColorBlack: var(--white);
+  --invertColorWhite: var(--black);
  --transImgs: var(--transparent);
 
 }
@@ -130,8 +138,9 @@
   background-image: radial-gradient(circle at center, #899Dc4, #0759fc);
   background: radial-gradient(ellipse at bottom, #ffffff, #cfebf3);
   color:  black;
+  --invertColorBlack: var(--white);
+  --invertColorWhite: var(--black);
  --transImgs: var(--transparent);
-
 }
 
 * {
