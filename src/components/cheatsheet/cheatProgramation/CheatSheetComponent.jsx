@@ -6,28 +6,26 @@ function CheatSheetComponent() {
 const [first] = useState(programationCheatsheetsData)
 const [cardWidth, setcardWidth] = useState("20vw")
 const [cardHeight, setcardHeight] = useState("350px")
-const [titleSize, settitleSize] = useState("24px")
-const [textSize, settextSize] = useState("16px")
+const [titleSize, settitleSize] = useState("22px")
+const [textSize, settextSize] = useState("14px")
 
 const handleExpand = () =>{
   if(cardWidth === "20vw"){
-    setcardWidth("30vw")
-    settitleSize("26px")
-    settextSize("18px")
-  } else if(cardWidth === "30vw"){
+    setcardWidth("32vw")
+  } else if(cardWidth === "32vw"){
     setcardWidth("45vw")
+    settitleSize("24px")
+    settextSize("16px")
+  } else if(cardWidth === "45vw"){
+    setcardWidth("68vw")
+    setcardHeight("450px")
     settitleSize("28px")
     settextSize("20px")
-  } else if(cardWidth === "45vw"){
-    setcardWidth("65vw")
-    setcardHeight("450px")
-    settitleSize("30px")
-    settextSize("22px")
   } else{
     setcardWidth("20vw")
     setcardHeight("350px")
-    settitleSize("24px")
-    settextSize("16px")
+    settitleSize("22px")
+    settextSize("14px")
   }
 }
 

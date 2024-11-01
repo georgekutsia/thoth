@@ -17,8 +17,8 @@ function BtnExpandComponent({handleExpand, icon, extraIcon}) {
     }else if (expand === "fa-3"){
       setExpand("fa-4")
     } else if (expand === "fa-4"){
-      setExpand("fa-5")
-    } else if (expand === "fa-5"){
+      setExpand("fa-1")
+    } else if (expand === "fa-1"){
       setExpand("fa-2")
     }
   }
