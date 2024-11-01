@@ -32,3 +32,9 @@ export { default as dbsNotas } from "./notas/dbsNotas.js";
 export { default as programacionNotas } from "./notas/programacionNotas.js";
 export { default as empleabilidadNotas } from "./notas/empleabilidadNotas.js";
 export { default as lenguajesNotas } from "./notas/lenguajesNotas.js";
+
+
+
+
+export { default as programationCheatsheetsData } from "./cheatsheets/programationCheatsheetData.js";
+

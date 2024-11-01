@@ -1,6 +1,7 @@
 :root {
-  --invertColor: var(--black);
-  --textChangeColor: var(--white);
+  --invertColorBlack: var(--black);  /*con el cambio de color de la página cambian las letras iniciales en negro a blanco  */
+  --invertColorWhite: var(--white); /*con el cambio de color de la página cambian las letras iniciales en blacno a negro  */
+  --transImgs: var(--white);
 
 --white: #ffffff;
 --grey: rgb(193, 193, 193);
@@ -13,6 +14,7 @@
 --brown: rgb(165, 42, 42);
 --green: rgb(0, 255, 0);
 --pink: #ff0080;
+--transparent: rgba(0, 0, 0, 0.099);
 
 --navbar-blue: rgba(31, 153, 235, 0.7);
 --navbar-violet: rgba(176, 31, 235, 0.7);
@@ -91,34 +93,45 @@
   background-image: radial-gradient(circle at center, #899Dc4, #0759fc);
   background: radial-gradient(ellipse at bottom, #ffffff, #edfdff);
   color:  black;
- --invertColor: var(--white);
- --textChangeColor: var(--black);
+ --invertColorBlack: var(--white);
+ --invertColorWhite: var(--black);
+ --transImgs: var(--transparent);
 
 }
 .body-day-1 {
   background-image: radial-gradient(circle at center, #899Dc4, #0759fc);
-  background: radial-gradient(ellipse at bottom, #fff8ca, #ffce72);
+  background: radial-gradient(ellipse at bottom, #fff8ca, #fff0d3);
   color:  black;
+ --transImgs: var(--transparent);
+
 }
 .body-day-2 {
   background-image: radial-gradient(circle at center, #899Dc4, #0759fc);
-  background: radial-gradient(ellipse at bottom, #ffb6b2, #ff8282);
+  background: radial-gradient(ellipse at bottom, #ffb6b2, #ffdcdc);
   color:  black;
+ --transImgs: var(--transparent);
+
 }
 .body-day-3 {
   background-image: radial-gradient(circle at center, #899Dc4, #0759fc);
-  background: radial-gradient(ellipse at bottom, #ffffff, #ff7fbd);
+  background: radial-gradient(ellipse at bottom, #ffffff, #f9b7d7);
   color:  black;
+ --transImgs: var(--transparent);
+
 }
 .body-day-4 {
   background-image: radial-gradient(circle at center, #899Dc4, #0759fc);
-  background: radial-gradient(ellipse at bottom, #f8fff0, #d3ffc5);
+  background: radial-gradient(ellipse at bottom, #f8fff0, #e7f9e1);
   color:  black;
+ --transImgs: var(--transparent);
+
 }
 .body-day-5 {
   background-image: radial-gradient(circle at center, #899Dc4, #0759fc);
-  background: radial-gradient(ellipse at bottom, #ffffff, #bdf1ff);
+  background: radial-gradient(ellipse at bottom, #ffffff, #cfebf3);
   color:  black;
+ --transImgs: var(--transparent);
+
 }
 
 * {

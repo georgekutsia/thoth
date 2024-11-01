@@ -17,7 +17,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(20px + 3vw);
-  color: var(--textChangeColor);
+  color: var(--invertColorWhite);
 }
 .slide-btn-2{
   position: absolute;
@@ -37,7 +37,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(20px + 3vw);
-  color: var(--textChangeColor);
+  color: var(--invertColorWhite);
 }
 
 .button-slider-sides-btn:hover{

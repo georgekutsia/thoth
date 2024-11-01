@@ -24,10 +24,10 @@
           if (window.scrollY <= 1) {
             setCollapsed(false);
             setmainNavbarClass(false);
-          } else if (window.scrollY >= 20 && window.scrollY <= 80) {
+          } else if (window.scrollY >= 10 && window.scrollY <= 30) {
             setCollapsed(true);
             setmainNavbarClass(false);
-          } else if (window.scrollY > 81) {
+          } else if (window.scrollY > 31) {
             setCollapsed(true);
             setmainNavbarClass(true);
           }

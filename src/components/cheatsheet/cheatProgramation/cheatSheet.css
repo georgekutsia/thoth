@@ -1,6 +1,61 @@
 .cheat-sheet-box{
   width: 70vw;
-  background-color: blue;
   margin: auto;
-  height: 50vh;
+  margin-top: 10vh;
+  height: 80vh;
+  border-radius: 10px;
+  overflow-y: scroll;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+  border-top: 5px inset var(--red);
+  border-bottom: 5px inset var(--red);
+  padding: 20px 0px;
+}
+
+.cheat-sheet-card {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 1px 1px 5px var(--invertColorWhite);
+  border-radius: 10px;
+  overflow: scroll;
+  transition: 0.2s ease-in-out;
+  align-items: center;
+  max-height: 550px;
+}
+.cheat-sheet-card-texts{
+  text-align: left;
+  text-indent: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.cheat-sheet-card-imgs{
+  background-color: var(--transImgs);
+  border-radius: 10px;
+  box-shadow: 1px 5px 10px var(--invertColorWhite);
+  max-width: 98%;
+}
+.cheat-sheet-card img{
+  max-width: 100%;
+  border-radius: 10px;
+  mix-blend-mode: multiply;
+  box-shadow: 1px 5px 10px var(--black);
+  margin: auto;
+}
+.cheat-sheet-card-imgs img:nth-child(2),
+.cheat-sheet-card-imgs img:nth-child(3),
+.cheat-sheet-card-imgs img:nth-child(4)
+{
+  margin-top: 20px;
+}
+
+.expand-icon-cheatsheet{
+  position: absolute;
+  z-index: 40;
+  width: 60px;
+  right: 0px;
+  top: 10vh;
 }
