@@ -16,7 +16,7 @@ function ProgramacionScreen() {
     <div className="screen-box">
       <ExtraNavbarComponents
         dataExer={dataExer}
-        setSearchTerm={setSearchTerm} // Pasar el setter para el término de búsqueda
+        setSearchTerm={setSearchTerm} 
         searchTerm = {searchTerm}
         typeData="progType" 
       />

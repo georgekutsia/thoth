@@ -4,7 +4,7 @@ const FormattedTextComponent = ({ text }) => {
   if (!text) return null;
 
   // Cambia la expresión regular para que detecte solo fragmentos entre un solo `*` a cada lado
-  const colors = text.split(/(\*[^*]*\*)/);
+  const colors = text.split(/(\*\*[^*]*\*\*)/);
 
   return colors.map((colorPart, index) => {
     // Si el fragmento está entre un solo `*`, aplicar el color azul
@@ -13,7 +13,7 @@ const FormattedTextComponent = ({ text }) => {
       const parts = innerText.split(/("[^"]*")/);
 
       return (
-        <span key={index} style={{ color: "var(--blue)" }}>
+        <span key={index} style={{ color: "var(--navbar-bluey)"  }}>
           {parts.map((part, subIndex) => {
             // Aplicar negrita si está entre comillas
             if (part.startsWith('"') && part.endsWith('"')) {

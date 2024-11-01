@@ -37,7 +37,7 @@ function BtnExpandComponent({handleExpand, icon, extraIcon}) {
 BtnExpandComponent.propTypes={
   handleExpand: PropTypes.func.isRequired,
   icon: PropTypes.string.isRequired,
-  extraIcon: PropTypes.string.isRequired,
+  extraIcon: PropTypes.string,
 }
 
 export default BtnExpandComponent

@@ -37,7 +37,7 @@ function TablaHorarioComponent() {
           />
           <HorarioTdComponent
             linkClase={"https://thepowerfp.alexiaclassroom.com/course/view.php?id=607"}
-            linkZoom={"https://meet.google.com/hxc-efvc-wjb"}
+            linkZoom={"https://meet.google.com/xry-vrgr-crr?authuser=1"}
             texto={"Lenguaje de Marcas"}
             style="lenguaje"
           />
@@ -65,7 +65,7 @@ function TablaHorarioComponent() {
           />
           <HorarioTdComponent
             linkClase={"https://thepowerfp.alexiaclassroom.com/course/view.php?id=567"}
-            linkZoom={"https://meet.google.com/mys-ydbh-onu"}
+            linkZoom={"https://meet.google.com/yci-ywju-aas?authuser=1"}
             texto={"Sistemas Informáticos"}
             style="sistemas"
           />
@@ -104,7 +104,7 @@ function TablaHorarioComponent() {
           />
           <HorarioTdComponent
             linkClase={"https://thepowerfp.alexiaclassroom.com/course/view.php?id=567"}
-            linkZoom={"https://meet.google.com/iej-axug-nnr"}
+            linkZoom={"https://meet.google.com/hro-eeqr-fet?authuser=1"}
             texto={"Tutoría Sistemas Informáticos"}
             style="sistemas"
           />
