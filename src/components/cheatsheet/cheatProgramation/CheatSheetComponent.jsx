@@ -55,9 +55,29 @@ const handleExpand = () =>{
       <div className="cheat-sheet-card-texts">
         <p  style={{fontSize : textSize}}>{data.text}</p>
         <p  style={{fontSize : textSize}}>{data.text1}</p>
+        <ul>
+          <li>{data.textSub1a}</li>
+          <li>{data.textSub1b}</li>
+          <li>{data.textSub1c}</li>
+          </ul>
         <p  style={{fontSize : textSize}}>{data.text2}</p>
+        <ul>
+          <li>{data.textSub2a}</li>
+          <li>{data.textSub2b}</li>
+          <li>{data.textSub2c}</li>
+          </ul>
         <p  style={{fontSize : textSize}}>{data.text3}</p>
+        <ul>
+          <li>{data.textSub3a}</li>
+          <li>{data.textSub3b}</li>
+          <li>{data.textSub3c}</li>
+          </ul>
         <p  style={{fontSize : textSize}}>{data.text4}</p>
+        <ul>
+          <li>{data.textSub4a}</li>
+          <li>{data.textSub4b}</li>
+          <li>{data.textSub4c}</li>
+          </ul>
         <p  style={{fontSize : textSize}}>{data.text5}</p>
         <p  style={{fontSize : textSize}}>{data.text6}</p>
       </div>

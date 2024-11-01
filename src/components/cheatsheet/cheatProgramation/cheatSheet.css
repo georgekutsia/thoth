@@ -60,3 +60,34 @@
   right: 0px;
   top: 10vh;
 }
+
+@media (max-width: 768px) {
+  .cheat-sheet-box{
+    width: 95vw;
+    margin-top: 2vh;
+    height: 80vh;
+    border-radius: 10px;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+    border-top: 5px inset var(--red);
+    border-bottom: 5px inset var(--red);
+    padding: 10px 0px;
+  }
+  .cheat-sheet-card {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    box-shadow: 1px 1px 5px var(--invertColorWhite);
+    border-radius: 10px;
+    overflow: scroll;
+    transition: 0.2s ease-in-out;
+    align-items: center;
+    max-height: 550px;
+    gap: 20px;
+    min-width: 300px;
+  }
+}
