@@ -40,7 +40,9 @@ export default function CardSlider({ fromData, text }) {
         {gallery.length > 0 ? (
           gallery.map((ans, index) => (
             <SwiperSlide key={index}>
-              <BtnExpandComponent handleExpand={handleShowFull} />
+                <i className="btn-expand-position">
+                <BtnExpandComponent handleExpand={handleShowFull} />
+              </i>
               <div className='btn-copy-slider'>
                 <BtnCopyComponent copiarTexto={ans.code} />
               </div>

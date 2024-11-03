@@ -1,7 +1,8 @@
 import { useRef, useState } from "react";
 import "./filter.css";
+import PropTypes from "prop-types";
 
-function FilterComponent({ searchTerm, setSearchTerm }) {
+function FilterComponent({ searchTerm, setSearchTerm, filtrar }) {
   const inputRef = useRef(null);
   const [inputBorder, setInputBorder] = useState("");
 
@@ -24,8 +25,8 @@ function FilterComponent({ searchTerm, setSearchTerm }) {
   };
 
   return (
-    <>
-      <i className="fa-solid fa-magnifying-glass search-icon"></i>
+    <div className="filter-box">
+
       <input
         ref={inputRef}
         type="text"
@@ -36,6 +37,7 @@ function FilterComponent({ searchTerm, setSearchTerm }) {
         className="search-input"
         style={{ width: inputBorder, transition: "0.4s ease-in-out" }}
         data-aos="slide-left"
+        placeholder={filtrar}
       />
       {searchTerm && (
         <i
@@ -44,8 +46,13 @@ function FilterComponent({ searchTerm, setSearchTerm }) {
           style={{ cursor: "pointer" }}
         ></i>
       )}
-    </>
+    </div>
   );
 }
+FilterComponent.propTypes = {
+  searchTerm: PropTypes.string,
+  filtrar: PropTypes.string,
+  setSearchTerm:PropTypes.func
+};
 
 export default FilterComponent;

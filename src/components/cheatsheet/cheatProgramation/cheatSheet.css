@@ -1,17 +1,21 @@
 .cheat-sheet-box{
+  border-top: 5px inset var(--red);
+  border-bottom: 5px inset var(--red);
   width: 70vw;
   margin: auto;
-  margin-top: 10vh;
+  margin-top: 4vh;
   height: 80vh;
+  
+}
+.cheat-sheet-content{
   border-radius: 10px;
   overflow-y: scroll;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 20px;
-  border-top: 5px inset var(--red);
-  border-bottom: 5px inset var(--red);
   padding: 20px 0px;
+margin-top: 5vh;
 }
 
 .cheat-sheet-card {
@@ -52,13 +56,14 @@
 {
   margin-top: 20px;
 }
-
 .expand-icon-cheatsheet{
-  position: absolute;
+  position:absolute;
+  margin: 1vh 0 0 10%;
+  display: flex;
+  justify-content: space-between;
   z-index: 40;
-  width: 60px;
-  right: 0px;
-  top: 10vh;
+  width: 100px;
+  gap: 20px;
 }
 
 @media (max-width: 768px) {

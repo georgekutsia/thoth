@@ -60,8 +60,15 @@ export default function ProgramacionSliderComponent() {
             <SwiperSlide>          
               <CardSlider fromData={programacionNotas.conditionalJava} text='Condicionales (java)' />
               <div className='pdf-downloader'>
-                <DpfDownloaderComponent text='Inicio a la Programación' url={"https://thepowerfp.alexiaclassroom.com/pluginfile.php/26102/mod_resource/content/1/UD1.%20Inicio%20a%20la%20Programaci%C3%B3n.pdf"} />
-                <DpfDownloaderComponent text='Configuración de Netbeans y XAMPP ' url={"https://thepowerfp.alexiaclassroom.com/pluginfile.php/29572/mod_resource/content/1/Netbeans%20%20XAMPP.pdf"} />       
+                {/* <DpfDownloaderComponent text='Inicio a la Programación' url={"https://thepowerfp.alexiaclassroom.com/pluginfile.php/26102/mod_resource/content/1/UD1.%20Inicio%20a%20la%20Programaci%C3%B3n.pdf"} /> */}
+                {/* <DpfDownloaderComponent text='Configuración de Netbeans y XAMPP ' url={"https://thepowerfp.alexiaclassroom.com/pluginfile.php/29572/mod_resource/content/1/Netbeans%20%20XAMPP.pdf"} />        */}
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>          
+              <CardSlider fromData={programacionNotas.conditional2Java} text='Condicionales complejos (java)' />
+              <div className='pdf-downloader'>
+                {/* <DpfDownloaderComponent text='Inicio a la Programación' url={"https://thepowerfp.alexiaclassroom.com/pluginfile.php/26102/mod_resource/content/1/UD1.%20Inicio%20a%20la%20Programaci%C3%B3n.pdf"} /> */}
+                {/* <DpfDownloaderComponent text='Configuración de Netbeans y XAMPP ' url={"https://thepowerfp.alexiaclassroom.com/pluginfile.php/29572/mod_resource/content/1/Netbeans%20%20XAMPP.pdf"} />        */}
               </div>
             </SwiperSlide>
           </Swiper>

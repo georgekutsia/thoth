@@ -17,8 +17,9 @@ function ExerciseComponent({ subject, exercise, exImage, date, question, answer,
 
   return (
     <div className={` ${expanded} exercise-box`}>
-
+    <i className="btn-expand-position">
       <BtnExpandComponent expanded={expanded} handleExpand={() => handleExpand()} />
+    </i>
       <section className="exercise-section1" data-aos="fade-in" data-aos-delay={`${aosDelay}` + "00"}>
         <i className={`fa-solid fa-${subject}`}></i>
         <h6 className="ex-title">{exercise}</h6>

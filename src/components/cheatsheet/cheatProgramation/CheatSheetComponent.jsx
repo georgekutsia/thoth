@@ -3,13 +3,20 @@ import programationCheatsheetsData from "../../../data/cheatsheets/programationC
 import { useState } from "react";
 import BtnExpandComponent from "../../button-expand/BtnExpandComponent";
 import FormattedTextComponent from "../../utils/formattedText/FormattedTextComponent";
+import FilterComponent from "../../filter/FilterComponent";
 
 function CheatSheetComponent() {
-  const [first] = useState(programationCheatsheetsData);
+  const [cheatData] = useState(programationCheatsheetsData);
   const [cardWidth, setcardWidth] = useState("20vw");
   const [cardHeight, setcardHeight] = useState("350px");
   const [titleSize, settitleSize] = useState("20px");
   const [textSize, settextSize] = useState("14px");
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const filteredData = cheatData.filter((data) =>
+    data.title.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
 
   const handleExpand = () => {
     if (cardWidth === "20vw") {
@@ -33,10 +40,12 @@ function CheatSheetComponent() {
 
   return (
     <div className="cheat-sheet-box">
-      <div className="expand-icon-cheatsheet">
-        <BtnExpandComponent handleExpand={handleExpand} icon="fa-2" extraIcon={" x"} />
+    <div className="expand-icon-cheatsheet">
+        <BtnExpandComponent handleExpand={handleExpand} icon="fa-1" />
+        <FilterComponent searchTerm={searchTerm} setSearchTerm={setSearchTerm} filtrar={`Filtrarheatsheet`}/>
       </div>
-      {first.map((data, index) => (
+    <div className="cheat-sheet-content">
+      {filteredData.map((data, index) => (
         <div  key={index} className="cheat-sheet-card" style={{ width: cardWidth, minHeight: cardHeight }}>
           <h3  style={{ fontSize: titleSize }}>{data.title}</h3>
           <div  className="cheat-sheet-card-imgs">
@@ -94,6 +103,8 @@ function CheatSheetComponent() {
         </div>
       ))}
     </div>
+    </div>
+
   );
 }
 

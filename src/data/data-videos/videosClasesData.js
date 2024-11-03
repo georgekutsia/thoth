@@ -36,7 +36,7 @@ const videos = {
     { clase: "Tutoria Itinerario Para Empleabilidad", url: "https://drive.google.com/file/d/1yaau2m9-B1m1tmJvDNf6rasfe4viRrMS/view" },
     { clase: "Tutoria Sistemas informáticos", url: "https://drive.google.com/file/d/1qPjWcBf-F8ww5lYSiJWXtRUPNrJvJn51/view" },
     { clase: "Tutoria Extra Instalación MySQL", url: "https://drive.google.com/file/d/1jLBaYQbS23H1guGf3FnHLS5Bk3nxAS8r/view" },
-    { clase: "Programación Tutoría Colectiva", url: "https://thepowerfp.alexiaclassroom.com/pluginfile.php/26095/mod_folder/content/0/TUTORIA%20INDIVIDUAL%20PROGRAMACION%20DAW%20%282024-10-04%2019_17%20GMT%2B2%29.mp4?forcedownload=1" },
+    { clase: "Programación Tutoría", url: "https://thepowerfp.alexiaclassroom.com/pluginfile.php/26095/mod_folder/content/0/TUTORIA%20INDIVIDUAL%20PROGRAMACION%20DAW%20%282024-10-04%2019_17%20GMT%2B2%29.mp4?forcedownload=1" },
   ],
   "Mon Oct 07 2024": [
     { clase: "Bases de datos", url: "https://drive.google.com/file/d/1URXkdx-3IVy4ijlWLUMPKXO5l7eDwraA/view" },
@@ -100,9 +100,11 @@ const videos = {
     { clase: "Tutoria Lenguaje de marcas", url: "https://drive.google.com/file/d/1_KW8d8MjG8ypfDOkFXvUxKdgUD2sina3/view" }
   ],
   "Fri Oct 25 2024": [
-    { clase: "Programación", url: "" },
+    { clase: "Programación", url: "https://drive.google.com/file/d/1ri6mBeuQPudNdVHDEZxPPOncT-a0vylF/view" },
     { clase: "Tutoria Itinerario Para Empleabilidad", url: "" },
-    { clase: "Tutoria Sistemas informáticos", url: "" }
+    { clase: "Tutoria Sistemas informáticos", url: "" },
+    { clase: "Tutoría Programación ", url: "https://drive.google.com/file/d/1nv5Wir4bxv9Jsap80qrJ-pg6dYouf7DL/view" },
+    
   ],
   "Mon Oct 28 2024": [
     { clase: "Bases de datos", url: "" },

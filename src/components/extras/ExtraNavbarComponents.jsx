@@ -64,7 +64,7 @@ function ExtraNavbarComponents({
         handleTeacher={handleTeacher}
         showInfo={visibleComponent === "teacher"}
       />
-      <FilterComponent searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+      <FilterComponent searchTerm={searchTerm} setSearchTerm={setSearchTerm} filtrar={"Filtrar ..."}/>
 
       {visibleComponent === "exercise" && (
         <div className="exercise-map-box" data-aos="fade-down">
