@@ -1,10 +1,10 @@
 .btn-expand{
   font-size: 25px;
-  color: white;
+  color: var(--invertColorWhite);
+  transition: 0.4s ease-in-out;
 }
 .btn-expand:hover{
-scale: 1.05;
-color: var(--blue);
+scale: 1.1;
 }
 
 .btn-expand-position{

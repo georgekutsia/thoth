@@ -1,6 +1,8 @@
 import { useState } from "react";
 import {ExplanationComponent,TitleScreenComponent,} from "../../components";
 import ExtraNavbarComponents from "../../components/extras/ExtraNavbarComponents";
+import lenguajesCheatsheetData from "../../data/cheatsheets/lenguajesCheatsheetData";
+
 import { ldmData, langEj1 } from "../../data";
 
 function LenguajeDeMarcasScreen() {
@@ -18,6 +20,8 @@ function LenguajeDeMarcasScreen() {
         setSearchTerm={setSearchTerm} // Pasar el setter para el término de búsqueda
         searchTerm = {searchTerm}
         typeData="langType" 
+        cheatsheetData={lenguajesCheatsheetData}
+
       />
 
       <TitleScreenComponent subject="Lenguaje de Marcas" />

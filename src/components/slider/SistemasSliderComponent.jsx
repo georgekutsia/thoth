@@ -8,26 +8,29 @@ import { useState } from 'react';
 import NavigationSliderComponent from './NavigationSliderComponent';
 import DpfDownloaderComponent from '../pdf-downloader/DpfDownloaderComponent';
 import { sistemasNotas } from "../../data";
+import ButtonSliderSidesComponent from '../button-slider-sides/ButtonSliderSidesComponent';
 
 export default function SistemasSliderComponent() {
   const [swiperRef, setSwiperRef] = useState(null); 
 
+  const nextSlide = () => {
+    if (swiperRef) swiperRef.slideNext();
+  };
+
+  const prevSlide = () => {
+    if (swiperRef) swiperRef.slidePrev();
+  };
   const slideTo = (index) => {
     if (swiperRef) {
       swiperRef.slideTo(index, 0); 
     }
   };
-
   return (
-    <div data-aos="zoom-out-down">
-    <NavigationSliderComponent slideTo={slideTo} fromData='indice' navData={sistemasNotas}/>
-      <Swiper
-        className="mySwiper swiper-h"
-        spaceBetween={50}
-        pagination={{ clickable: true }}
-        modules={[Pagination]}
-        onSwiper={setSwiperRef} 
-      >
+    <div className='sliders-box' data-aos="zoom-out-down">
+    <NavigationSliderComponent changeNextData={slideTo} fromData='indice' navData={sistemasNotas}/>
+    <ButtonSliderSidesComponent handle={prevSlide} btnNumb={"1"}  angle='left'/>
+    <ButtonSliderSidesComponent handle={nextSlide} btnNumb={"2"}  angle='right'/>
+      <Swiper className="mySwiper swiper-h" spaceBetween={50} pagination={{ clickable: true }} modules={[Pagination]} onSwiper={setSwiperRef} >
       <DpfDownloaderComponent text='Instalar cacafuti'/>
         <SwiperSlide><CardSlider fromData={"ejemplo"} /></SwiperSlide>
         <SwiperSlide>

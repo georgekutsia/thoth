@@ -26,12 +26,12 @@ function FilterComponent({ searchTerm, setSearchTerm, filtrar }) {
 
   return (
     <div className="filter-box">
-
+      <i className="fa-solid fa-magnifying-glass expa-filter-icons"></i>
       <input
         ref={inputRef}
         type="text"
         value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)} // Actualiza el valor del estado
+        onChange={(e) => setSearchTerm(e.target.value)}
         onFocus={handleFocus}
         onBlur={handleBlur}
         className="search-input"

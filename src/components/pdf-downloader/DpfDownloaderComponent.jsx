@@ -32,7 +32,7 @@ function DpfDownloaderComponent({text, textPlus, url, nav}) {
 }
 DpfDownloaderComponent.propTypes = {
   text: PropTypes.string.isRequired,
-  textPlus: PropTypes.string.isRequired,
+  textPlus: PropTypes.string,
   url: PropTypes.string,
   nav: PropTypes.bool,
 };

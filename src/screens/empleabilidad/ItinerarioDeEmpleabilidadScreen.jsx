@@ -1,6 +1,7 @@
 import { useState } from "react";
 import {ExplanationComponent,TitleScreenComponent,} from "../../components";
 import ExtraNavbarComponents from "../../components/extras/ExtraNavbarComponents";
+import itinerarioCheatsheetData from "../../data/cheatsheets/itinerarioCheatsheetData";
 import { empData, empEj1 } from "../../data";
 
 function ItinerarioDeEmpleabilidadScreen() {
@@ -19,6 +20,8 @@ function ItinerarioDeEmpleabilidadScreen() {
         setSearchTerm={setSearchTerm} // Pasar el setter para el término de búsqueda
         searchTerm = {searchTerm}
         typeData="empType" 
+        cheatsheetData={itinerarioCheatsheetData}
+        
       />
 
       <TitleScreenComponent subject="Itinerario de Empleabilidad" />

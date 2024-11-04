@@ -1,6 +1,7 @@
 import { useState } from "react";
 import {ExplanationComponent,TitleScreenComponent,} from "../../components";
 import ExtraNavbarComponents from "../../components/extras/ExtraNavbarComponents";
+import programationCheatsheetsData from "../../data/cheatsheets/programationCheatsheetData";
 import { progData, prEj1 } from "../../data";
 
 function ProgramacionScreen() {
@@ -19,6 +20,7 @@ function ProgramacionScreen() {
         setSearchTerm={setSearchTerm} 
         searchTerm = {searchTerm}
         typeData="progType" 
+        cheatsheetData={programationCheatsheetsData}
       />
 
       <TitleScreenComponent subject="Programación" />

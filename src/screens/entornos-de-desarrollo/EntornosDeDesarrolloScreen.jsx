@@ -1,6 +1,7 @@
 import { useState } from "react";
 import {ExplanationComponent,TitleScreenComponent,} from "../../components";
 import ExtraNavbarComponents from "../../components/extras/ExtraNavbarComponents";
+import entornosCheatsheetData from "../../data/cheatsheets/entornosCheatsheetData";
 import { entData, entEj1 } from "../../data";
 
 function EntornosDeDesarrolloScreen() {
@@ -19,6 +20,7 @@ function EntornosDeDesarrolloScreen() {
         setSearchTerm={setSearchTerm} // Pasar el setter para el término de búsqueda
         searchTerm = {searchTerm}
         typeData="entType" 
+        cheatsheetData={entornosCheatsheetData}
       />
 
 

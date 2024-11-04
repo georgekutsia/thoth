@@ -1,6 +1,8 @@
 import { useState } from "react";
 import {ExplanationComponent,TitleScreenComponent,} from "../../components";
 import ExtraNavbarComponents from "../../components/extras/ExtraNavbarComponents";
+import dbsCheatsheetData from "../../data/cheatsheets/dbsCheatsheetData";
+
 import { dbsData, dbsEj1 } from "../../data";
 
 function BasesDeDatosScreen() {
@@ -19,6 +21,8 @@ function BasesDeDatosScreen() {
         setSearchTerm={setSearchTerm} // Pasar el setter para el término de búsqueda
         searchTerm = {searchTerm}
         typeData="dbsType" 
+        cheatsheetData={dbsCheatsheetData}
+
       />
 
     <TitleScreenComponent subject="Bases de Datos"/>

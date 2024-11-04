@@ -3,13 +3,13 @@
   border-bottom: 5px inset var(--red);
   width: 70vw;
   margin: auto;
-  margin-top: 4vh;
+  margin-top: 10vh;
   height: 80vh;
+  overflow-y: scroll;
   
 }
 .cheat-sheet-content{
   border-radius: 10px;
-  overflow-y: scroll;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -58,12 +58,13 @@ margin-top: 5vh;
 }
 .expand-icon-cheatsheet{
   position:absolute;
-  margin: 1vh 0 0 10%;
+  margin: 1vh 0 0 0;
   display: flex;
   justify-content: space-between;
   z-index: 40;
-  width: 100px;
+  width: 70vw;
   gap: 20px;
+  transform: translateY(-60px);
 }
 
 @media (max-width: 768px) {

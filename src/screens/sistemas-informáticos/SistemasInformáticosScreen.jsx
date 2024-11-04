@@ -3,8 +3,9 @@ import {
   ExplanationComponent,
   TitleScreenComponent,
 } from "../../components";
-import { sisData, sisEj1 } from "../../data";
 import ExtraNavbarComponents from "../../components/extras/ExtraNavbarComponents";
+import sistemasCheatsheetData from "../../data/cheatsheets/sistemasCheatsheetData";
+import { sisData, sisEj1 } from "../../data";
 
 function SistemasInformáticosScreen() {
   const [dataInfo] = useState(sisData);
@@ -22,6 +23,8 @@ function SistemasInformáticosScreen() {
         setSearchTerm={setSearchTerm} // Pasar el setter para el término de búsqueda
         searchTerm = {searchTerm}
         typeData={"sisType"}
+        cheatsheetData={sistemasCheatsheetData}
+
       />
       <TitleScreenComponent subject="Sistemas Informáticos" />
 

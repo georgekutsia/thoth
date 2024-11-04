@@ -7,16 +7,15 @@
   border: none;
   letter-spacing: 0.1rem;
   font-size: calc(10px + 0.2vw);
-  padding: 10px 13px;
+  padding: 5px 9px;
   transition: 0.2s;
   border-radius: 10px;
-
 }
 
 .btnNavSlider:hover {
   color: var(--clr);
   animation: box 3s infinite;
-  background-color: var(--light-blue);
+  background-color: var(--transparent);
 }
 
 .btnNavSlider:hover i {
@@ -109,5 +108,4 @@
   color: var(--white);
   margin-right: 10px;
   font-size: calc(13px + 0.2vw);
-
 }

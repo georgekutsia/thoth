@@ -8,10 +8,18 @@ import { useState } from 'react';
 import NavigationSliderComponent from './NavigationSliderComponent';
 import DpfDownloaderComponent from '../pdf-downloader/DpfDownloaderComponent';
 import { lenguajesNotas } from "../../data";
+import ButtonSliderSidesComponent from '../button-slider-sides/ButtonSliderSidesComponent';
 
 export default function LenguajesSliderComponent() {
   const [swiperRef, setSwiperRef] = useState(null);
 
+  const nextSlide = () => {
+    if (swiperRef) swiperRef.slideNext();
+  };
+
+  const prevSlide = () => {
+    if (swiperRef) swiperRef.slidePrev();
+  };
   const slideTo = (index) => {
     if (swiperRef) {
       swiperRef.slideTo(index, 0); 
@@ -20,14 +28,11 @@ export default function LenguajesSliderComponent() {
 
   return (
     <div className='sliders-box' data-aos="zoom-out-down">
-      <NavigationSliderComponent slideTo={slideTo} fromData='indice' navData={lenguajesNotas}/>
-      <Swiper
-        className="mySwiper swiper-h"
-        spaceBetween={50}
-        pagination={{ clickable: true }}
-        modules={[Pagination]}
-        onSwiper={setSwiperRef}
-      >
+      <NavigationSliderComponent changeNextData={slideTo} fromData='indice' navData={lenguajesNotas}/>
+      <ButtonSliderSidesComponent handle={prevSlide} btnNumb={"1"}  angle='left'/>
+      <ButtonSliderSidesComponent handle={nextSlide} btnNumb={"2"}  angle='right'/>
+      
+      <Swiper className="mySwiper swiper-h" spaceBetween={50} pagination={{ clickable: true }} modules={[Pagination]} onSwiper={setSwiperRef}>
         {/* Primer Slide */}
         <SwiperSlide>
           <>
@@ -40,10 +45,7 @@ export default function LenguajesSliderComponent() {
             </div>
           </>
         </SwiperSlide>
-
         {/* Segundo Slide */}
-
-
         <SwiperSlide>
           <Swiper className="mySwiper2 swiper-v" direction={'vertical'} spaceBetween={50} pagination={{ clickable: true }} modules={[Pagination]}>
             <SwiperSlide>          

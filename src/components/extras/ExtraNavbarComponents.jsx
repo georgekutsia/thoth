@@ -8,7 +8,8 @@ function ExtraNavbarComponents({
   dataExer,
   setSearchTerm,
   searchTerm,
-  typeData
+  typeData,
+  cheatsheetData
 }) {
   const [visibleComponent, setVisibleComponent] = useState(null);
   const [exerIcon, setExerIcon] = useState("fa-folder");
@@ -91,7 +92,7 @@ function ExtraNavbarComponents({
       {visibleComponent === "notes" && typeData === "empType"  && <EmpleabilidadSliderComponent />}
       {visibleComponent === "notes" && typeData === "dbsType"  && <DbsSliderComponent />}
 
-      {visibleComponent === "cheat" && <CheatSheetComponent/>}
+      {visibleComponent === "cheat" && <CheatSheetComponent cheatsheetData={cheatsheetData}/>}
     </div>
   );
 }

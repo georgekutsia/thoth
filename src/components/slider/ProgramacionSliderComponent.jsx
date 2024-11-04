@@ -29,7 +29,7 @@ export default function ProgramacionSliderComponent() {
 
   return (
     <div className='sliders-box' data-aos="zoom-out-down">
-    <NavigationSliderComponent slideTo={slideTo} fromData='indice' navData={programacionNotas}/>
+      <NavigationSliderComponent changeNextData={slideTo} fromData='indice' navData={programacionNotas}/>
       <ButtonSliderSidesComponent handle={prevSlide} btnNumb={"1"}  angle='left'/>
       <ButtonSliderSidesComponent handle={nextSlide} btnNumb={"2"}  angle='right'/>
       
