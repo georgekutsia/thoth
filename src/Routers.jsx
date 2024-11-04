@@ -13,7 +13,7 @@ function Routers() {
         <Route path="/dbs" element={<BasesDeDatosScreen />} />
         <Route path="/programacion" element={<ProgramacionScreen />} />
         <Route path="/entornos" element={<EntornosDeDesarrolloScreen />} />
-        <Route path="/ldm" element={<LenguajeDeMarcasScreen/>} />
+        <Route path="/lenguaje" element={<LenguajeDeMarcasScreen/>} />
         <Route path="/sistemas" element={<SistemasInformáticosScreen />} />
         <Route path="/empleabilidad" element={<ItinerarioDeEmpleabilidadScreen />} />
         <Route path="/examenes" element={<ExamenesScreen />} />

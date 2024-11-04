@@ -110,7 +110,7 @@
             <MainNavbarBtnComponent
               classN={"fa-solid fa-file-code"}
               dataI={"fa-file-code"}
-              navL={"/ldm"}
+              navL={"/lenguaje"}
               btnT={"Lenguajes de Marca"}
               aosDelay={"150"}
               aosFading={"fade-left"}

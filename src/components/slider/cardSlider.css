@@ -7,13 +7,14 @@
 
 .swiper-h {
   width: 80vw;
-  height: calc(300px + 20vw);
+  height: calc(300px + 23vw);
 }
 
 .swiper-v {
   width: 80vw;
   height: 100%; /* ajusta los pequeños sliders cuando son varios en la grande */
   background: transparent;
+  
 }
 
 .swiper-slide {
@@ -29,6 +30,7 @@
   display: block;
   width: 99%;
   height: 99%;
+margin: auto;
 }
 
 /* Estilos para los cards en el slider de tarjetas */
@@ -40,13 +42,11 @@
 }
 .mySwiperCard-big {
   position: absolute;
-  height: 64vh;
-  width: 95%;
+  height: 98%;
+  width: 60%;
   z-index: 80;
-  
-
+  margin-top: 90px;
 }
-
 .mySwiperCard .swiper-slide {
   display: flex;
   align-items: center;
@@ -112,4 +112,10 @@ padding: 5px;
 .btn-nextprev-slider{
   position: absolute;
   top: 30px;
+}
+
+.slider-title{
+  position: absolute;
+  z-index: 100;
+  top: 50px;
 }

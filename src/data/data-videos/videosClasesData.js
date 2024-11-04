@@ -101,31 +101,31 @@ const videos = {
   ],
   "Fri Oct 25 2024": [
     { clase: "Programación", url: "https://drive.google.com/file/d/1ri6mBeuQPudNdVHDEZxPPOncT-a0vylF/view" },
-    { clase: "Tutoria Itinerario Para Empleabilidad", url: "" },
-    { clase: "Tutoria Sistemas informáticos", url: "" },
+    { clase: "Tutoria Itinerario Para Empleabilidad", url: "https://drive.google.com/file/d/1ujAXf7-nK24clnP6F_fADPeGXE1II3lB/view" },
+    { clase: "Tutoria Sistemas informáticos", url: "https://drive.google.com/file/d/1zwEMaQhBIJLIbsLr4zQOVRdqrLShw_65/view" },
     { clase: "Tutoría Programación ", url: "https://drive.google.com/file/d/1nv5Wir4bxv9Jsap80qrJ-pg6dYouf7DL/view" },
     
   ],
   "Mon Oct 28 2024": [
-    { clase: "Bases de datos", url: "" },
-    { clase: "Itinerario Para Empleabilidad", url: "" },
-    { clase: "Entornos", url: "" }
+    { clase: "Bases de datos", url: "https://drive.google.com/file/d/1uyHaUQOZbKmtznZHiNHTm4IoWJlCYav7/view" },
+    { clase: "Itinerario Para Empleabilidad", url: "28.10.2024. Clase en directo. Unidad 3: Continuación tema 3." },
+    { clase: "Entornos", url: "https://drive.google.com/file/d/1eGV40ZKmNsqNURx7V1Z3FPhM5iY1RCJG/view" }
   ],
-  "Tue Oct 29 2024": [{ clase: "Fundamentos de bases de datos (MPO)", url: "" }],
+  "Tue Oct 29 2024": [{ clase: "Fundamentos de bases de datos (MPO)", url: "https://drive.google.com/file/d/11neiK_IhjoFDrnLTMVzPh9nW-J6pa6DE/view" }],
   "Wed Oct 30 2024": [
-    { clase: "Tutoria Entornos", url: "" },
-    { clase: "Tutoria Fundamentos de bases de datos (MPO)", url: "" },
-    { clase: "Tutoria Bases de datos", url: "" }
+    { clase: "Tutoria Entornos", url: "https://drive.google.com/file/d/10a_WxIIBIsg1ZxyuYFPWOdBd0WKb3NU5/view" },
+    { clase: "Tutoria Fundamentos de bases de datos (MPO)", url: "https://drive.google.com/file/d/19fZOSgrDPQWUDzKXZAuDr5T102Pv_aVT/view" },
+    { clase: "Programada la clase para el 8/11  las 20:00", url: "" }
   ],
   "Thu Oct 31 2024": [
-    { clase: "Lenguaje de marcas", url: "" },
-    { clase: "Sistemas informáticos", url: "" },
-    { clase: "Tutoria Lenguaje de marcas", url: "" }
+    { clase: "Lenguaje de marcas", url: "https://drive.google.com/file/d/1OkXxeuhZkzSWp1DJa_u_eYh4kHmRCD7w/view" },
+    { clase: "Sistemas informáticos", url: "https://drive.google.com/file/d/16gTFWuXLnBA-x2ujcIfF689E3Fmsv_bF/view" },
+    { clase: "Tutoria Lenguaje de marcas", url: "https://drive.google.com/file/d/1R9sFOWaIA_zVogh7Y9PSgra2QjHQQI67/view" }
   ],
     "Fri Nov 01 2024": [
-    { clase: "Programación", url: "" },
-    { clase: "Tutoria Itinerario Para Empleabilidad", url: "" },
-    { clase: "Tutoria Sistemas informáticos", url: "" }
+    { clase: "Libre por festivo ", url: "" },
+    { clase: "Libre por festivo ", url: "" },
+    { clase: "Libre por festivo", url: "" }
   ],
   "Mon Nov 04 2024": [
     { clase: "Bases de datos", url: "" },

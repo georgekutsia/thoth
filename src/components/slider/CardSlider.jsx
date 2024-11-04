@@ -40,13 +40,17 @@ export default function CardSlider({ fromData, text }) {
         {gallery.length > 0 ? (
           gallery.map((ans, index) => (
             <SwiperSlide key={index}>
+            <div>
                 <i className="btn-expand-position">
-                <BtnExpandComponent handleExpand={handleShowFull} />
+                <BtnExpandComponent handleExpand={handleShowFull}  colorExpand={"var(--white)"}/> 
+                {/* tengo que especificar el color en este comoponente del btnexpandcomponent para que siempre se vea blacno aunque cabie dia/noche */}
               </i>
+              <h5>{ans.title}</h5>
               <div className='btn-copy-slider'>
                 <BtnCopyComponent copiarTexto={ans.code} />
               </div>
               <img src={ans.url} alt={`slide-${index}`} />
+            </div>
             </SwiperSlide>
           ))
         ) : (

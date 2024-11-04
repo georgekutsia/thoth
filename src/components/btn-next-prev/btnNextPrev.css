@@ -26,10 +26,10 @@
   background-color: var(--light-blue);
 }
 
-.btnNavNextPrevLeft:hover i {
-  color: var(--grey); 
+.btnNavNextPrevLeft:hover i ,
+.btnNavNextPrevRight:hover i {
+  color: var(--invertColorWhite); 
 }
-
 .btnNavNextPrevLeft::before {
   content: "";
   position: absolute;
@@ -93,6 +93,7 @@
 }
 .btn-nav-next-prev-box{
   width: 200px;
+  margin-top: -20px;
 }
 
 @keyframes moveLeft {
@@ -163,9 +164,7 @@
   background-color: var(--light-blue);
 }
 
-.btnNavNextPrevRight:hover i {
-  color: var(--grey); 
-}
+
 
 .btnNavNextPrevRight::before {
   content: "";

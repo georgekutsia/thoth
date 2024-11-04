@@ -13,13 +13,13 @@
 }
 
 .btnNavSlider:hover {
-  color: var(--clr);
+  color: var(--red);
   animation: box 3s infinite;
   background-color: var(--transparent);
 }
 
 .btnNavSlider:hover i {
-  color: var(--grey); 
+  color: var(--light-blue); 
 }
 
 .btnNavSlider::before {

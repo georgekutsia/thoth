@@ -5,7 +5,7 @@ import Tooltip from 'react-bootstrap/Tooltip';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 
 
-function BtnExpandComponent({handleExpand, icon, extraIcon}) {
+function BtnExpandComponent({handleExpand, icon, extraIcon,colorExpand}) {
   const [expand, setExpand] = useState(icon ||"fa-expand")
   const [toolInfo, settoolInfo] = useState("")
 
@@ -44,7 +44,7 @@ function BtnExpandComponent({handleExpand, icon, extraIcon}) {
     {extraIcon &&
     <i className="fa-solid fa-expand expa-filter-icons"  onClick={()=>handleExpandExercise()}></i>
     }
-    <i className={`fa-solid  ${expand} btn-expand`} onClick={()=>handleExpandExercise()}></i>
+    <i className={`fa-solid  ${expand} btn-expand`} onClick={()=>handleExpandExercise()} style={{color: colorExpand}}></i>
     </div>
   </OverlayTrigger>
   )
@@ -54,6 +54,7 @@ BtnExpandComponent.propTypes={
   handleExpand: PropTypes.func.isRequired,
   icon: PropTypes.string,
   extraIcon: PropTypes.bool,
+  colorExpand: PropTypes.string
 }
 
 export default BtnExpandComponent

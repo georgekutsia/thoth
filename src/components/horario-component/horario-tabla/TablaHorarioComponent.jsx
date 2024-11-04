@@ -24,7 +24,7 @@ function TablaHorarioComponent() {
           <td>15:00 - 16:00</td>
           <HorarioTdComponent
             linkClase={"https://thepowerfp.alexiaclassroom.com/course/view.php?id=566"}
-            linkZoom={"https://meet.google.com/sfz-afik-hfs"}
+            linkZoom={" https://meet.google.com/mtz-bpem-hzk?authuser=1"}
             texto={"Base de datos"}
             style="bases"
           />
@@ -52,7 +52,7 @@ function TablaHorarioComponent() {
           <td>16:00 - 17:00</td>
           <HorarioTdComponent
             linkClase={"https://thepowerfp.alexiaclassroom.com/course/view.php?id=591"}
-            linkZoom={"https://meet.google.com/owd-wkey-uid"}
+            linkZoom={"https://meet.google.com/ofm-jkxg-vdo?authuser=1"}
             texto={"Itinerario Personal I"}
             style="itinerario"
           />
@@ -80,7 +80,7 @@ function TablaHorarioComponent() {
           <td>17:00 - 18:00</td>
           <HorarioTdComponent
             linkClase={"https://thepowerfp.alexiaclassroom.com/course/view.php?id=611"}
-            linkZoom={"https://meet.google.com/vqw-itrf-dpo"}
+            linkZoom={"https://meet.google.com/evj-ijtt-fhb?authuser=1"}
             texto={"Entornos"}
             style="entornos"
           />

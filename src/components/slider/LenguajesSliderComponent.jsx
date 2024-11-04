@@ -52,7 +52,7 @@ export default function LenguajesSliderComponent() {
             <CardSlider fromData={lenguajesNotas.basicoHtml} text={"Etiquetas y atributos básicos"}/>
             </SwiperSlide>
             <SwiperSlide>
-              <CardSlider fromData={lenguajesNotas.basicoForm} text={"Form Básico"}/>
+              <CardSlider fromData={lenguajesNotas.basicoForm} text={"Tablas y Forms Básicos"}/>
             </SwiperSlide>
           </Swiper>
         </SwiperSlide>
