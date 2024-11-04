@@ -85,7 +85,7 @@ function ExamenesScreen() {
 
   return (
     <div data-aos="fade-in" data-aos-duration="500"  className="pt-20 screen-box subject-selection" >
-      <h1 className="text-3xl font-bold mb-4">{subjectTests[selectedSubject].name}</h1>
+      <h2 className="text-3xl font-bold mb-4">{subjectTests[selectedSubject].name}</h2>
       <BtnChangeSubjectComponent handleSubject={()=>handleChangeSubject()} tooltipText={"Cambiar de asignatura"}/>
       <div className="exam-screen">
         {!selectedSimulacro ? (

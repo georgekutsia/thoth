@@ -49,7 +49,7 @@ export default function CardSlider({ fromData, text }) {
               <div className='btn-copy-slider'>
                 <BtnCopyComponent copiarTexto={ans.code} />
               </div>
-              <img src={ans.url} alt={`slide-${index}`} />
+              <img src={ans.url} alt={ans.title} />
             </div>
             </SwiperSlide>
           ))

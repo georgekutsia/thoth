@@ -996,6 +996,267 @@ ese conjunto de campos. Usualmente, se encuentra dentro del elemento <fieldset> 
 </html>`, 
  },
 ],
+complexForm: [
+    {  title:"Post",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730763351/post3_g5gzfx.png", code: `<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo de Formulario POST</title>
+</head>
+<body>
+    <h1>Formulario con Método POST</h1>
+    <p>Este formulario enviará los datos a través del método POST, por lo que los datos no serán visibles en la URL.</p>
+    
+    <form action="/buscar" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad"><br><br>
+        
+        <button type="submit">Enviar con POST</button>
+    </form>
+</body>
+</html>
+` },
+    {  title:"Get",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730763348/get3_ysmszk.png", code: `<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo de Formulario GET</title>
+</head>
+<body>
+    <h1>Formulario con Método GET</h1>
+    <p>Este formulario enviará los datos a través del método GET, por lo que los datos serán visibles en la URL.</p>
+    
+    <form action="/buscar" method="GET">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad"><br><br>
+        
+        <button type="submit">Enviar con GET</button>
+    </form>
+</body>
+</html>
+` },
+    {  title:"Encuesta pelis",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730763364/encuesta_pelis_xkpsm3.png", code: `<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Encuesta de Películas</title>
+
+</head>
+<body>
+    <h2>Encuesta de Preferencias de Películas</h2>
+    <form action="">
+        <fieldset>
+            <legend>Información Básica</legend>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="10" max="100" required><br><br>
+
+            <label for="genero">Género Favorito:</label>
+            <select id="genero" name="genero">
+                <option value="accion">Acción</option>
+                <option value="comedia">Comedia</option>
+                <option value="drama">Drama</option>
+                <option value="terror">Terror</option>
+            </select><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferencias de Películas</legend>
+            
+            <label>¿Te gustan las películas en 3D?</label><br>
+            <input type="radio" id="si3d" name="3d" value="si">
+            <label for="si3d">Sí</label><br>
+            <input type="radio" id="no3d" name="3d" value="no">
+            <label for="no3d">No</label><br><br>
+
+            <label for="comentarios">Comentarios:</label><br>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+        </fieldset>
+
+        <button type="submit">Enviar Encuesta</button>
+    </form>
+
+    <div class="center">
+        <h3>Trailer de una Película Reciente</h3>
+        <video width="320" height="240" controls>
+            <source src="video/236893_small.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+
+        <h3>Imagen relacionada</h3>
+        <img src="img/turtle-9144782_1280.jpg" alt="Imagen de tortuga" width="320" height="240">
+        <img src="imagen2/copyright-6114655_1280.jpg" alt="Imagen" width="320" height="240">
+    </div>
+</body>
+</html>
+
+` },
+    {  title:"Controles de video",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730763360/getpost4_pl6zaa.png", code: `<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Control de Video</title>
+    <style>
+        /* Estilos para simular el ajuste de brillo */
+        #videoContainer {
+            filter: brightness(1);
+            transition: filter 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <h2>Control de Volumen y Brillo del Video</h2>
+
+    <div id="videoContainer">
+        <video id="miVideo" width="320" height="240" controls>
+            <source src="video/236893_small.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+    </div>
+
+    <h3>Ajustes de Video</h3>
+    <form>
+        <label for="volumen">Nivel de Volumen:</label>
+        <input type="range" id="volumen" min="0" max="1" step="0.1" value="1" oninput="ajustarVolumen()">
+        <span id="volDisplay">100%</span><br><br>
+
+        <label for="brillo">Nivel de Brillo:</label>
+        <input type="range" id="brillo" min="0" max="1" step="0.1" value="1" oninput="ajustarBrillo()">
+        <span id="brilloDisplay">100%</span><br><br>
+    </form>
+
+    <script>
+        // Función para ajustar el volumen del video
+        function ajustarVolumen() {
+            const video = document.getElementById("miVideo");
+            const volumen = document.getElementById("volumen").value;
+            video.volume = volumen;
+            document.getElementById("volDisplay").innerText = Math.round(volumen * 100) + "%";
+        }
+
+        // Función para ajustar el brillo del video
+        function ajustarBrillo() {
+            const brillo = document.getElementById("brillo").value;
+            document.getElementById("videoContainer").style.filter =    AQUI FALTA   brightness(simbolo de dolar y luego (brillo)});
+            document.getElementById("brilloDisplay").innerText = Math.round(brillo * 100) + "%";
+        }
+    </script>
+</body>
+</html>
+` },
+    {  title:"Formulario de registro",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730763358/formulario_de_registro_p05ysr.png", code: `<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+
+<html lang="es" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Registro</title>
+</head>
+<body>
+    <h2>Formulario de Registro</h2>
+    <form action="" >
+        <fieldset>
+            <legend>Información Personal</legend>
+            
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" maxlength="10"><br><br>
+
+            <label for="genero">Género:</label>
+            <select id="genero" name="genero">
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+            </select><br><br>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Información de Cuenta</legend>
+
+            <label for="usuario">Nombre de Usuario:</label>
+            <input type="text" id="usuario" name="usuario" required><br><br>
+
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contraseña" required minlength="8"><br><br>
+
+            <label for="foto">Foto de Perfil:</label>
+            <input type="file" id="foto" name="foto" accept=".pdf"><br><br>
+        </fieldset>
+
+        <button type="submit">Registrarse</button>
+    </form>
+</body>
+</html>
+` },
+    {  title:"Configuración de preferencias",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730763354/configuracion_de_preferencias_b8tppc.png", code: `<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html lang="es" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Configuración de Preferencias</title>
+</head>
+<body>
+    <h2>Configuración de Preferencias</h2>
+    <form action="archivo.php" method="post">
+        <fieldset>
+            <legend>Información Personal</legend>
+            
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="18" max="99" required><br><br>
+        </fieldset>
+        
+        <br>
+
+        <fieldset>
+            <legend>Preferencias de Uso</legend>
+
+            <label for="volumen">Nivel de Volumen:</label>
+            <input type="range" id="volumen" name="volumen" min="0" max="100" value="0">
+            <span id="volDisplay">0</span>%<br><br>
+
+            <label for="brillo">Nivel de Brillo de Pantalla:</label>
+            <input type="range" id="brillo" name="brillo" min="0" max="100" value="0">
+            <span id="brilloDisplay">0</span>%<br><br>
+        </fieldset>
+
+        <button type="submit">Guardar Configuración</button>
+    </form>
+</body>
+</html>
+` },
+],
+das: [
+    {  title:"Form básico",  url: "", code: `` },
+    {  title:"Form básico",  url: "", code: `` },
+],
  indice:["Aula General","Unidad1", "Unidad2", "Unidad3", "Unidad4","unidad5","unidad6"]
 };
 

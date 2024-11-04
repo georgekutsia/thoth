@@ -1,7 +1,7 @@
 .slide-btn-2,
 .slide-btn-1{
   position: absolute;
-  top: 0vh;
+  top: 3vh;
   z-index: 2; /*delante del slider*/
   width: 15vw;
   height: 50vh;

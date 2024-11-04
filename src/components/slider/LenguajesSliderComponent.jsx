@@ -54,12 +54,23 @@ export default function LenguajesSliderComponent() {
             <SwiperSlide>
               <CardSlider fromData={lenguajesNotas.basicoForm} text={"Tablas y Forms Básicos"}/>
             </SwiperSlide>
+            <div className='pdf-downloader'>
+                <DpfDownloaderComponent text='Presentación de la Asignatura' url={"https://thepowerfp.alexiaclassroom.com/pluginfile.php/21965/mod_resource/content/1/PRESENTACION%20ASIGNATURA.pdf"} />
+                <DpfDownloaderComponent text='Configuración de Netbeans y XAMPP ' url={"https://thepowerfp.alexiaclassroom.com/pluginfile.php/29572/mod_resource/content/1/Netbeans%20%20XAMPP.pdf"} />       
+              </div>
           </Swiper>
         </SwiperSlide>
 
         {/* Otro Slide con CardSlider */}
         <SwiperSlide>
-
+        <Swiper className="mySwiper2 swiper-v" direction={'vertical'} spaceBetween={50} pagination={{ clickable: true }} modules={[Pagination]}>
+            <SwiperSlide>
+              <CardSlider fromData={lenguajesNotas.complexForm} text={"Formularios con get, post y ajustes"}/>
+            </SwiperSlide>
+            <div className='pdf-downloader'>
+                <DpfDownloaderComponent text='Unidad 2 lenguajes de marcas' url={"https://thepowerfp.alexiaclassroom.com/pluginfile.php/36421/mod_resource/content/1/UD2.pdf"} />
+              </div>
+          </Swiper>
         </SwiperSlide>
       <SwiperSlide>
           <>

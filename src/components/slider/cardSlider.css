@@ -1,8 +1,23 @@
+.swiper {
+  width: 50vw;
+  padding: 0px;
+}
+.navigation-buttons{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.sliders-box{
+  overflow: hidden;
+}
+
 .mySwiper {
   width: 80vw;
   height: 10vw;
   border-radius: 90px 10px 90px 10px;
   margin-bottom: 10vh;
+
 }
 
 .swiper-h {
