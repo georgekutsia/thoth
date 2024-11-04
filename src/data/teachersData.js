@@ -22,10 +22,10 @@ const teachers = [
     email:"https://chatgpt.com/"
   },
   { 
-    img: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729020831/Skrull_ya_t9hjdo.png",
-    subject:"Fundamentos de Bases de Datos (MPO)",
-    name: "Skrull",
-    email:"A mi no me engañan. Están probando si pasará desapercibida su invasión..."
+    img: "https://media.licdn.com/dms/image/v2/D4D03AQEWmaIwcdnXZw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1693484510616?e=2147483647&v=beta&t=zS_JYTKpHGpDizJwfMj0latYNO6XkYlxkTipz6RrXS8",
+    subject:"Clases de apoyo",
+    name: "Raúl Albiol Salguero",
+    email:"raul.albiol@thepower.education"
   },
 ]
 
