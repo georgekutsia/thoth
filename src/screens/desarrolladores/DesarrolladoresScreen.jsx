@@ -5,11 +5,14 @@ function DesarrolladoresScreen() {
 
 
   return (
-    <div className="screen-box desarrolladores-box">
+    <div className="screen-box ">
+    <h2>Página en desarrollo y práctica... ignorar todo</h2>
+    <div className="desarrolladores-box">
       {/* <BtnPruebaComponent textColor={"yellow"}  texto={"Boton 1"}/> */}
       <DesarrolladoresComponent nombre={"jose Ventura david"}/>
       <DesarrolladoresComponent nombre={"Marzagán"}/>
       <DesarrolladoresComponent nombre={"Bulala"}/>
+    </div>
     </div>
   )
 }
