@@ -2,15 +2,15 @@
 import { useState } from "react"
 import "./teachersContact.css"
 import TeacherComponent from "./teacher/TeacherComponent"
-import {teachersData} from "../../../data"
+import {teachersData} from "../../../data" //traemos la información de la carpeta data
 import Tooltip from 'react-bootstrap/Tooltip';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import PropTypes from "prop-types";
 
 
 function TeachersContactButtonComponent({handleTeacher, showInfo}) {
-  const [teacherData] = useState(teachersData)
-
+  const [teacherData] = useState(teachersData) //cargamos la información de data en la variable teacherData para luego hacer el map
+  
   const renderTooltip = (props) => (
     <Tooltip id="button-tooltip" {...props}>
       Profesorado
@@ -24,7 +24,7 @@ function TeachersContactButtonComponent({handleTeacher, showInfo}) {
 
       <div className="teachers-big-box">
       {showInfo &&
-      teacherData.map((teacher, index)=>(
+      teacherData.map((teacher, index)=>( //mostramos la infromación del mapeo en el componente
       <TeacherComponent key={index} name={teacher.name} mail={teacher.email} subject={teacher.subject} img={teacher.img} index={index} />
       ))}
       </div>

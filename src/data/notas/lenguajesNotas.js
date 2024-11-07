@@ -1253,9 +1253,19 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
 </html>
 ` },
 ],
-das: [
-    {  title:"Form básico",  url: "", code: `` },
-    {  title:"Form básico",  url: "", code: `` },
+basicoCss: [
+    {  title:"Form básico",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730990891/css_html_0.1_c15zkw.png", code: ``, code1:`` },
+    {  title:"Form básico",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730990887/css_html_0_tmg32j.png", code: ``, code1:``, code2:`` },
+    {  title:"Form básico",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730990909/css_html_0.2_guwvub.png", code: ``, code1:``, code2:`` },
+    {  title:"Form básico",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730990882/css_html_1_niyxva.png", code: ``, code1:``, code2:`` },
+    {  title:"Form básico",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730990883/css_0.1_kunpzq.png", code: ``, code1:``, code2:`` },
+    {  title:"Form básico",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730990903/css_0.2_wkle8l.png", code: ``, code1:``, code2:`` },
+    {  title:"Form básico",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730990896/css_0.3_ondfii.png", code: ``, code1:``, code2:`` },
+    {  title:"Form básico",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730990899/css_1_ck6ttq.png", code: ``, code1:``, code2:`` },
+],
+ee: [
+    {  title:"Form básico",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730990903/css_0.2_wkle8l.png", code: ``, code1:``, code2:`` },
+    {  title:"Form básico",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730990899/css_1_ck6ttq.png", code: ``, code1:``, code2:`` },
 ],
  indice:["Aula General","Unidad1", "Unidad2", "Unidad3", "Unidad4","unidad5","unidad6"]
 };

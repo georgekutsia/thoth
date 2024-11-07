@@ -9,12 +9,12 @@ function TeacherComponent({name, mail, subject, img, index}) {
         <h5>{subject}</h5>
         <h6>{name}</h6>
         <h6>{mail}  <BtnCopyComponent copiarTexto={mail}/></h6>
-       
       </div>
         <img src={img} alt={name} />
     </div>
   )
 }
+
 TeacherComponent.propTypes = {
   name: PropTypes.string.isRequired,
   mail: PropTypes.string.isRequired,
@@ -22,4 +22,5 @@ TeacherComponent.propTypes = {
   index: PropTypes.number.isRequired,
   subject: PropTypes.string.isRequired,
 }
+
 export default TeacherComponent
