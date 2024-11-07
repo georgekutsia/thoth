@@ -30,7 +30,6 @@ function BtnCopyComponent({copiarTexto}) {
 }
 BtnCopyComponent.propTypes = {
   copiarTexto: PropTypes.string.isRequired,
-
 };
 
 export default BtnCopyComponent;

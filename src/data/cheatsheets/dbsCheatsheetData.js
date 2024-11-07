@@ -10,7 +10,7 @@ const dbsCheatsheetData = {   //rodeas de doble ** ** para mostrar texto azul y 
     textSub2d:`"main": Es el nombre específico que Java busca como punto de entrada en una aplicación.`,
     url:"https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730246072/1_nr7e1o.png",
   },
- ],
+],
  códigos :[
   {title:"Hello, world",
     text:`La imagen muestra la estructura básica de un programa en Java, específicamente el clásico programa "Hello World"`,

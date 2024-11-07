@@ -6,6 +6,7 @@ export {default as SistemasInformáticosScreen} from "./sistemas-informáticos/S
 export {default as ItinerarioDeEmpleabilidadScreen} from "./empleabilidad/ItinerarioDeEmpleabilidadScreen.jsx"
 export {default as ExamenesScreen} from "./Examenes/ExamenesScreen.jsx"
 export {default as WelcomeScreen} from "./welcome-screen/WelcomeScreen.jsx"
+export {default as DesarrolladoresScreen} from "./desarrolladores/DesarrolladoresScreen.jsx"
 
 
 export {default as CiberseguridadScreen} from "./ciberseguridad-screen/CiberseguridadScreen"

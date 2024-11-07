@@ -15,17 +15,14 @@ function DayNightBoxComponent({ handleChangeTheme, handleDayNight, isNightMode }
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      // Verificamos si se hizo clic fuera del componente
       if (boxRef.current && !boxRef.current.contains(event.target)) {
-        setshowDayNight(false); // Ocultamos el menú si el clic fue fuera del componente
+        setshowDayNight(false); 
       }
     };
 
-    // Agregamos un listener de clic en el documento
     document.addEventListener("mousedown", handleClickOutside);
 
     return () => {
-      // Limpiamos el listener cuando el componente se desmonta
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [boxRef]);
