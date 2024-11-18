@@ -47,7 +47,16 @@ export default function CardSlider({ fromData, text }) {
               </i>
               <h5>{ans.title}</h5>
               <div className='btn-copy-slider'>
-                <BtnCopyComponent copiarTexto={ans.code} />
+              {ans.codeHtml &&
+                <BtnCopyComponent copiarTexto={ans.codeHtml} btnT={"copiar HTML"}/>
+              }
+
+                {ans.codeJava &&
+                  <BtnCopyComponent copiarTexto={ans.codeJava} btnT={"copiar Java"}/>
+                }
+                {ans.codeCss &&
+                  <BtnCopyComponent copiarTexto={ans.codeCss} btnT={"copiar CSS"}/>
+                }
               </div>
               <img src={ans.url} alt={ans.title} />
             </div>

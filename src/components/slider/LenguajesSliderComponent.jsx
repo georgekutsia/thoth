@@ -74,6 +74,16 @@ export default function LenguajesSliderComponent() {
         </SwiperSlide>
       <SwiperSlide>
           <>
+          <CardSlider fromData={lenguajesNotas.basicoCss} text={"Etiquetas y atributos básicos"}/>
+            <div className='pdf-downloader'>
+              <DpfDownloaderComponent text='Ir a unidad 1 en Alexia' url="https://thepowerfp.alexiaclassroom.com/course/view.php?id=607&section=2" />
+              <DpfDownloaderComponent text='Presentación de la asignatura' url="https://thepowerfp.alexiaclassroom.com/pluginfile.php/21965/mod_resource/content/1/PRESENTACION%20ASIGNATURA.pdf" />
+              <DpfDownloaderComponent text='Configuración de Netbeans y XAMPP' url="https://thepowerfp.alexiaclassroom.com/pluginfile.php/21966/mod_resource/content/1/Netbeans%20%20XAMPP.pdf" />
+            </div>
+          </>
+        </SwiperSlide>
+      <SwiperSlide>
+          <>
           {/* <CardSlider fromData={lenguajesNotas.basicoHtml} text={"Etiquetas y atributos básicos"}/> */}
             <div className='pdf-downloader'>
               <DpfDownloaderComponent text='Ir a unidad 1 en Alexia' url="https://thepowerfp.alexiaclassroom.com/course/view.php?id=607&section=2" />

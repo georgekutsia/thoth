@@ -1,26 +1,5 @@
 const programacionNotas = {
-  ejemplo: [
-    {
-      url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259267/java000000_jt2gfr.png",
-      code: "java_code1",
-    },
-    {
-      url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259333/java00_z5kyqk.png",
-      code: "java_code2",
-    },
-    {
-      url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259331/java001_q43th4.png",
-      code: "java_code3",
-    },
-    {
-      url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259258/java1_tea7by.png",
-      code: "java_code4",
-    },
-    {
-      url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259254/java2_kkgp4s.png",
-      code: "java_code5",
-    },
-  ],
+
   indice: [
     "Aula General",
     "Unidad1",
@@ -34,7 +13,7 @@ const programacionNotas = {
   basicJava: [
     {
       url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259267/java000000_jt2gfr.png",
-      code: `
+      codeJava: `
 /**
  *
  * @author jdavi
@@ -71,7 +50,7 @@ Métodos: Son las acciones o comportamientos que los objetos pueden realizar (co
     },
     {
       url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259333/java00_z5kyqk.png",
-      code: `/*
+      codeJava: `/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
@@ -98,7 +77,7 @@ public class _4constante {
     },
     {
       url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259331/java001_q43th4.png",
-      code: `/*
+      codeJava: `/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
@@ -136,7 +115,7 @@ public class _5Datos {
     },
     {
       url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259258/java1_tea7by.png",
-      code: `/*@author jdavi*/
+      codeJava: `/*@author jdavi*/
 
 /*VARIABLES PRIMITIVAS
 Una Variable es un espacio de memoria que almacena un valor, es decir como si tuvieramos una caja y guardamos algo*/
@@ -182,7 +161,7 @@ Para los valores de long, se añade una L al final del número para indicar que 
     },
     {
       url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259254/java2_kkgp4s.png",
-      code: `/*
+      codeJava: `/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
@@ -234,7 +213,7 @@ public class _1variable_decimal {
     },
     {
       url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259286/java3_kjizzf.png",
-      code: `package _1curso_java;
+      codeJava: `package _1curso_java;
 
 public class _1variable_decimalbis {
     public static void main(String[] args) {
@@ -266,7 +245,7 @@ public class _1variable_decimalbis {
     },
     {
       url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259262/java4_dj0kxr.png",
-      code: `/*
+      codeJava: `/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
@@ -301,7 +280,7 @@ public class _2variable_booleana {
     },
     {
       url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259285/java5_aw1y3q.png",
-      code: `/*
+      codeJava: `/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
@@ -355,7 +334,7 @@ public class _2variable_booleanabis {
     },
     {
       url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259278/java6_obcfvg.png",
-      code: `/*
+      codeJava: `/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
@@ -404,7 +383,7 @@ public class _3datos_no_primitivos_y_cadenas {
     },
     {
       url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729259281/java05_nopf8g.png",
-      code: `/*@author jdavi*/
+      codeJava: `/*@author jdavi*/
 
 /*VARIABLES PRIMITIVAS
 Una Variable es un espacio de memoria que almacena un valor, es decir como si tuvieramos una caja y guardamos algo*/
@@ -481,7 +460,7 @@ Para los valores de long, se añade una L al final del número para indicar que 
   conditionalJava: [
     {
       url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729266559/cond1_llbelx.png",
-      code: `/*
+      codeJava: `/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
@@ -522,7 +501,7 @@ public class Mayor_Menor_Igualesbis {  // Definición de la clase principal "May
     },
     {
       url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729266464/cond2_t6n7em.png",
-      code: `/*Los operadores condicionales en Java son aquellos que evalúan dos expresiones booleanas.
+      codeJava: `/*Los operadores condicionales en Java son aquellos que evalúan dos expresiones booleanas.
 Operador	Descripción
 &&	        Operador condicional AND
 ||	        Operador condicional OR
@@ -557,7 +536,7 @@ public class Mayor_Menor_Iguales {
     },
     {
       url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729266489/cond3_ijr4vf.png",
-      code: `/*
+      codeJava: `/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
@@ -594,7 +573,7 @@ public class Mayor_Menorbis {  // Definición de la clase principal "Mayor_Menor
     },
     {
       url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729266538/cond4_xobtwu.png",
-      code: `/*Los operadores condicionales en Java son aquellos que evalúan dos expresiones booleanas.
+      codeJava: `/*Los operadores condicionales en Java son aquellos que evalúan dos expresiones booleanas.
 Operador	Descripción
 &&	        Operador condicional AND
 ||	        Operador condicional OR
@@ -628,7 +607,7 @@ public class Mayor_Menor {
     },
     {
       url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729266561/cond5_xoxb9g.png",
-      code: `/*
+      codeJava: `/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
@@ -687,7 +666,7 @@ public class Ecuacion_segundogradobis {  // Definición de la clase principal "E
     },
     {
       url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729266525/cond6_agdjng.png",
-      code: `/*Los operadores condicionales en Java son aquellos que evalúan dos expresiones booleanas.
+      codeJava: `/*Los operadores condicionales en Java son aquellos que evalúan dos expresiones booleanas.
 Operador	Descripción
 &&	        Operador condicional AND
 ||	        Operador condicional OR
@@ -740,7 +719,7 @@ public class Ecuacion_segundogrado {
     },
     {
       url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729266552/cond7_wfswr2.png",
-      code: `/*
+      codeJava: `/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
@@ -790,7 +769,7 @@ public class Dia_semanabis {  // Definición de la clase principal "Dia_semana".
     },
     {
       url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729266515/cond8_vlo2n2.png",
-      code: `/*Los operadores condicionales en Java son aquellos que evalúan dos expresiones booleanas.
+      codeJava: `/*Los operadores condicionales en Java son aquellos que evalúan dos expresiones booleanas.
 Operador	Descripción
 &&	        Operador condicional AND
 ||	        Operador condicional OR
@@ -826,7 +805,7 @@ public class Dia_semana {
     },
     {
       url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729266556/cond9_ttoowf.png",
-      code: `/*
+      codeJava: `/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
@@ -883,7 +862,7 @@ public class Calificacion_nota2bis {  // Definición de la clase principal "Cali
     },
     {
       url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729266445/cond10_mptcxo.png",
-      code: `/*Los operadores condicionales en Java son aquellos que evalúan dos expresiones booleanas.
+      codeJava: `/*Los operadores condicionales en Java son aquellos que evalúan dos expresiones booleanas.
 Operador	Descripción
 &&	        Operador condicional AND
 ||	        Operador condicional OR
@@ -925,7 +904,7 @@ public class Calificacion_nota {
     },
     {
       url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729266439/cond11_dqvnhn.png",
-      code: `/*Los operadores condicionales en Java son aquellos que evalúan dos expresiones booleanas.
+      codeJava: `/*Los operadores condicionales en Java son aquellos que evalúan dos expresiones booleanas.
 Operador	Descripción
 &&	        Operador condicional AND
 ||	        Operador condicional OR
@@ -971,7 +950,7 @@ public class Calificacion_nota2 {
     },
     {
       url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729266495/cond12_w43lnq.png",
-      code: `/*
+      codeJava: `/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
@@ -1021,7 +1000,7 @@ public class Calificacion_notabis {  // Definición de la clase principal "Calif
   conditional2Java: [
    {
      url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729862114/calculadoraimc_fbak4i.png",
-     code: `
+     codeJava: `
 /*
 IMC = Peso/(altura)^2
 Locale localeUS = Locale.US;       // Inglés de EE.UU.
@@ -1069,7 +1048,7 @@ public class CalculadoraIMC {
    },
    {
      url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729862114/diassemana_oghiue.png",
-     code: `/*
+     codeJava: `/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
@@ -1117,7 +1096,7 @@ public class DiasSemana {
    },
    {
      url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729862245/parimpar_oobrlw.png",
-     code: `/*
+     codeJava: `/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
@@ -1145,7 +1124,7 @@ public class ParImpar {
    },
    {
      url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729862114/calculadoradescuento_vubjpd.png",
-     code: `/*
+     codeJava: `/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
@@ -1176,11 +1155,11 @@ public class CalculadoraDescuento {
    },
    {
      url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729862116/cajeroautomatico_m4qgmp.png",
-     code: ``
+     codeJava: ``
    },
    {
      url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729862116/calculotarifa_ptnqhb.png",
-     code: `/*
+     codeJava: `/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
@@ -1219,7 +1198,7 @@ public class CalculoTarifa {
    },
    {
      url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729862120/calculadoraconcondicionales_oraup1.png",
-     code: `package _1Condicionales2;
+     codeJava: `package _1Condicionales2;
 import java.util.Scanner;
 public class CalculadoraConCondicionales {
     public static void main(String[] args) {

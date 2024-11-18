@@ -2,7 +2,6 @@
   --invertColorBlack: var(--black);  /*con el cambio de color de la página cambian las letras iniciales en negro a blanco  */
   --invertColorWhite: var(--white); /*con el cambio de color de la página cambian las letras iniciales en blacno a negro  */
   --transImgs: var(--white);
-
 --white: #ffffff;
 --grey: rgb(193, 193, 193);
 --black: #000000;

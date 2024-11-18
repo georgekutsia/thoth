@@ -1,16 +1,16 @@
 const lenguajeNotas = {
   ejemplo:[
-    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729204217/marcas2_xolned.png", code: "html_intro_code2" },
-    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729204210/marcas3_jtrwa1.png", code: "html_intro_code3" },
-    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729204220/marcas4_shcoss.png", code: "html_intro_code4" },
+    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729204217/marcas2_xolned.png", codeHtml: "html_intro_codeCss" },
+    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729204210/marcas3_jtrwa1.png", codeHtml: "html_intro_code3" },
+    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729204220/marcas4_shcoss.png", codeHtml: "html_intro_code4" },
   ],
 
   introHtml: [
-    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729204188/marcas1_pi4beh.png", code: "html_intro_code1" },
-    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729204217/marcas2_xolned.png", code: "html_intro_code2" },
-    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729204210/marcas3_jtrwa1.png", code: "html_intro_code3" },
-    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729204220/marcas4_shcoss.png", code: "html_intro_code4" },
-    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729204216/marcas5_ev3d0g.png", code: "html_intro_code5" },
+    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729204188/marcas1_pi4beh.png", codeHtml: "html_intro_code1" },
+    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729204217/marcas2_xolned.png", codeHtml: "html_intro_codeCss" },
+    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729204210/marcas3_jtrwa1.png", codeHtml: "html_intro_code3" },
+    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729204220/marcas4_shcoss.png", codeHtml: "html_intro_code4" },
+    { url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1729204216/marcas5_ev3d0g.png", codeHtml: "html_intro_code5" },
   ],
 
   basicoHtml: [
@@ -86,7 +86,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
 </html>
 ` },
-    {  title:"Etiquetas <h></h> |  <input/>",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730716444/2_h0m2fe.png", code: `
+    {  title:"Etiquetas <h></h> |  <input/>",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730716444/2_h0m2fe.png", codeHtml: `
       <!-- El DOCTYPE que debe iniciar cualquier archivo HTML puede contener lo que a algunas personas les parece una declaración de 
 idioma. No obstante, indica el idioma del esquema asociado con este documento, no tiene nada que ver con el idioma del 
 documento mismo.-->
@@ -169,7 +169,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     <body>
 </html>
 ` },
-    {  title:"Etiquetas <ul></ul> | <ol></ol> | <li></li>",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730720191/3_phya4i.png", code: `
+    {  title:"Etiquetas <ul></ul> | <ol></ol> | <li></li>",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730720191/3_phya4i.png", codeHtml: `
       <!-- El DOCTYPE que debe iniciar cualquier archivo HTML puede contener lo que a algunas personas les parece una declaración de 
 idioma. No obstante, indica el idioma del esquema asociado con este documento, no tiene nada que ver con el idioma del 
 documento mismo.-->
@@ -280,12 +280,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 </html>
 ` },
 
-    { url: "", code: `` },
-    { url: "", code: `` },
+    { url: "", codeHtml: `` },
+    { url: "", codeHtml: `` },
   ],
 
   basicoForm: [
-    {  title:"Form básico",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730730228/4_nzbfdp.png", code: `<!-- Error Carácteres -->
+    {  title:"Form básico",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730730228/4_nzbfdp.png", codeHtml: `<!-- Error Carácteres -->
 
         <!DOCTYPE html>
         <html>
@@ -346,7 +346,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         </body>
         </html>
             ` },
-    {title:"Form CV",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730736598/5_xetzoh.png", code: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+    {title:"Form CV",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730736598/5_xetzoh.png", codeHtml: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="es" xml:lang="es">
 
 <head>
@@ -411,7 +411,7 @@ Incluir mi foto <input type="file" name="foto" />
 </body>
 
 </html>` },
-    {title:"Tabla gastos 1/2",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730736552/6.1_x0oodp.png", code: `<!-- El DOCTYPE que debe iniciar cualquier archivo HTML puede contener lo que a algunas personas les parece una declaración de 
+    {title:"Tabla gastos 1/2",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730736552/6.1_x0oodp.png", codeHtml: `<!-- El DOCTYPE que debe iniciar cualquier archivo HTML puede contener lo que a algunas personas les parece una declaración de 
 idioma. No obstante, indica el idioma del esquema asociado con este documento, no tiene nada que ver con el idioma del 
 documento mismo.-->
 
@@ -532,7 +532,7 @@ documento mismo.-->
     <body>
 </html>
 ` },
-    {title:"Tabla gastos 2/2", url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730736594/6.2_vgil6e.png", code: `<!-- El DOCTYPE que debe iniciar cualquier archivo HTML puede contener lo que a algunas personas les parece una declaración de 
+    {title:"Tabla gastos 2/2", url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730736594/6.2_vgil6e.png", codeHtml: `<!-- El DOCTYPE que debe iniciar cualquier archivo HTML puede contener lo que a algunas personas les parece una declaración de 
 idioma. No obstante, indica el idioma del esquema asociado con este documento, no tiene nada que ver con el idioma del 
 documento mismo.-->
 
@@ -653,7 +653,7 @@ documento mismo.-->
     <body>
 </html>
 ` },
-{  title:"Script de JavaScript",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730736550/7_uy0250.png", code: `<!-- El DOCTYPE que debe iniciar cualquier archivo HTML puede contener lo que a algunas personas les parece una declaración de 
+{  title:"Script de JavaScript",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730736550/7_uy0250.png", codeHtml: `<!-- El DOCTYPE que debe iniciar cualquier archivo HTML puede contener lo que a algunas personas les parece una declaración de 
 idioma. No obstante, indica el idioma del esquema asociado con este documento, no tiene nada que ver con el idioma del 
 documento mismo.-->
 
@@ -705,7 +705,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
 </html>
 ` },
-{  title:"Form CV  Desplegables 1/2",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730736550/8.1_kdikjh.png", code: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+{  title:"Form CV  Desplegables 1/2",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730736550/8.1_kdikjh.png", codeHtml: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
 
 <head>
@@ -997,7 +997,7 @@ ese conjunto de campos. Usualmente, se encuentra dentro del elemento <fieldset> 
  },
 ],
 complexForm: [
-    {  title:"Post",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730763351/post3_g5gzfx.png", code: `<!DOCTYPE html>
+    {  title:"Post",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730763351/post3_g5gzfx.png", codeHtml: `<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -1019,7 +1019,7 @@ complexForm: [
 </body>
 </html>
 ` },
-    {  title:"Get",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730763348/get3_ysmszk.png", code: `<!DOCTYPE html>
+    {  title:"Get",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730763348/get3_ysmszk.png", codeHtml: `<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -1041,7 +1041,7 @@ complexForm: [
 </body>
 </html>
 ` },
-    {  title:"Encuesta pelis",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730763364/encuesta_pelis_xkpsm3.png", code: `<!DOCTYPE html>
+    {  title:"Encuesta pelis",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730763364/encuesta_pelis_xkpsm3.png", codeHtml: `<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -1100,7 +1100,7 @@ complexForm: [
 </html>
 
 ` },
-    {  title:"Controles de video",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730763360/getpost4_pl6zaa.png", code: `<!DOCTYPE html>
+    {  title:"Controles de video",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730763360/getpost4_pl6zaa.png", codeHtml: `<!DOCTYPE html>
 <!--
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
 Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
@@ -1158,7 +1158,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
 </body>
 </html>
 ` },
-    {  title:"Formulario de registro",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730763358/formulario_de_registro_p05ysr.png", code: `<!DOCTYPE html>
+    {  title:"Formulario de registro",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730763358/formulario_de_registro_p05ysr.png", codeHtml: `<!DOCTYPE html>
 <!--
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
 Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
@@ -1210,7 +1210,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 </body>
 </html>
 ` },
-    {  title:"Configuración de preferencias",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730763354/configuracion_de_preferencias_b8tppc.png", code: `<!DOCTYPE html>
+    {  title:"Configuración de preferencias",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730763354/configuracion_de_preferencias_b8tppc.png", codeHtml: `<!DOCTYPE html>
 <!--
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
 Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
@@ -1254,18 +1254,264 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
 ` },
 ],
 basicoCss: [
-    {  title:"Form básico",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730990891/css_html_0.1_c15zkw.png", code: ``, code1:`` },
-    {  title:"Form básico",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730990887/css_html_0_tmg32j.png", code: ``, code1:``, code2:`` },
-    {  title:"Form básico",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730990909/css_html_0.2_guwvub.png", code: ``, code1:``, code2:`` },
-    {  title:"Form básico",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730990882/css_html_1_niyxva.png", code: ``, code1:``, code2:`` },
-    {  title:"Form básico",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730990883/css_0.1_kunpzq.png", code: ``, code1:``, code2:`` },
-    {  title:"Form básico",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730990903/css_0.2_wkle8l.png", code: ``, code1:``, code2:`` },
-    {  title:"Form básico",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730990896/css_0.3_ondfii.png", code: ``, code1:``, code2:`` },
-    {  title:"Form básico",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730990899/css_1_ck6ttq.png", code: ``, code1:``, code2:`` },
+    {  title:"Form básico",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730990891/css_html_0.1_c15zkw.png", codeHtml: `<!-- El resultado es que todos los elementos p de html se van a transformar en letra de color azul gracias a la propiedad css 
+color aplicada a todos los párrafos en las etiquetas style. -->
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicios CSS</title>
+    <style>
+        p {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Párrafo 1.</p>
+    <p>Párrafo 2.</p>
+    <p>Párrafo 3.</p>
+</body>
+</html>
+
+`, code1:`` },
+    {  title:"Form básico",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730990887/css_html_0_tmg32j.png", codeHtml: `
+<!--
+En este caso, solo le aplico a uno de los tres párrafos el estilo CSS gracias al atributo html style.
+-->
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicios CSS</title>
+        
+</head>
+
+<body>
+    <p style="color: blue">Párrafo 1.</p>
+    <p>Párrafo 2.</p>
+    <p>Párrafo 3.</p>
+</body>
+</html>
+`, code1:``, codeCss:`` },
+    {  title:"Form básico",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730990909/css_html_0.2_guwvub.png", codeHtml: `<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicios CSS</title>
+    <style>
+        /* Estilos específicos para cada párrafo */
+        #parrafo1 {
+            color: blue;
+        }
+
+        #parrafo2 {
+            color: red;
+        }
+
+        #parrafo3 {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Aplicar ID a cada párrafo para que tengan colores diferentes -->
+    <p id="parrafo1">Párrafo 1.</p>
+    <p id="parrafo2">Párrafo 2.</p>
+    <p id="parrafo3">Párrafo 3.</p>
+</body>
+</html>
+`, code1:``, codeCss:`` },
+    {  title:"Form básico",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730990882/css_html_1_niyxva.png", codeHtml: `<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicios CSS</title>
+</head>
+
+<body>
+    <p style="color: blue;">Párrafo 1.</p>
+    <p style="color: red;">Párrafo 2.</p>
+    <p style="color: green;">Párrafo 3.</p>
+</body>
+</html>`, code1:``, codeCss:`` },
+    {  title:"Form básico",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730990883/css_0.1_kunpzq.png", codeHtml: `<!DOCTYPE html>
+<!--
+El resultado es exactamente el mismo que en el primer ejercicio, solo que esta vez, la hoja html no tiene los estilos CSS 
+directamente, si no que los carga de la página externa estilos.css o el nombre que le hayas puesto.
+-->
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicios CSS</title>
+    <link rel="stylesheet" href="estilos1.css">
+</head>
+
+<body>
+    <p>Párrafo 1.</p>
+    <p>Párrafo 2.</p>
+    <p>Párrafo 3.</p>
+</body>
+</html>`, code1:`p {
+    color:red;
+}
+`, codeCss:`` },
+    {  title:"Form básico",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730990903/css_0.2_wkle8l.png", codeHtml: `<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicios CSS</title>
+    <link rel="stylesheet" href="estilos1.css"> <!-- Enlace al archivo CSS externo -->
+</head>
+
+<body>
+    <!-- Aplicar ID a cada párrafo para que tengan colores diferentes -->
+    <p id="parrafo1">Párrafo 1.</p>
+    <p id="parrafo2">Párrafo 2.</p>
+    <p id="parrafo3">Párrafo 3.</p>
+</body>
+</html>
+`, codeCss:`/* Archivo: estilos.css */
+
+/* Estilos específicos para cada párrafo */
+#parrafo1 {
+    color: blue;
+}
+
+#parrafo2 {
+    color: red;
+}
+
+#parrafo3 {
+    color: green;
+}
+` },
+    {  title:"Form básico",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730990896/css_0.3_ondfii.png", codeHtml: `<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Sintaxis básica de CSS</title>
+    <link href="estilos2.css" rel="stylesheet" type="text/css"> 
+</head>
+
+<body>
+    <h1>Programación fácil</h1>
+    <h2>Curso de CSS desde cero</h2>
+    <p>Os doy la bienvenida al curso de CSS.</p>
+</body>
+</html>`, codeCss:`
+/*La font-sizepropiedad establece el tamaño de una fuente.*/
+p {
+    font-size:25px;
+}
+
+h1{
+    color:red; /*color: #FF0000;*/
+}
+
+h2{
+    text-align: center;
+}`,  },
+    {  title:"Form básico",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730990899/css_1_ck6ttq.png", codeHtml: `<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta name="author" content="" />
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	<title>Ejercicio 6</title>
+</head>
+<body>
+<!--Contenedor-->
+<div id="contenedor">
+	<!--Cabecera-->
+	<div id="cabecera">
+		<div id="logo">
+			<h2>LOGOTIPO</h2>
+		</div>
+	</div>
+	<!--/Cabecera-->
+	<!--Menú Principal-->
+	<div id="menu">
+		<ul>
+			<li><a href="#">Inicio</a></li>
+			<li><a href="#">Sobre Nosostros</a></li>
+			<li><a href="#">Contacto</a></li>
+		</ul>
+	</div>
+	<!--/Menú Principal-->
+	<!--Contenido-->
+	<div id="contenido">
+		<div class="articulo">
+			<h2>Provincias Castilla-La Mancha</h2>
+			<p>Albacete</p>
+			<p>Ciudad Real</p>
+			<p>Cuenca</p>
+			<p>Guadalajara</p>
+			<p>Toledo</p>
+			<p><a href="#">Seguir Leyendo ...</a></p>
+			
+		</div>
+	</div>
+	<!--/Contenido-->
+</div>
+<!--/Contenedor-->
+</body>
+</html>`, codeCss:`#contenedor {
+    width: 80%;              /* El ancho del contenedor ocupará el 80% del ancho total de la pantalla */
+    max-width: 950px;        /* El ancho máximo del contenedor será de 950px, para evitar que se expanda demasiado */
+}
+
+#cabecera {
+    font-size: 2em;          /* Tamaño de fuente para el texto dentro del encabezado, equivalente al doble del tamaño estándar */
+    margin-bottom: 0.5em;    /* Espacio debajo del encabezado, separándolo de otros elementos */
+}
+
+#menu {
+    margin-bottom: 6em;      /* Espacio inferior para separar el menú de otros elementos a continuación */
+}
+
+#menu a {
+    text-decoration: none;   /* Quita la subrayado de los enlaces del menú */
+}
+
+#menu li {
+    list-style-type: none;   /* Quita los puntos o viñetas de los elementos de lista */
+    float: left;             /* Hace que los elementos de la lista se alineen horizontalmente en lugar de verticalmente */
+    margin: 10px;            /* Añade espacio exterior alrededor de cada elemento de la lista */
+    padding: 0px;            /* Quita el espacio interior de cada elemento de lista */
+    color: red;              /* Establece el color de texto de los elementos de lista en rojo */
+}
+
+#menu li a:hover {
+    color: black;            /* Cambia el color del enlace a negro cuando el usuario pasa el ratón por encima */
+}
+
+#menu li a:visited {
+    color: red;              /* Cambia el color del enlace a rojo si el usuario ya ha visitado ese enlace */
+}
+
+#contenido {
+    background-color: grey;  /* Define un fondo gris para el contenedor de contenido */
+    border: 2px solid red;   /* Añade un borde rojo de 2px alrededor del contenedor de contenido */
+    color: white;            /* Establece el color del texto en blanco dentro del contenedor de contenido */
+}
+
+.articulo h2 {
+    font-family: Verdana;    /* Aplica la fuente Verdana a los encabezados h2 dentro de los artículos */
+    color: red;              /* Establece el color del texto de los encabezados h2 en rojo */
+}
+`,  },
 ],
 ee: [
-    {  title:"Form básico",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730990903/css_0.2_wkle8l.png", code: ``, code1:``, code2:`` },
-    {  title:"Form básico",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730990899/css_1_ck6ttq.png", code: ``, code1:``, code2:`` },
+    {  title:"Form básico",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730990903/css_0.2_wkle8l.png", codeHtml: ``, code1:``, codeCss:`` },
+    {  title:"Form básico",  url: "https://res.cloudinary.com/dtv1oj9bq/image/upload/v1730990899/css_1_ck6ttq.png", codeHtml: ``, code1:``, codeCss:`` },
 ],
  indice:["Aula General","Unidad1", "Unidad2", "Unidad3", "Unidad4","unidad5","unidad6"]
 };
