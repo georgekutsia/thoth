@@ -9,11 +9,9 @@ function BasesDeDatosScreen() {
   const [dataInfo] = useState(dbsData);
   const [dataExer] = useState(dbsEj1);
   const [searchTerm, setSearchTerm] = useState("");
-
   const filteredData = dataInfo.filter((data) =>
     data.titulo.toLowerCase().includes(searchTerm.toLowerCase())
   );
-
   return (
     <div className="screen-box">
       <ExtraNavbarComponents
@@ -22,12 +20,9 @@ function BasesDeDatosScreen() {
         searchTerm = {searchTerm}
         typeData="dbsType" 
         cheatsheetData={dbsCheatsheetData}
-
       />
-
     <TitleScreenComponent subject="Bases de Datos"/>
-    
-      <div  className="explanation-map-box">
+      <dl  className="explanation-map-box">
       {filteredData.map((sistData, index) => (
         <ExplanationComponent
           key={index}
@@ -40,7 +35,7 @@ function BasesDeDatosScreen() {
           random={sistData.random}
         />
       ))}
-      </div>
+      </dl>
     </div>
   );
 }

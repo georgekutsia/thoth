@@ -57,7 +57,7 @@
   text-shadow: 1px 1px var(--invertColor);
 
 }
-.explanation-text span{
+.explanation-text dfn{
   display: block;
 }
 .explanation-text p{

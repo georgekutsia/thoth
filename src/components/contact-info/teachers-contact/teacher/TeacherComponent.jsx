@@ -10,7 +10,7 @@ function TeacherComponent({name, mail, subject, img, index}) {
         <h6>{name}</h6>
         <h6>{mail}  <BtnCopyComponent copiarTexto={mail}/></h6>
       </div>
-        <img src={img} alt={name} />
+        <img  src={img} alt={name}/>
     </div>
   )
 }

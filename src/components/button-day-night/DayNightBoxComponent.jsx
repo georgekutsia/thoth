@@ -19,9 +19,7 @@ function DayNightBoxComponent({ handleChangeTheme, handleDayNight, isNightMode }
         setshowDayNight(false); 
       }
     };
-
     document.addEventListener("mousedown", handleClickOutside);
-
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };

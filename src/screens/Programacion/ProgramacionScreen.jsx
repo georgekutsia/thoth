@@ -22,9 +22,7 @@ function ProgramacionScreen() {
         typeData="progType" 
         cheatsheetData={programationCheatsheetsData}
       />
-
       <TitleScreenComponent subject="Programación" />
-
       <div className="explanation-map-box">
         {filteredData.map((data, index) => (
           <ExplanationComponent

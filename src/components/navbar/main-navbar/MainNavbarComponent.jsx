@@ -84,6 +84,7 @@
               isNightMode={isNightMode}
             />
             <MainNavbarBtnComponent
+            acces="s"
               classN={"fa-solid fa-server"}
               dataI={"fa-server"}
               navL={"/sistemas"}
@@ -92,6 +93,7 @@
               aosFading={"fade-left"}
             />
             <MainNavbarBtnComponent
+              acces="p"
               classN={"fa-solid fa-laptop-code"}
               dataI={"fa-laptop-code"}
               navL={"/programacion"}

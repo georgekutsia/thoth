@@ -5,7 +5,7 @@ import Tooltip from 'react-bootstrap/Tooltip';
 import PropTypes from "prop-types";
 
 
-function MainNavbarBtnComponent({dataI, classN, navL, btnT, aosDelay, aosFading, handleClick}) {
+function MainNavbarBtnComponent({acces, dataI, classN, navL, btnT, aosDelay, aosFading, handleClick}) {
   
 const renderTooltip = (props) => (
   <Tooltip id="button-tooltip" {...props}>
@@ -15,6 +15,7 @@ const renderTooltip = (props) => (
 
   return (
 <NavLink 
+    accessKey={acces}
     to={navL} 
     data-icon={dataI} 
     data-aos={aosFading}  
@@ -32,6 +33,7 @@ const renderTooltip = (props) => (
 }
 
 MainNavbarBtnComponent.propTypes = {
+  acces: PropTypes.string.isRequired,
   dataI: PropTypes.string.isRequired,
   classN: PropTypes.string.isRequired,
   navL: PropTypes.string,

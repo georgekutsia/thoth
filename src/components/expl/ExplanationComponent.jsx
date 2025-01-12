@@ -25,13 +25,15 @@ function ExplanationComponent({ color, titulo, explicación, cine, cocina, depor
   return (
 <div className={`explanation-box `} data-aos="fade-up" style={{ width: window.innerWidth >= 775 ? expanded : "80vw", transition: "0.5s ease-in-out"}}>
   <section id="expl-section1">
-{window.innerWidth>= 775&&
+{window.innerWidth >= 775 &&
   <i className="btn-expand-position">
       <BtnExpandComponent handleExpand={() => handleExpand()} />
     </i>
 }
     <p style={{ backgroundColor: color }} className="explanation-text">
-      <span className="explanation-title" onClick={() => handleExplType(0)}>{titulo}</span>
+    {/* cambiamos Span por DFN por si da problemas */}
+    
+  <dt className="explanation-title" onClick={() => handleExplType(0)}> {titulo}</dt>   
       {explType === 0 && explicación}
       {explType === 1 && cocina}
       {explType === 2 && cine}
