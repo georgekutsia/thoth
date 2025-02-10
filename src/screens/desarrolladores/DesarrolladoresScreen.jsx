@@ -7,7 +7,7 @@ function DesarrolladoresScreen() {
     <p>Página en desarrollo y práctica... ignorar todo</p>
     <div className="desarrolladores-box">
       {/* <BtnPruebaComponent textColor={"yellow"}  texto={"Boton 1"}/> */}
-      <DesarrolladoresComponent nombre={"jose Ventura david"}/>
+      {/* <DesarrolladoresComponent nombre={"jose Ventura david"}/> */}
     </div>
     </div>
   )

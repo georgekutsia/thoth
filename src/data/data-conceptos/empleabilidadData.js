@@ -1,7 +1,6 @@
 // data.js
 
 const data = [
-  
     {
       "titulo": "Contrato Laboral",
       "explicación": "Es un acuerdo entre el empleado y el empleador que establece las condiciones laborales, derechos y obligaciones de ambas partes.",
